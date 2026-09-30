@@ -3,181 +3,144 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useRouter } from "next/navigation";
-import { signOut } from "next-auth/react";
-import { useEffect, useRef, useState } from "react";
-import { useUserState } from "@/lib/state";
+import { useEffect, useState } from "react";
+
+const nav = [
+  { href: "/", label: "Home" },
+  { href: "/mathematics", label: "Maths" },
+  { href: "/physics", label: "Physics" },
+  { href: "/chemistry", label: "Chemistry" },
+  { href: "/biology", label: "Biology" },
+  { href: "/computer-science", label: "CS" },
+];
 
 export function Navbar() {
   const pathname = usePathname();
-  const router = useRouter();
-  const { loading, signedIn, email, name, refresh } = useUserState();
+  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null);
 
+  // Compact, more solid navbar once the user scrolls
   useEffect(() => {
-    function onClick(e: MouseEvent) {
-      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
-        setMenuOpen(false);
-      }
-    }
-    document.addEventListener("mousedown", onClick);
-    return () => document.removeEventListener("mousedown", onClick);
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  async function signOutNow() {
-    // Auth.js helper: posts with the required CSRF token and clears the session cookie
-    await signOut({ redirect: false });
-    setMenuOpen(false);
-    await refresh();
-    router.push("/");
-    router.refresh();
+  // Close the mobile menu whenever the route changes (deferred so the
+  // state update stays out of the synchronous effect path)
+  useEffect(() => {
+    let cancelled = false;
+    void (async () => {
+      await Promise.resolve();
+      if (!cancelled) setMenuOpen(false);
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [pathname]);
+
+  // Lock body scroll while the mobile menu is open
+  useEffect(() => {
+    if (!menuOpen) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [menuOpen]);
+
+  function isActive(href: string) {
+    return href === "/" ? pathname === "/" : pathname.startsWith(href);
   }
 
-  const nav = [
-    { href: "/", label: "Home" },
-    { href: "/mathematics", label: "Maths" },
-    { href: "/physics", label: "Physics" },
-    { href: "/chemistry", label: "Chemistry" },
-    { href: "/biology", label: "Biology" },
-    { href: "/computer-science", label: "CS" },
-  ];
-
-  const activePill = "bg-accent text-white font-medium";
+  const pill = (active: boolean) =>
+    active ? "bg-accent text-white font-medium shadow-card-sm" : "text-foreground/70 hover:text-foreground hover:bg-white/5";
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-background/90 backdrop-blur">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center gap-4">
-        <Link href="/" className="flex items-center gap-2" aria-label="Paprivo home">
-          <Image
-            src="/logo-mark.png"
-            alt=""
-            width={25}
-            height={32}
-            priority
-            className="h-8 w-auto"
-          />
-          <Image
-            src="/logo-wordmark.png"
-            alt="Paprivo"
-            width={92}
-            height={24}
-            priority
-            className="h-6 w-auto"
-          />
+    <header
+      className={`sticky top-0 z-40 transition-all duration-300 ${
+        scrolled
+          ? "border-b border-white/10 bg-background/85 backdrop-blur-md shadow-[0_4px_24px_rgba(2,8,23,0.35)]"
+          : "border-b border-transparent bg-background/60 backdrop-blur-sm"
+      }`}
+    >
+      <div className={`max-w-6xl mx-auto px-4 sm:px-6 flex items-center gap-4 transition-all duration-300 ${scrolled ? "h-13" : "h-16"}`}>
+        <Link href="/" className="flex items-center gap-2 shrink-0" aria-label="Paprivo home">
+          <Image src="/logo-mark.png" alt="" width={25} height={32} priority className="h-8 w-auto" />
+          <Image src="/logo-wordmark.png" alt="Paprivo" width={92} height={24} priority className="h-6 w-auto" />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-1 text-sm">
-          {nav.map((item) => {
-            const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`px-3 py-1.5 rounded-lg transition-colors ${
-                  active ? activePill : "text-foreground/70 hover:text-foreground hover:bg-white/5"
-                }`}
-              >
-                {item.label}
-              </Link>
-            );
-          })}
-          {signedIn && (
-            <Link
-              href="/dashboard"
-              className={`px-3 py-1.5 rounded-lg transition-colors ${
-                pathname === "/dashboard" ? activePill : "text-foreground/70 hover:text-foreground hover:bg-white/5"
-              }`}
-            >
-              Dashboard
-            </Link>
-          )}
-        </nav>
-
-        <div className="ml-auto flex items-center gap-2">
-          {loading ? (
-            <div className="h-8 w-20 rounded-lg bg-white/10 animate-pulse" />
-          ) : signedIn ? (
-            <div className="relative" ref={menuRef}>
-              <button
-                onClick={() => setMenuOpen((v) => !v)}
-                className="h-8 px-3 rounded-lg border border-white/15 bg-white/5 text-sm text-foreground hover:border-accent2-bright transition-colors flex items-center gap-2"
-              >
-                <span className="max-w-28 truncate">{name ?? email}</span>
-                <span aria-hidden>▾</span>
-              </button>
-              {menuOpen && (
-                <div className="absolute right-0 mt-2 w-48 rounded-xl border border-white/10 bg-[#1b2740] shadow-xl p-2 text-sm text-foreground">
-                  <p className="px-2 py-1 text-muted truncate">{email}</p>
-                  <Link
-                    href="/dashboard"
-                    onClick={() => setMenuOpen(false)}
-                    className="block px-2 py-1.5 rounded-lg hover:bg-white/10"
-                  >
-                    Dashboard
-                  </Link>
-                  <Link
-                    href="/onboarding"
-                    onClick={() => setMenuOpen(false)}
-                    className="block px-2 py-1.5 rounded-lg hover:bg-white/10"
-                  >
-                    Edit subjects
-                  </Link>
-                  <button
-                    onClick={signOutNow}
-                    className="w-full text-left px-2 py-1.5 rounded-lg hover:bg-white/10 text-on-card"
-                  >
-                    Sign out
-                  </button>
-                </div>
-              )}
-            </div>
-          ) : (
-            <>
-              <Link
-                href="/signin"
-                className="h-8 px-3 rounded-lg border border-white/15 bg-white/5 text-sm text-foreground flex items-center hover:border-accent2-bright transition-colors"
-              >
-                Sign in
-              </Link>
-              <Link
-                href="/signup"
-                className="h-8 px-3 rounded-lg bg-accent text-white text-sm flex items-center font-medium hover:bg-accent-soft transition-colors"
-              >
-                Sign up
-              </Link>
-            </>
-          )}
-        </div>
-      </div>
-
-      {/* mobile nav */}
-      <nav className="md:hidden flex gap-1 overflow-x-auto px-4 pb-2 text-sm">
-        {nav.map((item) => {
-          const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
-          return (
+        <nav className="hidden md:flex items-center gap-0.5 text-sm" aria-label="Primary">
+          {nav.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`px-3 py-1 rounded-lg whitespace-nowrap ${
-                active ? activePill : "text-foreground/70"
-              }`}
+              className={`nav-link ${isActive(item.href) ? "nav-link-active" : ""} px-3 py-1.5 rounded-lg transition-colors ${pill(isActive(item.href))}`}
             >
               {item.label}
             </Link>
-          );
-        })}
-        {signedIn && (
-          <Link
-            href="/dashboard"
-            className={`px-3 py-1 rounded-lg whitespace-nowrap ${
-              pathname === "/dashboard" ? activePill : "text-foreground/70"
-            }`}
-          >
-            Dashboard
+          ))}
+        </nav>
+
+        <div className="ml-auto flex items-center gap-2">
+          <Link href="/onboarding" className="hidden md:inline-flex btn-primary h-9 px-4 text-sm">
+            Choose subjects
           </Link>
-        )}
-      </nav>
+
+          {/* Hamburger (mobile only) */}
+          <button
+            onClick={() => setMenuOpen((v) => !v)}
+            aria-expanded={menuOpen}
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            className="md:hidden h-9 w-9 rounded-lg border border-white/15 bg-white/5 flex items-center justify-center transition-colors hover:border-white/30"
+          >
+            <span className="relative block w-4 h-3" aria-hidden>
+              <span
+                className={`absolute left-0 top-0 w-4 h-0.5 rounded bg-foreground transition-all duration-300 ${
+                  menuOpen ? "top-1.5 rotate-45" : ""
+                }`}
+              />
+              <span
+                className={`absolute left-0 top-1.5 w-4 h-0.5 rounded bg-foreground transition-all duration-300 ${
+                  menuOpen ? "opacity-0" : ""
+                }`}
+              />
+              <span
+                className={`absolute left-0 top-3 w-4 h-0.5 rounded bg-foreground transition-all duration-300 ${
+                  menuOpen ? "top-1.5 -rotate-45" : ""
+                }`}
+              />
+            </span>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile menu — slides down smoothly */}
+      <div
+        className="md:hidden overflow-hidden transition-[max-height,opacity] duration-300 ease-out"
+        style={{ maxHeight: menuOpen ? "24rem" : "0rem", opacity: menuOpen ? 1 : 0 }}
+      >
+        <nav className="px-4 pb-4 pt-1 space-y-1 border-t border-white/10" aria-label="Mobile">
+          {nav.map((item, i) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              style={{
+                transitionDelay: menuOpen ? `${i * 30}ms` : "0ms",
+                opacity: menuOpen ? 1 : 0,
+                transform: menuOpen ? "none" : "translateX(-8px)",
+              }}
+              className={`block px-3 py-2.5 rounded-lg text-sm transition-all duration-300 ${pill(isActive(item.href))}`}
+            >
+              {item.label}
+            </Link>
+          ))}
+          <Link href="/onboarding" className="btn-primary block px-3 py-2.5 text-sm text-center mt-2">
+            Choose subjects
+          </Link>
+        </nav>
+      </div>
     </header>
   );
 }

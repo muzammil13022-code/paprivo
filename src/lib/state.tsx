@@ -4,28 +4,19 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState, t
 import { SUBJECT_KEYS, type SubjectKey } from "@/lib/papers";
 
 /**
- * User state model:
- *  - Guest: subjects/progress/bookmarks live in localStorage.
- *  - Signed in: same shape mirrored server-side; mutations optimistically
- *    update local state then PATCH the API.
- *  - On first sign-in, guest state is promoted via /api/migrate.
+ * User state model — everything lives in localStorage on this device.
+ * Progress, bookmarks and subject selections work instantly with no account.
  */
 
 const LS_SUBJECTS = "ial.subjects.v1";
 const LS_PROGRESS = "ial.progress.v1";
 const LS_BOOKMARKS = "ial.bookmarks.v1";
-const LS_MIGRATED = "ial.migrated.v1";
 
 export interface UserState {
   loading: boolean;
-  signedIn: boolean;
-  email: string | null;
-  name: string | null;
   subjectKeys: SubjectKey[];
   progress: Set<string>;
   bookmarks: Set<string>;
-  /** Re-fetch /api/me — call after sign-in/sign-up so the UI reflects the session. */
-  refresh: () => Promise<void>;
   toggleSubject: (key: SubjectKey, on: boolean) => void;
   setSubjects: (keys: SubjectKey[]) => void;
   toggleProgress: (id: string) => void;
@@ -69,199 +60,68 @@ function persist(key: string, value: string[]) {
 
 export function UserStateProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
-  const [signedIn, setSignedIn] = useState(false);
-  const [email, setEmail] = useState<string | null>(null);
-  const [name, setName] = useState<string | null>(null);
-  const [serverProgress, setServerProgress] = useState<Set<string>>(new Set());
-  const [serverBookmarks, setServerBookmarks] = useState<Set<string>>(new Set());
-  const [guestSubjects, setGuestSubjects] = useState<SubjectKey[]>([]);
-  const [guestProgress, setGuestProgress] = useState<Set<string>>(new Set());
-  const [guestBookmarks, setGuestBookmarks] = useState<Set<string>>(new Set());
+  const [subjectKeys, setSubjectKeys] = useState<SubjectKey[]>([]);
+  const [progress, setProgress] = useState<Set<string>>(new Set());
+  const [bookmarks, setBookmarks] = useState<Set<string>>(new Set());
 
-  const loadMe = useCallback(async () => {
-    try {
-      const res = await fetch("/api/me", { cache: "no-store" });
-      if (!res.ok) return;
-      const data = (await res.json()) as {
-        signedIn: boolean;
-        email?: string;
-        name?: string;
-        subjectKeys: string[];
-        progress: string[];
-        bookmarks: string[];
-      };
-      if (data.signedIn) {
-        setSignedIn(true);
-        setEmail(data.email ?? null);
-        setName(data.name ?? null);
-        setServerProgress(new Set(data.progress));
-        setServerBookmarks(new Set(data.bookmarks));
-
-        // one-time migration of guest state into the account
-        const alreadyMigrated = window.localStorage.getItem(LS_MIGRATED) === "1";
-        const gSubjects = readSubjects();
-        const gProgress = [...readSet(LS_PROGRESS)];
-        const gBookmarks = [...readSet(LS_BOOKMARKS)];
-        const hasGuestState = gSubjects.length > 0 || gProgress.length > 0 || gBookmarks.length > 0;
-        if (!alreadyMigrated && hasGuestState) {
-          await fetch("/api/migrate", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              subjectKeys: gSubjects,
-              progress: gProgress,
-              bookmarks: gBookmarks,
-            }),
-          });
-          window.localStorage.setItem(LS_MIGRATED, "1");
-          // merge server + migrated guest state for this session
-          setServerProgress((prev) => new Set([...prev, ...gProgress]));
-          setServerBookmarks((prev) => new Set([...prev, ...gBookmarks]));
-        }
-        if (data.subjectKeys.length > 0) {
-          persist(LS_SUBJECTS, data.subjectKeys);
-        }
-        setGuestSubjects((data.subjectKeys as SubjectKey[]) ?? []);
-      } else {
-        setSignedIn(false);
-        setEmail(null);
-        setName(null);
-        setGuestSubjects(readSubjects());
-        setGuestProgress(readSet(LS_PROGRESS));
-        setGuestBookmarks(readSet(LS_BOOKMARKS));
-      }
-    } finally {
+  // Hydrate from localStorage after mount (keeps SSR markup stable).
+  // Deferred to a microtask so the updates don't run synchronously in the effect.
+  useEffect(() => {
+    void (async () => {
+      await Promise.resolve();
+      setSubjectKeys(readSubjects());
+      setProgress(readSet(LS_PROGRESS));
+      setBookmarks(readSet(LS_BOOKMARKS));
       setLoading(false);
-    }
+    })();
   }, []);
 
-  useEffect(() => {
-    void loadMe();
-  }, [loadMe]);
+  const toggleSubject = useCallback((key: SubjectKey, on: boolean) => {
+    setSubjectKeys((prev) => {
+      const next = on ? [...new Set([...prev, key])] : prev.filter((k) => k !== key);
+      persist(LS_SUBJECTS, next);
+      return next;
+    });
+  }, []);
 
-  const signedInState = signedIn;
+  const setSubjects = useCallback((keys: SubjectKey[]) => {
+    const unique = [...new Set(keys)];
+    setSubjectKeys(unique);
+    persist(LS_SUBJECTS, unique);
+  }, []);
 
-  const toggleSubject = useCallback(
-    (key: SubjectKey, on: boolean) => {
-      if (signedInState) {
-        setGuestSubjects((prev) => {
-          const next = on ? [...new Set([...prev, key])] : prev.filter((k) => k !== key);
-          void fetch("/api/me", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ subjectKeys: next }),
-          });
-          return next;
-        });
-      } else {
-        setGuestSubjects((prev) => {
-          const next = on ? [...new Set([...prev, key])] : prev.filter((k) => k !== key);
-          persist(LS_SUBJECTS, next);
-          return next;
-        });
-      }
-    },
-    [signedInState],
-  );
+  const toggleProgress = useCallback((id: string) => {
+    setProgress((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      persist(LS_PROGRESS, [...next]);
+      return next;
+    });
+  }, []);
 
-  const setSubjects = useCallback(
-    (keys: SubjectKey[]) => {
-      const unique = [...new Set(keys)];
-      setGuestSubjects(unique);
-      persist(LS_SUBJECTS, unique);
-      if (signedInState) {
-        void fetch("/api/me", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ subjectKeys: unique }),
-        });
-      }
-    },
-    [signedInState],
-  );
-
-  const toggleProgress = useCallback(
-    (id: string) => {
-      if (signedInState) {
-        let added = false;
-        setServerProgress((prev) => {
-          const next = new Set(prev);
-          if (next.has(id)) {
-            next.delete(id);
-            added = false;
-          } else {
-            next.add(id);
-            added = true;
-          }
-          void fetch("/api/progress", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ id, done: added }),
-          });
-          return next;
-        });
-      } else {
-        setGuestProgress((prev) => {
-          const next = new Set(prev);
-          if (next.has(id)) next.delete(id);
-          else next.add(id);
-          persist(LS_PROGRESS, [...next]);
-          return next;
-        });
-      }
-    },
-    [signedInState],
-  );
-
-  const toggleBookmark = useCallback(
-    (id: string) => {
-      if (signedInState) {
-        let starred = false;
-        setServerBookmarks((prev) => {
-          const next = new Set(prev);
-          if (next.has(id)) {
-            next.delete(id);
-            starred = false;
-          } else {
-            next.add(id);
-            starred = true;
-          }
-          void fetch("/api/bookmarks", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ id, starred }),
-          });
-          return next;
-        });
-      } else {
-        setGuestBookmarks((prev) => {
-          const next = new Set(prev);
-          if (next.has(id)) next.delete(id);
-          else next.add(id);
-          persist(LS_BOOKMARKS, [...next]);
-          return next;
-        });
-      }
-    },
-    [signedInState],
-  );
+  const toggleBookmark = useCallback((id: string) => {
+    setBookmarks((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      persist(LS_BOOKMARKS, [...next]);
+      return next;
+    });
+  }, []);
 
   const value = useMemo<UserState>(
     () => ({
       loading,
-      signedIn,
-      email,
-      name,
-      subjectKeys: guestSubjects,
-      progress: signedIn ? serverProgress : guestProgress,
-      bookmarks: signedIn ? serverBookmarks : guestBookmarks,
-      refresh: loadMe,
+      subjectKeys,
+      progress,
+      bookmarks,
       toggleSubject,
       setSubjects,
       toggleProgress,
       toggleBookmark,
     }),
-    [loading, signedIn, email, name, guestSubjects, guestProgress, serverProgress, guestBookmarks, serverBookmarks, loadMe, toggleSubject, setSubjects, toggleProgress, toggleBookmark],
+    [loading, subjectKeys, progress, bookmarks, toggleSubject, setSubjects, toggleProgress, toggleBookmark],
   );
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;

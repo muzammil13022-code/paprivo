@@ -8,7 +8,7 @@ import type { SubjectKey } from "@/lib/papers";
 
 export default function OnboardingPage() {
   const router = useRouter();
-  const { signedIn, subjectKeys, setSubjects } = useUserState();
+  const { subjectKeys, setSubjects } = useUserState();
   // null = no local edits yet, mirror the stored selection
   const [draft, setDraft] = useState<SubjectKey[] | null>(null);
   const picked = draft ?? subjectKeys;
@@ -19,15 +19,15 @@ export default function OnboardingPage() {
 
   function save() {
     setSubjects(picked);
-    router.push(signedIn ? "/dashboard" : "/");
+    router.push("/");
   }
 
   return (
     <div className="max-w-2xl mx-auto py-6">
-      <h1 className="text-2xl font-bold tracking-tight">Your subjects</h1>
-      <p className="text-muted mt-1 text-sm">
-        Choose what you study — the homepage and dashboard will show just those. You can change this
-        any time.
+      <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">Your subjects</h1>
+      <p className="text-muted mt-1.5 text-sm">
+        Choose what you study — the homepage will show just those. Saved in this browser, no account
+        needed. You can change this any time.
       </p>
 
       <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -39,14 +39,16 @@ export default function OnboardingPage() {
               key={meta.key}
               onClick={() => toggle(meta.key as SubjectKey)}
               aria-pressed={on}
-              className={`text-left rounded-2xl border p-4 transition-all ${
-                on ? "border-accent2 bg-card shadow-sm" : "border-card-border bg-card hover:border-accent2"
+              className={`text-left rounded-2xl border p-4 transition-all duration-200 ${
+                on
+                  ? "border-accent2 bg-card shadow-card-md"
+                  : "border-card-border bg-card shadow-card-sm hover:border-accent2 hover:shadow-card-md"
               }`}
             >
               <div className="flex items-center justify-between">
                 <span className="font-semibold">{meta.label}</span>
                 <span
-                  className={`w-5 h-5 rounded-md border flex items-center justify-center text-xs ${
+                  className={`w-5 h-5 rounded-md border flex items-center justify-center text-xs transition-colors ${
                     on ? "bg-accent border-accent text-white" : "border-card-border-strong"
                   }`}
                 >
@@ -63,10 +65,7 @@ export default function OnboardingPage() {
       </div>
 
       <div className="mt-6 flex items-center gap-3">
-        <button
-          onClick={save}
-          className="h-10 px-5 rounded-lg bg-accent text-white font-medium hover:bg-accent-soft transition-opacity"
-        >
+        <button onClick={save} className="btn-primary h-10 px-5 text-sm">
           Save {picked.length > 0 ? `(${picked.length})` : ""}
         </button>
         <p className="text-sm text-muted">

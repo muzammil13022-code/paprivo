@@ -11,6 +11,7 @@
 
 :root {
   --background: #0f172a;
+  --background-soft: #131f38;
   --foreground: #f8fafc;
   --card: #f8fafc;
   --on-card: #0f172a;
@@ -23,11 +24,20 @@
   --accent-soft: #2b4cac;
   --accent2: #b45309;
   --accent2-bright: #d97706;
+
+  /* Elevation */
+  --shadow-sm: 0 1px 2px rgba(2, 8, 23, 0.06), 0 1px 3px rgba(2, 8, 23, 0.08);
+  --shadow-md: 0 4px 12px rgba(2, 8, 23, 0.08), 0 2px 4px rgba(2, 8, 23, 0.06);
+  --shadow-lg: 0 16px 40px rgba(2, 8, 23, 0.14), 0 4px 12px rgba(2, 8, 23, 0.08);
+  --shadow-glow: 0 0 0 1px rgba(30, 58, 138, 0.16), 0 8px 32px rgba(30, 58, 138, 0.18);
+  --shadow-btn: 0 2px 8px rgba(30, 58, 138, 0.35);
+  --shadow-btn-hover: 0 4px 16px rgba(30, 58, 138, 0.5);
 }
 
 @theme inline {
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --color-background: var(--background);
+  --color-background-soft: var(--background-soft);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-on-card: var(--on-card);
@@ -39,12 +49,17 @@
   --color-accent-soft: var(--accent-soft);
   --color-accent2: var(--accent2);
   --color-accent2-bright: var(--accent2-bright);
+  --shadow-card-sm: var(--shadow-sm);
+  --shadow-card-md: var(--shadow-md);
+  --shadow-card-lg: var(--shadow-lg);
+  --shadow-glow: var(--shadow-glow);
 }
 
 html,
 body {
   background: var(--background);
   color: var(--foreground);
+  scroll-behavior: smooth;
 }
 
 /* Display face echoes the Paprivo wordmark (rounded geometric sans);
@@ -105,14 +120,236 @@ button {
   font-size: 0.8125rem;
   font-weight: 500;
   transition:
-    background 120ms ease,
-    border-color 120ms ease;
+    background 200ms ease,
+    border-color 200ms ease,
+    box-shadow 200ms ease;
 }
 .doc-btn:hover {
   border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
 }
 
 /* Progress ring animation */
 .ring-svg circle {
   transition: stroke-dashoffset 500ms ease;
+}
+
+/* ---------------------------------- */
+/* Premium interaction system         */
+/* ---------------------------------- */
+
+/* Interactive card: gentle lift, deeper shadow, brighter border */
+.card-interactive {
+  transition:
+    transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-color 220ms ease;
+  will-change: transform;
+}
+.card-interactive:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--card-border-strong);
+}
+.card-interactive:hover .card-glyph {
+  transform: translateY(-2px) scale(1.08);
+}
+.card-interactive .card-glyph {
+  transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Primary button — Oxford Blue, tactile hover with soft glow */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 500;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-btn);
+  transition:
+    transform 200ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 200ms ease,
+    filter 200ms ease,
+    background 200ms ease;
+}
+.btn-primary:hover {
+  background: var(--accent-soft);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-btn-hover);
+  filter: brightness(1.05);
+}
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-btn);
+}
+
+/* Secondary button — outlined, quiet */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(248, 250, 252, 0.22);
+  color: var(--foreground);
+  font-weight: 500;
+  border-radius: 0.75rem;
+  background: rgba(248, 250, 252, 0.04);
+  transition:
+    transform 200ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-color 200ms ease,
+    background 200ms ease;
+}
+.btn-secondary:hover {
+  border-color: rgba(248, 250, 252, 0.45);
+  background: rgba(248, 250, 252, 0.08);
+  transform: translateY(-1px);
+}
+.btn-secondary:active {
+  transform: translateY(0);
+}
+
+/* ---------------------------------- */
+/* Motion system (transform/opacity)  */
+/* ---------------------------------- */
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+@keyframes shimmer {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.anim-rise {
+  animation: rise-in 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.anim-scale {
+  animation: scale-in 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.anim-float {
+  animation: float-slow 7s ease-in-out infinite;
+}
+.anim-glow {
+  animation: pulse-glow 6s ease-in-out infinite;
+}
+.anim-spin {
+  animation: spin 0.8s linear infinite;
+}
+
+/* Entrance stagger helpers */
+.stagger-1 { animation-delay: 80ms; }
+.stagger-2 { animation-delay: 160ms; }
+.stagger-3 { animation-delay: 240ms; }
+.stagger-4 { animation-delay: 320ms; }
+.stagger-5 { animation-delay: 400ms; }
+
+/* Scroll reveal — JS toggles .is-visible when the element enters the viewport */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px) scale(0.985);
+  transition:
+    opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Respect reduced motion everywhere */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .anim-rise,
+  .anim-scale,
+  .anim-float,
+  .anim-glow {
+    animation: none;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .card-interactive,
+  .btn-primary,
+  .btn-secondary {
+    transition: none;
+  }
+  .card-interactive:hover,
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    transform: none;
+  }
+}
+
+/* Navbar link underline flourish */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: 0.2rem;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--accent2-bright);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.nav-link:not(.nav-link-active):hover::after {
+  transform: scaleX(1);
 }

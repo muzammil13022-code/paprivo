@@ -15,7 +15,7 @@ function PaperRow({ paper }: { paper: Paper }) {
 
   return (
     <li
-      className="rounded-xl border bg-card p-3 flex flex-wrap items-center gap-2 sm:gap-3 transition-colors"
+      className="card-interactive rounded-xl border bg-card p-3 flex flex-wrap items-center gap-2 sm:gap-3 shadow-card-sm"
       style={{
         borderColor: done ? "var(--accent2-bright)" : "var(--card-border)",
         boxShadow: done ? "inset 3px 0 0 var(--accent2-bright)" : undefined,
@@ -119,7 +119,7 @@ export function SubjectBrowser({ subject }: { subject: Subject }) {
         <select
           value={unitFilter}
           onChange={(e) => setUnitFilter(e.target.value)}
-          className="h-9 rounded-lg border border-card-border bg-card px-2 text-sm"
+          className="h-9 rounded-lg border border-card-border bg-card px-2 text-sm transition-colors hover:border-card-border-strong focus:outline-none focus:ring-2 focus:ring-ring/60"
           aria-label="Filter by unit"
         >
           <option value="All">All units</option>
@@ -133,7 +133,7 @@ export function SubjectBrowser({ subject }: { subject: Subject }) {
         <select
           value={yearFilter}
           onChange={(e) => setYearFilter(e.target.value === "All" ? "All" : Number(e.target.value))}
-          className="h-9 rounded-lg border border-card-border bg-card px-2 text-sm"
+          className="h-9 rounded-lg border border-card-border bg-card px-2 text-sm transition-colors hover:border-card-border-strong focus:outline-none focus:ring-2 focus:ring-ring/60"
           aria-label="Filter by year"
         >
           <option value="All">All years</option>
@@ -144,17 +144,17 @@ export function SubjectBrowser({ subject }: { subject: Subject }) {
           ))}
         </select>
 
-        <div className="flex rounded-lg border border-card-border overflow-hidden text-sm">
+        <div className="flex rounded-lg border border-card-border overflow-hidden text-sm bg-card">
           {(["All", ...SESSIONS] as const).map((s) => (
             <button
               key={s}
               onClick={() => setSessionFilter(s)}
-              className="px-3 h-9 transition-colors"
-              style={
+              className={`px-3 h-9 transition-all duration-200 ${
                 sessionFilter === s
-                  ? { background: "var(--accent)", color: "#fff", fontWeight: 500 }
-                  : undefined
-              }
+                  ? "text-white font-medium"
+                  : "text-on-card/70 hover:bg-black/5"
+              }`}
+              style={sessionFilter === s ? { background: "var(--accent)" } : undefined}
             >
               {s === "All" ? "All sessions" : s}
             </button>
@@ -166,7 +166,7 @@ export function SubjectBrowser({ subject }: { subject: Subject }) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search…"
-          className="h-9 flex-1 min-w-40 rounded-lg border border-card-border bg-card px-3 text-sm"
+          className="h-9 flex-1 min-w-40 rounded-lg border border-card-border bg-card px-3 text-sm transition-colors hover:border-card-border-strong focus:outline-none focus:ring-2 focus:ring-ring/60"
           aria-label="Search papers"
         />
       </div>

@@ -6,6 +6,7 @@ import { paperId } from "@/lib/papers";
 import type { Subject } from "@/types";
 import { useUserState } from "@/lib/state";
 import { ProgressRing } from "@/components/ProgressRing";
+import { Reveal } from "@/components/Reveal";
 
 function doneCount(subject: Subject | undefined, progress: Set<string>): number {
   if (!subject) return 0;
@@ -23,9 +24,9 @@ export function HomeSubjects() {
 
   if (loading) {
     return (
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {[...Array(5)].map((_, i) => (
-          <div key={i} className="h-40 rounded-2xl bg-card border border-card-border animate-pulse" />
+          <div key={i} className="h-44 rounded-2xl bg-card/5 border border-white/10 animate-pulse" />
         ))}
       </div>
     );
@@ -46,63 +47,65 @@ export function HomeSubjects() {
           </Link>
         </div>
       )}
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {shown.map((meta) => {
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {shown.map((meta, i) => {
           const subject = catalogueSubject(meta.key);
           const total = paperCountOf(meta.key);
           const done = doneCount(subject, progress);
           const isCS = meta.key === "computer-science";
           return (
-            <div
-              key={meta.key}
-              className="rounded-2xl border border-card-border bg-card p-5 flex flex-col gap-3 hover:border-card-border-strong transition-colors"
-            >
-              <div className="flex items-start justify-between gap-3">
-                <div>
-                  <h3 className="text-lg font-semibold">
-                    <Link href={`/${meta.key}`} className="hover:underline">
-                      {meta.label}
-                    </Link>
-                  </h3>
-                  <p className="text-sm text-muted">{meta.unitsLine}</p>
-                </div>
-                <span className="text-2xl" aria-hidden>
-                  {meta.glyph}
-                </span>
-              </div>
-
-              {isCS ? (
-                <div className="text-sm text-muted flex-1">
-                  <p>
-                    The new Pearson Edexcel IAL Computer Science spec (2026) has its first exams in
-                    <strong> June 2027</strong> — so there are no past papers yet.
-                  </p>
-                  <div className="flex gap-2 mt-3">
-                    <a className="doc-btn" href={CS_RESOURCES.spec} target="_blank" rel="noopener noreferrer">
-                      Specification ↗
-                    </a>
-                    <a className="doc-btn" href={CS_RESOURCES.sample} target="_blank" rel="noopener noreferrer">
-                      Sample materials ↗
-                    </a>
-                  </div>
-                </div>
-              ) : (
-                <>
-                  <p className="text-sm text-muted flex-1">{meta.blurb}</p>
-                  <div className="flex items-center gap-3">
-                    <ProgressRing done={done} total={total} />
-                    <div className="text-sm">
-                      <p className="font-medium">
-                        {done} of {total} papers done
-                      </p>
-                      <Link href={`/${meta.key}`} className="underline underline-offset-2 hover:text-accent2-bright">
-                        Browse papers
+            <Reveal key={meta.key} delay={(i % 3) * 90}>
+              <div className="card-interactive rounded-2xl border border-card-border bg-card p-5 flex flex-col gap-3 h-full shadow-card-sm">
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <h3 className="text-lg font-semibold">
+                      <Link href={`/${meta.key}`} className="hover:underline underline-offset-4">
+                        {meta.label}
                       </Link>
+                    </h3>
+                    <p className="text-sm text-muted">{meta.unitsLine}</p>
+                  </div>
+                  <span className="card-glyph text-2xl text-accent opacity-80" aria-hidden>
+                    {meta.glyph}
+                  </span>
+                </div>
+
+                {isCS ? (
+                  <div className="text-sm text-muted flex-1">
+                    <p>
+                      The new Pearson Edexcel IAL Computer Science spec (2026) has its first exams in
+                      <strong> June 2027</strong> — so there are no past papers yet.
+                    </p>
+                    <div className="flex gap-2 mt-3">
+                      <a className="doc-btn" href={CS_RESOURCES.spec} target="_blank" rel="noopener noreferrer">
+                        Specification ↗
+                      </a>
+                      <a className="doc-btn" href={CS_RESOURCES.sample} target="_blank" rel="noopener noreferrer">
+                        Sample materials ↗
+                      </a>
                     </div>
                   </div>
-                </>
-              )}
-            </div>
+                ) : (
+                  <>
+                    <p className="text-sm text-muted flex-1">{meta.blurb}</p>
+                    <div className="flex items-center gap-3">
+                      <ProgressRing done={done} total={total} />
+                      <div className="text-sm">
+                        <p className="font-medium">
+                          {done} of {total} papers done
+                        </p>
+                        <Link
+                          href={`/${meta.key}`}
+                          className="text-accent-soft underline underline-offset-2 hover:text-accent2-bright"
+                        >
+                          Browse papers
+                        </Link>
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
+            </Reveal>
           );
         })}
       </div>
