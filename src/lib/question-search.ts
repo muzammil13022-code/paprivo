@@ -1,6 +1,7 @@
 import { papersData, type Paper } from "@/types";
+import { paperId, type SubjectKey } from "@/lib/papers";
 import { SUBJECT_ORDER, SUBJECTS } from "@/lib/subjects";
-import type { SubjectKey } from "@/lib/papers";
+import questionPagesData from "@/data/question-pages.json";
 
 /**
  * Question Reference Search — data layer.
@@ -333,4 +334,32 @@ function suggestionList(): string[] {
 /** End-to-end helper: raw text → search result. */
 export function findQuestion(raw: string): QuestionSearchResult {
   return searchQuestions(parseQuestionQuery(raw));
+}
+
+/* ------------------------- question → PDF page ------------------------- */
+
+interface QuestionPagesData {
+  generatedAt: string;
+  note: string;
+  papers: Record<string, { qp?: Record<string, number> }>;
+}
+
+const questionPages = questionPagesData as unknown as QuestionPagesData;
+
+/**
+ * The 1-based PDF page where a question starts, when known from the exact
+ * "Question N (continued)" booklet headers extracted from the real paper.
+ * Returns null when unknown — the UI then links the whole document.
+ */
+export function questionStartPage(
+  code: string,
+  session: string,
+  year: number,
+  variant: string | null,
+  questionNumber: number | null,
+): number | null {
+  if (questionNumber === null) return null;
+  const entry = questionPages.papers[paperId(code, session, year, variant)];
+  const page = entry?.qp?.[String(questionNumber)];
+  return typeof page === "number" && page >= 1 ? page : null;
 }

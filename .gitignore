@@ -12,3 +12,7 @@ server.err.log
 
 # vercel
 .vercel
+
+# question-page extraction cache
+.cache-question-pages/
+qpages.log

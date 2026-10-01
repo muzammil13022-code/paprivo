@@ -3,6 +3,7 @@
 import { useCallback, useRef, useState, type FormEvent } from "react";
 import {
   findQuestion,
+  questionStartPage,
   type QuestionSearchHit,
   type QuestionSearchResult,
 } from "@/lib/question-search";
@@ -21,13 +22,19 @@ function SearchIcon() {
   );
 }
 
-function DocButtons({ hit }: { hit: QuestionSearchHit }) {
+function DocButtons({ hit, questionNumber }: { hit: QuestionSearchHit; questionNumber: number | null }) {
   const { paper } = hit;
+  const page = questionStartPage(paper.code, paper.session, paper.year, paper.variant, questionNumber);
   return (
     <div className="flex flex-col sm:flex-row gap-2.5 mt-4">
       {paper.qp ? (
-        <a className="btn-secondary !text-on-card !border-card-border !bg-card hover:!border-accent" href={paper.qp.url} target="_blank" rel="noopener noreferrer">
-          View Question Paper
+        <a
+          className="btn-secondary !text-on-card !border-card-border !bg-card hover:!border-accent"
+          href={page ? `${paper.qp.url}#page=${page}` : paper.qp.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Question Paper{page ? ` · page ${page}` : ""}
           {paper.qp.gated && <span className="text-xs font-normal text-muted">(Pearson sign-in)</span>}
           <span aria-hidden>↗</span>
         </a>
@@ -99,7 +106,7 @@ function HitCard({ hit, questionNumber, compact = false }: { hit: QuestionSearch
         </div>
       </dl>
 
-      <DocButtons hit={hit} />
+      <DocButtons hit={hit} questionNumber={questionNumber} />
       {questionNumber !== null && (
         <p className="text-xs text-muted mt-3">
           Question {questionNumber} opens inside this paper&apos;s PDF — numbering follows the paper as printed.

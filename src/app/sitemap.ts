@@ -6,6 +6,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   return [
     { url: siteUrl, lastModified: now },
+    { url: `${siteUrl}/resources`, lastModified: now },
+    ...["mathematics", "physics", "chemistry", "biology", "computer-science"].map((subject) => ({
+      url: `${siteUrl}/resources/${subject}`,
+      lastModified: now,
+    })),
     { url: `${siteUrl}/mathematics`, lastModified: now },
     { url: `${siteUrl}/physics`, lastModified: now },
     { url: `${siteUrl}/chemistry`, lastModified: now },

@@ -3,7 +3,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+
+const resourceLinks = [
+  { href: "/resources", label: "Resource Library", desc: "Search everything" },
+  { href: "/resources/mathematics", label: "Maths", desc: "Papers · textbooks · spec" },
+  { href: "/resources/physics", label: "Physics", desc: "Papers · textbooks · spec" },
+  { href: "/resources/chemistry", label: "Chemistry", desc: "Papers · textbooks · spec" },
+  { href: "/resources/biology", label: "Biology", desc: "Papers · textbooks · spec" },
+];
 
 const nav = [
   { href: "/", label: "Home" },
@@ -18,6 +26,8 @@ export function Navbar() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [resourcesOpen, setResourcesOpen] = useState(false);
+  const resRef = useRef<HTMLDivElement>(null);
 
   // Compact, more solid navbar once the user scrolls
   useEffect(() => {
@@ -39,6 +49,17 @@ export function Navbar() {
       cancelled = true;
     };
   }, [pathname]);
+
+  // Close the resources dropdown on outside click
+  useEffect(() => {
+    function onClick(e: MouseEvent) {
+      if (resRef.current && !resRef.current.contains(e.target as Node)) {
+        setResourcesOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", onClick);
+    return () => document.removeEventListener("mousedown", onClick);
+  }, []);
 
   // Lock body scroll while the mobile menu is open
   useEffect(() => {
@@ -72,7 +93,54 @@ export function Navbar() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-0.5 text-sm" aria-label="Primary">
-          {nav.map((item) => (
+          {nav.slice(0, 3).map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`nav-link ${isActive(item.href) ? "nav-link-active" : ""} px-3 py-1.5 rounded-lg transition-colors ${pill(isActive(item.href))}`}
+            >
+              {item.label}
+            </Link>
+))}
+
+          {/* Resources dropdown */}
+          <div className="relative" ref={resRef}>
+            <button
+              type="button"
+              onClick={() => setResourcesOpen((v) => !v)}
+              aria-expanded={resourcesOpen}
+              className={`px-3 py-1.5 rounded-lg flex items-center gap-1 transition-colors ${
+                pathname.startsWith("/resources")
+                  ? "bg-accent text-white font-medium shadow-card-sm"
+                  : "text-foreground/70 hover:text-foreground hover:bg-white/5"
+              }`}
+            >
+              Resources
+              <span
+                aria-hidden
+                className={`text-[10px] transition-transform duration-200 ${resourcesOpen ? "rotate-180" : ""}`}
+              >
+                ▾
+              </span>
+            </button>
+            {resourcesOpen && (
+              <div className="absolute left-0 mt-2 w-64 rounded-2xl border border-white/10 bg-[#1b2740] shadow-lg p-2 text-sm anim-rise origin-top">
+                {resourceLinks.map((r) => (
+                  <Link
+                    key={r.href}
+                    href={r.href}
+                    onClick={() => setResourcesOpen(false)}
+                    className="block px-3 py-2 rounded-xl hover:bg-white/10 transition-colors"
+                  >
+                    <span className="font-medium">{r.label}</span>
+                    <span className="block text-xs text-muted">{r.desc}</span>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {nav.slice(3).map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -84,7 +152,7 @@ export function Navbar() {
         </nav>
 
         <div className="ml-auto flex items-center gap-2">
-          <Link href="/onboarding" className="hidden md:inline-flex btn-primary h-9 px-4 text-sm">
+          <Link href="/onboarding" className="hidden lg:inline-flex btn-primary h-9 px-4 text-sm">
             Choose subjects
           </Link>
 
@@ -136,6 +204,20 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
+          <div className="pt-2 mt-2 border-t border-white/10">
+            <p className="px-3 pb-1 text-xs font-medium text-muted">Resources</p>
+            {resourceLinks.map((r) => (
+              <Link
+                key={r.href}
+                href={r.href}
+                className={`block px-3 py-2.5 rounded-lg text-sm ${
+                  pathname.startsWith(r.href) && r.href !== "/resources" ? pill(true) : pill(false)
+                }`}
+              >
+                {r.label}
+              </Link>
+            ))}
+          </div>
           <Link href="/onboarding" className="btn-primary block px-3 py-2.5 text-sm text-center mt-2">
             Choose subjects
           </Link>
