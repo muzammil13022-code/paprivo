@@ -20,7 +20,7 @@ export async function generateMetadata({
   const meta = SUBJECTS[subject as keyof typeof SUBJECTS];
   return {
     title: `${meta.label} resources`,
-    description: `${meta.label} International A Level resources: past papers, textbooks, specification and revision material for Pearson Edexcel IAL.`,
+    description: `${meta.label} International A Level resources: past papers, textbooks and mark schemes for Pearson Edexcel IAL.`,
   };
 }
 
@@ -88,8 +88,8 @@ export default async function SubjectResourcePage({
       <section className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-sm text-muted leading-relaxed">
         <p>
           <strong className="text-foreground">Only real, verified resources.</strong> Paprivo never
-          lists material it cannot link to legitimately — textbooks link to Pearson&apos;s own pages,
-          papers link to qualifications.pearson.com. Categories fill in as verified resources are
+          lists material it cannot link to legitimately — papers link to qualifications.pearson.com
+          and textbooks to the PaperLords archive. Categories fill in as verified resources are
           added.
         </p>
       </section>

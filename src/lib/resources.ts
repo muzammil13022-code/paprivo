@@ -16,8 +16,7 @@ export type ResourceType =
   | "past-paper"
   | "mark-scheme"
   | "topical-paper"
-  | "textbook"
-  | "revision-resource";
+  | "textbook";
 export type ResourceAccessType = "hosted" | "external";
 
 export interface Resource {
@@ -71,7 +70,6 @@ export const RESOURCE_TYPES: Array<{ value: ResourceType; label: string }> = [
   { value: "topical-paper", label: "Topical papers" },
   { value: "textbook", label: "Textbooks" },
   { value: "mark-scheme", label: "Mark schemes" },
-  { value: "revision-resource", label: "Revision" },
 ];
 
 export function allResources(): Resource[] {

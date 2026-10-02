@@ -24,10 +24,14 @@ const SUBJECTS = [
     units: [
       { code: "WMA11", name: "Pure Mathematics 1", short: "P1" },
       { code: "WMA12", name: "Pure Mathematics 2", short: "P2" },
+      { code: "WMA13", name: "Pure Mathematics 3", short: "P3" },
+      { code: "WMA14", name: "Pure Mathematics 4", short: "P4" },
       { code: "WME01", name: "Mechanics 1", short: "M1" },
       { code: "WME02", name: "Mechanics 2", short: "M2" },
+      { code: "WME03", name: "Mechanics 3", short: "M3" },
       { code: "WST01", name: "Statistics 1", short: "S1" },
       { code: "WST02", name: "Statistics 2", short: "S2" },
+      { code: "WST03", name: "Statistics 3", short: "S3" },
     ],
   },
   {
@@ -235,7 +239,7 @@ async function main() {
     subjects: outSubjects,
   };
 
-  const outPath = join(dirname(fileURLToPath(import.meta.url)), "..", "data", "papers.json");
+  const outPath = join(dirname(fileURLToPath(import.meta.url)), "..", "src", "data", "papers.json");
   mkdirSync(dirname(outPath), { recursive: true });
   writeFileSync(outPath, JSON.stringify(data, null, 2) + "\n");
 

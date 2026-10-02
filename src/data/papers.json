@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T10:21:18.544Z",
+  "generatedAt": "2026-10-02T18:37:59.867Z",
   "yearMin": 2019,
   "yearMax": 2026,
   "subjects": [
@@ -958,6 +958,815 @@
           ]
         },
         {
+          "code": "WMA13",
+          "name": "Pure Mathematics 3",
+          "short": "P3",
+          "papers": [
+            {
+              "code": "WMA13",
+              "session": "June",
+              "year": 2026,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01-que-20260603.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01-rms-20260813.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01-pef-20260813.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "June",
+              "year": 2026,
+              "variant": "A",
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01a-que-20260603.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01a-rms-20260813.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01a-pef-20260813.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "January",
+              "year": 2026,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01-que-20260120.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01-rms-20260305.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01-pef-20260305.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "January",
+              "year": 2026,
+              "variant": "A",
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01a-que-20260120.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01a-rms-20260305.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01a-pef-20260305.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "October",
+              "year": 2025,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01-que-20251022.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01-rms-20260122.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01-pef-20260122.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "October",
+              "year": 2025,
+              "variant": "A",
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01a-que-20251022.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01a-rms-20260122.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01a-pef-20260122.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "June",
+              "year": 2025,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-que-20250530.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-rms-20250814.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-pef-20250814.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "June",
+              "year": 2025,
+              "variant": "A",
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01a-que-20250530.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01a-rms-20250814.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01a-pef-20250814.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "January",
+              "year": 2025,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-que-20250117.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-rms-20250306.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-pef-20250306.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "October",
+              "year": 2024,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-que-20241022.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-rms-20250116.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-pef-20250116.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "June",
+              "year": 2024,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-que-20240531.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-rms-20240815.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-pef-20240815.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "January",
+              "year": 2024,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-que-20240109.pdf",
+                "gated": false
+              },
+              "ms": null,
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-pef-20240307.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "October",
+              "year": 2023,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-que-20231019.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-rms-20240118.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-pef-20240118.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "June",
+              "year": 2023,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-que-20230601.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-rms-20230817.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-pef-20230817.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "January",
+              "year": 2023,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma13-01-que-20230113.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma13-01-rms-20230302.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma13-01-pef-20230302.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "October",
+              "year": 2022,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma13-01-que-20221020.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma13-01-rms-20230112.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma13-01-pef-20230112.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "June",
+              "year": 2022,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma13-01-que-20220527.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma13-01-rms-20220818.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma13-01-pef-20220818.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "January",
+              "year": 2022,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA13_01_que_20220114.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma13-01-rms-20220303.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA13_01_pef_20220303.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "October",
+              "year": 2021,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA13_01_que_20211022.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma13-01-rms-20220113.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma13-01-pef-20220113.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "June",
+              "year": 2021,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma13-01-que-20210430.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA13_01_rms_20210604.pdf",
+                "gated": false
+              },
+              "er": null
+            },
+            {
+              "code": "WMA13",
+              "session": "January",
+              "year": 2021,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA13_01_que_20210304.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA13_01_msc_20210304.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA13_01_pef_20210304.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "October",
+              "year": 2020,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma13-01-que-20201009.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma13-01-msc-20210113.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA13_01_pef_20210113.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA13",
+              "session": "January",
+              "year": 2020,
+              "variant": null,
+              "qp": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA13_01_rms_20200305.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA13_01_pef_20200305.pdf",
+                "gated": false
+              }
+            }
+          ]
+        },
+        {
+          "code": "WMA14",
+          "name": "Pure Mathematics 4",
+          "short": "P4",
+          "papers": [
+            {
+              "code": "WMA14",
+              "session": "June",
+              "year": 2026,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01-que-20260610.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01-rms-20260813.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01-pef-20260813.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "June",
+              "year": 2026,
+              "variant": "A",
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01a-que-20260610.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01a-rms-20260813.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01a-pef-20260813.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "January",
+              "year": 2026,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01-que-20260123.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01-rms-20260305.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01-pef-20260305.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "January",
+              "year": 2026,
+              "variant": "A",
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01a-que-20260123.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01a-rms-20260305.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01a-pef-20260305.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "October",
+              "year": 2025,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01-que-20251029.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01-rms-20260122.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01-pef-20260122.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "October",
+              "year": 2025,
+              "variant": "A",
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01a-que-20251029.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01a-rms-20260122.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01a-pef-20260122.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "June",
+              "year": 2025,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-que-20250606.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-rms-20250814.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-pef-20250814.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "June",
+              "year": 2025,
+              "variant": "A",
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01a-que-20250606.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01a-rms-20250814.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01a-pef-20250814.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "January",
+              "year": 2025,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-que-20250122.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-rms-20250306.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-pef-20250306.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "October",
+              "year": 2024,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-que-20241029.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-rms-20250116.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-pef-20250116.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "June",
+              "year": 2024,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-que-20240607.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-rms-20240815.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-pef-20240815.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "January",
+              "year": 2024,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-que-20240119.pdf",
+                "gated": false
+              },
+              "ms": null,
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-pef-20240307.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "October",
+              "year": 2023,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-que-20231024.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-rms-20240118.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-pef-20240118.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "June",
+              "year": 2023,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-que-20230610.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-rms-20230817.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-pef-20230817.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "January",
+              "year": 2023,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma14-01-que-20230120.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma14-01-rms-20230302.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma14-01-pef-20230302.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "October",
+              "year": 2022,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma14-01-que-20221025.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma14-01-rms-20230112.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma14-01-pef-20230112.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "June",
+              "year": 2022,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma14-01-que-20220602.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma14-01-rms-20220818.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma14-01-pef-20220818.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "January",
+              "year": 2022,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA14_01_que_20220121.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA14_01_rms_20220303.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA14_01_pef_20220303.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "October",
+              "year": 2021,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA14_01_que_20211029.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA14_01_rms_20220113.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA14_01_pef_20220113.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "June",
+              "year": 2021,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma14-01-que-20210507.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA14_01_rms_20210604.pdf",
+                "gated": false
+              },
+              "er": null
+            },
+            {
+              "code": "WMA14",
+              "session": "January",
+              "year": 2021,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA14_01_que_20210304.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma14-01-msc-20210304.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA14_01_pef_20210304.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WMA14",
+              "session": "October",
+              "year": 2020,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma14-01-que-20201014.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA14_01_msc_20210113.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA14_01_pef_20210113.pdf",
+                "gated": false
+              }
+            }
+          ]
+        },
+        {
           "code": "WME01",
           "name": "Mechanics 1",
           "short": "M1",
@@ -1872,6 +2681,349 @@
           ]
         },
         {
+          "code": "WME03",
+          "name": "Mechanics 3",
+          "short": "M3",
+          "papers": [
+            {
+              "code": "WME03",
+              "session": "June",
+              "year": 2026,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme03-01-que-20260612.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme03-01-rms-20260813.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme03-01-pef-20260813.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WME03",
+              "session": "June",
+              "year": 2026,
+              "variant": "A",
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme03-01a-que-20260612.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme03-01a-rms-20260813.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme03-01a-pef-20260813.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WME03",
+              "session": "January",
+              "year": 2026,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme03-01-que-20260122.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme03-01-rms-20260305.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme03-01-pef-20260305.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WME03",
+              "session": "January",
+              "year": 2026,
+              "variant": "A",
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme03-01a-que-20260122.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme03-01a-rms-20260305.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme03-01a-pef-20260305.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WME03",
+              "session": "June",
+              "year": 2025,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme03-01-que-20250613.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme03-01-rms-20250814.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme03-01-pef-20250814.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WME03",
+              "session": "January",
+              "year": 2025,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme03-01-que-20250124.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme03-01-rms-20250306.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme03-01-pef-20250306.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WME03",
+              "session": "June",
+              "year": 2024,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme03-01-que-20240613.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme03-01-rms-20240815.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme03-01-pef-20240815.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WME03",
+              "session": "January",
+              "year": 2024,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme03-01-que-20240120.pdf",
+                "gated": false
+              },
+              "ms": null,
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme03-01-pef-20240307.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WME03",
+              "session": "June",
+              "year": 2023,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme03-01-que-20230607.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme03-01-rms-20230817.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme03-01-pef-20230817.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WME03",
+              "session": "January",
+              "year": 2023,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wme03-01-que-20230111.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wme03-01-rms-20230302.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wme03-01-pef-20230302.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WME03",
+              "session": "June",
+              "year": 2022,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wme03-01-que-20220531.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wme03-01-rms-20220818.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wme03-01-pef-20220818.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WME03",
+              "session": "January",
+              "year": 2022,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wme03-01-que-20220120.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WME03_01_rms_20220303.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wme03-01-pef-20220303.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WME03",
+              "session": "October",
+              "year": 2021,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WME03_01_que_20211026.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WME03_01_rms_20220113.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WME03_01_pef_20220113.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WME03",
+              "session": "June",
+              "year": 2021,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WME03_01_que_20210430.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WME03_01_rms_20210604.pdf",
+                "gated": false
+              },
+              "er": null
+            },
+            {
+              "code": "WME03",
+              "session": "January",
+              "year": 2021,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WME03_01_que_20210304.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WME03_01_msc_20210304.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WME03_01_pef_20210304.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WME03",
+              "session": "October",
+              "year": 2020,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WME03_01_que_20201014.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wme03-01-msc-20210113.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WME03_01_pef_20210113.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WME03",
+              "session": "January",
+              "year": 2020,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WME03_01_que_20200110.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WME03_01_rms_20200305.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wme03-01-pef-20200305.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WME03",
+              "session": "June",
+              "year": 2019,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2013/Exam materials/WME03_01_que_20190516.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2013/Exam materials/WME03_01_rms_20190815.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2013/Exam materials/WME03_01_pef_20190815.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WME03",
+              "session": "January",
+              "year": 2019,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2013/Exam materials/WME03_01_que_20190110.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2013/Exam materials/WME03_01_msc_20190307.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2013/Exam materials/WME03_01_pef_20190307.pdf",
+                "gated": false
+              }
+            }
+          ]
+        },
+        {
           "code": "WST01",
           "name": "Statistics 1",
           "short": "S1",
@@ -2762,6 +3914,313 @@
               },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2013/Exam materials/WST02_01_pef_20190307.pdf",
+                "gated": false
+              }
+            }
+          ]
+        },
+        {
+          "code": "WST03",
+          "name": "Statistics 3",
+          "short": "S3",
+          "papers": [
+            {
+              "code": "WST03",
+              "session": "June",
+              "year": 2026,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst03-01-que-20260613.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst03-01-rms-20260813.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst03-01-pef-20260813.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WST03",
+              "session": "June",
+              "year": 2026,
+              "variant": "A",
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst03-01a-que-20260613.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst03-01a-rms-20260813.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst03-01a-pef-20260813.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WST03",
+              "session": "January",
+              "year": 2026,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst03-01-que-20260123.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst03-01-rms-20260305.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst03-01-pef-20260305.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WST03",
+              "session": "January",
+              "year": 2026,
+              "variant": "A",
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst03-01a-que-20260123.pdf",
+                "gated": true
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst03-01a-rms-20260305.pdf",
+                "gated": true
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst03-01a-pef-20260305.pdf",
+                "gated": true
+              }
+            },
+            {
+              "code": "WST03",
+              "session": "June",
+              "year": 2025,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst03-01-que-20250614.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst03-01-rms-20250814.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst03-01-pef-20250814.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WST03",
+              "session": "January",
+              "year": 2025,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst03-01-que-20250123.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst03-01-rms-20250306.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst03-01-pef-20250306.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WST03",
+              "session": "June",
+              "year": 2024,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst03-01-que-20240614.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst03-01-rms-20240815.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst03-01-pef-20240815.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WST03",
+              "session": "January",
+              "year": 2024,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst03-01-que-20240120.pdf",
+                "gated": false
+              },
+              "ms": null,
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst03-01-pef-20240307.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WST03",
+              "session": "June",
+              "year": 2023,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst03-01-que-20230614.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst03-01-rms-20230817.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst03-01-pef-20230817.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WST03",
+              "session": "January",
+              "year": 2023,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wst03-01-que-20230112.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wst03-01-rms-20230302.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wst03-01-pef-20230302.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WST03",
+              "session": "June",
+              "year": 2022,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wst03-01-que-20220611.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wst03-01-rms-20220818.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wst03-01-pef-20220818.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WST03",
+              "session": "January",
+              "year": 2022,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WST03_01_que_20220125.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WST03_01_rms_20220303.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WST03_01_pef_20220303.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WST03",
+              "session": "October",
+              "year": 2021,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wst03-01-que-20211030.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WST03_01_rms_20220113.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wst03-01-pef-20220113.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WST03",
+              "session": "June",
+              "year": 2021,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wst03-01-que-20210507.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wst03-01-rms-20210604.pdf",
+                "gated": false
+              },
+              "er": null
+            },
+            {
+              "code": "WST03",
+              "session": "January",
+              "year": 2021,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WST03_01_que_20210304.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wst03-01-msc-20210304.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WST03_01_pef_20210304.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WST03",
+              "session": "October",
+              "year": 2020,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wst03-01-que-20201013.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WST03_01_msc_20210113.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WST03_01_pef_20210113.pdf",
+                "gated": false
+              }
+            },
+            {
+              "code": "WST03",
+              "session": "June",
+              "year": 2019,
+              "variant": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2013/Exam materials/WST03_01_que_20190524.pdf",
+                "gated": false
+              },
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2013/Exam materials/WST03_01_rms_20190815.pdf",
+                "gated": false
+              },
+              "er": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2013/Exam materials/WST03_01_pef_20190815.pdf",
                 "gated": false
               }
             }
@@ -9478,10 +10937,7 @@
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi15-01-que-20260605.pdf",
                 "gated": true
               },
-              "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi15-01-rms-20260813.pdf",
-                "gated": true
-              },
+              "ms": null,
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi15-01-pef-20260813.pdf",
                 "gated": true

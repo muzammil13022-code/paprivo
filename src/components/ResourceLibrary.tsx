@@ -21,9 +21,8 @@ const LEVEL_LABEL: Record<ResourceLevel, string> = { as: "AS", a2: "A2", alevel:
 const TYPE_BLURB: Record<ResourceType, string> = {
   "past-paper": "Full past papers with mark schemes and examiner reports",
   "topical-paper": "Questions grouped by syllabus topic",
-  textbook: "Published student books, linked from the official source",
+  textbook: "Published student books from the PaperLords archive, plus the Paprivo demo",
   "mark-scheme": "Official mark schemes",
-  "revision-resource": "Specifications, data sheets and other revision material",
 };
 
 function ResourceCard({ resource }: { resource: Resource }) {

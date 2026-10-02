@@ -3,7 +3,7 @@
 **Past papers. Better preparation.**
 
 A polished, free site for **Pearson Edexcel International AS/A Level** past papers (2019–2026) —
-Maths (P1, P2, M1, M2, S1, S2), Physics, Chemistry and Biology — with user accounts, per-user
+Maths (P1–P4, M1–M3, S1–S3), Physics, Chemistry and Biology — with per-user
 subject selection, progress tracking and bookmarks.
 
 All links point to **official Pearson files** on qualifications.pearson.com. Nothing is rehosted:

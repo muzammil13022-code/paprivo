@@ -18,10 +18,10 @@ export const SUBJECTS: Record<SubjectKey, SubjectMeta> = {
   mathematics: {
     key: "mathematics",
     label: "Mathematics",
-    blurb: "Pure Mathematics 1 & 2, Mechanics 1 & 2, Statistics 1 & 2",
+    blurb: "Pure Mathematics 1–4, Mechanics 1–3, Statistics 1–3",
     accent: "violet",
     glyph: "∑",
-    unitsLine: "P1, P2, M1, M2, S1, S2",
+    unitsLine: "P1–P4, M1–M3, S1–S3",
   },
   physics: {
     key: "physics",

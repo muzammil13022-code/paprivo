@@ -9,7 +9,7 @@ import { Reveal } from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Resource Library",
   description:
-    "Past papers, topical papers, textbooks and revision resources for Pearson Edexcel International AS and A Level — search everything in one place.",
+    "Past papers, topical papers, textbooks and mark schemes for Pearson Edexcel International AS and A Level — search everything in one place.",
 };
 
 export default function ResourcesPage() {
@@ -25,7 +25,7 @@ export default function ResourcesPage() {
         <div className="relative">
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Resource Library</h1>
           <p className="text-muted mt-2 max-w-2xl">
-            Past papers, topical papers, textbooks and revision material for Pearson Edexcel
+            Past papers, topical papers, textbooks and mark schemes for Pearson Edexcel
             International AS and A Levels — one searchable place, linking only to real, verified
             sources.
           </p>

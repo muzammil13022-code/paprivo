@@ -108,8 +108,8 @@ export default function HomePage() {
               </span>
             </h1>
             <p className="anim-rise stagger-2 mt-4 text-muted max-w-xl leading-relaxed">
-              Every Pearson Edexcel International AS/A Level past paper — Mathematics (P1, P2, M1, M2,
-              S1, S2), Physics, Chemistry and Biology, {years}. Pick your subjects, tick papers off as
+              Every Pearson Edexcel International AS/A Level past paper — Mathematics (P1–P4,
+              M1–M3, S1–S3), Physics, Chemistry and Biology, {years}. Pick your subjects, tick papers off as
               you work through them, and bookmark the ones you revisit.
             </p>
             <p className="anim-rise stagger-2 mt-2 text-sm text-muted">
