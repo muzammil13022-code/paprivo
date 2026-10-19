@@ -14,6 +14,8 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     // Vendored/minified assets
     "public/**",
+    // Local scratch/cache (PDF text cache + ad-hoc audit scripts)
+    ".cache-question-pages/**",
   ]),
 ]);
 

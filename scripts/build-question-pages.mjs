@@ -77,7 +77,9 @@ function extractStartPages(text) {
   let prev = 0;
   for (let q = 1; q <= maxQ; q++) {
     const p = first.get(q);
-    if (p === undefined || p <= prev) return {}; // gap or inversion → unreliable
+    // Descending (p < prev) is unreliable — reject. Equal is fine: MCQ sections
+    // and dense layouts legitimately start consecutive questions on one page.
+    if (p === undefined || p < prev) return {}; // gap or inversion → unreliable
     starts[String(q)] = p;
     prev = p;
   }

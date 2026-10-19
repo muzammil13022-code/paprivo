@@ -18,12 +18,12 @@
               "year": 2026,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma11-01-que-20260509.pdf",
-                "gated": true
+                "url": "/papers/wma11-01-que-202606.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma11-01-rms-20260813.pdf",
-                "gated": true
+                "url": "/papers/wma11-01-rms-202606.pdf",
+                "gated": false
               },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma11-01-pef-20260813.pdf",
@@ -36,12 +36,12 @@
               "year": 2026,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma11-01a-que-20260509.pdf",
-                "gated": true
+                "url": "/papers/wma11-01a-que-202606.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma11-01a-rms-20260813.pdf",
-                "gated": true
+                "url": "/papers/wma11-01a-rms-202606.pdf",
+                "gated": false
               },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma11-01a-pef-20260813.pdf",
@@ -54,8 +54,8 @@
               "year": 2026,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma11-01-que-20260109.pdf",
-                "gated": true
+                "url": "/papers/wma11-01-que-202601.pdf",
+                "gated": false
               },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma11-01-rms-20260305.pdf",
@@ -502,12 +502,12 @@
               "year": 2026,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma12-01-que-20260513.pdf",
-                "gated": true
+                "url": "/papers/wma12-01-que-202606.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma12-01-rms-20260813.pdf",
-                "gated": true
+                "url": "/papers/wma12-01-rms-202606.pdf",
+                "gated": false
               },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma12-01-pef-20260813.pdf",
@@ -520,12 +520,12 @@
               "year": 2026,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma12-01a-que-20260513.pdf",
-                "gated": true
+                "url": "/papers/wma12-01a-que-202606.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma12-01a-rms-20260813.pdf",
-                "gated": true
+                "url": "/papers/wma12-01a-rms-202606.pdf",
+                "gated": false
               },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma12-01a-pef-20260813.pdf",
@@ -538,8 +538,8 @@
               "year": 2026,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma12-01-que-20260114.pdf",
-                "gated": true
+                "url": "/papers/wma12-01-que-202601.pdf",
+                "gated": false
               },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma12-01-rms-20260305.pdf",
@@ -968,12 +968,12 @@
               "year": 2026,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01-que-20260603.pdf",
-                "gated": true
+                "url": "/papers/wma13-01-que-202606.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01-rms-20260813.pdf",
-                "gated": true
+                "url": "/papers/wma13-01-rms-202606.pdf",
+                "gated": false
               },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01-pef-20260813.pdf",
@@ -986,12 +986,12 @@
               "year": 2026,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01a-que-20260603.pdf",
-                "gated": true
+                "url": "/papers/wma13-01a-que-202606.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01a-rms-20260813.pdf",
-                "gated": true
+                "url": "/papers/wma13-01a-rms-202606.pdf",
+                "gated": false
               },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01a-pef-20260813.pdf",
@@ -1004,8 +1004,8 @@
               "year": 2026,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01-que-20260120.pdf",
-                "gated": true
+                "url": "/papers/wma13-01-que-202601.pdf",
+                "gated": false
               },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01-rms-20260305.pdf",
@@ -1380,12 +1380,12 @@
               "year": 2026,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01-que-20260610.pdf",
-                "gated": true
+                "url": "/papers/wma14-01-que-202606.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01-rms-20260813.pdf",
-                "gated": true
+                "url": "/papers/wma14-01-rms-202606.pdf",
+                "gated": false
               },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01-pef-20260813.pdf",
@@ -1398,12 +1398,12 @@
               "year": 2026,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01a-que-20260610.pdf",
-                "gated": true
+                "url": "/papers/wma14-01a-que-202606.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01a-rms-20260813.pdf",
-                "gated": true
+                "url": "/papers/wma14-01a-rms-202606.pdf",
+                "gated": false
               },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01a-pef-20260813.pdf",
@@ -1416,8 +1416,8 @@
               "year": 2026,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01-que-20260123.pdf",
-                "gated": true
+                "url": "/papers/wma14-01-que-202601.pdf",
+                "gated": false
               },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01-rms-20260305.pdf",
@@ -1777,12 +1777,12 @@
               "year": 2026,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme01-01-que-20260508.pdf",
-                "gated": true
+                "url": "/papers/wme01-01-que-202606.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme01-01-rms-20260813.pdf",
-                "gated": true
+                "url": "/papers/wme01-01-rms-202606.pdf",
+                "gated": false
               },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme01-01-pef-20260813.pdf",
@@ -2261,8 +2261,8 @@
               "year": 2026,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme02-01-que-20260116.pdf",
-                "gated": true
+                "url": "/papers/wme02-01-que-202601.pdf",
+                "gated": false
               },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme02-01-rms-20260305.pdf",
@@ -3070,8 +3070,8 @@
               "year": 2026,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst01-01-que-20260115.pdf",
-                "gated": true
+                "url": "/papers/wst01-01-que-202601.pdf",
+                "gated": false
               },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst01-01-rms-20260305.pdf",
@@ -3518,8 +3518,8 @@
               "year": 2026,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst02-01-que-20260121.pdf",
-                "gated": true
+                "url": "/papers/wst02-01-que-202601.pdf",
+                "gated": false
               },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst02-01-rms-20260305.pdf",
