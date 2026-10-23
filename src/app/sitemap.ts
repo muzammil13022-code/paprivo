@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: siteUrl, lastModified: now },
     { url: `${siteUrl}/resources`, lastModified: now },
-    ...["mathematics", "physics", "chemistry", "biology", "computer-science"].map((subject) => ({
+    ...["mathematics", "physics", "chemistry", "biology"].map((subject) => ({
       url: `${siteUrl}/resources/${subject}`,
       lastModified: now,
     })),
@@ -15,6 +15,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/physics`, lastModified: now },
     { url: `${siteUrl}/chemistry`, lastModified: now },
     { url: `${siteUrl}/biology`, lastModified: now },
-    { url: `${siteUrl}/computer-science`, lastModified: now },
   ];
 }

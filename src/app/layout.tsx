@@ -63,8 +63,7 @@ const FOOTER_SUBJECTS = [
   { href: "/physics", label: "Physics" },
   { href: "/chemistry", label: "Chemistry" },
   { href: "/biology", label: "Biology" },
-  { href: "/computer-science", label: "Computer Science" },
-];
+  ];
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

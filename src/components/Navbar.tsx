@@ -19,8 +19,7 @@ const nav = [
   { href: "/physics", label: "Physics" },
   { href: "/chemistry", label: "Chemistry" },
   { href: "/biology", label: "Biology" },
-  { href: "/computer-science", label: "CS" },
-];
+  ];
 
 export function Navbar() {
   const pathname = usePathname();

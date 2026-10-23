@@ -82,6 +82,7 @@ function PaperRow({ paper }: { paper: Paper }) {
             Report{paper.er.gated && <span title="Requires a free Pearson sign-in"> (sign-in)</span>}
           </a>
         )}
+        <a className="btn-link text-primary text-xs" href="https://www.youtube.com/results?search_query=IAL+exam+report" target="_blank" rel="noopener noreferrer">YT</a>
       </div>
     </li>
   );

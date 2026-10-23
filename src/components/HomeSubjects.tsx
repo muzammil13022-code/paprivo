@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { catalogueSubject, paperCountOf, subjectList, CS_RESOURCES } from "@/lib/subjects";
+import { catalogueSubject, paperCountOf, subjectList } from "@/lib/subjects";
 import { paperId } from "@/lib/papers";
 import type { Subject } from "@/types";
 import { useUserState } from "@/lib/state";
@@ -52,7 +52,6 @@ export function HomeSubjects() {
           const subject = catalogueSubject(meta.key);
           const total = paperCountOf(meta.key);
           const done = doneCount(subject, progress);
-          const isCS = meta.key === "computer-science";
           return (
             <Reveal key={meta.key} delay={(i % 3) * 90}>
               <div className="card-interactive rounded-2xl border border-card-border bg-card p-5 flex flex-col gap-3 h-full shadow-card-sm">
@@ -70,40 +69,23 @@ export function HomeSubjects() {
                   </span>
                 </div>
 
-                {isCS ? (
-                  <div className="text-sm text-muted flex-1">
-                    <p>
-                      The new Pearson Edexcel IAL Computer Science spec (2026) has its first exams in
-                      <strong> June 2027</strong> — so there are no past papers yet.
-                    </p>
-                    <div className="flex gap-2 mt-3">
-                      <a className="doc-btn" href={CS_RESOURCES.spec} target="_blank" rel="noopener noreferrer">
-                        Specification ↗
-                      </a>
-                      <a className="doc-btn" href={CS_RESOURCES.sample} target="_blank" rel="noopener noreferrer">
-                        Sample materials ↗
-                      </a>
+                <>
+                  <p className="text-sm text-muted flex-1">{meta.blurb}</p>
+                  <div className="flex items-center gap-3">
+                    <ProgressRing done={done} total={total} />
+                    <div className="text-sm">
+                      <p className="font-medium">
+                        {done} of {total} papers done
+                      </p>
+                      <Link
+                        href={`/${meta.key}`}
+                        className="text-accent-soft underline underline-offset-2 hover:text-accent2-bright"
+                      >
+                        Browse papers
+                      </Link>
                     </div>
                   </div>
-                ) : (
-                  <>
-                    <p className="text-sm text-muted flex-1">{meta.blurb}</p>
-                    <div className="flex items-center gap-3">
-                      <ProgressRing done={done} total={total} />
-                      <div className="text-sm">
-                        <p className="font-medium">
-                          {done} of {total} papers done
-                        </p>
-                        <Link
-                          href={`/${meta.key}`}
-                          className="text-accent-soft underline underline-offset-2 hover:text-accent2-bright"
-                        >
-                          Browse papers
-                        </Link>
-                      </div>
-                    </div>
-                  </>
-                )}
+                </>
               </div>
             </Reveal>
           );

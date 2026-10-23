@@ -11,7 +11,7 @@ export interface SubjectMeta {
   unitsLine: string;
 }
 
-export const SUBJECT_ORDER = ["mathematics", "physics", "chemistry", "biology", "computer-science"] as const;
+export const SUBJECT_ORDER = ["mathematics", "physics", "chemistry", "biology"] as const;
 export type SubjectKey = (typeof SUBJECT_ORDER)[number];
 
 export const SUBJECTS: Record<SubjectKey, SubjectMeta> = {
@@ -46,16 +46,8 @@ export const SUBJECTS: Record<SubjectKey, SubjectMeta> = {
     accent: "green",
     glyph: "α",
     unitsLine: "Units 1–6 (WBI11–16)",
-  },
-  "computer-science": {
-    key: "computer-science",
-    label: "Computer Science",
-    blurb: "New 2026 specification — first exams June 2027",
-    accent: "cyan",
-    glyph: "</>",
-    unitsLine: "First exams 2027",
-  },
-};
+  }
+}
 
 export const subjectList: SubjectMeta[] = SUBJECT_ORDER.map((k) => SUBJECTS[k]);
 
@@ -80,10 +72,3 @@ export function totalPaperCount(): number {
   );
 }
 
-/** Official links shown for Computer Science (new spec, first exams 2027). */
-export const CS_RESOURCES = {
-  spec:
-    "https://qualifications.pearson.com/en/qualifications/edexcel-international-advanced-levels/computer-science-2026.html",
-  sample:
-    "https://qualifications.pearson.com/en/qualifications/edexcel-international-advanced-levels/computer-science-2026.coursematerials.html",
-} as const;

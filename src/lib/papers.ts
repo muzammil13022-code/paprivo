@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { papersData } from "@/types";
 
-export const SUBJECT_KEYS = ["mathematics", "physics", "chemistry", "biology", "computer-science"] as const;
+export const SUBJECT_KEYS = ["mathematics", "physics", "chemistry", "biology"] as const;
 export type SubjectKey = (typeof SUBJECT_KEYS)[number];
 
 export const subjectKeysSchema = z.array(z.enum(SUBJECT_KEYS)).max(SUBJECT_KEYS.length);
