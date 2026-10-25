@@ -76,12 +76,22 @@ function PaperRow({ paper }: { paper: Paper }) {
           <a className="doc-btn" href={paper.ms.url} target="_blank" rel="noopener noreferrer">
             Mark scheme{paper.ms.gated && <span title="Requires a free Pearson sign-in"> (sign-in)</span>}
           </a>
-        )}
-        {paper.er && (
+        )}        {paper.er && (
           <a className="doc-btn" href={paper.er.url} target="_blank" rel="noopener noreferrer">
             Report{paper.er.gated && <span title="Requires a free Pearson sign-in"> (sign-in)</span>}
           </a>
-        )}
+        )}
+        <a
+          className="doc-btn"
+          href={`https://www.youtube.com/results?search_query=${encodeURIComponent(
+            `${paper.code} ${paper.session} ${paper.year}${paper.variant ? ` variant ${paper.variant}` : ""} past paper solution`,
+          )}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Find a worked solution video for this paper on YouTube"
+        >
+          YT 🎥
+        </a>
       </div>
     </li>
   );
