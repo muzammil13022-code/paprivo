@@ -4,12 +4,26 @@ import { useMemo, useState } from "react";
 import { paperId } from "@/lib/papers";
 import type { Paper, Subject } from "@/types";
 import { useUserState } from "@/lib/state";
+import ytWalkthroughs from "@/data/yt-walkthroughs.json";
 
 const SESSIONS = ["January", "June", "October"] as const;
+
+type Walkthrough = { i: string; t: string; c: string } | null;
+const ytData = ytWalkthroughs as Record<string, Walkthrough>;
+
+function walkthroughFor(paper: Pick<Paper, "code" | "session" | "year">): Walkthrough {
+  return ytData[`${paper.code}|${paper.session}|${paper.year}`] ?? null;
+}
+
+function ytSearchUrl(paper: Pick<Paper, "code" | "session" | "year" | "variant">): string {
+  const q = `${paper.code} ${paper.session} ${paper.year}${paper.variant ? ` variant ${paper.variant}` : ""} walkthrough`;
+  return `https://www.youtube.com/results?search_query=${encodeURIComponent(q)}`;
+}
 
 function PaperRow({ paper }: { paper: Paper }) {
   const { progress, bookmarks, toggleProgress, toggleBookmark } = useUserState();
   const id = paperId(paper.code, paper.session, paper.year, paper.variant);
+  const walkthrough = walkthroughFor(paper);
   const done = progress.has(id);
   const starred = bookmarks.has(id);
 
@@ -83,14 +97,16 @@ function PaperRow({ paper }: { paper: Paper }) {
         )}
         <a
           className="doc-btn"
-          href={`https://www.youtube.com/results?search_query=${encodeURIComponent(
-            `${paper.code} ${paper.session} ${paper.year}${paper.variant ? ` variant ${paper.variant}` : ""} past paper solution`,
-          )}`}
+          href={walkthrough ? `https://www.youtube.com/watch?v=${walkthrough.i}` : ytSearchUrl(paper)}
           target="_blank"
           rel="noopener noreferrer"
-          title="Find a worked solution video for this paper on YouTube"
+          title={
+            walkthrough
+              ? `Watch a full paper walkthrough: “${walkthrough.t}” by ${walkthrough.c}`
+              : "Find a walkthrough video for this paper on YouTube"
+          }
         >
-          YT 🎥
+          Yt 🎥
         </a>
       </div>
     </li>

@@ -16,3 +16,9 @@ server.err.log
 # question-page extraction cache
 .cache-question-pages/
 qpages.log
+
+.vercel
+.env*
+
+# yt walkthrough fetch output
+scripts/yt-fetch.log
