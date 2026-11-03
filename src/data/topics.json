@@ -1,0 +1,1086 @@
+{
+  "generatedAt": "2026-11-03T00:00:00.000Z",
+  "note": "Topic lists follow the Pearson Edexcel IAL (2018) specification topic headings. Revision notes are original Paprivo summaries kept deliberately short: they are memory-refreshers, not full teaching notes. Topical question banks live on the linked external pages (checked live at seed time).",
+  "subjects": {
+    "mathematics": {
+      "label": "Mathematics",
+      "units": [
+        {
+          "code": "WMA11",
+          "name": "Pure Mathematics 1",
+          "short": "P1",
+          "topics": [
+            {
+              "name": "Algebraic expressions",
+              "notes": [
+                "Laws of indices (including fractional and negative powers) drive most P1 algebra questions.",
+                "Rationalise surds and simplify expressions like a√b before substituting — examiners reward clean working.",
+                "Expand and factorise quadratics; completing the square reveals the vertex and the minimum/maximum value at a glance."
+              ]
+            },
+            {
+              "name": "Equations and inequalities",
+              "notes": [
+                "Quadratic formula, discriminant b²−4ac (equal roots, two roots, no real roots) and when to use it.",
+                "Solve simultaneous equations where one is quadratic — expect substitution and two solution pairs.",
+                "When multiplying an inequality by a negative number, flip the sign; sketching a quadratic helps read solutions."
+              ]
+            },
+            {
+              "name": "Graphs and transformations",
+              "notes": [
+                "Know the shapes of y = kxⁿ for n = −2, −1, 1, 2, 3 and how n's parity changes the sketch.",
+                "Translations f(x−a)+b, reflections f(−x) and −f(x), stretches f(ax) and af(x) — describe them in words too.",
+                "Use intersections with axes and turning points as sketch anchors; label them."
+              ]
+            },
+            {
+              "name": "Trigonometry",
+              "notes": [
+                "Right-angled trig, sine rule, cosine rule and area ½ab sin C — choose the tool from what's given.",
+                "Exact values for 30°, 45°, 60° and the graphs of sin, cos, tan (period, symmetry) are tested directly.",
+                "Solve simple trig equations in a stated interval and count all solutions using the graph's symmetry."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WMA12",
+          "name": "Pure Mathematics 2",
+          "short": "P2",
+          "topics": [
+            {
+              "name": "Proof",
+              "notes": [
+                "Distinguish proof by deduction, proof by exhaustion and disproof by counter-example — state which you're using.",
+                "Counter-example needs one value that breaks the claim; check simple values (0, 1, fraction) first."
+              ]
+            },
+            {
+              "name": "Algebra and functions",
+              "notes": [
+                "Factor theorem and algebraic division for cubic factorisation; polynomials division remainder links.",
+                "Modulus graphs |f(x)|, f(|x|); combined transformations in the right order.",
+                "Composite fg(x) and inverse f⁻¹(x): don't forget the domain/range swap when writing the inverse."
+              ]
+            },
+            {
+              "name": "Coordinate geometry",
+              "notes": [
+                "Line through two points: gradient, point-slope, perpendicular bisector (negative reciprocal gradient, midpoint).",
+                "Circle from (x−a)² + (y−b)² = r²; tangents are perpendicular to radii at the point of contact.",
+                "Intersection of lines and circles leads to quadratics — use the discriminant for tangent/not-touching cases."
+              ]
+            },
+            {
+              "name": "Sequences and series",
+              "notes": [
+                "Arithmetic: a, d, nth term a+(n−1)d, sum n/2(2a+(n−1)d). Geometric: a, r, ar^(n−1), sum a(1−rⁿ)/(1−r).",
+                "Sum to infinity a/(1−r) exists only for |r|<1 — justify the inequality when asked.",
+                "Early binomial expansion of (1+x)ⁿ for small n; write full expansion with decreasing powers."
+              ]
+            },
+            {
+              "name": "Radians and trigonometry",
+              "notes": [
+                "Radians throughout: arc length rθ, sector area ½r²θ.",
+                "Exact values and solving equations in radians; add 2π multiples when finding all solutions.",
+                "Small-angle approximations sinθ≈θ, cosθ≈1−θ²/2, tanθ≈θ inform limits questions."
+              ]
+            },
+            {
+              "name": "Exponentials and logarithms",
+              "notes": [
+                "Graphs of eˣ, e^(−x), ln x and their intersections with lines are common modelling setups.",
+                "Laws: log(xy)=log x+log y, log(x/y)=log x−log y, log(xⁿ)=n log x — natural logs follow the same rules.",
+                "Solve aˣ=b by logs; convert y=axⁿ to log y=log a+n log x or y=abˣ to ln y=ln x·ln b+ln a for linear fits."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WMA13",
+          "name": "Pure Mathematics 3",
+          "short": "P3",
+          "topics": [
+            {
+              "name": "Algebra and functions",
+              "notes": [
+                "Partial fractions with distinct/repeated linear factors and quadratic denominators feed integration questions.",
+                "Rational functions: asymptotes, asymptote-free graphs, and using factor theorem with unknown coefficients."
+              ]
+            },
+            {
+              "name": "Trigonometry",
+              "notes": [
+                "Reciprocal functions sec, cosec, cot and their graphs/identities; inverse functions sin⁻¹, cos⁻¹, tan⁻¹ ranges.",
+                "Compound angle, double angle and the R-form a sinθ+b cosθ=R sin(θ+α) — show working for R and α.",
+                "Most 'solve' questions combine identities; find all roots in the stated interval."
+              ]
+            },
+            {
+              "name": "Exponentials and logarithms",
+              "notes": [
+                "Exponential growth/decay models dN/dt=kN style setups appear in both maths and applied contexts.",
+                "Take logs of reciprocal/exponential models to identify constants from straight-line data plots."
+              ]
+            },
+            {
+              "name": "Differentiation",
+              "notes": [
+                "First principles for simple functions is examinable — memorise the limit definition.",
+                "Chain, product and quotient rules; differentiate e^x, lnx, trig and implicit-lite expressions.",
+                "Stationary points with second-derivative test; tangents and normals to curves including parametric-lite cases."
+              ]
+            },
+            {
+              "name": "Integration",
+              "notes": [
+                "Standard integrals, reverse chain rule (ln|f(x)| forms), integration by recognition.",
+                "Definite integrals as areas; areas between a curve and a line/axes, signed areas caution.",
+                "Improper integrals appear in P3/P4 boundary questions — evaluate with limits."
+              ]
+            },
+            {
+              "name": "Numerical methods",
+              "notes": [
+                "Locate a root by sign change over an interval and justify with a quick calculation.",
+                "Fixed-point iteration x_{n+1}=g(x_n): state the iteration, quote values to the asked accuracy.",
+                "Newton–Raphson may appear: know the formula and failure cases (derivative zero near the root)."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WMA14",
+          "name": "Pure Mathematics 4",
+          "short": "P4",
+          "topics": [
+            {
+              "name": "Algebra and functions",
+              "notes": [
+                "Binomial series for any rational n: general term, validity |x|<1, expansions with bracketed x rearrangement.",
+                "Partial fractions then integrate or differentiate term by term to build series expansions."
+              ]
+            },
+            {
+              "name": "Trigonometry",
+              "notes": [
+                "Reciprocal and inverse functions, compound/double angle proofs; R-form in modelling (max/min of asinθ+bcosθ).",
+                "Inverse trig derivatives and arcsin/arccos/arctan integrals appear with P4-heavy integration."
+              ]
+            },
+            {
+              "name": "Parametric equations",
+              "notes": [
+                "Convert parametric ↔ cartesian by eliminating the parameter; state domain restrictions.",
+                "Parametric differentiation dy/dx = (dy/dt)/(dx/dt); tangents/normals/arcs follow from it."
+              ]
+            },
+            {
+              "name": "Differentiation",
+              "notes": [
+                "Implicit differentiation incl. normals to circles-like curves and connected rates of change.",
+                "Parametric gradients and chain-rule heavy expressions; second derivatives for concavity/inflections.",
+                "Optimisation with constraints: build a single-variable model, differentiate, verify it's a max/min."
+              ]
+            },
+            {
+              "name": "Integration",
+              "notes": [
+                "By substitution (choose u from the inner function), by parts (LIATE heuristic), partial fractions.",
+                "Volumes of revolution around x or y axes; set limits from the geometry described.",
+                "Separable first-order differential equations with boundary conditions are a P4 staple."
+              ]
+            },
+            {
+              "name": "Vectors",
+              "notes": [
+                "Position/direction vectors, magnitude, unit vectors, vector arrows in 2D and 3D.",
+                "Line vector equations r=a+t(b−a): read parallel vectors, find points, distances via parametric t.",
+                "Vector proofs of parallelism/collinearity are quick marks — compare scalar multiples."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WME01",
+          "name": "Mechanics 1",
+          "short": "M1",
+          "topics": [
+            {
+              "name": "Modelling and vectors",
+              "notes": [
+                "Standard modelling assumptions (light inextensible string, smooth pulley, particle) — justify or drop them when asked.",
+                "Resolve vectors into components; direction bearings and unit vectors j/î language."
+              ]
+            },
+            {
+              "name": "Kinematics",
+              "notes": [
+                "suvat equations for constant acceleration; choose the unknown-safe equation.",
+                "Velocity–time and displacement–time graphs: gradient/area meaning, average speed vs average velocity."
+              ]
+            },
+            {
+              "name": "Dynamics",
+              "notes": [
+                "Newton's second law F=ma in component form; systems questions need a whole-system equation plus a part equation.",
+                "Connected particles (toys on tables, pulleys, lifts): tension same magnitude along a light string.",
+                "Weight as mg, normal reactions, and when bodies lose contact (R=0 condition)."
+              ]
+            },
+            {
+              "name": "Friction and statics",
+              "notes": [
+                "F ≤ μR with equality at limiting equilibrium; direction opposes motion/impending motion.",
+                "Particles on slopes: resolve parallel and perpendicular; equilibrium vs on-point-of-sliding wording."
+              ]
+            },
+            {
+              "name": "Moments",
+              "notes": [
+                "Moment = force × perpendicular distance; take moments about a strategic point to eliminate an unknown reaction.",
+                "Rigid-body equilibrium: sum of moments = 0 plus vertical/horizontal force balance; centre of mass position offsets."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WME02",
+          "name": "Mechanics 2",
+          "short": "M2",
+          "topics": [
+            {
+              "name": "Projectiles",
+              "notes": [
+                "Split into horizontal (constant speed) and vertical (suvat with a=−g) components; time is the shared variable.",
+                "Range, greatest height, time of flight formulae; landing at different level needs the full quadratic."
+              ]
+            },
+            {
+              "name": "Work, energy and power",
+              "notes": [
+                "Work = force × distance in the force's direction; energy conservation incl. gains/losses on inclines.",
+                "Power = Fv; driving-train problems combine resistance, power and constant speed equations.",
+                "Work–energy principle: total work done = change in KE; include friction work as negative."
+              ]
+            },
+            {
+              "name": "Impulse and momentum",
+              "notes": [
+                "Impulse = change in momentum = FΔt; area under a force–time graph.",
+                "Conservation of momentum for one-dimensional collisions; define a positive direction first."
+              ]
+            },
+            {
+              "name": "Collisions and restitution",
+              "notes": [
+                "Newton's law of restitution e = speed of separation / speed of approach; e=1 elastic, e=0 inelastic.",
+                "Two-ball stacked/follow-on problems: solve both impacts in sequence; check the second collision happens."
+              ]
+            },
+            {
+              "name": "Centres of mass",
+              "notes": [
+                "Composite laminas/shells by mass-weighted averaging of component centres (x̄=Σmx/Σm).",
+                "Tipping about an edge occurs when the centre of mass passes the support's vertical line — standard beam/plank setups."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WME03",
+          "name": "Mechanics 3",
+          "short": "M3",
+          "topics": [
+            {
+              "name": "Variable acceleration",
+              "notes": [
+                "Calculus links: a=dv/dt=d²x/dt², v=dx/dt; integrate with initial/final conditions.",
+                "Displacement vs distance demands tracking sign changes of v (stationary points)."
+              ]
+            },
+            {
+              "name": "Elastic strings and springs",
+              "notes": [
+                "Hooke's law T=λx/l for strings/springs; modulus of elasticity λ has force units.",
+                "Elastic energy stored λx²/2l powers energy-conservation questions (projos attached to springs)."
+              ]
+            },
+            {
+              "name": "Simple harmonic motion",
+              "notes": [
+                "SHM conditions and standard solutions x=a cos(ωt)+b sin(ωt); amplitude and period conversions.",
+                "Speed v=ω√(a²−x²); extrema, centre-of-oscillation, first-time-after-t style timings.",
+                "Springs+mass systems: derive ω² from the equation of motion by collecting terms."
+              ]
+            },
+            {
+              "name": "Centres of mass of solids",
+              "notes": [
+                "Standard results: hemisphere 3r/8, cone h/4 from base, composite solids by volume-weighted averages.",
+                "Hanging/float equilibrium: vertical through centre of mass; tilt angles from geometry."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WST01",
+          "name": "Statistics 1",
+          "short": "S1",
+          "topics": [
+            {
+              "name": "Representation and summary of data",
+              "notes": [
+                "Mean/mode/median comparisons under skew; standard deviation and variance (n and n−1 forms as specified).",
+                "Quartiles, IQR, outliers rule (Q3+1.5IQR etc); box plots, histograms, cumulative frequency reading.",
+                "Coding data (y=ax+b) scales mean and SD predictably — quick recalculation tool."
+              ]
+            },
+            {
+              "name": "Probability",
+              "notes": [
+                "Venn/tree diagrams; addition and multiplication laws with independence checks P(A∩B)=P(A)P(B).",
+                "Conditional probability P(A|B)=P(A∩B)/P(B); convert wording to set notation carefully."
+              ]
+            },
+            {
+              "name": "Correlation and regression",
+              "notes": [
+                "PMCC interpretation (strength, direction); correlation ≠ causation phrasing.",
+                "Regression y on x only; use it for interpolation, flag extrapolation risks; residual sum interpretation."
+              ]
+            },
+            {
+              "name": "Discrete random variables",
+              "notes": [
+                "Probability distributions must sum to 1; find unknown constants first.",
+                "E(X), Var(X)=E(X²)−[E(X)]², and linear combos E(aX+b), Var(aX+b)."
+              ]
+            },
+            {
+              "name": "Normal distribution",
+              "notes": [
+                "Standardise Z=(X−μ)/σ; use table/norm inverse for boundaries and probabilities.",
+                "Point binomial ≈ normal when np and nq large with continuity correction where required.",
+                "Find unknown μ/σ from percentage-point equations (two equations, two unknowns)."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WST02",
+          "name": "Statistics 2",
+          "short": "S2",
+          "topics": [
+            {
+              "name": "Binomial and Poisson distributions",
+              "notes": [
+                "B(n,p) conditions (fixed n, independent trials, constant p); Poisson modelling for rates/queues.",
+                "Poisson approximation to binomial (n large, p small, np=λ) and when tables beat manual computation.",
+                "Additivity: independent Poissons with rates λ1, λ2 → Poisson(λ1+λ2)."
+              ]
+            },
+            {
+              "name": "Continuous random variables",
+              "notes": [
+                "PDF integrates to 1; CDF for P(a<X<b); find unknown k by integration limits.",
+                "Mode = PDF peak; median by integrating to 0.5; uniform distribution mean/variance by geometry."
+              ]
+            },
+            {
+              "name": "Sampling and estimation",
+              "notes": [
+                "Unbiased estimators: mean of sample means; variance divisor (n−1) sample variance.",
+                "Sampling distribution of the mean; CLT for non-normal populations in large samples."
+              ]
+            },
+            {
+              "name": "Hypothesis testing",
+              "notes": [
+                "State H0/H1 (one or two-tailed) and the significance level before computing.",
+                "Binomial/Poisson critical region or probability-under-H0; compare to significance and conclude in context.",
+                "Conclusions must reference the claim wording ('insufficient evidence to suggest...')."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WST03",
+          "name": "Statistics 3",
+          "short": "S3",
+          "topics": [
+            {
+              "name": "Combinations of random variables",
+              "notes": [
+                "Sums/differences: E(aX±bY), Var(aX±bY)=a²Var(X)+b²Var(Y) for independent variables.",
+                "Sums of independent normals are normal with mean and variance added; standardise for probabilities."
+              ]
+            },
+            {
+              "name": "Sampling distributions",
+              "notes": [
+                "Central limit theorem: X̄ ~ N(μ, σ²/n) for large n whatever the population shape.",
+                "Distributions of differences of independent means/proportions underpin two-sample questions."
+              ]
+            },
+            {
+              "name": "Estimation and confidence",
+              "notes": [
+                "Confidence intervals for the mean: z (known σ/large n) and t (unknown σ); width narrows with n².",
+                "Two-sided vs one-sided intervals; interpret '95% confident' as process coverage, not probability of one interval."
+              ]
+            },
+            {
+              "name": "Chi-squared tests",
+              "notes": [
+                "Goodness of fit: expected counts, degrees of freedom (subtract parameters and 1), stepwise table comparison.",
+                "Contingency tables: independence test, df=(rows−1)(cols−1), merge small expected cells when required."
+              ]
+            },
+            {
+              "name": "Hypothesis tests for means",
+              "notes": [
+                "Two-sample z/t for difference of means (independent samples), paired-sample reductions.",
+                "State assumptions (independence, normality or CLT) and conclude in the problem's wording."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "physics": {
+      "label": "Physics",
+      "units": [
+        {
+          "code": "WPH11",
+          "name": "Mechanics and Materials",
+          "short": "Unit 1",
+          "topics": [
+            {
+              "name": "Kinematics and graphs of motion",
+              "notes": [
+                "suvat for constant acceleration; displacement–time and velocity–time graphs: gradients and areas.",
+                "Projectile motion: split into independent horizontal/vertical components; time links them.",
+                "Free fall g ≈ 9.81 m/s² is measured with light gates in the standard core practical."
+              ]
+            },
+            {
+              "name": "Forces, Newton's laws and moments",
+              "notes": [
+                "Free-body diagrams first; N1/N2/N3 phrased precisely (rate of change of momentum version is exam password).",
+                "Resolve multiple forces; equilibrium ΣF=0; moments balance for lever/plank problems.",
+                "Terminal velocity: drag increases with speed until net force is zero."
+              ]
+            },
+            {
+              "name": "Work, energy and power",
+              "notes": [
+                "W=Fs cosθ, KE=½mv², ΔGPE=mgh; energy conservation with efficiency losses.",
+                "Power = work/time = Fv for constant-speed vehicles/hydraulics problems."
+              ]
+            },
+            {
+              "name": "Momentum",
+              "notes": [
+                "p=mv; conservation in collisions/explosions (1D at Unit 1); impulse-momentum link appears lightly.",
+                "Momentum is a vector: assign signs before calculating."
+              ]
+            },
+            {
+              "name": "Fluids",
+              "notes": [
+                "Density and pressure (p=hρg for columns); upthrust = weight of displaced fluid.",
+                "Laminar vs turbulent flow; viscosity definition η=F/A ÷ velocity gradient.",
+                "Stokes' law F=6πηrv for terminal velocity of spheres; experimental determination of η."
+              ]
+            },
+            {
+              "name": "Materials",
+              "notes": [
+                "Hooke's law F=kΔx up to the limit of proportionality; force–extension energy area = work stored.",
+                "Stress σ=F/A, strain ε=Δx/x, Young modulus E=σ/ε; brittle vs ductile behaviour on σ–ε graphs.",
+                "Springs in series/parallel combine stiffnesses like 1/k and k sums."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WPH12",
+          "name": "Waves and Electricity",
+          "short": "Unit 2",
+          "topics": [
+            {
+              "name": "The nature of light",
+              "notes": [
+                "Photon energy E=hf=hc/λ; intensity relates to photon rate.",
+                "Photoelectric effect: threshold frequency, KEmax=hf−φ — evidence for quantised EM radiation.",
+                "Electron energy levels give line spectra; express transitions as ΔE=hf."
+              ]
+            },
+            {
+              "name": "Waves",
+              "notes": [
+                "v=fλ, wavefronts/rays; progressive vs stationary waves (nodes/antinodes, strings experiment).",
+                "Refraction/Snell's law, critical angle and total internal reflection; optical fibres.",
+                "Polarisation only for transverse waves; diffraction/interference (path difference, coherence)."
+              ]
+            },
+            {
+              "name": "Wave-particle duality",
+              "notes": [
+                "de Broglie λ=h/p for electrons; diffraction evidence for matter waves.",
+                "Compare photon (light quanta) and electron behaviour; link ideas to the electron microscope."
+              ]
+            },
+            {
+              "name": "DC electricity",
+              "notes": [
+                "I=Q/t, V=W/Q; Ohm's law and I–V characteristics for filament (temperature effect) and diodes.",
+                "Resistivity ρ=RA/L; series/parallel resistor networks, potential dividers and power P=VI.",
+                "EMF ε=I(R+r): internal resistance reduces terminal p.d.; efficiency and short-circuit reasoning."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WPH13",
+          "name": "Practical Skills in Physics I",
+          "short": "Unit 3",
+          "topics": [
+            {
+              "name": "Measurement techniques",
+              "notes": [
+                "Instrument choice and resolution (ruler, vernier, micrometer, stopwatch, sensors); avoid parallax error.",
+                "Oscillation timing: time many cycles and divide to cut timing reaction error."
+              ]
+            },
+            {
+              "name": "Uncertainties and errors",
+              "notes": [
+                "Absolute/percentage uncertainty combination for sums (add absolute) and products (add percentage).",
+                "Random vs systematic errors; repeats reduce random uncertainty, calibration fixes systematic."
+              ]
+            },
+            {
+              "name": "Graphical analysis",
+              "notes": [
+                "Log-log/ln plots linearise power/exponential relations; extract gradient→constants.",
+                "Error bars and best/worst gradient lines give uncertainty in gradients and intercepts."
+              ]
+            },
+            {
+              "name": "Core practicals recap",
+              "notes": [
+                "Know methods/variables for mechanics (g by free fall), materials (Young modulus) and waves (standing waves) practicals.",
+                "Be ready to critique method: control variables, safe layout, and how to improve precision."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WPH14",
+          "name": "Further Mechanics, Fields and Particles",
+          "short": "Unit 4",
+          "topics": [
+            {
+              "name": "Further mechanics",
+              "notes": [
+                "2D momentum conservation with component equations; impulse FΔt=Δp and force–time graphs.",
+                "Elastic vs inelastic collisions via KE comparison; restitution not required at Unit 4."
+              ]
+            },
+            {
+              "name": "Circular motion",
+              "notes": [
+                "Angular speed ω=2πf, v=ωr; centripetal force F=mv²/r with real examples (banking, satellites-lite).",
+                "Identify the force providing centripetal acceleration in each context — it's always a real force."
+              ]
+            },
+            {
+              "name": "Electric fields",
+              "notes": [
+                "E=F/q; field between parallel plates E=V/d; point-charge field E=kQ/r² (proportional reasoning acceptable).",
+                "Work done moving charge W=QΔV; equipotentials ⊥ field lines sketches."
+              ]
+            },
+            {
+              "name": "Capacitors",
+              "notes": [
+                "Q=CV, energy ½CV²; series/parallel combinations.",
+                "Exponential charge/discharge with time constant τ=RC; read capacitor graphs for τ and initial gradient RC reasoning."
+              ]
+            },
+            {
+              "name": "Magnetic fields",
+              "notes": [
+                "F=BIL sinθ and F=BQv for moving charges; Fleming's left-hand rule direction work.",
+                "Charged particle in circular path r=p/BQ; motor effect and simple induction ideas."
+              ]
+            },
+            {
+              "name": "Nuclear and particle physics",
+              "notes": [
+                "Quark model (u/d/s combinations), baryons vs mesons; beta decay and the neutrino story.",
+                "Mass-energy E=mc² in fusion/fission; particle accelerators raise momentum → de Broglie wavelength shrinks."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WPH15",
+          "name": "Thermodynamics, Radiation, Oscillations and Cosmology",
+          "short": "Unit 5",
+          "topics": [
+            {
+              "name": "Thermodynamics",
+              "notes": [
+                "Specific heat capacity Q=mcΔθ and specific latent heat Q=mL during phase change.",
+                "Ideal gas: pV=nRT (or NkT), kinetic theory pV=⅓Nm(c²)rms; temperature as mean KE."
+              ]
+            },
+            {
+              "name": "Nuclear decay",
+              "notes": [
+                "Activity A=λN, decay N=N₀e^(−λt), half-life t½=ln2/λ; interpret decay graphs.",
+                "Binding energy per nucleon curve explains fission/fusion energy release; mass defect and E=mc²."
+              ]
+            },
+            {
+              "name": "Oscillations",
+              "notes": [
+                "SHM: a=−ω²x; solutions x=A cos(ωt+φ), v=±ω√(A²−x²); period independent of amplitude.",
+                "Damping reduces amplitude; resonance at driving frequency ≈ natural frequency (with light damping)."
+              ]
+            },
+            {
+              "name": "Gravitational fields",
+              "notes": [
+                "g=GM/r²; field strength vs potential; equipotentials; weightlessness phrasing.",
+                "Orbital motion: gravitational force = centripetal; T² ∝ r³ for circular orbits."
+              ]
+            },
+            {
+              "name": "Astrophysics and cosmology",
+              "notes": [
+                "Stefan–Boltzmann L=σAT⁴ and Wien λmaxT=const; luminosity/brightness with inverse-square.",
+                "HR diagram, stellar lifecycle (main sequence → giants → white dwarf/neutron star/black hole).",
+                "Redshift and Hubble's law v=H₀d give the expanding-universe argument; receding/blueshifted spectra."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WPH16",
+          "name": "Practical Skills in Physics II",
+          "short": "Unit 6",
+          "topics": [
+            {
+              "name": "Planning investigations",
+              "notes": [
+                "Identify independent/dependent/control variables and justify the measurement instrument for each.",
+                "Write a workable method incl. safety and how graphs will be used to reach the conclusion."
+              ]
+            },
+            {
+              "name": "Analysis and evaluation",
+              "notes": [
+                "Linearise data, compute gradient/intercept with uncertainties, and compare to accepted values.",
+                "Percent difference judgement plus improvement suggestions (repeats, sensors, reducing systematic error)."
+              ]
+            },
+            {
+              "name": "Core practicals recap",
+              "notes": [
+                "A2-era practicals: capacitors discharge, oscillations (g by pendulum-style), fields and thermodynamics experiments.",
+                "Expect critique-style questions: what would you change and why, with quantitative reasoning."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "chemistry": {
+      "label": "Chemistry",
+      "units": [
+        {
+          "code": "WCH11",
+          "name": "Structure, Bonding and Introduction to Organic Chemistry",
+          "short": "Unit 1",
+          "topics": [
+            {
+              "name": "Formulae, equations and amounts of substance",
+              "notes": [
+                "Moles n=m/Mr, n=CV for solutions, gas volume n=V/24 (dm³, RTP); ideal gas equation appears too.",
+                "Balanced equations from titration data; limiting reagent, percentage yield and atom economy.",
+                "Avogadro constant conversions between particles and moles."
+              ]
+            },
+            {
+              "name": "Atomic structure and the periodic table",
+              "notes": [
+                "Electron configuration incl. 4s-before-3d fill and ion exceptions; isotopes and relative mass.",
+                "First ionisation energy trends (across period and down group) with sub-shell explanations.",
+                "Period 3 oxides' bonding and acid-base character link structure to properties."
+              ]
+            },
+            {
+              "name": "Bonding and structure",
+              "notes": [
+                "Ionic/covalent/metallic bonding; shapes from electron-pair repulsion incl. lone-pair effects.",
+                "Polarity (dipoles) and IMF ranking: London < dipole-dipole < hydrogen bonding; link to bp/melting.",
+                "Giant structures: diamond vs graphite vs metals explain conductivity/hardness."
+              ]
+            },
+            {
+              "name": "Introductory organic chemistry and alkanes",
+              "notes": [
+                "IUPAC naming, structural/isomer counting; functional group recognition chart.",
+                "Crude oil: fractional distillation, cracking; combustion completeness and pollutants.",
+                "Free-radical substitution mechanism (initiation/propagation/termination) with conditions."
+              ]
+            },
+            {
+              "name": "Alkenes",
+              "notes": [
+                "Double-bond reactivity: electrophilic addition of HX/Br2 with major/minor product Markovnikov-lite logic.",
+                "Addition polymerisation; addition vs substitution contrast.",
+                "Test for unsaturation (bromine water decolourises); industrial hydrogenation/ hydration basics."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WCH12",
+          "name": "Energetics, Group Chemistry, Halogenoalkanes and Alcohols",
+          "short": "Unit 2",
+          "topics": [
+            {
+              "name": "Energetics",
+              "notes": [
+                "Enthalpy level diagrams, exothermic/endothermic sign conventions; ΔH from average bond enthalpies vs Hess cycles.",
+                "Calorimetry q=mcΔT; sources of error and improved-insulation setups.",
+                "Hess's law cycles with formation/combustion data — keep signs consistent."
+              ]
+            },
+            {
+              "name": "Intermolecular forces",
+              "notes": [
+                "Rank London/dipole-dipole/H-bonds; justify boiling points of hydrides and isomer pairs.",
+                "Solubility reasoning: 'like dissolves like' plus H-bonding exceptions."
+              ]
+            },
+            {
+              "name": "Redox chemistry and groups 1, 2 and 7",
+              "notes": [
+                "Oxidation numbers and half-equations; oxidising/reducing agent identification.",
+                "Group 2 reactivity/trends (sulfates, hydroxides solubility); flame tests.",
+                "Group 7 displacement and disproportionation; chlorine water treatment debate points."
+              ]
+            },
+            {
+              "name": "Introduction to kinetics and equilibria",
+              "notes": [
+                "Collision theory: concentration/temperature/surface-area/catalyst effects; Maxwell–Boltzmann distribution sketching.",
+                "Dynamic equilibrium with Le Chatelier predictions; Kc expression and ICE-table calculations."
+              ]
+            },
+            {
+              "name": "Halogenoalkanes, alcohols and spectra",
+              "notes": [
+                "SN1/SN2 mechanisms and rates with primary/tertiary halogenoalkanes; hydrolysis experiment with AgNO3.",
+                "Alcohol oxidation: primary→aldehyde→acid, secondary→ketone, tertiary resistant; distill vs reflux.",
+                "Mass spectra (m/z fragments, M+ peak) and IR (bond vibrations, O-H/C=O regions) identification."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WCH13",
+          "name": "Practical Skills in Chemistry I",
+          "short": "Unit 3",
+          "topics": [
+            {
+              "name": "Core techniques",
+              "notes": [
+                "Titration procedure with indicators and concordant titres; burette/pipette use and uncertainty reading.",
+                "Heating under reflux, distillation, recrystallisation, melting point purity testing."
+              ]
+            },
+            {
+              "name": "Analysis and evaluation",
+              "notes": [
+                "Quantitative uncertainties in measured volumes/masses and % error comparison.",
+                "Critique and improve methods: control variables, drying/recrystallising steps, yield vs purity trade-offs."
+              ]
+            },
+            {
+              "name": "Qualitative tests",
+              "notes": [
+                "Cation/anion/gas tests: flame colours, AgNO3 halides, carbonate effervescence, sulfate barium, ammonia tests.",
+                "Organic tests for unsaturation and functional groups with expected observations stated precisely."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WCH14",
+          "name": "Rates, Equilibria and Further Organic Chemistry",
+          "short": "Unit 4",
+          "topics": [
+            {
+              "name": "Kinetics",
+              "notes": [
+                "Rate equations, orders (0/1/2) and rate constant k with units; initial-rates method and clock reactions.",
+                "Rate-determining step and plausible mechanisms from order data; Arrhenius equation ln k = −Ea/RT + ln A linearisation."
+              ]
+            },
+            {
+              "name": "Entropy and energetics",
+              "notes": [
+                "Entropy signs/change reasoning; ΔS = ΣS(products) − ΣS(reactants).",
+                "Gibbs energy ΔG=ΔH−TΔS; spontaneity temperature thresholds and decomposition feasibility."
+              ]
+            },
+            {
+              "name": "Chemical equilibria",
+              "notes": [
+                "Kp/Kc calculations incl. partial pressures and mole fractions; Le Chatelier with industrial compromise (Haber/ammonia)."
+              ]
+            },
+            {
+              "name": "Acid-base equilibria",
+              "notes": [
+                "Ka, pKa, Kw=10⁻¹⁴ at 298K; pH of strong/weak acids and bases.",
+                "Buffers: ratio reasoning and addition response; titration curves and indicator choice."
+              ]
+            },
+            {
+              "name": "Carbonyls, carboxylic acids and chirality",
+              "notes": [
+                "Aldehyde/ketone tests (Tollens, Fehling, 2,4-DNPH); nucleophilic addition mechanism.",
+                "Carboxylic acid acidity and derivatives (acyl chlorides, esters, anhydrides) reactions.",
+                "Optical isomerism with chiral centres; optical activity/subsequent racemisation from SN1 mechanisms."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WCH15",
+          "name": "Transition Metals and Organic Nitrogen Chemistry",
+          "short": "Unit 5",
+          "topics": [
+            {
+              "name": "Redox equilibria",
+              "notes": [
+                "Standard electrode potentials E°; cell EMF = E°(cathode)−E°(anode) and spontaneity.",
+                "Predict reactions with E° data; disproportionation and oxidising strength ordering."
+              ]
+            },
+            {
+              "name": "Transition metals",
+              "notes": [
+                "Variable oxidation states; complex ions with ligand substitution, colour from d-orbital splitting (…simplified as IAL allows).",
+                "Reactions of Cu²⁺/Fe³⁺/Fe²⁺/Cr³⁺ with NaOH/NH3; catalysis examples incl. heterogeneous contact process."
+              ]
+            },
+            {
+              "name": "Arenes",
+              "notes": [
+                "Benzene delocalised model vs Kekulé; stability via ΔHhydrogenation comparison.",
+                "Electrophilic substitution: nitration (NO2⁺) and halogenation (AlCl3/FeBr3 catalysts); directing effects (2/4 vs 3)."
+              ]
+            },
+            {
+              "name": "Organic nitrogen compounds",
+              "notes": [
+                "Amines basicity, preparation; amide formation; diazonium coupling to azo dyes (overview-level).",
+                "Amino acids zwitterions, isoelectric points; peptide bonds and hydrolysis of proteins."
+              ]
+            },
+            {
+              "name": "Organic synthesis",
+              "notes": [
+                "Multi-step routes: choose reagents/conditions between functional groups; protection where needed.",
+                "Purity/chirality considerations in synthesis; green-chemistry-flavoured justification questions."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WCH16",
+          "name": "Practical Skills in Chemistry II",
+          "short": "Unit 6",
+          "topics": [
+            {
+              "name": "Advanced core practicals",
+              "notes": [
+                "Redox titrations (e.g. Fe²⁺/MnO4⁻) with electron-count stoichiometry.",
+                "Organic preparation/purification and rate-measurement experiments at A2 demand."
+              ]
+            },
+            {
+              "name": "Evaluation style",
+              "notes": [
+                "Quantify uncertainties in multi-step measurements and judge the dominant error source.",
+                "Suggest improvements tied to identified errors (thermostatted vessels, calibration, recording frequency)."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "biology": {
+      "label": "Biology",
+      "units": [
+        {
+          "code": "WBI11",
+          "name": "Molecules, Diet, Transport and Health",
+          "short": "Unit 1",
+          "topics": [
+            {
+              "name": "Molecules, transport and health",
+              "notes": [
+                "Water's properties (H-bonding) underpin transport; carbohydrate/lipid/protein structures and tests (Benedict's, iodine, biuret).",
+                "Cardiovascular system: heart structure, cardiac cycle, blood vessels; atherosclerosis and CVD risk factors.",
+                "Diet: energy balance, BMI/waist-hip, food tests; blood pressure reading interpretation."
+              ]
+            },
+            {
+              "name": "Membranes, proteins, DNA and gene expression",
+              "notes": [
+                "Fluid mosaic model; diffusion/osmosis/active transport with experimental contexts (beetroot, water potential).",
+                "Protein structure levels and enzyme action (induced fit), factors affecting rate with graph reading.",
+                "DNA/RNA structure, semiconservative replication, transcription/translation and the genetic code."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WBI12",
+          "name": "Cells, Development, Biodiversity and Conservation",
+          "short": "Unit 2",
+          "topics": [
+            {
+              "name": "Cell structure, reproduction and development",
+              "notes": [
+                "Eukaryotic organelles vs prokaryotes; light/electron microscopy magnification/resolution calculations.",
+                "Mitosis stages and meiosis with gamete variation; fertilisation and early development in mammals/plants."
+              ]
+            },
+            {
+              "name": "Plant structure and function, biodiversity and conservation",
+              "notes": [
+                "Plant tissues (xylem, phloem, sclerenchyma); transpiration/cohesion-tension and transport experiments.",
+                "Classification hierarchy and the five-kingdom/three-domain debate; species concepts.",
+                "Biodiversity indices (Simpson's), niche concepts, conservation strategies and seed banks."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WBI13",
+          "name": "Practical Skills in Biology I",
+          "short": "Unit 3",
+          "topics": [
+            {
+              "name": "Core techniques",
+              "notes": [
+                "Microscope practicals, enzyme-rate experiments, membrane permeability, water potential serial dilutions.",
+                "Data handling: tables, graphs and Unit 1/2 variable control."
+              ]
+            },
+            {
+              "name": "Analysis and evaluation",
+              "notes": [
+                "Represent results and identify anomalies; explain reliability via repeats.",
+                "Suggest improvements mapped to specific weaknesses rather than generic answers."
+              ]
+            },
+            {
+              "name": "Statistical tests (light)",
+              "notes": [
+                "Unit-level significance basics; be comfortable with mean comparisons and simple significance reasoning."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WBI14",
+          "name": "Energy, Environment, Microbiology and Immunity",
+          "short": "Unit 4",
+          "topics": [
+            {
+              "name": "Energy flow, ecosystems and the environment",
+              "notes": [
+                "Photosynthesis: light-dependent/independent reactions and limiting factors experiments.",
+                "Respiration overview (glycolysis → link/Krebs/ETC) and RQ calculations.",
+                "Ecosystems: trophic levels, energy transfer efficiency, pyramids; succession and population change (abiotic/biotic)."
+              ]
+            },
+            {
+              "name": "Microbiology, immunity and forensics",
+              "notes": [
+                "Bacterial growth curves and culturing technique (aseptic); antibiotic action/resistance mechanisms.",
+                "Pathogens and disease (TB, HIV); immune response: phagocytes, T/B lymphocytes, antibodies, memory.",
+                "Vaccination/time-course graphs; forensic techniques incl. DNA profiling, PCR basics and time-of-death factors."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WBI15",
+          "name": "Respiration, Internal Environment, Coordination and Gene Technology",
+          "short": "Unit 5",
+          "topics": [
+            {
+              "name": "Respiration, muscles and the internal environment",
+              "notes": [
+                "Respiration detail: ATP yield, chemiosmotic theory, mitochondrial adaptations; respirometer experiments.",
+                "Muscle structure: sliding filament with actin/myosin/calcium role; slow vs fast fibres.",
+                "Homeostasis: thermoregulation loops; kidneys: ultrafiltration/selective reabsorption/osmoregulation with ADH."
+              ]
+            },
+            {
+              "name": "Coordination, response and gene technology",
+              "notes": [
+                "Nervous system: resting/action potentials with graphs, saltatory conduction, synapse function and drugs.",
+                "Plant responses/auxin, invertebrate vs vertebrate responses; brain regions basics per spec.",
+                "Gene technology: PCR, electrophoresis/sequencing, gene cloning uses, ethical positions."
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WBI16",
+          "name": "Practical Skills in Biology II",
+          "short": "Unit 6",
+          "topics": [
+            {
+              "name": "Advanced practicals",
+              "notes": [
+                "A2 core practicals: respiration rates, muscle/nerve contexts, ecology field techniques, gene-tech style procedures.",
+                "Design investigations with variables, controls and precision-focused methods."
+              ]
+            },
+            {
+              "name": "Statistical tests",
+              "notes": [
+                "Chi-squared, Student's t-test, correlation coefficient use-case matching; null hypotheses and rejection rules.",
+                "Interpret p<0.05 wording correctly in biological context."
+              ]
+            },
+            {
+              "name": "Evaluation",
+              "notes": [
+                "Quantify uncertainty sources, assess significant differences and propose concrete method upgrades.",
+                "Evaluate data-based conclusions: correlation vs causation and sample-size caveats."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

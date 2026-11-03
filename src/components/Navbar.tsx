@@ -6,6 +6,8 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 const resourceLinks = [
+  { href: "/topical", label: "Topical practice", desc: "Questions by topic" },
+  { href: "/notes", label: "Revision notes", desc: "Short notes per unit" },
   { href: "/resources", label: "Resource Library", desc: "Search everything" },
   { href: "/resources/mathematics", label: "Maths", desc: "Papers · textbooks · spec" },
   { href: "/resources/physics", label: "Physics", desc: "Papers · textbooks · spec" },

@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import type { Metadata } from "next";
 import { isSubjectKey, SUBJECTS, catalogueSubject } from "@/lib/subjects";
 import { SubjectBrowser } from "@/components/SubjectBrowser";
@@ -40,6 +41,15 @@ export default async function SubjectPage({ params }: { params: Promise<{ subjec
           {meta.glyph}
         </span>
       </header>
+
+      <div className="flex flex-wrap gap-2">
+        <Link href={`/${subject}/topical`} className="doc-btn h-9 inline-flex items-center">
+          Topical practice ↗
+        </Link>
+        <Link href={`/${subject}/notes`} className="doc-btn h-9 inline-flex items-center">
+          Revision notes ↗
+        </Link>
+      </div>
 
       {catalogue ? (
         <SubjectBrowser subject={catalogue} />
