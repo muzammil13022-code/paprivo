@@ -92,26 +92,39 @@ const fx = async (q) => {
 
 /**
  * Pick the top result for a paper given a pool of candidate videos, in order:
- *  1. Hassan-channel videos that also mention the paper code (maths priority)
- *  2. Videos whose title mentions the paper code
- *  3. Any Hassan-channel video
- *  4. Videos mentioning IAL / Edexcel / International
- *  5. The plain top result
+ *  1. Hassan-channel videos matching code + year + session (maths priority)
+ *  2. Videos matching code + year + session
+ *  3. Any Hassan-channel video mentioning the code
+ *  4. Any video mentioning the code
+ *  5. Videos matching subject + session + year (no code in title)
+ *  6. Videos matching subject + year, or IAL/Edexcel + subject
+ *  7. Any video mentioning the subject
+ *
+ * Unvalidated "top result" picks caused wrong-paper matches (IGCSE/AQA/GCE)
+ * and one video reused for many sessions, so the final group now still
+ * requires the subject name; if nothing matches, return null and let the UI
+ * fall back to a paper-specific YouTube search link.
  */
 function pick(task, candidates) {
   const rl = new RegExp(task.code, "i");
   const yr = new RegExp(String(task.year));
+  const sn =
+    task.session === "June" ? /may|jun/i :
+    task.session === "October" ? /oct|nov/i : /jan/i;
+  const sub =
+    task.subject === "physics" ? /physic/i :
+    task.subject === "chemistry" ? /chem/i : /bio/i;
   const ed = /(^|\W)(IAL|Edexcel|International)(\W|$)/i;
   const hassan = (v) => /hass/i.test(v.channel);
-  // Session on YouTube titles is often shortened ("May" instead of "June",
-  // "Oct"/"Nov" instead of "October"), so match loosely on the year only.
+  const hay = (v) => `${v.title} ${v.channel}`;
   const groups = [
-    candidates.filter((v) => hassan(v) && rl.test(v.title) && yr.test(`${v.title} ${v.channel}`)),
-    candidates.filter((v) => rl.test(v.title) && yr.test(`${v.title} ${v.channel}`)),
+    candidates.filter((v) => hassan(v) && rl.test(v.title) && yr.test(hay(v)) && sn.test(hay(v))),
+    candidates.filter((v) => rl.test(v.title) && yr.test(hay(v)) && sn.test(hay(v))),
     candidates.filter((v) => hassan(v) && rl.test(v.title)),
     candidates.filter((v) => rl.test(v.title)),
-    candidates.filter((v) => hassan(v)),
-    candidates.filter((v) => ed.test(`${v.title} ${v.channel}`)),
+    candidates.filter((v) => ed.test(hay(v)) && sub.test(hay(v)) && yr.test(hay(v)) && sn.test(hay(v))),
+    candidates.filter((v) => ed.test(hay(v)) && sub.test(hay(v))),
+    candidates.filter((v) => sub.test(hay(v))),
   ];
   for (const g of groups) if (g.length > 0) return g[0];
   return null;
