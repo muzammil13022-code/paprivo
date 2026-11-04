@@ -237,7 +237,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma11-01-que-20240110.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/mathematics/2018/Exam-materials/wma11-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma11-01-pef-20240307.pdf",
                 "gated": false
@@ -443,7 +446,10 @@
               "session": "October",
               "year": 2019,
               "variant": null,
-              "qp": null,
+              "qp": {
+                "url": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P1/QP/October%202019%20QP.pdf",
+                "gated": false
+              },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA11_01_msc_20191022.pdf",
                 "gated": false
@@ -721,7 +727,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma12-01-que-20240117.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/mathematics/2018/Exam-materials/wma12-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma12-01-pef-20240307.pdf",
                 "gated": false
@@ -927,7 +936,10 @@
               "session": "October",
               "year": 2019,
               "variant": null,
-              "qp": null,
+              "qp": {
+                "url": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P2/QP/October%202019%20QP.pdf",
+                "gated": false
+              },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/wma12-01-msc-20190815.pdf",
                 "gated": false
@@ -1169,7 +1181,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-que-20240109.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/mathematics/2018/Exam-materials/wma13-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-pef-20240307.pdf",
                 "gated": false
@@ -1357,7 +1372,10 @@
               "session": "January",
               "year": 2020,
               "variant": null,
-              "qp": null,
+              "qp": {
+                "url": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P3/QP/January%202020%20QP.pdf",
+                "gated": false
+              },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2018/Exam-materials/WMA13_01_rms_20200305.pdf",
                 "gated": false
@@ -1581,7 +1599,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-que-20240119.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/mathematics/2018/Exam-materials/wma14-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-pef-20240307.pdf",
                 "gated": false
@@ -1960,7 +1981,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme01-01-que-20240118.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/mathematics/2018/Exam-materials/wme01-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme01-01-pef-20240307.pdf",
                 "gated": false
@@ -2166,7 +2190,10 @@
               "session": "October",
               "year": 2019,
               "variant": null,
-              "qp": null,
+              "qp": {
+                "url": "https://www.mymathscloud.com/api/download/modules/A-Level/Past-Papers/Edexcel-IAL/Old-M1/M1%20OCTOBER%202019%20PAPER.pdf?id=19363111",
+                "gated": false
+              },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2013/Exam materials/WME01_01_msc_20191105.pdf",
                 "gated": false
@@ -2426,7 +2453,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme02-01-que-20240112.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/mathematics/2018/Exam-materials/wme02-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme02-01-pef-20240307.pdf",
                 "gated": false
@@ -2632,7 +2662,10 @@
               "session": "October",
               "year": 2019,
               "variant": null,
-              "qp": null,
+              "qp": {
+                "url": "https://www.mymathscloud.com/api/download/modules/A-Level/Past-Papers/Edexcel-IAL/Old-M2/M2%20OCTOBER%202019%20PAPER.pdf?id=19363176",
+                "gated": false
+              },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2013/Exam materials/WME02_01_msc_20191124.pdf",
                 "gated": false
@@ -2820,7 +2853,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme03-01-que-20240120.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/mathematics/2018/Exam-materials/wme03-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme03-01-pef-20240307.pdf",
                 "gated": false
@@ -3217,7 +3253,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst01-01-que-20240111.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/mathematics/2018/Exam-materials/wst01-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst01-01-pef-20240307.pdf",
                 "gated": false
@@ -3423,7 +3462,10 @@
               "session": "October",
               "year": 2019,
               "variant": null,
-              "qp": null,
+              "qp": {
+                "url": "https://www.mymathscloud.com/api/download/modules/A-Level/Past-Papers/Edexcel-IAL/Old-S1/S1%20OCTOBER%202019%20PAPER.pdf?id=19363235",
+                "gated": false
+              },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2013/Exam materials/WST01_01_msc_20191023.pdf",
                 "gated": false
@@ -3665,7 +3707,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst02-01-que-20240113.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/mathematics/2018/Exam-materials/wst02-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst02-01-pef-20240307.pdf",
                 "gated": false
@@ -3871,7 +3916,10 @@
               "session": "October",
               "year": 2019,
               "variant": null,
-              "qp": null,
+              "qp": {
+                "url": "https://www.mymathscloud.com/api/download/modules/A-Level/Past-Papers/Edexcel-IAL/Old-S2/S2%20OCTOBER%202019%20PAPER.pdf?id=19363281",
+                "gated": false
+              },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Mathematics/2013/Exam materials/WST02_01_msc_20200123.pdf",
                 "gated": false
@@ -4059,7 +4107,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst03-01-que-20240120.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/mathematics/2018/Exam-materials/wst03-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst03-01-pef-20240307.pdf",
                 "gated": false
@@ -4426,7 +4477,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph11-01-que-20240112.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/physics/2018/Exam-materials/wph11-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph11-01-pef-20240307.pdf",
                 "gated": false
@@ -4632,7 +4686,10 @@
               "session": "October",
               "year": 2019,
               "variant": null,
-              "qp": null,
+              "qp": {
+                "url": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/Edexcel-IAL/2018-spec/Unit-1/QP/October%202019%20(IAL)%20QP.pdf",
+                "gated": false
+              },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Physics/2018/Exam-materials/WPH11_01_msc_20200123.pdf",
                 "gated": false
@@ -4874,7 +4931,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph12-01-que-20240119.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/physics/2018/Exam-materials/wph12-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph12-01-pef-20240307.pdf",
                 "gated": false
@@ -5080,7 +5140,10 @@
               "session": "October",
               "year": 2019,
               "variant": null,
-              "qp": null,
+              "qp": {
+                "url": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/Edexcel-IAL/2018-spec/Unit-2/QP/October%202019%20(IAL)%20QP.pdf",
+                "gated": false
+              },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Physics/2018/Exam-materials/WPH12_01_msc_20200123.pdf",
                 "gated": false
@@ -5304,7 +5367,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph13-01-que-20240124.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/physics/2018/Exam-materials/wph13-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph13-01-pef-20240307.pdf",
                 "gated": false
@@ -5510,7 +5576,10 @@
               "session": "October",
               "year": 2019,
               "variant": null,
-              "qp": null,
+              "qp": {
+                "url": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/Edexcel-IAL/2018-spec/Unit-3/QP/October%202019%20(IAL)%20QP.pdf",
+                "gated": false
+              },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Physics/2018/Exam-materials/WPH13_01_msc_20200123.pdf",
                 "gated": false
@@ -5734,7 +5803,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph14-01-que-20240110.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/physics/2018/Exam-materials/wph14-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph14-01-pef-20240307.pdf",
                 "gated": false
@@ -6034,7 +6106,10 @@
               "session": "October",
               "year": 2025,
               "variant": "A",
-              "qp": null,
+              "qp": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/physics/2018/Exam-materials/wph15-01a-que-20251029.pdf",
+                "gated": false
+              },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph15-01a-rms-20260122.pdf",
                 "gated": true
@@ -6125,7 +6200,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph15-01-que-20240116.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/physics/2018/Exam-materials/wph15-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph15-01-pef-20240307.pdf",
                 "gated": false
@@ -6504,7 +6582,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph16-01-que-20240123.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/physics/2018/Exam-materials/wph16-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph16-01-pef-20240307.pdf",
                 "gated": false
@@ -6889,7 +6970,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch11-01-que-20240111.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/chemistry/2018/Exam-materials/wch11-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch11-01-pef-20240307.pdf",
                 "gated": false
@@ -7095,7 +7179,10 @@
               "session": "October",
               "year": 2019,
               "variant": null,
-              "qp": null,
+              "qp": {
+                "url": "https://pmt.physicsandmathstutor.com/download/Chemistry/A-level/Past-Papers/Edexcel-IAL/2018-spec/Unit-1/QP/October%202019%20(IAL)%20QP.pdf",
+                "gated": false
+              },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Chemistry/2018/Exam-materials/WCH11_01_msc_20200123.pdf",
                 "gated": false
@@ -7355,7 +7442,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch12-01-que-20240117.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/chemistry/2018/Exam-materials/wch12-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch12-01-pef-20240307.pdf",
                 "gated": false
@@ -7561,7 +7651,10 @@
               "session": "October",
               "year": 2019,
               "variant": null,
-              "qp": null,
+              "qp": {
+                "url": "https://pmt.physicsandmathstutor.com/download/Chemistry/A-level/Past-Papers/Edexcel-IAL/2018-spec/Unit-2/QP/October%202019%20(IAL)%20QP.pdf",
+                "gated": false
+              },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Chemistry/2018/Exam-materials/WCH12_01_msc_20200123.pdf",
                 "gated": false
@@ -7803,7 +7896,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch13-01-que-20240123.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/chemistry/2018/Exam-materials/wch13-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch13-01-pef-20240307.pdf",
                 "gated": false
@@ -8009,7 +8105,10 @@
               "session": "October",
               "year": 2019,
               "variant": null,
-              "qp": null,
+              "qp": {
+                "url": "https://pmt.physicsandmathstutor.com/download/Chemistry/A-level/Past-Papers/Edexcel-IAL/2018-spec/Unit-3/QP/October%202019%20(IAL)%20QP.pdf",
+                "gated": false
+              },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Chemistry/2018/Exam-materials/WCH13_01_msc_20200123.pdf",
                 "gated": false
@@ -8233,7 +8332,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch14-01-que-20240109.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/chemistry/2018/Exam-materials/wch14-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch14-01-pef-20240307.pdf",
                 "gated": false
@@ -8648,7 +8750,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch15-01-que-20240113.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/chemistry/2018/Exam-materials/wch15-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch15-01-pef-20240307.pdf",
                 "gated": false
@@ -9027,7 +9132,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch16-01-que-20240119.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/chemistry/2018/Exam-materials/wch16-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch16-01-pef-20240307.pdf",
                 "gated": false
@@ -9412,7 +9520,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi11-01-que-20240109.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/biology/2018/Exam-materials/wbi11-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi11-01-pef-20240307.pdf",
                 "gated": false
@@ -9618,7 +9729,10 @@
               "session": "October",
               "year": 2019,
               "variant": null,
-              "qp": null,
+              "qp": {
+                "url": "https://pmt.physicsandmathstutor.com/download/Biology/A-level/Past-Papers/Edexcel-IAL/2018-spec/Unit-1/QP/October%202019%20(IAL)%20QP.pdf",
+                "gated": false
+              },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Biology/2018/Exam-materials/WBI11_01_msc_20200123.pdf",
                 "gated": false
@@ -9860,7 +9974,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi12-01-que-20240116.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/biology/2018/Exam-materials/wbi12-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi12-01-pef-20240307.pdf",
                 "gated": false
@@ -10066,7 +10183,10 @@
               "session": "October",
               "year": 2019,
               "variant": null,
-              "qp": null,
+              "qp": {
+                "url": "https://pmt.physicsandmathstutor.com/download/Biology/A-level/Past-Papers/Edexcel-IAL/2018-spec/Unit-2/QP/October%202019%20(IAL)%20QP.pdf",
+                "gated": false
+              },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Biology/2018/Exam-materials/WBI12_01_msc_20200123.pdf",
                 "gated": false
@@ -10290,7 +10410,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi13-01-que-20240120.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/biology/2018/Exam-materials/wbi13-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi13-01-pef-20240307.pdf",
                 "gated": false
@@ -10496,7 +10619,10 @@
               "session": "October",
               "year": 2019,
               "variant": null,
-              "qp": null,
+              "qp": {
+                "url": "https://pmt.physicsandmathstutor.com/download/Biology/A-level/Past-Papers/Edexcel-IAL/2018-spec/Unit-3/QP/October%202019%20(IAL)%20QP.pdf",
+                "gated": false
+              },
               "ms": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Biology/2018/Exam-materials/WBI13_01_msc_20200123.pdf",
                 "gated": false
@@ -10720,7 +10846,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi14-01-que-20240112.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/biology/2018/Exam-materials/wbi14-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi14-01-pef-20240307.pdf",
                 "gated": false
@@ -10937,7 +11066,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi15-01-que-20260605.pdf",
                 "gated": true
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi15-01-rms-20260813.pdf",
+                "gated": true
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi15-01-pef-20260813.pdf",
                 "gated": true
@@ -11114,7 +11246,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi15-01-que-20240118.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/biology/2018/Exam-materials/wbi15-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi15-01-pef-20240307.pdf",
                 "gated": false
@@ -11493,7 +11628,10 @@
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi16-01-que-20240124.pdf",
                 "gated": false
               },
-              "ms": null,
+              "ms": {
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/biology/2018/Exam-materials/wbi16-01-rms-20240307.pdf",
+                "gated": false
+              },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi16-01-pef-20240307.pdf",
                 "gated": false
