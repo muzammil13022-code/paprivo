@@ -8,6 +8,8 @@ import {
   topicalBankUrl,
   topicalQuestionSearchUrl,
   topicalReviewSearchUrl,
+  topicalPapersOf,
+  TOPICAL_PAPERS_SOURCE,
   type TopicUnit,
 } from "@/lib/topics";
 import type { SubjectKey } from "@/lib/subjects";
@@ -111,6 +113,8 @@ export default async function TopicalUnitPage({ params }: Props) {
         </ul>
       </section>
 
+      <TopicalPapersSection unitCode={unitData.code} unitName={unitData.name} />
+
       {recentPapers.length > 0 && (
         <section className="space-y-3">
           <h2 className="text-lg font-semibold">Try it in a real paper</h2>
@@ -153,6 +157,42 @@ function slugify(name: string): string {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+}
+
+function TopicalPapersSection({
+  unitCode,
+  unitName,
+}: {
+  unitCode: string;
+  unitName: string;
+}) {
+  const papers = topicalPapersOf(unitCode);
+  if (papers.length === 0) return null;
+  return (
+    <section className="space-y-3">
+      <h2 className="text-lg font-semibold">Topical papers (PDF)</h2>
+      <p className="text-sm text-muted max-w-2xl">
+        Topic-by-topic question packs for {unitName} — questions drawn from past
+        sessions, grouped by topic. Download and use alongside the mark schemes.
+      </p>
+      <ul className="grid gap-2 sm:grid-cols-2">
+        {papers.map((paper) => (
+          <li key={paper.url}>
+            <a
+              className="card-interactive flex items-center justify-between gap-3 rounded-xl border border-card-border bg-card p-3 shadow-card-sm"
+              href={paper.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="font-medium">{paper.title}</span>
+              <span className="text-xs text-muted whitespace-nowrap">PDF ↗</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p className="text-xs text-muted">{TOPICAL_PAPERS_SOURCE}</p>
+    </section>
+  );
 }
 
 function TopicCard({

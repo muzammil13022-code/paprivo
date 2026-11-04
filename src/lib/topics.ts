@@ -1,4 +1,5 @@
 import topicsJson from "@/data/topics.json";
+import topicalPdfsJson from "@/data/topical-pdfs.json";
 import type { SubjectKey } from "@/lib/subjects";
 
 /**
@@ -77,6 +78,37 @@ export function topicalBankUrl(subject: SubjectKey, unit: TopicUnit): string {
     return `https://www.physicsandmathstutor.com/biology-revision/a-level-edexcel-ial/unit-${unit.unitNo}/`;
   }
   return "https://www.physicsandmathstutor.com/a-level-maths-papers/edexcel-maths-ial-papers/";
+}
+
+/**
+ * Topical paper compilations for a unit — physical PDF files produced by
+ * StudyHub IAL and served from their site; Paprivo deep-links to the
+ * original files rather than hosting copies.
+ */
+export interface TopicalPaper {
+  title: string;
+  url: string;
+}
+
+interface TopicalPdfsData {
+  generatedAt: string;
+  source: string;
+  units: Record<string, Array<{ t: string; u: string }>>;
+}
+
+const pdfsData = topicalPdfsJson as unknown as TopicalPdfsData;
+
+export const TOPICAL_PAPERS_SOURCE = pdfsData.source;
+
+const topicalPapersByUnit = new Map(
+  Object.entries(pdfsData.units).map(([code, packs]) => [
+    code,
+    packs.map((p) => ({ title: p.t, url: p.u })),
+  ]),
+);
+
+export function topicalPapersOf(unitCode: string): TopicalPaper[] {
+  return topicalPapersByUnit.get(unitCode.toUpperCase()) ?? [];
 }
 
 export function topicalQuestionSearchUrl(unit: TopicUnit, topicName: string): string {

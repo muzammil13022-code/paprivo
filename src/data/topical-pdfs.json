@@ -1,0 +1,552 @@
+{
+  "generatedAt": "2026-11-03",
+  "source": "Topical paper compilations hosted by StudyHub IAL (studyhubial.replit.app). Paprivo links to the original files; it does not host them.",
+  "units": {
+    "WPH11": [
+      {
+        "t": "Density, Upthrust & Viscous Drag",
+        "u": "https://studyhubIAL.replit.app/pdfs/Density%2CUpthrust%26ViscousDrag.pdf"
+      },
+      {
+        "t": "Forces & Momentum",
+        "u": "https://studyhubIAL.replit.app/pdfs/Forces%26Momentum.pdf"
+      },
+      {
+        "t": "Materials (scanned) — pack 1",
+        "u": "https://studyhubIAL.replit.app/pdfs/MaterialsQP1.pdf"
+      },
+      {
+        "t": "Materials (scanned) — pack 2",
+        "u": "https://studyhubIAL.replit.app/pdfs/MaterialsQP2.pdf"
+      },
+      {
+        "t": "Materials (scanned) — pack 3",
+        "u": "https://studyhubIAL.replit.app/pdfs/MaterialsQP3.pdf"
+      },
+      {
+        "t": "Materials (scanned) — pack 4",
+        "u": "https://studyhubIAL.replit.app/pdfs/MaterialsQP4.pdf"
+      },
+      {
+        "t": "Materials (scanned) — pack 5",
+        "u": "https://studyhubIAL.replit.app/pdfs/MaterialsQP5.pdf"
+      },
+      {
+        "t": "Materials (scanned) — pack 6",
+        "u": "https://studyhubIAL.replit.app/pdfs/MaterialsQP6.pdf"
+      }
+    ],
+    "WPH12": [
+      {
+        "t": "Waves, Electrons & Photons",
+        "u": "https://studyhubIAL.replit.app/pdfs/Waves%2CElectrons%26Photons.pdf"
+      },
+      {
+        "t": "Interference & Stationary Waves",
+        "u": "https://studyhubIAL.replit.app/pdfs/Interference%26StationaryWaves.pdf"
+      },
+      {
+        "t": "Current, Potential Difference, Resistance & Power",
+        "u": "https://studyhubIAL.replit.app/pdfs/Current%2CPotentialDifference%2Cresistance%26power.pdf"
+      },
+      {
+        "t": "Resistance, Resistivity & Potential Dividers",
+        "u": "https://studyhubIAL.replit.app/pdfs/Resistance%2CResistivity%26Potential.pdf"
+      },
+      {
+        "t": "Waves (scanned)",
+        "u": "https://studyhubIAL.replit.app/pdfs/waves1.pdf"
+      }
+    ],
+    "WPH13": [
+      {
+        "t": "Practical Skills I: Planning",
+        "u": "https://studyhubIAL.replit.app/pdfs/PracticalSkillsPlanning.pdf"
+      },
+      {
+        "t": "Practical Skills I: Implementation & Measurements",
+        "u": "https://studyhubIAL.replit.app/pdfs/PracticalSkillsImplementation%26.pdf"
+      },
+      {
+        "t": "Practical Skills I: Processing Results",
+        "u": "https://studyhubIAL.replit.app/pdfs/PracticalSkills%20IProcessingResults.pdf"
+      }
+    ],
+    "WPH14": [
+      {
+        "t": "Circular Motion",
+        "u": "https://studyhubIAL.replit.app/pdfs/CircularMotion.pdf"
+      },
+      {
+        "t": "Electric Fields",
+        "u": "https://studyhubIAL.replit.app/pdfs/ElectricFields.pdf"
+      },
+      {
+        "t": "Capacitance",
+        "u": "https://studyhubIAL.replit.app/pdfs/Capacitance.pdf"
+      },
+      {
+        "t": "Magnetic Fields",
+        "u": "https://studyhubIAL.replit.app/pdfs/MagneticFields.pdf"
+      },
+      {
+        "t": "Particle Interactions & Conservation",
+        "u": "https://studyhubIAL.replit.app/pdfs/ParticleInteractions%26Conservation.pdf"
+      },
+      {
+        "t": "Nuclear Fusion & Fission",
+        "u": "https://studyhubIAL.replit.app/pdfs/NuclearFusion%26Fission.pdf"
+      }
+    ],
+    "WPH15": [
+      {
+        "t": "Thermal Energy Transfer",
+        "u": "https://studyhubIAL.replit.app/pdfs/ThermalEnergyTransfer.pdf"
+      },
+      {
+        "t": "Gravitational Fields",
+        "u": "https://studyhubIAL.replit.app/pdfs/GravitationalFields.pdf"
+      },
+      {
+        "t": "Astronomy",
+        "u": "https://studyhubIAL.replit.app/pdfs/Astronomy.pdf"
+      },
+      {
+        "t": "Black Body Radiation",
+        "u": "https://studyhubIAL.replit.app/pdfs/BlackBodyRadiation.pdf"
+      },
+      {
+        "t": "Cosmology",
+        "u": "https://studyhubIAL.replit.app/pdfs/Cosmology.pdf"
+      }
+    ],
+    "WPH16": [
+      {
+        "t": "Practical Skills II: Planning",
+        "u": "https://studyhubIAL.replit.app/pdfs/PracticalSkills%20II-Planning.pdf"
+      },
+      {
+        "t": "Practical Skills II: Implementation & Measurements",
+        "u": "https://studyhubIAL.replit.app/pdfs/PracticalSkills%20II-Implementation%26%20Measurements.pdf"
+      },
+      {
+        "t": "Practical Skills II: Analysis",
+        "u": "https://studyhubIAL.replit.app/pdfs/PracticalSkills%20II-Analysis.pdf"
+      }
+    ],
+    "WCH11": [
+      {
+        "t": "Amount of Substance",
+        "u": "https://studyhubIAL.replit.app/pdfs/AmountofSubstance.pdf"
+      },
+      {
+        "t": "Atomic Structure",
+        "u": "https://studyhubIAL.replit.app/pdfs/AtomicStructure.pdf"
+      },
+      {
+        "t": "Electrons & Ions",
+        "u": "https://studyhubIAL.replit.app/pdfs/Electrons%26Ions.pdf"
+      },
+      {
+        "t": "Ionic & Metallic Bonding & Structure",
+        "u": "https://studyhubIAL.replit.app/pdfs/Ionic%26MetallicBonding%26Structure.pdf"
+      },
+      {
+        "t": "Covalent Bonding & Structure",
+        "u": "https://studyhubIAL.replit.app/pdfs/CovalentBonding%26Structure.pdf"
+      },
+      {
+        "t": "Unit 1 scanned pack A",
+        "u": "https://studyhubIAL.replit.app/pdfs/CH11Aphy.pdf"
+      },
+      {
+        "t": "Unit 1 scanned pack B",
+        "u": "https://studyhubIAL.replit.app/pdfs/CH11Bphy.pdf"
+      }
+    ],
+    "WCH12": [
+      {
+        "t": "Alkanes",
+        "u": "https://studyhubIAL.replit.app/pdfs/Alkanes.pdf"
+      },
+      {
+        "t": "Alkenes",
+        "u": "https://studyhubIAL.replit.app/pdfs/Alkenes.pdf"
+      }
+    ],
+    "WCH14": [
+      {
+        "t": "Kinetics",
+        "u": "https://studyhubIAL.replit.app/pdfs/ch41.pdf"
+      },
+      {
+        "t": "Entropy",
+        "u": "https://studyhubIAL.replit.app/pdfs/ch42.pdf"
+      },
+      {
+        "t": "Energetics",
+        "u": "https://studyhubIAL.replit.app/pdfs/ch43.pdf"
+      },
+      {
+        "t": "Chemical Equilibria",
+        "u": "https://studyhubIAL.replit.app/pdfs/ch44.pdf"
+      },
+      {
+        "t": "Acid-base Equilibria",
+        "u": "https://studyhubIAL.replit.app/pdfs/ch45.pdf"
+      },
+      {
+        "t": "Organic Chemistry: Chirality",
+        "u": "https://studyhubIAL.replit.app/pdfs/ch46.pdf"
+      },
+      {
+        "t": "Organic Chemistry: Carbonyls",
+        "u": "https://studyhubIAL.replit.app/pdfs/ch47.pdf"
+      },
+      {
+        "t": "Organic Chemistry: Carboxylic Acids",
+        "u": "https://studyhubIAL.replit.app/pdfs/ch48.pdf"
+      }
+    ],
+    "WCH15": [
+      {
+        "t": "Redox Equilibria",
+        "u": "https://studyhubIAL.replit.app/pdfs/ch51.pdf"
+      },
+      {
+        "t": "Transition Metals & Complexes",
+        "u": "https://studyhubIAL.replit.app/pdfs/ch52.pdf"
+      },
+      {
+        "t": "Transition Metal Reactions",
+        "u": "https://studyhubIAL.replit.app/pdfs/ch53.pdf"
+      },
+      {
+        "t": "Organic Chemistry: Arenes",
+        "u": "https://studyhubIAL.replit.app/pdfs/ch54.pdf"
+      },
+      {
+        "t": "Organic Chemistry: Nitrogen Compounds",
+        "u": "https://studyhubIAL.replit.app/pdfs/ch55.pdf"
+      },
+      {
+        "t": "Organic Synthesis",
+        "u": "https://studyhubIAL.replit.app/pdfs/ch56.pdf"
+      }
+    ],
+    "WCH16": [
+      {
+        "t": "Advanced Physical Chemistry Core Practicals",
+        "u": "https://studyhubIAL.replit.app/pdfs/ch61.pdf"
+      },
+      {
+        "t": "Advanced Inorganic & Organic Chemistry Core Practicals",
+        "u": "https://studyhubIAL.replit.app/pdfs/ch62.pdf"
+      }
+    ],
+    "WBI11": [
+      {
+        "t": "Biological Molecules",
+        "u": "https://studyhubIAL.replit.app/pdfs/water.pdf"
+      },
+      {
+        "t": "Cell Structure & Organisation",
+        "u": "https://studyhubIAL.replit.app/pdfs/cell.pdf"
+      },
+      {
+        "t": "Diet & Health",
+        "u": "https://studyhubIAL.replit.app/pdfs/diet.pdf"
+      },
+      {
+        "t": "DNA & Gene Expression",
+        "u": "https://studyhubIAL.replit.app/pdfs/dna.pdf"
+      }
+    ],
+    "WBI12": [
+      {
+        "t": "Plant Structure & Function",
+        "u": "https://studyhubIAL.replit.app/pdfs/plant.pdf"
+      },
+      {
+        "t": "Classification & Biodiversity",
+        "u": "https://studyhubIAL.replit.app/pdfs/Biodiversity.pdf"
+      },
+      {
+        "t": "Plants & Conservation",
+        "u": "https://studyhubIAL.replit.app/pdfs/Conservation.pdf"
+      }
+    ],
+    "WBI14": [
+      {
+        "t": "Plants & Bacterial Growth",
+        "u": "https://studyhubIAL.replit.app/pdfs/Bacterial.pdf"
+      },
+      {
+        "t": "Photosynthesis",
+        "u": "https://studyhubIAL.replit.app/pdfs/bio51.pdf"
+      },
+      {
+        "t": "Ecosystems",
+        "u": "https://studyhubIAL.replit.app/pdfs/bio52.pdf"
+      },
+      {
+        "t": "Environmental Biology",
+        "u": "https://studyhubIAL.replit.app/pdfs/bio53.pdf"
+      },
+      {
+        "t": "Microbiology",
+        "u": "https://studyhubIAL.replit.app/pdfs/bio61.pdf"
+      },
+      {
+        "t": "Immunity",
+        "u": "https://studyhubIAL.replit.app/pdfs/bio62.pdf"
+      },
+      {
+        "t": "Antibiotics",
+        "u": "https://studyhubIAL.replit.app/pdfs/bio63.pdf"
+      },
+      {
+        "t": "Decomposition & Decay",
+        "u": "https://studyhubIAL.replit.app/pdfs/bio64.pdf"
+      },
+      {
+        "t": "Forensics",
+        "u": "https://studyhubIAL.replit.app/pdfs/bio65.pdf"
+      }
+    ],
+    "WBI15": [
+      {
+        "t": "Inheritance",
+        "u": "https://studyhubIAL.replit.app/pdfs/gene.pdf"
+      },
+      {
+        "t": "Respiration",
+        "u": "https://studyhubIAL.replit.app/pdfs/bio71.pdf"
+      },
+      {
+        "t": "Muscular Movement",
+        "u": "https://studyhubIAL.replit.app/pdfs/bio72.pdf"
+      },
+      {
+        "t": "The Internal Environment",
+        "u": "https://studyhubIAL.replit.app/pdfs/bio73.pdf"
+      },
+      {
+        "t": "The Nervous System",
+        "u": "https://studyhubIAL.replit.app/pdfs/bio81.pdf"
+      },
+      {
+        "t": "Plant Hormones",
+        "u": "https://studyhubIAL.replit.app/pdfs/bio82.pdf"
+      },
+      {
+        "t": "The Brain",
+        "u": "https://studyhubIAL.replit.app/pdfs/bio83.pdf"
+      },
+      {
+        "t": "Gene Technology",
+        "u": "https://studyhubIAL.replit.app/pdfs/bio84.pdf"
+      }
+    ],
+    "WMA11": [
+      {
+        "t": "Laws of Indices & Surds",
+        "u": "https://studyhubIAL.replit.app/pdfs/p11.pdf"
+      },
+      {
+        "t": "Quadratics",
+        "u": "https://studyhubIAL.replit.app/pdfs/p12.pdf"
+      },
+      {
+        "t": "Simultaneous Equations",
+        "u": "https://studyhubIAL.replit.app/pdfs/p13.pdf"
+      },
+      {
+        "t": "Inequalities",
+        "u": "https://studyhubIAL.replit.app/pdfs/p14.pdf"
+      },
+      {
+        "t": "Radian Measure",
+        "u": "https://studyhubIAL.replit.app/pdfs/p120.pdf"
+      },
+      {
+        "t": "Trigonometric Functions",
+        "u": "https://studyhubIAL.replit.app/pdfs/p121.pdf"
+      },
+      {
+        "t": "Differentiation",
+        "u": "https://studyhubIAL.replit.app/pdfs/p122.pdf"
+      },
+      {
+        "t": "Integration",
+        "u": "https://studyhubIAL.replit.app/pdfs/p123.pdf"
+      }
+    ],
+    "WMA12": [
+      {
+        "t": "Proof",
+        "u": "https://studyhubIAL.replit.app/pdfs/p21.pdf"
+      },
+      {
+        "t": "Polynomials",
+        "u": "https://studyhubIAL.replit.app/pdfs/p22.pdf"
+      },
+      {
+        "t": "Circles",
+        "u": "https://studyhubIAL.replit.app/pdfs/p23.pdf"
+      },
+      {
+        "t": "Binomial Expansion",
+        "u": "https://studyhubIAL.replit.app/pdfs/p24.pdf"
+      },
+      {
+        "t": "Arithmetic Sequences & Series",
+        "u": "https://studyhubIAL.replit.app/pdfs/p25.pdf"
+      },
+      {
+        "t": "Trigonometric Equations",
+        "u": "https://studyhubIAL.replit.app/pdfs/p210.pdf"
+      },
+      {
+        "t": "Applications of Differentiation",
+        "u": "https://studyhubIAL.replit.app/pdfs/p211.pdf"
+      },
+      {
+        "t": "Integration",
+        "u": "https://studyhubIAL.replit.app/pdfs/p212.pdf"
+      }
+    ],
+    "WMA13": [
+      {
+        "t": "Rational Expressions",
+        "u": "https://studyhubIAL.replit.app/pdfs/p31.pdf"
+      },
+      {
+        "t": "Functions",
+        "u": "https://studyhubIAL.replit.app/pdfs/p32.pdf"
+      },
+      {
+        "t": "Combinations of Transformations",
+        "u": "https://studyhubIAL.replit.app/pdfs/p33.pdf"
+      },
+      {
+        "t": "Reciprocal & Inverse Trigonometric Functions",
+        "u": "https://studyhubIAL.replit.app/pdfs/p34.pdf"
+      },
+      {
+        "t": "Compound & Double Angle Formulae",
+        "u": "https://studyhubIAL.replit.app/pdfs/p35.pdf"
+      },
+      {
+        "t": "Further Differentiation",
+        "u": "https://studyhubIAL.replit.app/pdfs/p310.pdf"
+      },
+      {
+        "t": "Further Integration",
+        "u": "https://studyhubIAL.replit.app/pdfs/p311.pdf"
+      },
+      {
+        "t": "Numerical Methods",
+        "u": "https://studyhubIAL.replit.app/pdfs/p312.pdf"
+      }
+    ],
+    "WMA14": [
+      {
+        "t": "Proof by Contradiction",
+        "u": "https://studyhubIAL.replit.app/pdfs/p41.pdf"
+      },
+      {
+        "t": "Partial Fractions",
+        "u": "https://studyhubIAL.replit.app/pdfs/p42.pdf"
+      },
+      {
+        "t": "General Binomial Expansion",
+        "u": "https://studyhubIAL.replit.app/pdfs/p43.pdf"
+      },
+      {
+        "t": "Further Applications of Differentiation",
+        "u": "https://studyhubIAL.replit.app/pdfs/p44.pdf"
+      },
+      {
+        "t": "Implicit Differentiation",
+        "u": "https://studyhubIAL.replit.app/pdfs/p45.pdf"
+      },
+      {
+        "t": "Vectors in 2D",
+        "u": "https://studyhubIAL.replit.app/pdfs/p410.pdf"
+      },
+      {
+        "t": "Vectors in 3D",
+        "u": "https://studyhubIAL.replit.app/pdfs/p411.pdf"
+      },
+      {
+        "t": "Vector Equations of Lines & The Scalar Product",
+        "u": "https://studyhubIAL.replit.app/pdfs/p412.pdf"
+      }
+    ],
+    "WME01": [
+      {
+        "t": "Quantities, Units & Modelling",
+        "u": "https://studyhubIAL.replit.app/pdfs/m11.pdf"
+      },
+      {
+        "t": "Working with Vectors",
+        "u": "https://studyhubIAL.replit.app/pdfs/m12.pdf"
+      },
+      {
+        "t": "Kinematics Graphs",
+        "u": "https://studyhubIAL.replit.app/pdfs/m13.pdf"
+      },
+      {
+        "t": "Constant Acceleration in 1D",
+        "u": "https://studyhubIAL.replit.app/pdfs/m14.pdf"
+      },
+      {
+        "t": "Constant Acceleration in 2D",
+        "u": "https://studyhubIAL.replit.app/pdfs/m15.pdf"
+      },
+      {
+        "t": "Forces",
+        "u": "https://studyhubIAL.replit.app/pdfs/m16.pdf"
+      },
+      {
+        "t": "Newton's Second Law",
+        "u": "https://studyhubIAL.replit.app/pdfs/m17.pdf"
+      },
+      {
+        "t": "Moments",
+        "u": "https://studyhubIAL.replit.app/pdfs/m110.pdf"
+      }
+    ],
+    "WST01": [
+      {
+        "t": "Statistical Measures",
+        "u": "https://studyhubIAL.replit.app/pdfs/s11.pdf"
+      },
+      {
+        "t": "Working with Data",
+        "u": "https://studyhubIAL.replit.app/pdfs/s12.pdf"
+      },
+      {
+        "t": "Correlation & Regression",
+        "u": "https://studyhubIAL.replit.app/pdfs/s13.pdf"
+      },
+      {
+        "t": "Basic Probability",
+        "u": "https://studyhubIAL.replit.app/pdfs/s14.pdf"
+      },
+      {
+        "t": "Further Probability",
+        "u": "https://studyhubIAL.replit.app/pdfs/s15.pdf"
+      },
+      {
+        "t": "Discrete Random Variables",
+        "u": "https://studyhubIAL.replit.app/pdfs/s16.pdf"
+      },
+      {
+        "t": "Normal Distribution",
+        "u": "https://studyhubIAL.replit.app/pdfs/s17.pdf"
+      }
+    ]
+  }
+}
