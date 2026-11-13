@@ -90,16 +90,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma11-01-que-20251010.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma11-01-que-20251010.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma11-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma11-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma11-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma11-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -108,16 +108,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma11-01a-que-20251010.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma11-01a-que-20251010.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma11-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma11-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma11-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma11-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -580,16 +580,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma12-01-que-20251016.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma12-01-que-20251016.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma12-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma12-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma12-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma12-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -598,16 +598,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma12-01a-que-20251016.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma12-01a-que-20251016.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma12-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma12-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma12-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma12-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -1052,16 +1052,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01-que-20251022.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-que-20251022.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -1070,16 +1070,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01a-que-20251022.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01a-que-20251022.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma13-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma13-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -1470,16 +1470,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01-que-20251029.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-que-20251029.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -1488,16 +1488,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01a-que-20251029.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01a-que-20251029.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wma14-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wma14-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -1870,16 +1870,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme01-01-que-20251014.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme01-01-que-20251014.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme01-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme01-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme01-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme01-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -1888,16 +1888,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme01-01a-que-20251014.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme01-01a-que-20251014.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme01-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme01-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme01-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme01-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -2324,16 +2324,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme02-01-que-20251024.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme02-01-que-20251024.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme02-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme02-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme02-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme02-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -2342,16 +2342,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme02-01a-que-20251024.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme02-01a-que-20251024.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme02-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme02-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wme02-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wme02-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -3142,16 +3142,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst01-01-que-20251018.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst01-01-que-20251018.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst01-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst01-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst01-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst01-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -3160,16 +3160,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst01-01a-que-20251018.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst01-01a-que-20251018.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst01-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst01-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst01-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst01-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -3596,16 +3596,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst02-01-que-20251101.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst02-01-que-20251101.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst02-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst02-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst02-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst02-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -3614,16 +3614,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst02-01a-que-20251101.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst02-01a-que-20251101.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst02-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst02-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/mathematics/2018/exam-materials/wst02-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Mathematics/2018/Exam-materials/wst02-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -4366,16 +4366,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph11-01-que-20251009.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph11-01-que-20251009.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph11-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph11-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph11-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph11-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -4384,16 +4384,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph11-01a-que-20251009.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph11-01a-que-20251009.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph11-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph11-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph11-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph11-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -4820,16 +4820,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph12-01-que-20251016.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph12-01-que-20251016.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph12-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph12-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph12-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph12-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -4838,16 +4838,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph12-01a-que-20251016.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph12-01a-que-20251016.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph12-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph12-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph12-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph12-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -5256,16 +5256,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph13-01-que-20251018.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph13-01-que-20251018.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph13-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph13-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph13-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph13-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -5274,16 +5274,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph13-01a-que-20251018.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph13-01a-que-20251018.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph13-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph13-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph13-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph13-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -5692,16 +5692,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph14-01-que-20251022.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph14-01-que-20251022.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph14-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph14-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph14-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph14-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -5710,16 +5710,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph14-01a-que-20251022.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph14-01a-que-20251022.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph14-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph14-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph14-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph14-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -6089,16 +6089,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph15-01-que-20251029.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph15-01-que-20251029.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph15-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph15-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph15-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph15-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -6111,12 +6111,12 @@
                 "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph15-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph15-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph15-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph15-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -6471,16 +6471,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph16-01-que-20251031.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph16-01-que-20251031.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph16-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph16-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph16-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph16-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -6489,16 +6489,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph16-01a-que-20251031.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph16-01a-que-20251031.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph16-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph16-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/physics/2018/exam-materials/wph16-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Physics/2018/Exam-materials/wph16-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -6859,16 +6859,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch11-01-que-20251010.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch11-01-que-20251010.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch11-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch11-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch11-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch11-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -6877,16 +6877,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch11-01a-que-20251010.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch11-01a-que-20251010.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch11-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch11-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch11-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch11-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -7007,8 +7007,8 @@
                 "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch11-01-rms-20230817.pdf",
-                "gated": true
+                "url": "https://www.alevelcopilot.com/whfile/cf/22/e7/f0/cc/d2/d9/30/d8/a6/40/7f/60/36/43/fa.pdf",
+                "gated": false
               },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch11-01-pef-20230817.pdf",
@@ -7313,16 +7313,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch12-01-que-20251014.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch12-01-que-20251014.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch12-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch12-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch12-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch12-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -7331,16 +7331,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch12-01a-que-20251014.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch12-01a-que-20251014.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch12-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch12-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch12-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch12-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -7767,16 +7767,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch13-01-que-20251021.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch13-01-que-20251021.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch13-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch13-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch13-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch13-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -7785,16 +7785,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch13-01a-que-20251021.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch13-01a-que-20251021.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch13-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch13-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch13-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch13-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -8221,16 +8221,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch14-01-que-20251023.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch14-01-que-20251023.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch14-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch14-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch14-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch14-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -8239,16 +8239,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch14-01a-que-20251023.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch14-01a-que-20251023.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch14-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch14-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch14-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch14-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -8621,16 +8621,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch15-01-que-20251025.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch15-01-que-20251025.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch15-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch15-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch15-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch15-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -8639,16 +8639,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch15-01a-que-20251025.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch15-01a-que-20251025.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch15-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch15-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch15-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch15-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -9021,16 +9021,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch16-01-que-20251101.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch16-01-que-20251101.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch16-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch16-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch16-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch16-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -9039,16 +9039,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch16-01a-que-20251101.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch16-01a-que-20251101.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch16-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch16-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch16-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch16-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -9151,8 +9151,8 @@
                 "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/chemistry/2018/exam-materials/wch16-01-rms-20240118.pdf",
-                "gated": true
+                "url": "https://www.alevelcopilot.com/whfile/e2/2a/f6/45/8a/d6/04/2d/59/2a/fe/f1/3c/92/63/8d.pdf",
+                "gated": false
               },
               "er": {
                 "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Chemistry/2018/Exam-materials/wch16-01-pef-20240118.pdf",
@@ -9409,16 +9409,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi11-01-que-20251011.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi11-01-que-20251011.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi11-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi11-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi11-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi11-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -9427,16 +9427,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi11-01a-que-20251011.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi11-01a-que-20251011.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi11-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi11-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi11-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi11-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -9863,16 +9863,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi12-01-que-20251015.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi12-01-que-20251015.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi12-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi12-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi12-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi12-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -9881,16 +9881,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi12-01a-que-20251015.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi12-01a-que-20251015.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi12-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi12-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi12-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi12-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -10299,16 +10299,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi13-01-que-20251017.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi13-01-que-20251017.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi13-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi13-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi13-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi13-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -10317,16 +10317,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi13-01a-que-20251017.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi13-01a-que-20251017.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi13-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi13-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi13-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi13-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -10735,16 +10735,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi14-01-que-20251024.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi14-01-que-20251024.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi14-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi14-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi14-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi14-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -10753,16 +10753,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi14-01a-que-20251024.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi14-01a-que-20251024.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi14-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi14-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi14-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi14-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -11135,16 +11135,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi15-01-que-20251028.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi15-01-que-20251028.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi15-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi15-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi15-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi15-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -11153,16 +11153,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi15-01a-que-20251028.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi15-01a-que-20251028.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi15-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi15-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi15-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi15-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -11517,16 +11517,16 @@
               "year": 2025,
               "variant": null,
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi16-01-que-20251030.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi16-01-que-20251030.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi16-01-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi16-01-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi16-01-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi16-01-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
@@ -11535,16 +11535,16 @@
               "year": 2025,
               "variant": "A",
               "qp": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi16-01a-que-20251030.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi16-01a-que-20251030.pdf",
+                "gated": false
               },
               "ms": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi16-01a-rms-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi16-01a-rms-20260122.pdf",
+                "gated": false
               },
               "er": {
-                "url": "https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-advanced-level/biology/2018/exam-materials/wbi16-01a-pef-20260122.pdf",
-                "gated": true
+                "url": "https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi16-01a-pef-20260122.pdf",
+                "gated": false
               }
             },
             {
