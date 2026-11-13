@@ -49,6 +49,9 @@ export default async function SubjectPage({ params }: { params: Promise<{ subjec
         <Link href={`/${subject}/notes`} className="doc-btn h-9 inline-flex items-center">
           Revision notes ↗
         </Link>
+        <Link href={`/${subject}/videos`} className="doc-btn h-9 inline-flex items-center">
+          Video library ↗
+        </Link>
       </div>
 
       {catalogue ? (

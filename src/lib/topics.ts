@@ -1,5 +1,6 @@
 import topicsJson from "@/data/topics.json";
-import topicalPdfsJson from "@/data/topical-pdfs.json";
+import notesPdfsJson from "@/data/notes-pdfs.json";
+import topicalPapersJson from "@/data/topical-papers.json";
 import type { SubjectKey } from "@/lib/subjects";
 
 /**
@@ -81,42 +82,77 @@ export function topicalBankUrl(subject: SubjectKey, unit: TopicUnit): string {
 }
 
 /**
- * Topical paper compilations for a unit — physical PDF files produced by
- * StudyHub IAL and served from their site; Paprivo deep-links to the
- * original files rather than hosting copies.
+ * Revision notes PDFs — published by StudyHub IAL and deep-linked, never
+ * re-hosted. Built by scripts/build-notes-pdfs.mjs; units without a
+ * published pack simply have no entry.
  */
-export interface TopicalPaper {
+export interface NotesPdf {
   title: string;
   url: string;
+  source: string;
 }
 
-interface TopicalPdfsData {
+interface NotesPdfsData {
   generatedAt: string;
   source: string;
-  units: Record<string, Array<{ t: string; u: string }>>;
+  units: Record<string, NotesPdf[]>;
 }
 
-const pdfsData = topicalPdfsJson as unknown as TopicalPdfsData;
+const notesData = notesPdfsJson as unknown as NotesPdfsData;
 
-export const TOPICAL_PAPERS_SOURCE = pdfsData.source;
+export const NOTES_PDFS_SOURCE = notesData.source;
 
-const topicalPapersByUnit = new Map(
-  Object.entries(pdfsData.units).map(([code, packs]) => [
-    code,
-    packs.map((p) => ({ title: p.t, url: p.u })),
-  ]),
-);
+export function notesPdfsOf(unitCode: string): NotesPdf[] {
+  return notesData.units[unitCode.toUpperCase()] ?? [];
+}
 
-export function topicalPapersOf(unitCode: string): TopicalPaper[] {
-  return topicalPapersByUnit.get(unitCode.toUpperCase()) ?? [];
+/**
+ * Topical question packs — one PDF per specification topic, with a mark
+ * scheme where StudyHub publishes one. Notes are deliberately not included
+ * here; they live in notes-pdfs.json.
+ */
+export interface TopicalPackFile {
+  label: string;
+  kind: "qp" | "ms" | "scanned";
+  url: string;
+  source?: string;
+}
+
+export interface TopicalPackGroup {
+  /** Where the packs come from; a unit can mix sources. */
+  source: string;
+  topic: string;
+  files: TopicalPackFile[];
+}
+
+interface TopicalPapersData {
+  generatedAt: string;
+  source: string;
+  units: Record<
+    string,
+    Array<{ topic: string; label: string; kind: TopicalPackFile["kind"]; url: string; source?: string }>
+  >;
+}
+
+const topicalPapersData = topicalPapersJson as unknown as TopicalPapersData;
+
+export const TOPICAL_PACKS_SOURCE = topicalPapersData.source;
+
+/** Packs for a unit, grouped by topic (topics keep the build's ordering). */
+export function topicalPacksOf(unitCode: string): TopicalPackGroup[] {
+  const packs = topicalPapersData.units[unitCode.toUpperCase()] ?? [];
+  const groups: TopicalPackGroup[] = [];
+  for (const pack of packs) {
+    const source = pack.source ?? "StudyHub IAL";
+    const file = { label: pack.label, kind: pack.kind, url: pack.url, source };
+    const group = groups.find((g) => g.source === source && g.topic === pack.topic);
+    if (group) group.files.push(file);
+    else groups.push({ source, topic: pack.topic, files: [file] });
+  }
+  return groups;
 }
 
 export function topicalQuestionSearchUrl(unit: TopicUnit, topicName: string): string {
   const q = `${unit.code} ${topicName} questions walkthrough IAL`;
-  return `https://www.youtube.com/results?search_query=${encodeURIComponent(q)}`;
-}
-
-export function topicalReviewSearchUrl(unit: TopicUnit): string {
-  const q = `${unit.code} ${unit.name} walkthrough IAL`;
   return `https://www.youtube.com/results?search_query=${encodeURIComponent(q)}`;
 }

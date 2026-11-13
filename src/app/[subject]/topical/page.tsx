@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { isSubjectKey, SUBJECTS } from "@/lib/subjects";
-import { topicUnitsOf } from "@/lib/topics";
+import { topicUnitsOf, topicalPacksOf } from "@/lib/topics";
 
 interface Props {
   params: Promise<{ subject: string }>;
@@ -51,6 +51,10 @@ export default async function TopicalHubPage({ params }: Props) {
             </div>
             <p className="text-sm text-muted mt-1">
               {unit.topics.length} topic{unit.topics.length === 1 ? "" : "s"} · practice &amp; notes
+              {(() => {
+                const packs = topicalPacksOf(unit.code).length;
+                return packs > 0 ? ` · ${packs} question pack${packs === 1 ? "" : "s"}` : "";
+              })()}
             </p>
           </Link>
         ))}

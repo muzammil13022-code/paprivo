@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { subjectList } from "@/lib/subjects";
-import { topicUnitsOf } from "@/lib/topics";
+import { notesPdfsOf, topicUnitsOf } from "@/lib/topics";
 
 export const metadata: Metadata = {
   title: "Revision notes",
   description:
-    "Short, spec-aligned revision notes for every Pearson Edexcel IAL unit — Mathematics, Physics, Chemistry and Biology.",
+    "Downloadable revision notes for every Pearson Edexcel IAL unit — Mathematics, Physics, Chemistry and Biology, split by specification topic.",
 };
 
 export default function NotesPage() {
@@ -15,15 +15,15 @@ export default function NotesPage() {
       <header>
         <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">Revision notes</h1>
         <p className="text-muted mt-1 max-w-2xl">
-          Concise notes for every unit — key ideas, formulas and exam phrasing to refresh
-          before practising questions.
+          Full notes for every unit, split by specification topic and published as PDFs — read
+          them offline, then practise the matching questions.
         </p>
       </header>
 
       <div className="grid gap-3 sm:grid-cols-2">
         {subjectList.map((subject) => {
           const units = topicUnitsOf(subject.key);
-          const noteCount = units.reduce((n, u) => n + u.topics.length, 0);
+          const pdfCount = units.reduce((n, u) => n + notesPdfsOf(u.code).length, 0);
           return (
             <Link
               key={subject.key}
@@ -40,7 +40,7 @@ export default function NotesPage() {
                 <span className="text-xs text-muted">{units.length} units</span>
               </div>
               <p className="text-sm text-muted mt-1">
-                {noteCount} topic summaries · links to full notes
+                {pdfCount > 0 ? `${pdfCount} notes PDF${pdfCount === 1 ? "" : "s"}` : "Notes PDFs coming soon"}
               </p>
             </Link>
           );

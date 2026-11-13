@@ -7,9 +7,7 @@ import {
   topicUnitOf,
   topicalBankUrl,
   topicalQuestionSearchUrl,
-  topicalReviewSearchUrl,
-  topicalPapersOf,
-  TOPICAL_PAPERS_SOURCE,
+  topicalPacksOf,
   type TopicUnit,
 } from "@/lib/topics";
 import type { SubjectKey } from "@/lib/subjects";
@@ -82,14 +80,6 @@ export default async function TopicalUnitPage({ params }: Props) {
         >
           Questions by topic ↗
         </a>
-        <a
-          className="doc-btn h-9 inline-flex items-center"
-          href={topicalReviewSearchUrl(unitData)}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full-paper walkthroughs 🎥
-        </a>
         <Link
           className="doc-btn h-9 inline-flex items-center"
           href={`/${subject}/notes/${unitData.code.toLowerCase()}`}
@@ -97,6 +87,8 @@ export default async function TopicalUnitPage({ params }: Props) {
           Revision notes for this unit
         </Link>
       </div>
+
+      <TopicalPacksSection unitCode={unitData.code} unitName={unitData.name} />
 
       <section className="space-y-3">
         <h2 className="text-lg font-semibold">Topics</h2>
@@ -112,8 +104,6 @@ export default async function TopicalUnitPage({ params }: Props) {
           ))}
         </ul>
       </section>
-
-      <TopicalPapersSection unitCode={unitData.code} unitName={unitData.name} />
 
       {recentPapers.length > 0 && (
         <section className="space-y-3">
@@ -152,45 +142,56 @@ export default async function TopicalUnitPage({ params }: Props) {
   );
 }
 
-function slugify(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
-
-function TopicalPapersSection({
-  unitCode,
-  unitName,
-}: {
-  unitCode: string;
-  unitName: string;
-}) {
-  const papers = topicalPapersOf(unitCode);
-  if (papers.length === 0) return null;
+function TopicalPacksSection({ unitCode, unitName }: { unitCode: string; unitName: string }) {
+  const groups = topicalPacksOf(unitCode);
+  if (groups.length === 0) return null;
+  const sourceGroups: Array<{ source: string; groups: typeof groups }> = [];
+  for (const group of groups) {
+    const bucket = sourceGroups.find((s) => s.source === group.source);
+    if (bucket) bucket.groups.push(group);
+    else sourceGroups.push({ source: group.source, groups: [group] });
+  }
   return (
     <section className="space-y-3">
-      <h2 className="text-lg font-semibold">Topical papers (PDF)</h2>
+      <h2 className="text-lg font-semibold">Topical question packs (PDF)</h2>
       <p className="text-sm text-muted max-w-2xl">
-        Topic-by-topic question packs for {unitName} — questions drawn from past
-        sessions, grouped by topic. Download and use alongside the mark schemes.
+        Past-session questions for {unitName}, separated by specification topic — one PDF per
+        topic. Mark schemes are listed alongside the pack they belong to.
       </p>
-      <ul className="grid gap-2 sm:grid-cols-2">
-        {papers.map((paper) => (
-          <li key={paper.url}>
-            <a
-              className="card-interactive flex items-center justify-between gap-3 rounded-xl border border-card-border bg-card p-3 shadow-card-sm"
-              href={paper.url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="font-medium">{paper.title}</span>
-              <span className="text-xs text-muted whitespace-nowrap">PDF ↗</span>
-            </a>
-          </li>
-        ))}
-      </ul>
-      <p className="text-xs text-muted">{TOPICAL_PAPERS_SOURCE}</p>
+      {sourceGroups.map(({ source, groups: sourceGroupsOf }) => (
+        <div key={source} className="space-y-2">
+          <h3 className="text-sm font-medium text-muted">{source}</h3>
+          <ul className="grid gap-2 sm:grid-cols-2">
+            {sourceGroupsOf.map((group) => (
+              <li
+                key={`${group.source}-${group.topic}`}
+                className="rounded-xl border border-white/10 bg-white/[0.03] p-3"
+              >
+                <p className="text-sm font-medium">{group.topic}</p>
+                <div className="mt-2 flex flex-wrap gap-1.5">
+                  {group.files.map((file) => (
+                    <a
+                      key={file.url}
+                      className="doc-btn"
+                      href={file.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {file.label} ↗
+                    </a>
+                  ))}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+      <p className="text-xs text-muted">
+        Questions and mark schemes from {sourceGroups.map((s) => s.source).join(" · ")}.
+        {sourceGroups.some((s) => s.source === "Rocket Revise")
+          ? " Rocket Revise packs open in Google Drive."
+          : null}
+      </p>
     </section>
   );
 }
@@ -221,7 +222,7 @@ function TopicCard({
         </a>
         <Link
           className="doc-btn"
-          href={`/${subject}/notes/${unit.code.toLowerCase()}#${slugify(name)}`}
+          href={`/${subject}/notes/${unit.code.toLowerCase()}`}
         >
           Notes
         </Link>

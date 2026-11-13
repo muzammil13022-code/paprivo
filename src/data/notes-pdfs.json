@@ -1,0 +1,836 @@
+{
+  "generatedAt": "2026-11-12T18:12:00.525Z",
+  "source": "StudyHub IAL (studyhubial.replit.app) revision notes, deep-linked",
+  "units": {
+    "WCH11": [
+      {
+        "title": "Amount of Substance | Edexcel International AS Chemistry Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/AmountofSubstance.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Atomic Structure | Edexcel International AS Chemistry Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/AtomicStructure.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Covalent Bonding & Structure | Edexcel International AS Chemistry Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/CovalentBonding%26Structure.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Ionic & Metallic Bonding & Structure | Edexcel International AS Chemistry Revision Notes 2",
+        "url": "https://studyhubIAL.replit.app/pdfs/Ionic%26MetallicBonding%26Structure.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WCH12": [
+      {
+        "title": "Alkanes | Edexcel International AS Chemistry Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/Alkanes.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Alkenes | Edexcel International AS Chemistry Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/Alkenes.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WCH13": [],
+    "WCH14": [
+      {
+        "title": "Kinetics | Edexcel International A Level (IAL) Chemistry Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/ch41.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Entropy | Edexcel International A Level (IAL) Chemistry Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/ch42.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Energetics | Edexcel International A Level (IAL) Chemistry Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/ch43.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Chemical Equilibria | Edexcel International A Level (IAL) Chemistry Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/ch44.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Acid-base Equilibria | Edexcel International A Level (IAL) Chemistry Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/ch45.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Organic Chemistry: Chirality | Edexcel International A Level (IAL) Chemistry Revision Note",
+        "url": "https://studyhubIAL.replit.app/pdfs/ch46.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Organic Chemistry: Carbonyls | Edexcel International A Level (IAL) Chemistry Revision Note",
+        "url": "https://studyhubIAL.replit.app/pdfs/ch47.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Organic Chemistry: Carboxylic Acids | Edexcel International A Level (IAL) Chemistry Revisi",
+        "url": "https://studyhubIAL.replit.app/pdfs/ch48.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WCH15": [
+      {
+        "title": "Redox Equilibria | Edexcel International A Level (IAL) Chemistry Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/ch51.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Transition Metals & Complexes | Edexcel International A Level (IAL) Chemistry Revision Not",
+        "url": "https://studyhubIAL.replit.app/pdfs/ch52.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Transition Metal Reactions | Edexcel International A Level (IAL) Chemistry Revision Notes ",
+        "url": "https://studyhubIAL.replit.app/pdfs/ch53.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Organic Chemistry: Arenes | Edexcel International A Level (IAL) Chemistry Revision Notes 2",
+        "url": "https://studyhubIAL.replit.app/pdfs/ch54.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Organic Chemistry: Nitrogen Compounds | Edexcel International A Level (IAL) Chemistry Revi",
+        "url": "https://studyhubIAL.replit.app/pdfs/ch55.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Organic Synthesis | Edexcel International A Level (IAL) Chemistry Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/ch56.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WCH16": [
+      {
+        "title": "Advanced Physical Chemistry Core Practicals | Edexcel International A Level (IAL) Chemistr",
+        "url": "https://studyhubIAL.replit.app/pdfs/ch61.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Advanced Inorganic & Organic Chemistry Core Practicals | Edexcel International A Level (IA",
+        "url": "https://studyhubIAL.replit.app/pdfs/ch62.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WPH11": [
+      {
+        "title": "Density, Upthrust & Viscous Drag | Edexcel International A Level (IAL) Physics Revision No",
+        "url": "https://studyhubIAL.replit.app/pdfs/Density%2CUpthrust%26ViscousDrag.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Forces & Momentum | Edexcel International A Level (IAL) Physics Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/Forces%26Momentum.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WPH12": [
+      {
+        "title": "Capacitance | Edexcel International A Level (IAL) Physics Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/Capacitance.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Current, Potential Difference, Resistance & Power | Edexcel International A Level (IAL) Ph",
+        "url": "https://studyhubIAL.replit.app/pdfs/Current%2CPotentialDifference%2Cresistance%26power.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Electric Fields | Edexcel International A Level (IAL) Physics Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/ElectricFields.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Interference & Stationary Waves | Edexcel International A Level (IAL) Physics Revision Not",
+        "url": "https://studyhubIAL.replit.app/pdfs/Interference%26StationaryWaves.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Resistance, Resistivity & Potential Dividers | Edexcel International A Level (IAL) Physics",
+        "url": "https://studyhubIAL.replit.app/pdfs/Resistance%2CResistivity%26Potential.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Waves, Electrons & Photons | Edexcel International A Level (IAL) Physics Revision Notes 20",
+        "url": "https://studyhubIAL.replit.app/pdfs/Waves%2CElectrons%26Photons.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "IAS Physics CH3A Basic Waves",
+        "url": "https://studyhubIAL.replit.app/pdfs/waves1.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WPH13": [
+      {
+        "title": "Practical Skills II: Analysis | Edexcel International A Level (IAL) Physics Revision Notes",
+        "url": "https://studyhubIAL.replit.app/pdfs/PracticalSkills%20II-Analysis.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Practical Skills II: Implementation & Measurements | Edexcel International A Level (IAL) P",
+        "url": "https://studyhubIAL.replit.app/pdfs/PracticalSkills%20II-Implementation%26%20Measurements.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WPH14": [
+      {
+        "title": "Circular Motion | Edexcel International A Level (IAL) Physics Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/CircularMotion.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Electric Fields | Edexcel International A Level (IAL) Physics Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/ElectricFields.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Gravitational Fields | Edexcel International A Level (IAL) Physics Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/GravitationalFields.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Magnetic Fields | Edexcel International A Level (IAL) Physics Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/MagneticFields.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Nuclear Fusion & Fission | Edexcel International A Level (IAL) Physics Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/NuclearFusion%26Fission.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Particle Interactions & Conservation | Edexcel International A Level (IAL) Physics Revisio",
+        "url": "https://studyhubIAL.replit.app/pdfs/ParticleInteractions%26Conservation.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WPH15": [
+      {
+        "title": "Astronomy | Edexcel International A Level (IAL) Physics Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/Astronomy.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Black Body Radiation | Edexcel International A Level (IAL) Physics Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/BlackBodyRadiation.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Cosmology | Edexcel International A Level (IAL) Physics Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/Cosmology.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Thermal Energy Transfer | Edexcel International A Level (IAL) Physics Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/ThermalEnergyTransfer.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WPH16": [
+      {
+        "title": "Practical Skills II: Analysis | Edexcel International A Level (IAL) Physics Revision Notes",
+        "url": "https://studyhubIAL.replit.app/pdfs/PracticalSkills%20II-Analysis.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Practical Skills II: Implementation & Measurements | Edexcel International A Level (IAL) P",
+        "url": "https://studyhubIAL.replit.app/pdfs/PracticalSkills%20II-Implementation%26%20Measurements.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Practical Skills II: Planning | Edexcel International A Level (IAL) Physics Revision Notes",
+        "url": "https://studyhubIAL.replit.app/pdfs/PracticalSkills%20II-Planning.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Practical Skills I: Processing Results | Edexcel International A Level (IAL) Physics Revis",
+        "url": "https://studyhubIAL.replit.app/pdfs/PracticalSkills%20IProcessingResults.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Practical Skills I: Implementation & Measurements | Edexcel International A Level (IAL) Ph",
+        "url": "https://studyhubIAL.replit.app/pdfs/PracticalSkillsImplementation%26.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Practical Skills I: Planning | Edexcel International A Level (IAL) Physics Revision Notes ",
+        "url": "https://studyhubIAL.replit.app/pdfs/PracticalSkillsPlanning.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WBI11": [
+      {
+        "title": "Cell Structure & Organisation | Edexcel International AS Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/cell.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "DNA & Gene Expression | Edexcel International AS Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/dna.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Inheritance | Edexcel International AS Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/gene.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Biological Molecules | Edexcel International AS Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/water.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WBI12": [
+      {
+        "title": "Plants & Bacterial Growth | Edexcel International AS Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/Bacterial.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Classification & Biodiversity | Edexcel International AS Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/Biodiversity.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Plants & Conservation | Edexcel International AS Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/Conservation.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Diet & Health | Edexcel International AS Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/diet.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Plant Structure & Function | Edexcel International AS Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/plant.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WBI13": [],
+    "WBI14": [
+      {
+        "title": "Photosynthesis | Edexcel International A Level (IAL) Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/bio51.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Ecosystems | Edexcel International A Level (IAL) Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/bio52.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Environmental Biology | Edexcel International A Level (IAL) Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/bio53.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WBI15": [
+      {
+        "title": "Microbiology | Edexcel International A Level (IAL) Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/bio61.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Immunity | Edexcel International A Level (IAL) Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/bio62.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Antibiotics | Edexcel International A Level (IAL) Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/bio63.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Decomposition & Decay | Edexcel International A Level (IAL) Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/bio64.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Forensics | Edexcel International A Level (IAL) Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/bio65.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WBI16": [
+      {
+        "title": "Respiration | Edexcel International A Level (IAL) Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/bio71.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Muscular Movement | Edexcel International A Level (IAL) Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/bio72.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "The Internal Environment | Edexcel International A Level (IAL) Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/bio73.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "The Nervous System | Edexcel International A Level (IAL) Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/bio81.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Plant Hormones | Edexcel International A Level (IAL) Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/bio82.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "The Brain | Edexcel International A Level (IAL) Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/bio83.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Gene Technology | Edexcel International A Level (IAL) Biology Revision Notes 2018",
+        "url": "https://studyhubIAL.replit.app/pdfs/bio84.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WME01": [
+      {
+        "title": "Mechanics 1 — Quantities, Units & Modelling",
+        "url": "https://studyhubIAL.replit.app/pdfs/m11.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Mechanics 1 — Working with Vectors",
+        "url": "https://studyhubIAL.replit.app/pdfs/m12.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Mechanics 1 — Kinematics Graphs",
+        "url": "https://studyhubIAL.replit.app/pdfs/m13.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Mechanics 1 — Constant Acceleration in 1D",
+        "url": "https://studyhubIAL.replit.app/pdfs/m14.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Mechanics 1 — Constant Acceleration in 2D",
+        "url": "https://studyhubIAL.replit.app/pdfs/m15.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Mechanics 1 — Forces",
+        "url": "https://studyhubIAL.replit.app/pdfs/m16.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Mechanics 1 — Newton's Second Law",
+        "url": "https://studyhubIAL.replit.app/pdfs/m17.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Mechanics 1 — Resolving Forces, Inclined Planes & Friction",
+        "url": "https://studyhubIAL.replit.app/pdfs/m18.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Mechanics 1 — Momentum, Impulse & Collisions",
+        "url": "https://studyhubIAL.replit.app/pdfs/m19.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Mechanics 1 — Moments",
+        "url": "https://studyhubIAL.replit.app/pdfs/m110.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WME02": [
+      {
+        "title": "Mechanics 2 — revision notes",
+        "url": "https://studyhubIAL.replit.app/pdfs/M2G.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Mechanics 2 — Variable Acceleration in 1D",
+        "url": "https://studyhubIAL.replit.app/pdfs/m21.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Mechanics 2 — Variable Acceleration in 2D",
+        "url": "https://studyhubIAL.replit.app/pdfs/m22.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Mechanics 2 — Projectiles",
+        "url": "https://studyhubIAL.replit.app/pdfs/m23.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Mechanics 2 — Centres of Mass",
+        "url": "https://studyhubIAL.replit.app/pdfs/m24.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Mechanics 2 — Work & Energy",
+        "url": "https://studyhubIAL.replit.app/pdfs/m25.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Mechanics 2 — Power",
+        "url": "https://studyhubIAL.replit.app/pdfs/m26.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Mechanics 2 — Collisions",
+        "url": "https://studyhubIAL.replit.app/pdfs/m27.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Mechanics 2 — Moments & Equilibrium",
+        "url": "https://studyhubIAL.replit.app/pdfs/m28.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WMA11": [
+      {
+        "title": "Pure Mathematics 1 — Laws of Indices & Surds",
+        "url": "https://studyhubIAL.replit.app/pdfs/p11.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 1 — Quadratics",
+        "url": "https://studyhubIAL.replit.app/pdfs/p12.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 1 — Simultaneous Equations",
+        "url": "https://studyhubIAL.replit.app/pdfs/p13.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 1 — Inequalities",
+        "url": "https://studyhubIAL.replit.app/pdfs/p14.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 1 — Polynomials",
+        "url": "https://studyhubIAL.replit.app/pdfs/p15.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 1 — Graphs of Functions",
+        "url": "https://studyhubIAL.replit.app/pdfs/p16.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 1 — Transformations of Functions",
+        "url": "https://studyhubIAL.replit.app/pdfs/p17.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 1 — Equation of a Straight Line",
+        "url": "https://studyhubIAL.replit.app/pdfs/p18.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 1 — Basic Trigonometry",
+        "url": "https://studyhubIAL.replit.app/pdfs/p19.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 1 — Radian Measure",
+        "url": "https://studyhubIAL.replit.app/pdfs/p120.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 1 — Trigonometric Functions",
+        "url": "https://studyhubIAL.replit.app/pdfs/p121.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 1 — Differentiation",
+        "url": "https://studyhubIAL.replit.app/pdfs/p122.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 1 — Integration",
+        "url": "https://studyhubIAL.replit.app/pdfs/p123.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WMA12": [
+      {
+        "title": "Pure Mathematics 2 — Proof",
+        "url": "https://studyhubIAL.replit.app/pdfs/p21.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 2 — Polynomials",
+        "url": "https://studyhubIAL.replit.app/pdfs/p22.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 2 — Circles",
+        "url": "https://studyhubIAL.replit.app/pdfs/p23.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 2 — Binomial Expansion",
+        "url": "https://studyhubIAL.replit.app/pdfs/p24.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 2 — Arithmetic Sequences & Series",
+        "url": "https://studyhubIAL.replit.app/pdfs/p25.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 2 — Geometric Sequences & Series",
+        "url": "https://studyhubIAL.replit.app/pdfs/p26.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 2 — Sequences & Series",
+        "url": "https://studyhubIAL.replit.app/pdfs/p27.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 2 — Modelling with Sequences & Series",
+        "url": "https://studyhubIAL.replit.app/pdfs/p28.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 2 — Laws of Logarithms",
+        "url": "https://studyhubIAL.replit.app/pdfs/p29.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 2 — Trigonometric Equations",
+        "url": "https://studyhubIAL.replit.app/pdfs/p210.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 2 — Applications of Differentiation",
+        "url": "https://studyhubIAL.replit.app/pdfs/p211.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 2 — Integration",
+        "url": "https://studyhubIAL.replit.app/pdfs/p212.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WMA13": [
+      {
+        "title": "Pure Mathematics 3 — revision notes",
+        "url": "https://studyhubIAL.replit.app/pdfs/P3G.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 3 — Rational Expressions",
+        "url": "https://studyhubIAL.replit.app/pdfs/p31.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 3 — Functions",
+        "url": "https://studyhubIAL.replit.app/pdfs/p32.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 3 — Combinations of Transformations",
+        "url": "https://studyhubIAL.replit.app/pdfs/p33.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 3 — Reciprocal & Inverse Trigonometric Functions",
+        "url": "https://studyhubIAL.replit.app/pdfs/p34.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 3 — Compound & Double Angle Formulae",
+        "url": "https://studyhubIAL.replit.app/pdfs/p35.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 3 — Further Trigonometric Equations",
+        "url": "https://studyhubIAL.replit.app/pdfs/p36.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 3 — Trigonometric Proof",
+        "url": "https://studyhubIAL.replit.app/pdfs/p37.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 3 — Exponential & Logarithms",
+        "url": "https://studyhubIAL.replit.app/pdfs/p38.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 3 — Modelling with Exponentials & Logarithms",
+        "url": "https://studyhubIAL.replit.app/pdfs/p39.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 3 — Further Differentiation",
+        "url": "https://studyhubIAL.replit.app/pdfs/p310.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 3 — Further Integration",
+        "url": "https://studyhubIAL.replit.app/pdfs/p311.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 3 — Numerical Methods",
+        "url": "https://studyhubIAL.replit.app/pdfs/p312.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WMA14": [
+      {
+        "title": "Pure Mathematics 4 — Proof by Contradiction",
+        "url": "https://studyhubIAL.replit.app/pdfs/p41.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 4 — Partial Fractions",
+        "url": "https://studyhubIAL.replit.app/pdfs/p42.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 4 — General Binomial Expansion",
+        "url": "https://studyhubIAL.replit.app/pdfs/p43.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 4 — Further Applications of Differentiation",
+        "url": "https://studyhubIAL.replit.app/pdfs/p44.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 4 — Implicit Differentiation",
+        "url": "https://studyhubIAL.replit.app/pdfs/p45.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 4 — Further Integration",
+        "url": "https://studyhubIAL.replit.app/pdfs/p46.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 4 — Differential Equations",
+        "url": "https://studyhubIAL.replit.app/pdfs/p47.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 4 — Parametric Equations",
+        "url": "https://studyhubIAL.replit.app/pdfs/p48.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 4 — Further Parametric Equations",
+        "url": "https://studyhubIAL.replit.app/pdfs/p49.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 4 — Vectors in 2D",
+        "url": "https://studyhubIAL.replit.app/pdfs/p410.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 4 — Vectors in 3D",
+        "url": "https://studyhubIAL.replit.app/pdfs/p411.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Pure Mathematics 4 — Vector Equations of Lines & The Scalar Product",
+        "url": "https://studyhubIAL.replit.app/pdfs/p412.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WST01": [
+      {
+        "title": "Statistics 1 — Statistical Measures",
+        "url": "https://studyhubIAL.replit.app/pdfs/s11.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Statistics 1 — Working with Data",
+        "url": "https://studyhubIAL.replit.app/pdfs/s12.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Statistics 1 — Correlation & Regression",
+        "url": "https://studyhubIAL.replit.app/pdfs/s13.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Statistics 1 — Basic Probability",
+        "url": "https://studyhubIAL.replit.app/pdfs/s14.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Statistics 1 — Further Probability",
+        "url": "https://studyhubIAL.replit.app/pdfs/s15.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Statistics 1 — Discrete Random Variables",
+        "url": "https://studyhubIAL.replit.app/pdfs/s16.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Statistics 1 — Normal Distribution",
+        "url": "https://studyhubIAL.replit.app/pdfs/s17.pdf",
+        "source": "StudyHub IAL"
+      }
+    ],
+    "WST02": [
+      {
+        "title": "Statistics 2 — Binomial Distribution",
+        "url": "https://studyhubIAL.replit.app/pdfs/s21.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Statistics 2 — Poisson Distribution",
+        "url": "https://studyhubIAL.replit.app/pdfs/s22.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Statistics 2 — Continuous Random Variables",
+        "url": "https://studyhubIAL.replit.app/pdfs/s23.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Statistics 2 — Cumulative Distribution Function",
+        "url": "https://studyhubIAL.replit.app/pdfs/s24.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Statistics 2 — Working with Distributions",
+        "url": "https://studyhubIAL.replit.app/pdfs/s25.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Statistics 2 — Sampling Distributions & Introduction to Hypothesis Testing",
+        "url": "https://studyhubIAL.replit.app/pdfs/s26.pdf",
+        "source": "StudyHub IAL"
+      },
+      {
+        "title": "Statistics 2 — Hypothesis Testing (Binomial & Poisson Distributions)",
+        "url": "https://studyhubIAL.replit.app/pdfs/s27.pdf",
+        "source": "StudyHub IAL"
+      }
+    ]
+  }
+}

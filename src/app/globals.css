@@ -77,7 +77,10 @@ body {
   border-color: var(--card-border);
 }
 
-a {
+/* Links inherit their surroundings — except cards, which are light surfaces.
+   Unlayered rules beat the layered .bg-card colour, so a link card would
+   otherwise inherit the page's white text and vanish on its own background. */
+a:where(:not(.bg-card)) {
   color: inherit;
 }
 
@@ -117,6 +120,8 @@ button {
   border-radius: 0.5rem;
   border: 1px solid var(--card-border);
   background: var(--card);
+  /* Light surface: always deep-slate text, even outside a .bg-card parent. */
+  color: var(--on-card);
   font-size: 0.8125rem;
   font-weight: 500;
   transition:

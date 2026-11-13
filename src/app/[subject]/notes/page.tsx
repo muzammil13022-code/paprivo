@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { isSubjectKey, SUBJECTS } from "@/lib/subjects";
-import { topicUnitsOf } from "@/lib/topics";
+import { notesPdfsOf, topicUnitsOf } from "@/lib/topics";
 
 interface Props {
   params: Promise<{ subject: string }>;
@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const meta = SUBJECTS[subject];
   return {
     title: `${meta.label} revision notes`,
-    description: `Short, spec-aligned revision notes for every ${meta.label} IAL unit.`,
+    description: `Downloadable revision notes for every ${meta.label} IAL unit, split by specification topic.`,
   };
 }
 
@@ -31,8 +31,8 @@ export default async function NotesHubPage({ params }: Props) {
           {meta.label} revision notes
         </h1>
         <p className="text-muted mt-1 max-w-2xl">
-          Concise notes for every {meta.label} unit — key ideas, formulas and exam
-          phrasing to refresh before practicing questions.
+          Full notes for every {meta.label} unit, split by specification topic and published as
+          PDFs you can read offline before practicing questions.
         </p>
       </header>
 
@@ -50,7 +50,12 @@ export default async function NotesHubPage({ params }: Props) {
               </span>
             </div>
             <p className="text-sm text-muted mt-1">
-              {unit.topics.length} topic{unit.topics.length === 1 ? "" : "s"} of notes
+              {(() => {
+                const count = notesPdfsOf(unit.code).length;
+                return count > 0
+                  ? `${count} notes PDF${count === 1 ? "" : "s"} · ${unit.topics.length} topics`
+                  : `${unit.topics.length} topic${unit.topics.length === 1 ? "" : "s"} · PDF coming soon`;
+              })()}
             </p>
           </Link>
         ))}

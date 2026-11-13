@@ -28,7 +28,10 @@ function PaperRow({ paper }: { paper: Paper }) {
   const starred = bookmarks.has(id);
 
   return (
-    <li
+    // Not an <li>: the caller already renders the list item, and nesting list
+    // items breaks markup (React reports a hydration error). The visual row is
+    // unchanged — same classes, plain block element.
+    <div
       className="card-interactive rounded-xl border bg-card p-3 flex flex-wrap items-center gap-2 sm:gap-3 shadow-card-sm"
       style={{
         borderColor: done ? "var(--accent2-bright)" : "var(--card-border)",
@@ -109,7 +112,7 @@ function PaperRow({ paper }: { paper: Paper }) {
           Yt 🎥
         </a>
       </div>
-    </li>
+    </div>
   );
 }
 
