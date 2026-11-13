@@ -127,6 +127,7 @@ export default async function TopicalUnitPage({ params }: Props) {
 function TopicalPacksSection({ unitCode, unitName }: { unitCode: string; unitName: string }) {
   const groups = topicalPacksOf(unitCode);
   if (groups.length === 0) return null;
+  const hasDriveLinks = groups.some((g) => g.files.some((f) => f.url.includes("drive.google.com")));
   const sourceGroups: Array<{ source: string; groups: typeof groups }> = [];
   for (const group of groups) {
     const bucket = sourceGroups.find((s) => s.source === group.source);
@@ -171,7 +172,9 @@ function TopicalPacksSection({ unitCode, unitName }: { unitCode: string; unitNam
       <p className="text-xs text-muted">
         Questions and mark schemes from {sourceGroups.map((s) => s.source).join(" · ")}.
         {sourceGroups.some((s) => s.source === "Rocket Revise")
-          ? " Rocket Revise packs open in Google Drive."
+          ? hasDriveLinks
+            ? " Rocket Revise packs are hosted by Paprivo; the view-only mark schemes open in Google Drive."
+            : " Rocket Revise packs are hosted by Paprivo."
           : null}
       </p>
     </section>

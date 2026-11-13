@@ -16,11 +16,22 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
+import { pathToFileURL } from "node:url";
 
 const DEFAULT_SRC =
   "C:/Users/Muzam/OneDrive/Desktop/Rocket revise/Rocket-Revise-Edexcel-International-AS-Topical-PDFs/Rocket Revise - Edexcel International AS Topical PDFs";
-const SRC = process.argv[2] ?? DEFAULT_SRC;
+/** Exported for upload-rocket-pdfs.mjs, which stores each PDF under the same path. */
+/** Override with ROCKET_SRC when the collection lives somewhere else. */
+export const SOURCE_DIR = process.env.ROCKET_SRC ?? DEFAULT_SRC;
+export const SKIP_FILES = new Set([
+  "Physics/Core Practical 3 - Young Modulus of Material - QP.pdf", // byte-identical to 3A Basic Waves
+  "Chemistry/3A Ionic Bonding - QP - Copy.pdf", // duplicate of 3A Ionic Bonding
+]);
+
+const SRC = SOURCE_DIR;
 const MANIFEST = "src/data/rocket-packs.json";
+/** Written by upload-rocket-pdfs.mjs once the PDFs are hosted, e.g. on Blob. */
+const HOSTING = "src/data/rocket-hosting.json";
 const UA = "Mozilla/5.0 (compatible; Paprivo research)";
 
 /**
@@ -42,10 +53,7 @@ const PHYSICS_PRACTICALS = {
   "Core Practical 1 - objects": { unit: "WPH11", topic: "Core Practical 1 (Free Fall)" },
   "Core Practical 2 - Viscocity of Liquids": { unit: "WPH11", topic: "Core Practical 2 (Viscosity)" },
 };
-const SKIP = new Set([
-  "Physics/Core Practical 3 - Young Modulus of Material - QP.pdf", // byte-identical to 3A Basic Waves
-  "Chemistry/3A Ionic Bonding - QP - Copy.pdf", // duplicate of 3A Ionic Bonding
-]);
+const SKIP = SKIP_FILES;
 
 /** README bullet subject -> unit, for the view-only mark schemes. */
 const MS_UNIT_BY_KEY = {
@@ -102,6 +110,15 @@ const numericKey = (s) => {
 };
 
 const normalize = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+/** URL-safe file stem for the hosted copy: "3A Ionic Bonding" -> "3a-ionic-bonding". */
+const slug = (s) =>
+  s
+    .toLowerCase()
+    .replace(/'/g, "")
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
 
 /** Question papers use Drive's direct-download form while the owner allows it. */
 const downloadUrl = (id) => `https://drive.google.com/uc?export=download&id=${id}`;
@@ -169,6 +186,54 @@ function parseMarkSchemes(readme) {
   return out;
 }
 
+/**
+ * Unit, topic and hosted pathname for a file in the collection. Exported so
+ * upload-rocket-pdfs.mjs stores each PDF under exactly the URL built here.
+ */
+export function resolveFile(rel) {
+  const parts = rel.split("/");
+  const folder = parts[0];
+  const file = parts[parts.length - 1];
+  if (!/\.pdf$/i.test(file)) return null;
+  const base = file.replace(/\.pdf$/i, "").replace(/\s*-\s*(QP|MS)$/i, "");
+
+  let unit;
+  let topic;
+  if (folder === "Maths") {
+    unit = MATHS_UNITS[parts[1]];
+    if (!unit) return null;
+    topic = niceTopic(base);
+  } else if (PHYSICS_PRACTICALS[base]) {
+    ({ unit, topic } = PHYSICS_PRACTICALS[base]);
+  } else {
+    const map = UNIT_BY_SUBJECT_DIGIT[folder];
+    if (!map) return null;
+    // "4B Alkanes" and "Topic 5 Alkenes" both carry their topic number.
+    unit = map[Number((base.match(/(\d+)/) ?? [])[1])];
+    if (!unit) return null;
+    topic = niceTopic(base);
+  }
+
+  const isMs = /\s-\s*MS\.pdf$/i.test(file);
+  return {
+    unit,
+    topic,
+    isMs,
+    base,
+    pathname: `${unit.toLowerCase()}/${slug(base)}${isMs ? "-ms" : ""}.pdf`,
+  };
+}
+
+/** Base URL of the hosted copies, if they have been uploaded. */
+async function hostingBase() {
+  if (process.env.ROCKET_BLOB_BASE) return process.env.ROCKET_BLOB_BASE.replace(/\/$/, "");
+  try {
+    return String(JSON.parse(await readFile(HOSTING, "utf8")).base ?? "").replace(/\/$/, "") || null;
+  } catch {
+    return null;
+  }
+}
+
 async function walk(dir) {
   const { readdir } = await import("node:fs/promises");
   const out = [];
@@ -199,48 +264,36 @@ async function main() {
       continue;
     }
 
-    const parts = rel.split("/");
-    const folder = parts[0];
-    const file = parts[parts.length - 1];
-    const base = file.replace(/\.pdf$/i, "").replace(/\s*-\s*(QP|MS)$/i, "");
-
-    let unit;
-    let topic;
-    if (folder === "Maths") {
-      unit = MATHS_UNITS[parts[1]];
-      if (!unit) continue;
-      topic = niceTopic(base);
-    } else if (PHYSICS_PRACTICALS[base]) {
-      unit = PHYSICS_PRACTICALS[base].unit;
-      topic = PHYSICS_PRACTICALS[base].topic;
-    } else {
-      const map = UNIT_BY_SUBJECT_DIGIT[folder];
-      if (!map) continue;
-      // "4B Alkanes" and "Topic 5 Alkenes" both carry their topic number.
-      unit = map[Number((base.match(/(\d+)/) ?? [])[1])];
-      if (!unit) continue;
-      topic = niceTopic(base);
-    }
-
-    const isMs = /\s-\s*MS\.pdf$/i.test(file);
+    const resolved = resolveFile(rel);
+    if (!resolved) continue;
+    const { unit, topic, isMs, base, pathname } = resolved;
     pending.push({
       unit,
       topic,
       label: isMs ? "Mark scheme" : "Questions",
       kind: isMs ? "ms" : "qp",
       id: fileId,
+      pathname,
       n: numericKey(base),
     });
   }
 
-  // Question papers link straight to the PDF; if the owner has blocked the
-  // download, link the Drive viewer instead so the pack still opens.
+  // Hosted copies win. Otherwise question papers link straight to the PDF and
+  // fall back to the Drive viewer if the owner has blocked downloading.
+  const base = await hostingBase();
   const fallbacks = [];
   await mapLimit(pending, 6, async (item) => {
-    let url = viewUrl(item.id);
-    if (item.kind === "qp") {
-      if (await downloadsDirectly(item.id)) url = downloadUrl(item.id);
-      else fallbacks.push(`${item.unit} :: ${item.topic}`);
+    let url;
+    if (base) {
+      url = `${base}/${item.pathname}`;
+    } else if (item.kind === "qp") {
+      url = downloadUrl(item.id);
+      if (!(await downloadsDirectly(item.id))) {
+        url = viewUrl(item.id);
+        fallbacks.push(`${item.unit} :: ${item.topic}`);
+      }
+    } else {
+      url = viewUrl(item.id);
     }
     (units[item.unit] ??= []).push({
       topic: item.topic,
@@ -305,7 +358,9 @@ async function main() {
   }
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}
