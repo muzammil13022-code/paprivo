@@ -6,11 +6,8 @@ import {
   topicUnitsOf,
   topicUnitOf,
   topicalBankUrl,
-  topicalQuestionSearchUrl,
   topicalPacksOf,
-  type TopicUnit,
 } from "@/lib/topics";
-import type { SubjectKey } from "@/lib/subjects";
 
 interface Props {
   params: Promise<{ subject: string; unit: string }>;
@@ -89,21 +86,6 @@ export default async function TopicalUnitPage({ params }: Props) {
       </div>
 
       <TopicalPacksSection unitCode={unitData.code} unitName={unitData.name} />
-
-      <section className="space-y-3">
-        <h2 className="text-lg font-semibold">Topics</h2>
-        <ul className="grid gap-3 sm:grid-cols-2">
-          {unitData.topics.map((topic) => (
-            <TopicCard
-              key={topic.name}
-              subject={subject}
-              unit={unitData}
-              name={topic.name}
-              firstNote={topic.notes[0]}
-            />
-          ))}
-        </ul>
-      </section>
 
       {recentPapers.length > 0 && (
         <section className="space-y-3">
@@ -196,37 +178,4 @@ function TopicalPacksSection({ unitCode, unitName }: { unitCode: string; unitNam
   );
 }
 
-function TopicCard({
-  subject,
-  unit,
-  name,
-  firstNote,
-}: {
-  subject: SubjectKey;
-  unit: TopicUnit;
-  name: string;
-  firstNote?: string;
-}) {
-  return (
-    <li className="card-interactive rounded-xl border border-card-border bg-card p-4 shadow-card-sm">
-      <p className="font-medium">{name}</p>
-      {firstNote && <p className="text-sm text-muted mt-1">{firstNote}</p>}
-      <div className="mt-3 flex gap-2">
-        <a
-          className="doc-btn"
-          href={topicalQuestionSearchUrl(unit, name)}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Walkthroughs 🎥
-        </a>
-        <Link
-          className="doc-btn"
-          href={`/${subject}/notes/${unit.code.toLowerCase()}`}
-        >
-          Notes
-        </Link>
-      </div>
-    </li>
-  );
-}
+
