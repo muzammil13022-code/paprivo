@@ -22,3 +22,6 @@ qpages.log
 
 # yt walkthrough fetch output
 scripts/yt-fetch.log
+
+# debug logs
+scripts/*.log
