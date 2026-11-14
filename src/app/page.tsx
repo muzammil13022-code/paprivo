@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { HomeSubjects } from "@/components/HomeSubjects";
-import { FindYourQuestion } from "@/components/FindYourQuestion";
-import { FindAVideo } from "@/components/FindAVideo";
+import { UnifiedSearch } from "@/components/UnifiedSearch";
 import { ProgressRing } from "@/components/ProgressRing";
 import { totalPaperCount } from "@/lib/subjects";
 import { papersData } from "@/types";
@@ -132,12 +131,7 @@ export default function HomePage() {
 
       {/* ---------------- Find Your Question ---------------- */}
       <div id="find-question" className="scroll-mt-24">
-        <FindYourQuestion />
-      </div>
-
-      {/* ---------------- Find a video ---------------- */}
-      <div id="find-video" className="scroll-mt-24 mt-8">
-        <FindAVideo />
+        <UnifiedSearch />
       </div>
 
       {/* ---------------- Subjects ---------------- */}

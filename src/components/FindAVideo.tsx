@@ -32,7 +32,7 @@ function SearchIcon() {
   );
 }
 
-function HitCard({ hit }: { hit: VideoHit }) {
+export function VideoHitCard({ hit }: { hit: VideoHit }) {
   const topicHref = `/${hit.subjectKey}/videos/${hit.unitCode.toLowerCase()}`;
   return (
     <li className="flex flex-col sm:flex-row gap-4 rounded-2xl border border-card-border bg-card p-4 shadow-card-sm">
@@ -176,7 +176,7 @@ export function FindAVideo({ subject, className = "" }: Props) {
               </p>
               <ul className="space-y-3">
                 {hits.map((hit) => (
-                  <HitCard key={`${hit.unitCode}-${hit.video.i}`} hit={hit} />
+                  <VideoHitCard key={`${hit.unitCode}-${hit.video.i}`} hit={hit} />
                 ))}
               </ul>
             </>

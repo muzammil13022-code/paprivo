@@ -52,7 +52,7 @@ function DocButtons({ hit, questionNumber }: { hit: QuestionSearchHit; questionN
   );
 }
 
-function HitCard({ hit, questionNumber, compact = false }: { hit: QuestionSearchHit; questionNumber: number | null; compact?: boolean }) {
+export function HitCard({ hit, questionNumber, compact = false }: { hit: QuestionSearchHit; questionNumber: number | null; compact?: boolean }) {
   const { paper } = hit;
   return (
     <div className={`rounded-2xl border border-card-border bg-card shadow-card-sm ${compact ? "p-4" : "p-5 sm:p-6"}`}>
