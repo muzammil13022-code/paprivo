@@ -2,14 +2,17 @@
  * Hand-picked videos for the gaps in the Syllabus library.
  *
  * scripts/build-videos.mjs applies these after the library pass, so a rebuild
- * keeps them instead of wiping them. Every id is re-verified through YouTube's
- * oEmbed endpoint at build time; titles and channels come from oEmbed, not
- * from this file.
+ * keeps them instead of wiping them. Nothing here replaces a library video:
+ * empty sections are filled, missing units are built, and teacher playlists
+ * (Mr Hassaan for pure maths, Mr Exham for biology) are appended as extra
+ * sections alongside the library's own.
+ * Every id is re-verified through YouTube's oEmbed endpoint at build time;
+ * titles and channels come from oEmbed, not from this file.
  *
  * Shape:
- *   CURATED_PICKS     — unit -> section slug -> [video id, tags][]  (fills empty sections)
- *   CURATED_UNITS     — unit -> [name, slug, picks][]               (units the library lacks)
- *   CURATED_OVERRIDES — unit -> [name, slug, picks][]               (replaces a unit's sections)
+ *   CURATED_PICKS  — unit -> section slug -> [video id, tags][]  (fills empty sections)
+ *   CURATED_UNITS  — unit -> [name, slug, picks][]               (units the library lacks)
+ *   CURATED_EXTRAS — unit -> [name, slug, picks][]               (appended, never replacing)
  */
 
 export const CURATED_PICKS = {
@@ -99,43 +102,6 @@ export const CURATED_PICKS = {
   },
 };
 
-/**
- * Pure maths uses Mr Hassaan's Maths Channel (IAL P1–P4 walkthroughs), split by
- * specification topic instead of the library's one-section-per-unit layout.
- */
-export const CURATED_OVERRIDES = {
-  WMA11: [
-    ["Algebraic expressions", "p1-algebraic-expressions", [["b8ZvHcI5J18", ["IAL", "Walkthrough"]], ["Y4oIN-boVe4", ["IAL", "Walkthrough"]]]],
-    ["Equations and inequalities", "p1-equations-inequalities", [["rsvZzfSqSyo", ["IAL", "Walkthrough"]], ["vlJeQtjHems", ["IAL", "Walkthrough"]]]],
-    ["Graphs and transformations", "p1-graphs-transformations", [["MKp4yQoWBMM", ["IAL", "Walkthrough"]], ["PLSqFhPlgCw", ["IAL", "Walkthrough"]]]],
-    ["Trigonometry", "p1-trigonometry", [["6WayV3VTYTw", ["IAL", "Walkthrough"]], ["MnYB7tVgDzs", ["IAL", "Walkthrough"]]]],
-  ],
-  WMA12: [
-    ["Proof", "p2-proof", [["RapwlK8yFaw", ["IAL", "Walkthrough"]], ["1nPhyCvL6zg", ["IAL", "Walkthrough"]]]],
-    ["Algebra and functions", "p2-algebra-functions", [["KpCIRJd9vmw", ["IAL", "Walkthrough"]], ["e261hH7AHoE", ["IAL", "Walkthrough"]]]],
-    ["Coordinate geometry", "p2-coordinate-geometry", [["Z5ZnbRW3DhM", ["IAL", "Walkthrough"]], ["hK9vhfXb3tg", ["IAL", "Walkthrough"]]]],
-    ["Sequences and series", "p2-sequences-series", [["cMfz1Yqxe2s", ["IAL", "Walkthrough"]], ["wP_RiLCYsBs", ["IAL", "Walkthrough"]]]],
-    ["Radians and trigonometry", "p2-radians-trigonometry", [["gECKDmBzB9c", ["IAL", "Walkthrough"]], ["1Wmai0hOKUY", ["IAL", "Walkthrough"]]]],
-    ["Exponentials and logarithms", "p2-exponentials-logarithms", [["kknXLahiFZU", ["IAL", "Walkthrough"]], ["e2Z_3JvwloQ", ["IAL", "Walkthrough"]]]],
-  ],
-  WMA13: [
-    ["Algebra and functions", "p3-algebra-functions", [["EDlGNOVgqrs", ["IAL", "Walkthrough"]], ["W2_KiibyfuY", ["Concept support"]]]],
-    ["Trigonometry", "p3-trigonometry", [["tQxtuqB43rw", ["IAL", "Walkthrough"]], ["mPyTgOJ5UaA", ["Concept support"]]]],
-    ["Exponentials and logarithms", "p3-exponentials-logarithms", [["sfzC4RWilYA", ["IAL", "Walkthrough"]], ["j4_KgHbB62g", ["IAL", "Walkthrough"]]]],
-    ["Differentiation", "p3-differentiation", [["GXkJL8bA1Hg", ["IAL", "Walkthrough"]], ["n34eM0--kBU", ["IAL", "Walkthrough"]]]],
-    ["Integration", "p3-integration", [["yrcu9Pr2chs", ["IAL", "Walkthrough"]], ["hGMoOiogD4I", ["IAL", "Walkthrough"]]]],
-    ["Numerical methods", "p3-numerical-methods", [["bA3GcWBwi-s", ["IAL", "Walkthrough"]], ["xJ3xDQnWus0", ["IAL", "Walkthrough"]]]],
-  ],
-  WMA14: [
-    ["Algebra and functions", "p4-algebra-functions", [["_LR7wBnlIqA", ["IAL", "Walkthrough"]], ["KBTcfpCYdOs", ["IAL", "Walkthrough"]]]],
-    ["Trigonometry", "p4-trigonometry", [["UrKSBUA4B6U", ["IAL", "Walkthrough"]], ["dixrNCp4rDg", ["IAL", "Walkthrough"]]]],
-    ["Parametric equations", "p4-parametric-equations", [["HVDSJhqaZio", ["IAL", "Walkthrough"]], ["8NYzbNb22ko", ["IAL", "Walkthrough"]]]],
-    ["Differentiation", "p4-differentiation", [["xULvrH65OHE", ["IAL", "Walkthrough"]], ["OV-J9i76_aA", ["IAL", "Walkthrough"]]]],
-    ["Integration", "p4-integration", [["1yQxU_rVVN8", ["IAL", "Walkthrough"]], ["cxkv-tVmHSM", ["IAL", "Walkthrough"]]]],
-    ["Vectors", "p4-vectors", [["a-2YR6IC9JQ", ["IAL", "Walkthrough"]], ["odoi4GOPhQM", ["IAL", "Walkthrough"]]]],
-  ],
-};
-
 /** Units with no sections in the Syllabus library: build them from the spec. */
 export const CURATED_UNITS = {
   WME03: [
@@ -173,11 +139,7 @@ export const CURATED_UNITS = {
     ],
   ],
   WST03: [
-    [
-      "Combinations of random variables",
-      "s3-combinations",
-      [["Eujxit90MOk", ["Concept support"]]],
-    ],
+    ["Combinations of random variables", "s3-combinations", [["Eujxit90MOk", ["Concept support"]]]],
     [
       "Sampling distributions",
       "s3-sampling",
@@ -186,11 +148,7 @@ export const CURATED_UNITS = {
         ["DKnw03lMxsw", ["IAL", "Lesson"]],
       ],
     ],
-    [
-      "Estimation and confidence",
-      "s3-estimation",
-      [["ENnlSlvQHO0", ["Concept support"]]],
-    ],
+    ["Estimation and confidence", "s3-estimation", [["ENnlSlvQHO0", ["Concept support"]]]],
     [
       "Chi-squared tests",
       "s3-chi-squared",
@@ -207,5 +165,70 @@ export const CURATED_UNITS = {
         ["6fXC4cYWIxw", ["Lesson"]],
       ],
     ],
+  ],
+};
+
+/**
+ * Extra sections appended to a unit's own videos, so the library keeps its
+ * picks and these read as additional help from a named teacher.
+ */
+const H = ["Mr Hassaan", "Extra help"];
+const E = ["Mr Exham", "Extra help"];
+
+export const CURATED_EXTRAS = {
+  WMA11: [
+    ["Mr Hassaan — Algebraic expressions", "hs-p1-algebraic-expressions", [["b8ZvHcI5J18", H], ["Y4oIN-boVe4", H]]],
+    ["Mr Hassaan — Equations and inequalities", "hs-p1-equations-inequalities", [["rsvZzfSqSyo", H], ["vlJeQtjHems", H]]],
+    ["Mr Hassaan — Graphs and transformations", "hs-p1-graphs-transformations", [["MKp4yQoWBMM", H], ["PLSqFhPlgCw", H]]],
+    ["Mr Hassaan — Trigonometry", "hs-p1-trigonometry", [["6WayV3VTYTw", H], ["MnYB7tVgDzs", H]]],
+  ],
+  WMA12: [
+    ["Mr Hassaan — Proof", "hs-p2-proof", [["RapwlK8yFaw", H], ["1nPhyCvL6zg", H]]],
+    ["Mr Hassaan — Algebra and functions", "hs-p2-algebra-functions", [["KpCIRJd9vmw", H], ["e261hH7AHoE", H]]],
+    ["Mr Hassaan — Coordinate geometry", "hs-p2-coordinate-geometry", [["Z5ZnbRW3DhM", H], ["hK9vhfXb3tg", H]]],
+    ["Mr Hassaan — Sequences and series", "hs-p2-sequences-series", [["cMfz1Yqxe2s", H], ["wP_RiLCYsBs", H]]],
+    ["Mr Hassaan — Radians and trigonometry", "hs-p2-radians-trigonometry", [["gECKDmBzB9c", H], ["1Wmai0hOKUY", H]]],
+    ["Mr Hassaan — Exponentials and logarithms", "hs-p2-exponentials-logarithms", [["kknXLahiFZU", H], ["e2Z_3JvwloQ", H]]],
+  ],
+  WMA13: [
+    ["Mr Hassaan — Algebra and functions", "hs-p3-algebra-functions", [["EDlGNOVgqrs", H], ["W2_KiibyfuY", H]]],
+    ["Mr Hassaan — Trigonometry", "hs-p3-trigonometry", [["tQxtuqB43rw", H], ["mPyTgOJ5UaA", H]]],
+    ["Mr Hassaan — Exponentials and logarithms", "hs-p3-exponentials-logarithms", [["sfzC4RWilYA", H], ["j4_KgHbB62g", H]]],
+    ["Mr Hassaan — Differentiation", "hs-p3-differentiation", [["GXkJL8bA1Hg", H], ["n34eM0--kBU", H]]],
+    ["Mr Hassaan — Integration", "hs-p3-integration", [["yrcu9Pr2chs", H], ["hGMoOiogD4I", H]]],
+    ["Mr Hassaan — Numerical methods", "hs-p3-numerical-methods", [["bA3GcWBwi-s", H], ["xJ3xDQnWus0", H]]],
+  ],
+  WMA14: [
+    ["Mr Hassaan — Algebra and functions", "hs-p4-algebra-functions", [["_LR7wBnlIqA", H], ["KBTcfpCYdOs", H]]],
+    ["Mr Hassaan — Trigonometry", "hs-p4-trigonometry", [["UrKSBUA4B6U", H], ["dixrNCp4rDg", H]]],
+    ["Mr Hassaan — Parametric equations", "hs-p4-parametric-equations", [["HVDSJhqaZio", H], ["8NYzbNb22ko", H]]],
+    ["Mr Hassaan — Differentiation", "hs-p4-differentiation", [["xULvrH65OHE", H], ["OV-J9i76_aA", H]]],
+    ["Mr Hassaan — Integration", "hs-p4-integration", [["1yQxU_rVVN8", H], ["cxkv-tVmHSM", H]]],
+    ["Mr Hassaan — Vectors", "hs-p4-vectors", [["a-2YR6IC9JQ", H], ["odoi4GOPhQM", H]]],
+  ],
+  WBI11: [
+    ["Mr Exham — Molecules, transport and health", "ex-molecules-transport", [["1_BkwMYGWnU", E], ["JSc876fvCrg", E]]],
+    ["Mr Exham — Membranes, proteins, DNA and gene expression", "ex-membranes-gene-expression", [["vdANObA4Dpg", E], ["N-yDTLFYKFs", E]]],
+  ],
+  WBI12: [
+    ["Mr Exham — Cell structure, reproduction and development", "ex-cells-reproduction", [["SwrqYwLlDxs", E], ["2Usx06H5LvQ", E]]],
+    ["Mr Exham — Plant structure, biodiversity and conservation", "ex-plants-biodiversity", [["zeV9k3l6lTI", E], ["m6ZgMJXx1dU", E]]],
+  ],
+  WBI13: [
+    ["Mr Exham — Core techniques", "ex-core-techniques", [["cLy7_aTul-Y", E], ["CR8jJak4jpY", E]]],
+    ["Mr Exham — Analysis and evaluation", "ex-analysis-evaluation", [["x-FjOSX_4XA", E], ["zva39Sobz-M", E]]],
+    ["Mr Exham — Statistical tests", "ex-statistical-tests", [["Me6X-MhpK8g", E]]],
+  ],
+  WBI14: [
+    ["Mr Exham — Energy flow, ecosystems and the environment", "ex-energy-flow", [["gS8XyJQJBZs", E], ["snm56bdTFDM", E]]],
+    ["Mr Exham — Microbiology, immunity and forensics", "ex-microbiology-immunity", [["vog3vLlnsV8", E], ["ejyhTqAPVtI", E]]],
+  ],
+  WBI15: [
+    ["Mr Exham — Respiration, muscles and the internal environment", "ex-respiration-homeostasis", [["Wfhgt75rIzc", E], ["GDRGJLV8LPA", E], ["yXWlSve_7Uw", E]]],
+    ["Mr Exham — Coordination, response and gene technology", "ex-coordination-gene-tech", [["btdVcSLTfDk", E], ["XJkUtMW1yVM", E], ["ZCBrN-E1tQ0", E]]],
+  ],
+  WBI16: [
+    ["Mr Exham — Advanced practicals", "ex-advanced-practicals", [["CR8jJak4jpY", E], ["HDigBCZJMwQ", E]]],
+    ["Mr Exham — Statistical tests and evaluation", "ex-stats-evaluation", [["Me6X-MhpK8g", E], ["zva39Sobz-M", E]]],
   ],
 };

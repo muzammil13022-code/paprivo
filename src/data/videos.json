@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T09:15:06.677Z",
+  "generatedAt": "2026-11-14T09:22:27.533Z",
   "source": "Syllabus (edexcel-library.vercel.app) video picks, verified via YouTube oEmbed",
   "note": "Picks follow the Pearson IAL specification order. Videos tagged “Concept support” may use broader A-level coverage; check the specification for exact IAL scope.",
   "units": {
@@ -965,6 +965,56 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Mr Exham — Molecules, transport and health",
+        "summary": "",
+        "slug": "ex-molecules-transport",
+        "videos": [
+          {
+            "i": "1_BkwMYGWnU",
+            "t": "Enzymes Part 1 - Structure, function and rates - A Level Biology",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "JSc876fvCrg",
+            "t": "Biological properties of water - A Level Biology",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mr Exham — Membranes, proteins, DNA and gene expression",
+        "summary": "",
+        "slug": "ex-membranes-gene-expression",
+        "videos": [
+          {
+            "i": "vdANObA4Dpg",
+            "t": "Gene expression, transcription factors and epigenetics - A Level Biology",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "N-yDTLFYKFs",
+            "t": "Protein Synthesis Part 2 - Transcription and Translation - GCSE Biology (9-1)",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          }
+        ]
       }
     ],
     "WBI12": [
@@ -1062,6 +1112,56 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Mr Exham — Cell structure, reproduction and development",
+        "summary": "",
+        "slug": "ex-cells-reproduction",
+        "videos": [
+          {
+            "i": "SwrqYwLlDxs",
+            "t": "The Cell Cycle - A Level Biology",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "2Usx06H5LvQ",
+            "t": "Sexual reproduction in mammals - A Level Biology",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mr Exham — Plant structure, biodiversity and conservation",
+        "summary": "",
+        "slug": "ex-plants-biodiversity",
+        "videos": [
+          {
+            "i": "zeV9k3l6lTI",
+            "t": "Sexual Reproduction in Plants - A Level Biology",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "m6ZgMJXx1dU",
+            "t": "Classification Part 1 - A Level Biology",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          }
+        ]
       }
     ],
     "WBI13": [
@@ -1084,6 +1184,72 @@
             "c": "chem bio by Hosni",
             "tags": [
               "Exam technique"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mr Exham — Core techniques",
+        "summary": "",
+        "slug": "ex-core-techniques",
+        "videos": [
+          {
+            "i": "cLy7_aTul-Y",
+            "t": "Core Practical 1 - A Level Biology",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "CR8jJak4jpY",
+            "t": "Core Practical 6 - A Level Biology",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mr Exham — Analysis and evaluation",
+        "summary": "",
+        "slug": "ex-analysis-evaluation",
+        "videos": [
+          {
+            "i": "x-FjOSX_4XA",
+            "t": "Food Tests Core Practical - GCSE Biology (9-1) 1.13B",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "zva39Sobz-M",
+            "t": "IGCSE Biology Past Paper Question Practice - Plant Reproduction/Selective Breeding",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mr Exham — Statistical tests",
+        "summary": "",
+        "slug": "ex-statistical-tests",
+        "videos": [
+          {
+            "i": "Me6X-MhpK8g",
+            "t": "Chi-squared test -  Post 16 Biology (A Level, Pre-U, IB, AP Bio)",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
             ]
           }
         ]
@@ -1148,6 +1314,56 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Mr Exham — Energy flow, ecosystems and the environment",
+        "summary": "",
+        "slug": "ex-energy-flow",
+        "videos": [
+          {
+            "i": "gS8XyJQJBZs",
+            "t": "Ecology -  Energy Flow - GCSE Biology (9-1)",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "snm56bdTFDM",
+            "t": "Food Chain Energy Transfer and Loss - GCSE Biology (9-1) 9.8B",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mr Exham — Microbiology, immunity and forensics",
+        "summary": "",
+        "slug": "ex-microbiology-immunity",
+        "videos": [
+          {
+            "i": "vog3vLlnsV8",
+            "t": "#biologyrevision investigating antibiotics",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "ejyhTqAPVtI",
+            "t": "Food Production - Biotechnology - Yoghurt Production - GCSE Biology (9-1)",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          }
+        ]
       }
     ],
     "WBI15": [
@@ -1208,6 +1424,74 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Mr Exham — Respiration, muscles and the internal environment",
+        "summary": "",
+        "slug": "ex-respiration-homeostasis",
+        "videos": [
+          {
+            "i": "Wfhgt75rIzc",
+            "t": "Cellular Respiration - Introduction to Respiration - Post 16 Biology (A Level, Pre-U, IB, AP Bio)",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "GDRGJLV8LPA",
+            "t": "Cellular Respiration - Glycolysis - Post 16 Biology (A Level, Pre-U, IB, AP Bio)",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "yXWlSve_7Uw",
+            "t": "Excretion - ADH and Homeostasis - GCSE Biology (9-1)",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mr Exham — Coordination, response and gene technology",
+        "summary": "",
+        "slug": "ex-coordination-gene-tech",
+        "videos": [
+          {
+            "i": "btdVcSLTfDk",
+            "t": "The Nervous System - GCSE Biology (9-1)",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "XJkUtMW1yVM",
+            "t": "Genomes and PCR - A Level Biology",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "ZCBrN-E1tQ0",
+            "t": "DNA Fingerprinting - Post 16 Biology (A Level, Pre-U, IB, AP Bio)",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          }
+        ]
       }
     ],
     "WBI16": [
@@ -1233,21 +1517,123 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Mr Exham — Advanced practicals",
+        "summary": "",
+        "slug": "ex-advanced-practicals",
+        "videos": [
+          {
+            "i": "CR8jJak4jpY",
+            "t": "Core Practical 6 - A Level Biology",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "HDigBCZJMwQ",
+            "t": "Core Practical 5 - A Level Biology",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mr Exham — Statistical tests and evaluation",
+        "summary": "",
+        "slug": "ex-stats-evaluation",
+        "videos": [
+          {
+            "i": "Me6X-MhpK8g",
+            "t": "Chi-squared test -  Post 16 Biology (A Level, Pre-U, IB, AP Bio)",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "zva39Sobz-M",
+            "t": "IGCSE Biology Past Paper Question Practice - Plant Reproduction/Selective Breeding",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "Mr Exham",
+              "Extra help"
+            ]
+          }
+        ]
       }
     ],
     "WMA11": [
       {
-        "name": "Algebraic expressions",
+        "name": "Pure Mathematics 1",
+        "summary": "Pure Mathematics 1",
+        "slug": "maths-topic-p1",
+        "videos": [
+          {
+            "i": "qeByhTF8WEw",
+            "t": "How To Solve Quadratic Equations By Factoring - Quick & Simple! | Algebra Online Course",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "m1OitPmkydY",
+            "t": "Trig Identities",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "kEcbxiLeGTc",
+            "t": "Solving Trigonometric Equations By Finding All Solutions",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "9Yz-RCdS2Tg",
+            "t": "The Power Rule For Derivatives",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "Gc3QvUB0PkI",
+            "t": "Definite Integral",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mr Hassaan — Algebraic expressions",
         "summary": "",
-        "slug": "p1-algebraic-expressions",
+        "slug": "hs-p1-algebraic-expressions",
         "videos": [
           {
             "i": "b8ZvHcI5J18",
             "t": "EDEXCEL IAL P1 new Specimen Paper 2018 Q4  Indices & Surds",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1255,24 +1641,24 @@
             "t": "EDEXCEL IAL P1 new Practice Paper B 2018 Q1  Simplifying Surds",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Equations and inequalities",
+        "name": "Mr Hassaan — Equations and inequalities",
         "summary": "",
-        "slug": "p1-equations-inequalities",
+        "slug": "hs-p1-equations-inequalities",
         "videos": [
           {
             "i": "rsvZzfSqSyo",
             "t": "EDEXCEL IAL P1 new Practice Paper B 2018 Q5  Simultaneous Equations",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1280,24 +1666,24 @@
             "t": "EDEXCEL IAL P1 new Practice Paper B 2018 Q9  Quadratic Inequalities",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Graphs and transformations",
+        "name": "Mr Hassaan — Graphs and transformations",
         "summary": "",
-        "slug": "p1-graphs-transformations",
+        "slug": "hs-p1-graphs-transformations",
         "videos": [
           {
             "i": "MKp4yQoWBMM",
             "t": "EDEXCEL IAL P1 new Practice Paper B 2018 Q6  Transformations of Graphs",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1305,24 +1691,24 @@
             "t": "EDEXCEL IAL P1 new Specimen Paper 2018 Q1  Transformations of Graphs",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Trigonometry",
+        "name": "Mr Hassaan — Trigonometry",
         "summary": "",
-        "slug": "p1-trigonometry",
+        "slug": "hs-p1-trigonometry",
         "videos": [
           {
             "i": "6WayV3VTYTw",
             "t": "WMA11/01 (Edexcel) IAL P1 June 2022, Q2, Trigonometry, The Sine Rule, Obtuse Angle",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1330,8 +1716,8 @@
             "t": "EDEXCEL IAL WMA11 01 P1 new OCT 2019 Q4 Area of Triangles, Trigonometry, Cosine Rule",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
@@ -1339,17 +1725,96 @@
     ],
     "WMA12": [
       {
-        "name": "Proof",
+        "name": "Pure Mathematics 2",
+        "summary": "Pure Mathematics 2",
+        "slug": "maths-topic-p2",
+        "videos": [
+          {
+            "i": "XZJdyPkCxuE",
+            "t": "Arithmetic Sequences and Arithmetic Series - Basic Introduction",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "xTuNJNpQnys",
+            "t": "WMA12/01, (Edexcel), IAL, P2, June 2024, Q2, Arithmetic Series",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "Worked questions",
+              "IAL match"
+            ]
+          },
+          {
+            "i": "Jtv9Lnf7Zw8",
+            "t": "Properties of Logarithms",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "DASfP8KAyvs",
+            "t": "How To Graph Exponential Functions",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "m1OitPmkydY",
+            "t": "Trig Identities",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "kEcbxiLeGTc",
+            "t": "Solving Trigonometric Equations By Finding All Solutions",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "9Yz-RCdS2Tg",
+            "t": "The Power Rule For Derivatives",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "Gc3QvUB0PkI",
+            "t": "Definite Integral",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mr Hassaan — Proof",
         "summary": "",
-        "slug": "p2-proof",
+        "slug": "hs-p2-proof",
         "videos": [
           {
             "i": "RapwlK8yFaw",
             "t": "WMA12/01, (Edexcel), IAL, P2,  June 2025, Q10 Proof, Exhaustion",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1357,24 +1822,24 @@
             "t": "WMA12/01, (Edexcel), IAL, P2,  June 2025(A), Q1, Proof by Exhaustion",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Algebra and functions",
+        "name": "Mr Hassaan — Algebra and functions",
         "summary": "",
-        "slug": "p2-algebra-functions",
+        "slug": "hs-p2-algebra-functions",
         "videos": [
           {
             "i": "KpCIRJd9vmw",
             "t": "WMA12/01, (Edexcel), IAL, P2,  June 2025, Q4, Factor & Remainder Theorems, Algebraic Long Division",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1382,24 +1847,24 @@
             "t": "WMA12/01, (Edexcel), IAL, P2, June 2024 (R),Q6, The Factor & Remainder Theorems, Differentiation",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Coordinate geometry",
+        "name": "Mr Hassaan — Coordinate geometry",
         "summary": "",
-        "slug": "p2-coordinate-geometry",
+        "slug": "hs-p2-coordinate-geometry",
         "videos": [
           {
             "i": "Z5ZnbRW3DhM",
             "t": "WMA12/01, (Edexcel), IAL, P2,  June 2025, Q2 Equations of Circles",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1407,24 +1872,24 @@
             "t": "WMA12/01, (Edexcel), IAL, P2,  June 2025(A), Q9, Equations of Circles",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Sequences and series",
+        "name": "Mr Hassaan — Sequences and series",
         "summary": "",
-        "slug": "p2-sequences-series",
+        "slug": "hs-p2-sequences-series",
         "videos": [
           {
             "i": "cMfz1Yqxe2s",
             "t": "WMA12/01, (Edexcel), IAL, P2,  January 2025, Q1, Arithmetic Series",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1432,24 +1897,24 @@
             "t": "WMA12/01, (Edexcel), IAL, P2,  June 2025, Q1 Binomial Expansion",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Radians and trigonometry",
+        "name": "Mr Hassaan — Radians and trigonometry",
         "summary": "",
-        "slug": "p2-radians-trigonometry",
+        "slug": "hs-p2-radians-trigonometry",
         "videos": [
           {
             "i": "gECKDmBzB9c",
             "t": "WMA12/01, (Edexcel), IAL, P2,  June 2025, Q8 Solving Trigonometric Equations",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1457,24 +1922,24 @@
             "t": "WMA11/01 EDEXCEL IAL P1 JAN 2019 Q10  Radian Measure",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Exponentials and logarithms",
+        "name": "Mr Hassaan — Exponentials and logarithms",
         "summary": "",
-        "slug": "p2-exponentials-logarithms",
+        "slug": "hs-p2-exponentials-logarithms",
         "videos": [
           {
             "i": "kknXLahiFZU",
             "t": "WMA12/01, (Edexcel), IAL, P2,  June 2025, Q6 Logarithms & Exponential Equations",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1482,8 +1947,8 @@
             "t": "WMA12/01, (Edexcel), IAL, P2, June 2024, Q3 Logarithms",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
@@ -1581,17 +2046,96 @@
     ],
     "WMA13": [
       {
-        "name": "Algebra and functions",
+        "name": "Pure Mathematics 3",
+        "summary": "Pure Mathematics 3",
+        "slug": "maths-topic-p3",
+        "videos": [
+          {
+            "i": "m1OitPmkydY",
+            "t": "Trig Identities",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "kEcbxiLeGTc",
+            "t": "Solving Trigonometric Equations By Finding All Solutions",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "Jtv9Lnf7Zw8",
+            "t": "Properties of Logarithms",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "DASfP8KAyvs",
+            "t": "How To Graph Exponential Functions",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "9Yz-RCdS2Tg",
+            "t": "The Power Rule For Derivatives",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "Gc3QvUB0PkI",
+            "t": "Definite Integral",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "Rn9Gr52zhrY",
+            "t": "Trapezoidal Rule",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "oa_PfSm-m7g",
+            "t": "Edexcel IAL P3 WMA13/01 October 2022 - Full Paper Walkthrough",
+            "c": "MedDude",
+            "tags": [
+              "Worked questions",
+              "IAL match"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mr Hassaan — Algebra and functions",
         "summary": "",
-        "slug": "p3-algebra-functions",
+        "slug": "hs-p3-algebra-functions",
         "videos": [
           {
             "i": "EDlGNOVgqrs",
             "t": "[5] A2 (IAL) Pure Mathematics (P4) Solomon K Q3 Partial Fractions- Integration using 'ln'",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1599,23 +2143,24 @@
             "t": "[9i] CAIE, 9709/32/O/N/09, P3, Nov 2008, Paper 3, Q8(i),  Partial Fractions - Quadratic Factor",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Concept support"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Trigonometry",
+        "name": "Mr Hassaan — Trigonometry",
         "summary": "",
-        "slug": "p3-trigonometry",
+        "slug": "hs-p3-trigonometry",
         "videos": [
           {
             "i": "tQxtuqB43rw",
             "t": "WMA13/01, (Edexcel), IAL, P3 June 2024, Q7, Trigonometric Identities & Equations",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1623,23 +2168,24 @@
             "t": "[10] [P3] C3, (GCE), 6665/01, June 2013, Q8, Trig Identities, Harmonic Equations",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Concept support"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Exponentials and logarithms",
+        "name": "Mr Hassaan — Exponentials and logarithms",
         "summary": "",
-        "slug": "p3-exponentials-logarithms",
+        "slug": "hs-p3-exponentials-logarithms",
         "videos": [
           {
             "i": "sfzC4RWilYA",
             "t": "EDEXCEL  IAL WMA13 P3 new Sample Assesment Paper Q8  Logarithms & Modelling as Straight Lines",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1647,24 +2193,24 @@
             "t": "EDEXCEL  IAL WMA13 P3 new Sample Assesment Paper Q10 Exponentials & Logarithms   Modelling",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Differentiation",
+        "name": "Mr Hassaan — Differentiation",
         "summary": "",
-        "slug": "p3-differentiation",
+        "slug": "hs-p3-differentiation",
         "videos": [
           {
             "i": "GXkJL8bA1Hg",
             "t": "EDEXCEL  IAL WMA13 P3 new Sample Assesment Paper Q5  Differentiation   The Quotient Rule",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1672,24 +2218,24 @@
             "t": "EDEXCEL  IAL WMA13 P3 new Sample Assesment Paper Q7  Differentiation   Chain Rule",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Integration",
+        "name": "Mr Hassaan — Integration",
         "summary": "",
-        "slug": "p3-integration",
+        "slug": "hs-p3-integration",
         "videos": [
           {
             "i": "yrcu9Pr2chs",
             "t": "EDEXCEL  IAL WMA13 P3 new Specimen Paper  Q2 Trigonometric Identities   Integration",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1697,24 +2243,24 @@
             "t": "EDEXCEL  IAL WMA13 P3 new Specimen Paper  Q10 Iteration   Numerical Methods    Integration",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Numerical methods",
+        "name": "Mr Hassaan — Numerical methods",
         "summary": "",
-        "slug": "p3-numerical-methods",
+        "slug": "hs-p3-numerical-methods",
         "videos": [
           {
             "i": "bA3GcWBwi-s",
             "t": "EDEXCEL  IAL WMA13 P3 new Sample Assesment Paper 2018 Q2  Numerical Methods",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1722,8 +2268,8 @@
             "t": "WMA12/01, (Edexcel), IAL, P2, January 2024,  Q4, Exponential Graphs, Trapezium Rule",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
@@ -1731,17 +2277,51 @@
     ],
     "WMA14": [
       {
-        "name": "Algebra and functions",
+        "name": "Pure Mathematics 4",
+        "summary": "Pure Mathematics 4",
+        "slug": "maths-topic-p4",
+        "videos": [
+          {
+            "i": "sWSLLO3DS1I",
+            "t": "Integration By Parts",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          },
+          {
+            "i": "BX3I7qWWuFA",
+            "t": "WMA14/01, (Edexcel), IAL P4, June 2024,  Q1, Integration by Parts, DI Method, Trig Functions",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "Worked questions",
+              "IAL match"
+            ]
+          },
+          {
+            "i": "VzX8KJKFhlM",
+            "t": "Dot Product of Two Vectors",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Lesson",
+              "Concept support"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mr Hassaan — Algebra and functions",
         "summary": "",
-        "slug": "p4-algebra-functions",
+        "slug": "hs-p4-algebra-functions",
         "videos": [
           {
             "i": "_LR7wBnlIqA",
             "t": "EDEXCEL  IAL WMA14 P4 new Sample Assesment Paper  Q3 Partial Fractions  Integration",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1749,24 +2329,24 @@
             "t": "EDEXCEL  IAL WMA14 P4 new Sample Assesment Paper  Q1 The Binomial Expansion",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Trigonometry",
+        "name": "Mr Hassaan — Trigonometry",
         "summary": "",
-        "slug": "p4-trigonometry",
+        "slug": "hs-p4-trigonometry",
         "videos": [
           {
             "i": "UrKSBUA4B6U",
             "t": "[Q2] A2 (IAL) Pure Mathematics (P3)-Solomon Paper A  Q7 Trigonometric Addition Formulae",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1774,24 +2354,24 @@
             "t": "[Q4] A2 (IAL) Pure Mathematics (P3)-Solomon Paper C Q7 Trig Addition Formulae",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Parametric equations",
+        "name": "Mr Hassaan — Parametric equations",
         "summary": "",
-        "slug": "p4-parametric-equations",
+        "slug": "hs-p4-parametric-equations",
         "videos": [
           {
             "i": "HVDSJhqaZio",
             "t": "WMA14/01, (Edexcel), IAL P4, June 2025, Q5, Parametric Differentiation, Cartesian Form",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1799,24 +2379,24 @@
             "t": "EDEXCEL  IAL WMA14 P4 new Sample Assesment Paper  Q7 Parametric Equations",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Differentiation",
+        "name": "Mr Hassaan — Differentiation",
         "summary": "",
-        "slug": "p4-differentiation",
+        "slug": "hs-p4-differentiation",
         "videos": [
           {
             "i": "xULvrH65OHE",
             "t": "WMA14/01, (Edexcel), IAL P4, June 2025, Q1, Implicit Differentiation, Equation of Tangent",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1824,24 +2404,24 @@
             "t": "WMA14/01, (Edexcel), IAL P4, January 2025, Q2, Implicit Differentiation,",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Integration",
+        "name": "Mr Hassaan — Integration",
         "summary": "",
-        "slug": "p4-integration",
+        "slug": "hs-p4-integration",
         "videos": [
           {
             "i": "1yQxU_rVVN8",
             "t": "WMA14 01 IAL (Edexcel) P4  June Oct 2020 Q7 i Integration by Substitution",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1849,24 +2429,24 @@
             "t": "WMA14 01 IAL (Edexcel) P4  June Oct 2020 Q5 Integration by Parts",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]
       },
       {
-        "name": "Vectors",
+        "name": "Mr Hassaan — Vectors",
         "summary": "",
-        "slug": "p4-vectors",
+        "slug": "hs-p4-vectors",
         "videos": [
           {
             "i": "a-2YR6IC9JQ",
             "t": "WMA14/01, (Edexcel), IAL, P4, June 2024, Q6, Vector Equation of Straight Lines, Angles",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           },
           {
@@ -1874,8 +2454,8 @@
             "t": "WMA14/01, (Edexcel), IAL P4, June 2024,  Q2, Vectors, Perpendicular Lines",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "IAL",
-              "Walkthrough"
+              "Mr Hassaan",
+              "Extra help"
             ]
           }
         ]

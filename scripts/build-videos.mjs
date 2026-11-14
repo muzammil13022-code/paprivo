@@ -12,7 +12,7 @@
  * Usage: node scripts/build-videos.mjs
  */
 import { writeFile, readFile } from "node:fs/promises";
-import { CURATED_OVERRIDES, CURATED_PICKS, CURATED_UNITS } from "./curated-videos.mjs";
+import { CURATED_EXTRAS, CURATED_PICKS, CURATED_UNITS } from "./curated-videos.mjs";
 
 const LIB = "https://edexcel-library.vercel.app";
 const UA = "Mozilla/5.0 (compatible; Paprivo research)";
@@ -188,16 +188,18 @@ async function main() {
     units[code] = built;
   }
 
-  // Units whose topic layout is replaced by hand (pure maths: Mr Hassaan).
-  for (const [code, sections] of Object.entries(CURATED_OVERRIDES)) {
+  // Extra sections added on top of the library's own (never replacing them).
+  for (const [code, sections] of Object.entries(CURATED_EXTRAS)) {
+    const existing = units[code] ?? [];
     const built = [];
     for (const [name, slug, picks] of sections) {
+      if (existing.some((s) => s.slug === slug)) continue;
       const videos = await verifyPicks(picks);
       built.push({ name, summary: "", slug, videos });
       curated += videos.length;
-      console.log(`override ${code}/${slug}: ${videos.length} videos`);
+      console.log(`extra ${code}/${slug}: ${videos.length} videos`);
     }
-    units[code] = built;
+    units[code] = [...existing, ...built];
   }
 
   const data = {
