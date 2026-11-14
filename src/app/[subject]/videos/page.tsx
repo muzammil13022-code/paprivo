@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { isSubjectKey, SUBJECTS } from "@/lib/subjects";
 import { topicUnitsOf } from "@/lib/topics";
 import { videoCountOf, videoSectionsOf } from "@/lib/videos";
+import { FindAVideo } from "@/components/FindAVideo";
 
 interface Props {
   params: Promise<{ subject: string }>;
@@ -50,6 +51,8 @@ export default async function SubjectVideosPage({ params }: Props) {
           Pick a unit to see its topics in specification order, with a lesson or two for each area.
         </p>
       </header>
+
+      <FindAVideo subject={subject} />
 
       <div className="grid gap-3 sm:grid-cols-2">
         {units.map((unit) => {

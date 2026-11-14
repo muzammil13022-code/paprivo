@@ -4,6 +4,7 @@ import { Reveal } from "@/components/Reveal";
 import { SUBJECTS, SUBJECT_ORDER } from "@/lib/subjects";
 import { topicUnitsOf } from "@/lib/topics";
 import { VIDEO_NOTE, VIDEO_SOURCE, videoCountOf } from "@/lib/videos";
+import { FindAVideo } from "@/components/FindAVideo";
 
 export const metadata: Metadata = {
   title: "Video library",
@@ -28,6 +29,8 @@ export default function VideosPage() {
           </p>
         </div>
       </header>
+
+      <FindAVideo />
 
       <div className="grid gap-4 sm:grid-cols-2">
         {SUBJECT_ORDER.map((key, i) => {
