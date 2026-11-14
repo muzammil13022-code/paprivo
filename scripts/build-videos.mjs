@@ -3,12 +3,16 @@
  *
  * Structure and pick list follow the open Syllabus library
  * (edexcel-library.vercel.app), which groups videos by Pearson spec topic.
+ * Sections that library leaves empty are filled from the hand-picked list in
+ * scripts/curated-videos.mjs (which also supplies units the library has no
+ * page for, e.g. WME03 and WST03), so a rebuild never drops those picks.
  * Every id is re-checked against YouTube's oEmbed endpoint before it ships,
  * and any topic without a verified pick is simply left without videos.
  *
  * Usage: node scripts/build-videos.mjs
  */
 import { writeFile, readFile } from "node:fs/promises";
+import { CURATED_PICKS, CURATED_UNITS } from "./curated-videos.mjs";
 
 const LIB = "https://edexcel-library.vercel.app";
 const UA = "Mozilla/5.0 (compatible; Paprivo research)";
@@ -95,6 +99,22 @@ async function main() {
   let kept = 0;
   let dropped = 0;
 
+  /** Verify a curated pick list and turn it into video entries. */
+  async function verifyPicks(picks) {
+    const out = [];
+    for (const [id, tags] of picks) {
+      const meta = await oembed(id);
+      if (!meta) {
+        dropped++;
+        console.log(`  drop ${id} (not on YouTube)`);
+        continue;
+      }
+      out.push({ i: id, t: meta.title, c: meta.channel, tags });
+      kept++;
+    }
+    return out;
+  }
+
   for (const subject of SUBJECTS) {
     const slugs = await get(`${LIB}/subject/${subject.slug}/`);
     const unitSlugs = [...new Set([...slugs.matchAll(/href="\/unit\/([^"/]+)\/"/g)].map((m) => m[1]))];
@@ -135,6 +155,39 @@ async function main() {
     }
   }
 
+  // Fill sections the library left empty, then add units it has no page for.
+  let curated = 0;
+  for (const [code, bySlug] of Object.entries(CURATED_PICKS)) {
+    const sections = units[code];
+    if (!sections) {
+      console.log(`curated: ${code} not in library yet, skipped`);
+      continue;
+    }
+    for (const [slug, picks] of Object.entries(bySlug)) {
+      const section = sections.find((s) => s.slug === slug);
+      if (!section) {
+        console.log(`curated: ${code}/${slug} section missing, skipped`);
+        continue;
+      }
+      if (section.videos.length) continue;
+      section.videos = await verifyPicks(picks);
+      curated += section.videos.length;
+      console.log(`curated ${code}/${slug}: ${section.videos.length} videos`);
+    }
+  }
+
+  for (const [code, sections] of Object.entries(CURATED_UNITS)) {
+    if (units[code]) continue;
+    const built = [];
+    for (const [name, slug, picks] of sections) {
+      const videos = await verifyPicks(picks);
+      built.push({ name, summary: "", slug, videos });
+      curated += videos.length;
+      console.log(`curated ${code}/${slug}: ${videos.length} videos`);
+    }
+    units[code] = built;
+  }
+
   const data = {
     generatedAt: new Date().toISOString(),
     source: "Syllabus (edexcel-library.vercel.app) video picks, verified via YouTube oEmbed",
@@ -143,7 +196,7 @@ async function main() {
   };
   await writeFile("src/data/videos.json", JSON.stringify(data, null, 2) + "\n");
   const totalVideos = Object.values(units).reduce((n, s) => n + s.reduce((m, x) => m + x.videos.length, 0), 0);
-  console.log(`\nwrote src/data/videos.json — ${Object.keys(units).length} units, ${totalVideos} videos (kept ${kept}, dropped ${dropped})`);
+  console.log(`\nwrote src/data/videos.json — ${Object.keys(units).length} units, ${totalVideos} videos (kept ${kept}, dropped ${dropped}, ${curated} curated)`);
 }
 
 main().catch((err) => {
