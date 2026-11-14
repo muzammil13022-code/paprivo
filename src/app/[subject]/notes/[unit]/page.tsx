@@ -10,6 +10,7 @@ import {
   type TopicUnit,
 } from "@/lib/topics";
 import type { SubjectKey } from "@/lib/subjects";
+import { SubmitResource } from "@/components/SubmitResource";
 
 interface Props {
   params: Promise<{ subject: string; unit: string }>;
@@ -129,6 +130,8 @@ export default async function NotesUnitPage({ params }: Props) {
         Notes PDFs are published by StudyHub IAL and open on their site; Paprivo links to them
         rather than hosting copies.
       </p>
+
+      <SubmitResource context={`${meta.label} ${unitData.code} notes`} />
     </div>
   );
 }

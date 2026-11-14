@@ -8,6 +8,7 @@ import {
   topicalBankUrl,
   topicalPacksOf,
 } from "@/lib/topics";
+import { SubmitResource } from "@/components/SubmitResource";
 
 interface Props {
   params: Promise<{ subject: string; unit: string }>;
@@ -120,6 +121,8 @@ export default async function TopicalUnitPage({ params }: Props) {
           </p>
         </section>
       )}
+
+      <SubmitResource context={`${meta.label} ${unitData.code} topical practice`} />
     </div>
   );
 }
