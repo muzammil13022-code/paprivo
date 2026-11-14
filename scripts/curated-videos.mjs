@@ -7,8 +7,9 @@
  * from this file.
  *
  * Shape:
- *   CURATED_PICKS — unit -> section slug -> [video id, tags][]  (fills empty sections)
- *   CURATED_UNITS — unit -> [name, slug, picks][]               (units the library lacks)
+ *   CURATED_PICKS     — unit -> section slug -> [video id, tags][]  (fills empty sections)
+ *   CURATED_UNITS     — unit -> [name, slug, picks][]               (units the library lacks)
+ *   CURATED_OVERRIDES — unit -> [name, slug, picks][]               (replaces a unit's sections)
  */
 
 export const CURATED_PICKS = {
@@ -96,6 +97,43 @@ export const CURATED_PICKS = {
       ["FsRQtuTyWCQ", ["Revision"]],
     ],
   },
+};
+
+/**
+ * Pure maths uses Mr Hassaan's Maths Channel (IAL P1–P4 walkthroughs), split by
+ * specification topic instead of the library's one-section-per-unit layout.
+ */
+export const CURATED_OVERRIDES = {
+  WMA11: [
+    ["Algebraic expressions", "p1-algebraic-expressions", [["b8ZvHcI5J18", ["IAL", "Walkthrough"]], ["Y4oIN-boVe4", ["IAL", "Walkthrough"]]]],
+    ["Equations and inequalities", "p1-equations-inequalities", [["rsvZzfSqSyo", ["IAL", "Walkthrough"]], ["vlJeQtjHems", ["IAL", "Walkthrough"]]]],
+    ["Graphs and transformations", "p1-graphs-transformations", [["MKp4yQoWBMM", ["IAL", "Walkthrough"]], ["PLSqFhPlgCw", ["IAL", "Walkthrough"]]]],
+    ["Trigonometry", "p1-trigonometry", [["6WayV3VTYTw", ["IAL", "Walkthrough"]], ["MnYB7tVgDzs", ["IAL", "Walkthrough"]]]],
+  ],
+  WMA12: [
+    ["Proof", "p2-proof", [["RapwlK8yFaw", ["IAL", "Walkthrough"]], ["1nPhyCvL6zg", ["IAL", "Walkthrough"]]]],
+    ["Algebra and functions", "p2-algebra-functions", [["KpCIRJd9vmw", ["IAL", "Walkthrough"]], ["e261hH7AHoE", ["IAL", "Walkthrough"]]]],
+    ["Coordinate geometry", "p2-coordinate-geometry", [["Z5ZnbRW3DhM", ["IAL", "Walkthrough"]], ["hK9vhfXb3tg", ["IAL", "Walkthrough"]]]],
+    ["Sequences and series", "p2-sequences-series", [["cMfz1Yqxe2s", ["IAL", "Walkthrough"]], ["wP_RiLCYsBs", ["IAL", "Walkthrough"]]]],
+    ["Radians and trigonometry", "p2-radians-trigonometry", [["gECKDmBzB9c", ["IAL", "Walkthrough"]], ["1Wmai0hOKUY", ["IAL", "Walkthrough"]]]],
+    ["Exponentials and logarithms", "p2-exponentials-logarithms", [["kknXLahiFZU", ["IAL", "Walkthrough"]], ["e2Z_3JvwloQ", ["IAL", "Walkthrough"]]]],
+  ],
+  WMA13: [
+    ["Algebra and functions", "p3-algebra-functions", [["EDlGNOVgqrs", ["IAL", "Walkthrough"]], ["W2_KiibyfuY", ["Concept support"]]]],
+    ["Trigonometry", "p3-trigonometry", [["tQxtuqB43rw", ["IAL", "Walkthrough"]], ["mPyTgOJ5UaA", ["Concept support"]]]],
+    ["Exponentials and logarithms", "p3-exponentials-logarithms", [["sfzC4RWilYA", ["IAL", "Walkthrough"]], ["j4_KgHbB62g", ["IAL", "Walkthrough"]]]],
+    ["Differentiation", "p3-differentiation", [["GXkJL8bA1Hg", ["IAL", "Walkthrough"]], ["n34eM0--kBU", ["IAL", "Walkthrough"]]]],
+    ["Integration", "p3-integration", [["yrcu9Pr2chs", ["IAL", "Walkthrough"]], ["hGMoOiogD4I", ["IAL", "Walkthrough"]]]],
+    ["Numerical methods", "p3-numerical-methods", [["bA3GcWBwi-s", ["IAL", "Walkthrough"]], ["xJ3xDQnWus0", ["IAL", "Walkthrough"]]]],
+  ],
+  WMA14: [
+    ["Algebra and functions", "p4-algebra-functions", [["_LR7wBnlIqA", ["IAL", "Walkthrough"]], ["KBTcfpCYdOs", ["IAL", "Walkthrough"]]]],
+    ["Trigonometry", "p4-trigonometry", [["UrKSBUA4B6U", ["IAL", "Walkthrough"]], ["dixrNCp4rDg", ["IAL", "Walkthrough"]]]],
+    ["Parametric equations", "p4-parametric-equations", [["HVDSJhqaZio", ["IAL", "Walkthrough"]], ["8NYzbNb22ko", ["IAL", "Walkthrough"]]]],
+    ["Differentiation", "p4-differentiation", [["xULvrH65OHE", ["IAL", "Walkthrough"]], ["OV-J9i76_aA", ["IAL", "Walkthrough"]]]],
+    ["Integration", "p4-integration", [["1yQxU_rVVN8", ["IAL", "Walkthrough"]], ["cxkv-tVmHSM", ["IAL", "Walkthrough"]]]],
+    ["Vectors", "p4-vectors", [["a-2YR6IC9JQ", ["IAL", "Walkthrough"]], ["odoi4GOPhQM", ["IAL", "Walkthrough"]]]],
+  ],
 };
 
 /** Units with no sections in the Syllabus library: build them from the spec. */

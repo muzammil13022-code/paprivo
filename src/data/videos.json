@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T09:08:36.707Z",
+  "generatedAt": "2026-11-14T09:15:06.677Z",
   "source": "Syllabus (edexcel-library.vercel.app) video picks, verified via YouTube oEmbed",
   "note": "Picks follow the Pearson IAL specification order. Videos tagged “Concept support” may use broader A-level coverage; check the specification for exact IAL scope.",
   "units": {
@@ -1237,53 +1237,101 @@
     ],
     "WMA11": [
       {
-        "name": "Pure Mathematics 1",
-        "summary": "Pure Mathematics 1",
-        "slug": "maths-topic-p1",
+        "name": "Algebraic expressions",
+        "summary": "",
+        "slug": "p1-algebraic-expressions",
         "videos": [
           {
-            "i": "qeByhTF8WEw",
-            "t": "How To Solve Quadratic Equations By Factoring - Quick & Simple! | Algebra Online Course",
-            "c": "The Organic Chemistry Tutor",
+            "i": "b8ZvHcI5J18",
+            "t": "EDEXCEL IAL P1 new Specimen Paper 2018 Q4  Indices & Surds",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
-              "Concept support"
+              "IAL",
+              "Walkthrough"
             ]
           },
           {
-            "i": "m1OitPmkydY",
-            "t": "Trig Identities",
-            "c": "The Organic Chemistry Tutor",
+            "i": "Y4oIN-boVe4",
+            "t": "EDEXCEL IAL P1 new Practice Paper B 2018 Q1  Simplifying Surds",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
-              "Concept support"
+              "IAL",
+              "Walkthrough"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Equations and inequalities",
+        "summary": "",
+        "slug": "p1-equations-inequalities",
+        "videos": [
+          {
+            "i": "rsvZzfSqSyo",
+            "t": "EDEXCEL IAL P1 new Practice Paper B 2018 Q5  Simultaneous Equations",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
             ]
           },
           {
-            "i": "kEcbxiLeGTc",
-            "t": "Solving Trigonometric Equations By Finding All Solutions",
-            "c": "The Organic Chemistry Tutor",
+            "i": "vlJeQtjHems",
+            "t": "EDEXCEL IAL P1 new Practice Paper B 2018 Q9  Quadratic Inequalities",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
-              "Concept support"
+              "IAL",
+              "Walkthrough"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Graphs and transformations",
+        "summary": "",
+        "slug": "p1-graphs-transformations",
+        "videos": [
+          {
+            "i": "MKp4yQoWBMM",
+            "t": "EDEXCEL IAL P1 new Practice Paper B 2018 Q6  Transformations of Graphs",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
             ]
           },
           {
-            "i": "9Yz-RCdS2Tg",
-            "t": "The Power Rule For Derivatives",
-            "c": "The Organic Chemistry Tutor",
+            "i": "PLSqFhPlgCw",
+            "t": "EDEXCEL IAL P1 new Specimen Paper 2018 Q1  Transformations of Graphs",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
-              "Concept support"
+              "IAL",
+              "Walkthrough"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Trigonometry",
+        "summary": "",
+        "slug": "p1-trigonometry",
+        "videos": [
+          {
+            "i": "6WayV3VTYTw",
+            "t": "WMA11/01 (Edexcel) IAL P1 June 2022, Q2, Trigonometry, The Sine Rule, Obtuse Angle",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
             ]
           },
           {
-            "i": "Gc3QvUB0PkI",
-            "t": "Definite Integral",
-            "c": "The Organic Chemistry Tutor",
+            "i": "MnYB7tVgDzs",
+            "t": "EDEXCEL IAL WMA11 01 P1 new OCT 2019 Q4 Area of Triangles, Trigonometry, Cosine Rule",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
-              "Concept support"
+              "IAL",
+              "Walkthrough"
             ]
           }
         ]
@@ -1291,80 +1339,151 @@
     ],
     "WMA12": [
       {
-        "name": "Pure Mathematics 2",
-        "summary": "Pure Mathematics 2",
-        "slug": "maths-topic-p2",
+        "name": "Proof",
+        "summary": "",
+        "slug": "p2-proof",
         "videos": [
           {
-            "i": "XZJdyPkCxuE",
-            "t": "Arithmetic Sequences and Arithmetic Series - Basic Introduction",
-            "c": "The Organic Chemistry Tutor",
-            "tags": [
-              "Lesson",
-              "Concept support"
-            ]
-          },
-          {
-            "i": "xTuNJNpQnys",
-            "t": "WMA12/01, (Edexcel), IAL, P2, June 2024, Q2, Arithmetic Series",
+            "i": "RapwlK8yFaw",
+            "t": "WMA12/01, (Edexcel), IAL, P2,  June 2025, Q10 Proof, Exhaustion",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Worked questions",
-              "IAL match"
+              "IAL",
+              "Walkthrough"
             ]
           },
           {
-            "i": "Jtv9Lnf7Zw8",
-            "t": "Properties of Logarithms",
-            "c": "The Organic Chemistry Tutor",
+            "i": "1nPhyCvL6zg",
+            "t": "WMA12/01, (Edexcel), IAL, P2,  June 2025(A), Q1, Proof by Exhaustion",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
-              "Concept support"
+              "IAL",
+              "Walkthrough"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Algebra and functions",
+        "summary": "",
+        "slug": "p2-algebra-functions",
+        "videos": [
+          {
+            "i": "KpCIRJd9vmw",
+            "t": "WMA12/01, (Edexcel), IAL, P2,  June 2025, Q4, Factor & Remainder Theorems, Algebraic Long Division",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
             ]
           },
           {
-            "i": "DASfP8KAyvs",
-            "t": "How To Graph Exponential Functions",
-            "c": "The Organic Chemistry Tutor",
+            "i": "e261hH7AHoE",
+            "t": "WMA12/01, (Edexcel), IAL, P2, June 2024 (R),Q6, The Factor & Remainder Theorems, Differentiation",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
-              "Concept support"
+              "IAL",
+              "Walkthrough"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Coordinate geometry",
+        "summary": "",
+        "slug": "p2-coordinate-geometry",
+        "videos": [
+          {
+            "i": "Z5ZnbRW3DhM",
+            "t": "WMA12/01, (Edexcel), IAL, P2,  June 2025, Q2 Equations of Circles",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
             ]
           },
           {
-            "i": "m1OitPmkydY",
-            "t": "Trig Identities",
-            "c": "The Organic Chemistry Tutor",
+            "i": "hK9vhfXb3tg",
+            "t": "WMA12/01, (Edexcel), IAL, P2,  June 2025(A), Q9, Equations of Circles",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
-              "Concept support"
+              "IAL",
+              "Walkthrough"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sequences and series",
+        "summary": "",
+        "slug": "p2-sequences-series",
+        "videos": [
+          {
+            "i": "cMfz1Yqxe2s",
+            "t": "WMA12/01, (Edexcel), IAL, P2,  January 2025, Q1, Arithmetic Series",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
             ]
           },
           {
-            "i": "kEcbxiLeGTc",
-            "t": "Solving Trigonometric Equations By Finding All Solutions",
-            "c": "The Organic Chemistry Tutor",
+            "i": "wP_RiLCYsBs",
+            "t": "WMA12/01, (Edexcel), IAL, P2,  June 2025, Q1 Binomial Expansion",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
-              "Concept support"
+              "IAL",
+              "Walkthrough"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Radians and trigonometry",
+        "summary": "",
+        "slug": "p2-radians-trigonometry",
+        "videos": [
+          {
+            "i": "gECKDmBzB9c",
+            "t": "WMA12/01, (Edexcel), IAL, P2,  June 2025, Q8 Solving Trigonometric Equations",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
             ]
           },
           {
-            "i": "9Yz-RCdS2Tg",
-            "t": "The Power Rule For Derivatives",
-            "c": "The Organic Chemistry Tutor",
+            "i": "1Wmai0hOKUY",
+            "t": "WMA11/01 EDEXCEL IAL P1 JAN 2019 Q10  Radian Measure",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
-              "Concept support"
+              "IAL",
+              "Walkthrough"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Exponentials and logarithms",
+        "summary": "",
+        "slug": "p2-exponentials-logarithms",
+        "videos": [
+          {
+            "i": "kknXLahiFZU",
+            "t": "WMA12/01, (Edexcel), IAL, P2,  June 2025, Q6 Logarithms & Exponential Equations",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
             ]
           },
           {
-            "i": "Gc3QvUB0PkI",
-            "t": "Definite Integral",
-            "c": "The Organic Chemistry Tutor",
+            "i": "e2Z_3JvwloQ",
+            "t": "WMA12/01, (Edexcel), IAL, P2, June 2024, Q3 Logarithms",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
-              "Concept support"
+              "IAL",
+              "Walkthrough"
             ]
           }
         ]
@@ -1462,80 +1581,149 @@
     ],
     "WMA13": [
       {
-        "name": "Pure Mathematics 3",
-        "summary": "Pure Mathematics 3",
-        "slug": "maths-topic-p3",
+        "name": "Algebra and functions",
+        "summary": "",
+        "slug": "p3-algebra-functions",
         "videos": [
           {
-            "i": "m1OitPmkydY",
-            "t": "Trig Identities",
-            "c": "The Organic Chemistry Tutor",
+            "i": "EDlGNOVgqrs",
+            "t": "[5] A2 (IAL) Pure Mathematics (P4) Solomon K Q3 Partial Fractions- Integration using 'ln'",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
-              "Concept support"
+              "IAL",
+              "Walkthrough"
             ]
           },
           {
-            "i": "kEcbxiLeGTc",
-            "t": "Solving Trigonometric Equations By Finding All Solutions",
-            "c": "The Organic Chemistry Tutor",
+            "i": "W2_KiibyfuY",
+            "t": "[9i] CAIE, 9709/32/O/N/09, P3, Nov 2008, Paper 3, Q8(i),  Partial Fractions - Quadratic Factor",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
               "Concept support"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Trigonometry",
+        "summary": "",
+        "slug": "p3-trigonometry",
+        "videos": [
+          {
+            "i": "tQxtuqB43rw",
+            "t": "WMA13/01, (Edexcel), IAL, P3 June 2024, Q7, Trigonometric Identities & Equations",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
             ]
           },
           {
-            "i": "Jtv9Lnf7Zw8",
-            "t": "Properties of Logarithms",
-            "c": "The Organic Chemistry Tutor",
+            "i": "mPyTgOJ5UaA",
+            "t": "[10] [P3] C3, (GCE), 6665/01, June 2013, Q8, Trig Identities, Harmonic Equations",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
               "Concept support"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Exponentials and logarithms",
+        "summary": "",
+        "slug": "p3-exponentials-logarithms",
+        "videos": [
+          {
+            "i": "sfzC4RWilYA",
+            "t": "EDEXCEL  IAL WMA13 P3 new Sample Assesment Paper Q8  Logarithms & Modelling as Straight Lines",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
             ]
           },
           {
-            "i": "DASfP8KAyvs",
-            "t": "How To Graph Exponential Functions",
-            "c": "The Organic Chemistry Tutor",
+            "i": "j4_KgHbB62g",
+            "t": "EDEXCEL  IAL WMA13 P3 new Sample Assesment Paper Q10 Exponentials & Logarithms   Modelling",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
-              "Concept support"
+              "IAL",
+              "Walkthrough"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Differentiation",
+        "summary": "",
+        "slug": "p3-differentiation",
+        "videos": [
+          {
+            "i": "GXkJL8bA1Hg",
+            "t": "EDEXCEL  IAL WMA13 P3 new Sample Assesment Paper Q5  Differentiation   The Quotient Rule",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
             ]
           },
           {
-            "i": "9Yz-RCdS2Tg",
-            "t": "The Power Rule For Derivatives",
-            "c": "The Organic Chemistry Tutor",
+            "i": "n34eM0--kBU",
+            "t": "EDEXCEL  IAL WMA13 P3 new Sample Assesment Paper Q7  Differentiation   Chain Rule",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
-              "Concept support"
+              "IAL",
+              "Walkthrough"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Integration",
+        "summary": "",
+        "slug": "p3-integration",
+        "videos": [
+          {
+            "i": "yrcu9Pr2chs",
+            "t": "EDEXCEL  IAL WMA13 P3 new Specimen Paper  Q2 Trigonometric Identities   Integration",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
             ]
           },
           {
-            "i": "Gc3QvUB0PkI",
-            "t": "Definite Integral",
-            "c": "The Organic Chemistry Tutor",
+            "i": "hGMoOiogD4I",
+            "t": "EDEXCEL  IAL WMA13 P3 new Specimen Paper  Q10 Iteration   Numerical Methods    Integration",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
-              "Concept support"
+              "IAL",
+              "Walkthrough"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Numerical methods",
+        "summary": "",
+        "slug": "p3-numerical-methods",
+        "videos": [
+          {
+            "i": "bA3GcWBwi-s",
+            "t": "EDEXCEL  IAL WMA13 P3 new Sample Assesment Paper 2018 Q2  Numerical Methods",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
             ]
           },
           {
-            "i": "Rn9Gr52zhrY",
-            "t": "Trapezoidal Rule",
-            "c": "The Organic Chemistry Tutor",
+            "i": "xJ3xDQnWus0",
+            "t": "WMA12/01, (Edexcel), IAL, P2, January 2024,  Q4, Exponential Graphs, Trapezium Rule",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
-              "Concept support"
-            ]
-          },
-          {
-            "i": "oa_PfSm-m7g",
-            "t": "Edexcel IAL P3 WMA13/01 October 2022 - Full Paper Walkthrough",
-            "c": "MedDude",
-            "tags": [
-              "Worked questions",
-              "IAL match"
+              "IAL",
+              "Walkthrough"
             ]
           }
         ]
@@ -1543,35 +1731,151 @@
     ],
     "WMA14": [
       {
-        "name": "Pure Mathematics 4",
-        "summary": "Pure Mathematics 4",
-        "slug": "maths-topic-p4",
+        "name": "Algebra and functions",
+        "summary": "",
+        "slug": "p4-algebra-functions",
         "videos": [
           {
-            "i": "sWSLLO3DS1I",
-            "t": "Integration By Parts",
-            "c": "The Organic Chemistry Tutor",
-            "tags": [
-              "Lesson",
-              "Concept support"
-            ]
-          },
-          {
-            "i": "BX3I7qWWuFA",
-            "t": "WMA14/01, (Edexcel), IAL P4, June 2024,  Q1, Integration by Parts, DI Method, Trig Functions",
+            "i": "_LR7wBnlIqA",
+            "t": "EDEXCEL  IAL WMA14 P4 new Sample Assesment Paper  Q3 Partial Fractions  Integration",
             "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Worked questions",
-              "IAL match"
+              "IAL",
+              "Walkthrough"
             ]
           },
           {
-            "i": "VzX8KJKFhlM",
-            "t": "Dot Product of Two Vectors",
-            "c": "The Organic Chemistry Tutor",
+            "i": "KBTcfpCYdOs",
+            "t": "EDEXCEL  IAL WMA14 P4 new Sample Assesment Paper  Q1 The Binomial Expansion",
+            "c": "Mr Hassaan's Maths Channel",
             "tags": [
-              "Lesson",
-              "Concept support"
+              "IAL",
+              "Walkthrough"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Trigonometry",
+        "summary": "",
+        "slug": "p4-trigonometry",
+        "videos": [
+          {
+            "i": "UrKSBUA4B6U",
+            "t": "[Q2] A2 (IAL) Pure Mathematics (P3)-Solomon Paper A  Q7 Trigonometric Addition Formulae",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
+            ]
+          },
+          {
+            "i": "dixrNCp4rDg",
+            "t": "[Q4] A2 (IAL) Pure Mathematics (P3)-Solomon Paper C Q7 Trig Addition Formulae",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Parametric equations",
+        "summary": "",
+        "slug": "p4-parametric-equations",
+        "videos": [
+          {
+            "i": "HVDSJhqaZio",
+            "t": "WMA14/01, (Edexcel), IAL P4, June 2025, Q5, Parametric Differentiation, Cartesian Form",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
+            ]
+          },
+          {
+            "i": "8NYzbNb22ko",
+            "t": "EDEXCEL  IAL WMA14 P4 new Sample Assesment Paper  Q7 Parametric Equations",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Differentiation",
+        "summary": "",
+        "slug": "p4-differentiation",
+        "videos": [
+          {
+            "i": "xULvrH65OHE",
+            "t": "WMA14/01, (Edexcel), IAL P4, June 2025, Q1, Implicit Differentiation, Equation of Tangent",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
+            ]
+          },
+          {
+            "i": "OV-J9i76_aA",
+            "t": "WMA14/01, (Edexcel), IAL P4, January 2025, Q2, Implicit Differentiation,",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Integration",
+        "summary": "",
+        "slug": "p4-integration",
+        "videos": [
+          {
+            "i": "1yQxU_rVVN8",
+            "t": "WMA14 01 IAL (Edexcel) P4  June Oct 2020 Q7 i Integration by Substitution",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
+            ]
+          },
+          {
+            "i": "cxkv-tVmHSM",
+            "t": "WMA14 01 IAL (Edexcel) P4  June Oct 2020 Q5 Integration by Parts",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Vectors",
+        "summary": "",
+        "slug": "p4-vectors",
+        "videos": [
+          {
+            "i": "a-2YR6IC9JQ",
+            "t": "WMA14/01, (Edexcel), IAL, P4, June 2024, Q6, Vector Equation of Straight Lines, Angles",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
+            ]
+          },
+          {
+            "i": "odoi4GOPhQM",
+            "t": "WMA14/01, (Edexcel), IAL P4, June 2024,  Q2, Vectors, Perpendicular Lines",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL",
+              "Walkthrough"
             ]
           }
         ]
