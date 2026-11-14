@@ -174,6 +174,7 @@ export const CURATED_UNITS = {
  */
 const H = ["Mr Hassaan", "Extra help"];
 const E = ["Mr Exham", "Extra help"];
+const O = ["The Organic Chemistry Tutor", "Extra help"];
 
 export const CURATED_EXTRAS = {
   WMA11: [
@@ -230,5 +231,85 @@ export const CURATED_EXTRAS = {
   WBI16: [
     ["Mr Exham — Advanced practicals", "ex-advanced-practicals", [["CR8jJak4jpY", E], ["HDigBCZJMwQ", E]]],
     ["Mr Exham — Statistical tests and evaluation", "ex-stats-evaluation", [["Me6X-MhpK8g", E], ["zva39Sobz-M", E]]],
+  ],
+
+  // Chemistry — one section per specification topic, The Organic Chemistry Tutor.
+  WCH11: [
+    ["Organic Chemistry Tutor — Moles and equations", "oct-moles", [["CK2yK_JTUH4", O], ["jtAj0s203CI", O]]],
+    ["Organic Chemistry Tutor — Atomic structure and the periodic table", "oct-atomic", [["NIwcDnFjj98", O], ["N8PaCCDplRw", O]]],
+    ["Organic Chemistry Tutor — Bonding and structure", "oct-bonding", [["S_k0kr2eZSQ", O], ["DBrq31w8vC4", O]]],
+    ["Organic Chemistry Tutor — Organic chemistry and alkanes", "oct-alkanes", [["TYU_JluleME", O], ["Tj7mXcWkrTE", O]]],
+    ["Organic Chemistry Tutor — Alkenes", "oct-alkenes", [["lKROX1C0JRs", O], ["6O-xSRC5Wg8", O]]],
+  ],
+  WCH12: [
+    ["Organic Chemistry Tutor — Energetics", "oct-enthalpy", [["2ixEf2zpR8E", O], ["HlvllF6Ml9c", O]]],
+    ["Organic Chemistry Tutor — Intermolecular forces", "oct-intermolecular", [["XSRa9P-xJl0", O], ["QdwzMPwPA3I", O]]],
+    ["Organic Chemistry Tutor — Redox and Groups 1, 2 and 7", "oct-redox-groups", [["j0hI-a6EWWo", O], ["t55mYdWC5mo", O], ["moRp4_oIioc", O]]],
+    ["Organic Chemistry Tutor — Kinetics and equilibria", "oct-rates-equilibria", [["JpoOfrPKgmM", O], ["bNcTt3l3Q8k", O]]],
+    ["Organic Chemistry Tutor — Halogenoalkanes, alcohols and spectra", "oct-halogenoalkanes", [["yrV85H737o", O], ["K07VceUan0k", O], ["SzVxYTp3pZY", O]]],
+  ],
+  WCH13: [
+    ["Organic Chemistry Tutor — Core techniques", "oct-core-techniques-1", [["HJvALCcKYAc", O], ["ekMM3-o_4FA", O]]],
+    ["Organic Chemistry Tutor — Analysis and evaluation", "oct-analysis-1", [["JbEo46uV6d4", O], ["l2yuDvwYq5g", O]]],
+    ["Organic Chemistry Tutor — Qualitative tests", "oct-qualitative", [["leCoWeIN-h8", O], ["FPidlCmymVg", O]]],
+  ],
+  WCH14: [
+    ["Organic Chemistry Tutor — Kinetics", "oct-kinetics", [["7I0Xg92_eA4", O], ["16fFjAcxJSc", O]]],
+    ["Organic Chemistry Tutor — Entropy and energetics", "oct-entropy", [["bp389WSTplY", O], ["2KuNzB0cZL4", O]]],
+    ["Organic Chemistry Tutor — Chemical equilibria", "oct-equilibria", [["J4WJCYpTYj8", O], ["s0PnM_LlUp4", O]]],
+    ["Organic Chemistry Tutor — Acid-base equilibria", "oct-acid-base", [["kBzPTEB21Po", O], ["OEW4-Sfyvik", O]]],
+    ["Organic Chemistry Tutor — Carbonyls, acids and chirality", "oct-carbonyls", [["2seAPy1sZHE", O], ["EqBfua_kQ70", O], ["yzfcrwJ37kI", O]]],
+  ],
+  WCH15: [
+    ["Organic Chemistry Tutor — Redox equilibria", "oct-redox-equilibria", [["lUXP856WluE", O], ["UzkLP8segcs", O]]],
+    ["Organic Chemistry Tutor — Transition metals", "oct-transition", [["r4H5XjJPn58", O], ["yeNtqjE0dJw", O]]],
+    ["Organic Chemistry Tutor — Arenes", "oct-arenes", [["ubtvxTvdWjA", O], ["7tsHis091lM", O]]],
+    ["Organic Chemistry Tutor — Organic nitrogen compounds", "oct-nitrogen", [["Y6AzMr0Fn3Y", O], ["GtyquGq3aSE", O], ["EzjyF2qvtLs", O]]],
+    ["Organic Chemistry Tutor — Organic synthesis", "oct-synthesis", [["nkh0egRNQz0", O], ["I85LgmfkJ0o", O]]],
+  ],
+  WCH16: [
+    ["Organic Chemistry Tutor — Advanced practicals", "oct-core-techniques-2", [["ekMM3-o_4FA", O], ["FPidlCmymVg", O]]],
+    ["Organic Chemistry Tutor — Evaluation style", "oct-evaluation-2", [["0IiHPKAvo7g", O], ["IBRzTvoHbHY", O]]],
+  ],
+
+  // Physics — one section per specification topic, The Organic Chemistry Tutor.
+  WPH11: [
+    ["Organic Chemistry Tutor — Kinematics and motion graphs", "oct-kinematics", [["dHjWVlfNraM", O], ["tfItlGfPHyo", O]]],
+    ["Organic Chemistry Tutor — Forces and Newton's laws", "oct-forces", [["g550H4e5FCY", O], ["52R61aSWHg0", O]]],
+    ["Organic Chemistry Tutor — Work, energy and power", "oct-work-energy", [["_MR1Dp8-F8w", O], ["_DwG8fukuj4", O]]],
+    ["Organic Chemistry Tutor — Momentum", "oct-momentum", [["FfaEbqmvKQA", O], ["9YRgHikdcqs", O]]],
+    ["Organic Chemistry Tutor — Fluids", "oct-fluids", [["nUKUzpRgdbY", O], ["Qgl_l0H7Qgc", O]]],
+    ["Organic Chemistry Tutor — Materials", "oct-materials", [["HALbtyDUjp0", O], ["qQZRTBRJbl4", O]]],
+  ],
+  WPH12: [
+    ["Organic Chemistry Tutor — The nature of light", "oct-light", [["KiJi8yqB_Rg", O], ["9hCrhllI0ck", O]]],
+    ["Organic Chemistry Tutor — Waves", "oct-waves", [["ys0mQbJYQjY", O], ["-8nn8hb0H8o", O]]],
+    ["Organic Chemistry Tutor — Wave-particle duality", "oct-duality", [["TX_4r76RppM", O], ["-LECEvusk8E", O]]],
+    ["Organic Chemistry Tutor — DC electricity", "oct-dc", [["dEuBykX5_B4", O], ["_rSHqvjDksg", O]]],
+  ],
+  WPH13: [
+    ["Organic Chemistry Tutor — Measurement techniques", "oct-measurement", [["8rZRYPoerPw", O], ["l2yuDvwYq5g", O]]],
+    ["Organic Chemistry Tutor — Uncertainties and errors", "oct-uncertainties", [["b881nOem4vg", O], ["NBnw_2gUiV4", O]]],
+    ["Organic Chemistry Tutor — Graphical analysis", "oct-graphs", [["P8hT5nDai6A", O], ["fyJAOD3X5tw", O]]],
+    ["Organic Chemistry Tutor — Core practicals recap", "oct-practicals-1", [["1Q15fgz-lUk", O], ["G1mZutobxDU", O]]],
+  ],
+  WPH14: [
+    ["Organic Chemistry Tutor — Further mechanics", "oct-further-mechanics", [["WQ9AH2S8B6Y", O], ["WzjIMuf-yuo", O]]],
+    ["Organic Chemistry Tutor — Circular motion", "oct-circular", [["IawY86XveQE", O], ["_psIWtPBHzA", O]]],
+    ["Organic Chemistry Tutor — Electric fields", "oct-electric-fields", [["kCp5yYjo9zE", O], ["LzKMQByFSLc", O]]],
+    ["Organic Chemistry Tutor — Capacitors", "oct-capacitors", [["BimpNou0orc", O], ["PTyB6_Kt_5A", O]]],
+    ["Organic Chemistry Tutor — Magnetic fields", "oct-magnetic", [["7MBawzone30", O], ["LDOa7UdfcMQ", O]]],
+    ["Organic Chemistry Tutor — Nuclear and particle physics", "oct-nuclear", [["cPRFF-eCGT8", O], ["eLwraf_A80U", O]]],
+  ],
+  WPH15: [
+    ["Organic Chemistry Tutor — Thermodynamics", "oct-thermodynamics", [["7Siv2NNCFag", O], ["TnDCxw0y6YM", O]]],
+    ["Organic Chemistry Tutor — Nuclear decay", "oct-decay", [["WTQvfvoOF3g", O], ["oSM6nyil7Q8", O]]],
+    ["Organic Chemistry Tutor — Oscillations", "oct-shm", [["_Gnke2x3vT8", O], ["iubb3eFBQ9U", O]]],
+    ["Organic Chemistry Tutor — Gravitational fields", "oct-gravitational", [["Ep1jIhHdf2A", O], ["CCsbSq9wlyI", O]]],
+  ],
+  WPH16: [
+    ["Organic Chemistry Tutor — Planning investigations", "oct-planning", [["xaAthgG0o8o", O], ["sNQsdrqsD_s", O]]],
+    ["Organic Chemistry Tutor — Analysis and evaluation", "oct-analysis-2", [["JbEo46uV6d4", O], ["0IiHPKAvo7g", O]]],
+    ["Organic Chemistry Tutor — Core practicals recap", "oct-practicals-2", [["1Q15fgz-lUk", O], ["PLQrPqYlPmI", O]]],
   ],
 };

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T09:22:27.533Z",
+  "generatedAt": "2026-11-14T11:35:21.148Z",
   "source": "Syllabus (edexcel-library.vercel.app) video picks, verified via YouTube oEmbed",
   "note": "Picks follow the Pearson IAL specification order. Videos tagged “Concept support” may use broader A-level coverage; check the specification for exact IAL scope.",
   "units": {
@@ -137,6 +137,131 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Moles and equations",
+        "summary": "",
+        "slug": "oct-moles",
+        "videos": [
+          {
+            "i": "CK2yK_JTUH4",
+            "t": "Stoichiometry - Limiting & Excess Reactant, Theoretical & Percent Yield - Chemistry",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "jtAj0s203CI",
+            "t": "How To Calculate Theoretical Yield and Percent Yield",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Atomic structure and the periodic table",
+        "summary": "",
+        "slug": "oct-atomic",
+        "videos": [
+          {
+            "i": "NIwcDnFjj98",
+            "t": "Electron Configuration - Basic introduction",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "N8PaCCDplRw",
+            "t": "Periodic Table of Elements Explained - Metals, Nonmetals, Valence Electrons, Charges",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Bonding and structure",
+        "summary": "",
+        "slug": "oct-bonding",
+        "videos": [
+          {
+            "i": "S_k0kr2eZSQ",
+            "t": "Introduction to Ionic Bonding and Covalent Bonding",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "DBrq31w8vC4",
+            "t": "VSEPR Theory - Basic Introduction",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Organic chemistry and alkanes",
+        "summary": "",
+        "slug": "oct-alkanes",
+        "videos": [
+          {
+            "i": "TYU_JluleME",
+            "t": "IUPAC Nomenclature of Alkanes - Naming Organic Compounds",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "Tj7mXcWkrTE",
+            "t": "Drawing Constitutional Isomers of Alkanes - Organic Chemistry",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Alkenes",
+        "summary": "",
+        "slug": "oct-alkenes",
+        "videos": [
+          {
+            "i": "lKROX1C0JRs",
+            "t": "Alkene Reactions",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "6O-xSRC5Wg8",
+            "t": "Markovnikov's Rule",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
       }
     ],
     "WCH12": [
@@ -246,6 +371,140 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Energetics",
+        "summary": "",
+        "slug": "oct-enthalpy",
+        "videos": [
+          {
+            "i": "2ixEf2zpR8E",
+            "t": "Hess's Law Problems & Enthalpy Change - Chemistry",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "HlvllF6Ml9c",
+            "t": "Calorimetry Problems, Thermochemistry Practice, Specific Heat Capacity, Enthalpy Fusion, Chemistry",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Intermolecular forces",
+        "summary": "",
+        "slug": "oct-intermolecular",
+        "videos": [
+          {
+            "i": "XSRa9P-xJl0",
+            "t": "Intermolecular Forces - Hydrogen Bonding, Dipole Dipole Interactions - Boiling Point & Solubility",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "QdwzMPwPA3I",
+            "t": "Intermolecular Forces - Hydrogen Bonding, Dipole-Dipole, Ion-Dipole, London Dispersion Interactions",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Redox and Groups 1, 2 and 7",
+        "summary": "",
+        "slug": "oct-redox-groups",
+        "videos": [
+          {
+            "i": "j0hI-a6EWWo",
+            "t": "How To Calculate Oxidation Numbers - Basic Introduction",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "t55mYdWC5mo",
+            "t": "Alkali Metals",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "moRp4_oIioc",
+            "t": "Halogens",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Kinetics and equilibria",
+        "summary": "",
+        "slug": "oct-rates-equilibria",
+        "videos": [
+          {
+            "i": "JpoOfrPKgmM",
+            "t": "Factors Affecting the Rate of the Reaction - Chemical Kinetics",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "bNcTt3l3Q8k",
+            "t": "Le Chatelier's Principle",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Halogenoalkanes, alcohols and spectra",
+        "summary": "",
+        "slug": "oct-halogenoalkanes",
+        "videos": [
+          {
+            "i": "K07VceUan0k",
+            "t": "Oxidation of Alcohols",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "SzVxYTp3pZY",
+            "t": "IR Spectroscopy - Practice Problems",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
       }
     ],
     "WCH13": [
@@ -268,6 +527,81 @@
             "c": "A level Simplified",
             "tags": [
               "Walkthrough"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Core techniques",
+        "summary": "",
+        "slug": "oct-core-techniques-1",
+        "videos": [
+          {
+            "i": "HJvALCcKYAc",
+            "t": "Acid Base Titration Problems, Basic Introduction, Calculations, Examples, Solution Stoichiometry",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "ekMM3-o_4FA",
+            "t": "Filtration and Crystallisation",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Analysis and evaluation",
+        "summary": "",
+        "slug": "oct-analysis-1",
+        "videos": [
+          {
+            "i": "JbEo46uV6d4",
+            "t": "Percent Error Made Easy!",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "l2yuDvwYq5g",
+            "t": "Significant Figures - A Fast Review!",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Qualitative tests",
+        "summary": "",
+        "slug": "oct-qualitative",
+        "videos": [
+          {
+            "i": "leCoWeIN-h8",
+            "t": "Precipitation Reactions and Net Ionic Equations - Chemistry",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "FPidlCmymVg",
+            "t": "Dilution Problems, Chemistry, Molarity & Concentration Examples, Formula & Equations",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
             ]
           }
         ]
@@ -366,6 +700,140 @@
             "tags": [
               "Lesson",
               "Concept support"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Kinetics",
+        "summary": "",
+        "slug": "oct-kinetics",
+        "videos": [
+          {
+            "i": "7I0Xg92_eA4",
+            "t": "Integrated Rate Laws - Zero, First, & Second Order Reactions - Chemical Kinetics",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "16fFjAcxJSc",
+            "t": "Arrhenius Equation Activation Energy and Rate Constant K Explained",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Entropy and energetics",
+        "summary": "",
+        "slug": "oct-entropy",
+        "videos": [
+          {
+            "i": "bp389WSTplY",
+            "t": "Entropy, Enthalpy, & Gibbs Free Energy - Chemistry Spontaneity Formulas",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "2KuNzB0cZL4",
+            "t": "Gibbs Free Energy - Entropy, Enthalpy & Equilibrium Constant K",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Chemical equilibria",
+        "summary": "",
+        "slug": "oct-equilibria",
+        "videos": [
+          {
+            "i": "J4WJCYpTYj8",
+            "t": "Chemical Equilibrium Constant K - Ice Tables - Kp and Kc",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "s0PnM_LlUp4",
+            "t": "How To Calculate Kp From Kc - Chemical Equilibrium",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Acid-base equilibria",
+        "summary": "",
+        "slug": "oct-acid-base",
+        "videos": [
+          {
+            "i": "kBzPTEB21Po",
+            "t": "Buffer Solutions",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "OEW4-Sfyvik",
+            "t": "pH, pOH, H3O+, OH-, Kw, Ka, Kb, pKa, and pKb Basic Calculations -Acids and Bases Chemistry Problems",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Carbonyls, acids and chirality",
+        "summary": "",
+        "slug": "oct-carbonyls",
+        "videos": [
+          {
+            "i": "2seAPy1sZHE",
+            "t": "Aldehydes and Ketones",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "EqBfua_kQ70",
+            "t": "Fischer Esterification Reaction Mechanism - Carboxylic Acid Derivatives",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "yzfcrwJ37kI",
+            "t": "Stereochemistry - R S Configuration & Fischer Projections",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
             ]
           }
         ]
@@ -468,6 +936,140 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Redox equilibria",
+        "summary": "",
+        "slug": "oct-redox-equilibria",
+        "videos": [
+          {
+            "i": "lUXP856WluE",
+            "t": "Standard Reduction Potentials of Half Reactions - Electrochemistry",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "UzkLP8segcs",
+            "t": "Cell Potential Problems - Electrochemistry",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Transition metals",
+        "summary": "",
+        "slug": "oct-transition",
+        "videos": [
+          {
+            "i": "r4H5XjJPn58",
+            "t": "Complex Ions, Ligands, & Coordination Compounds, Basic Introduction   Chemistry",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "yeNtqjE0dJw",
+            "t": "Naming Coordination Compounds - Chemistry",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Arenes",
+        "summary": "",
+        "slug": "oct-arenes",
+        "videos": [
+          {
+            "i": "ubtvxTvdWjA",
+            "t": "Electrophilic Aromatic Substitution Reactions Made Easy!",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "7tsHis091lM",
+            "t": "Nitration of Benzene Mechanism - Electrophilic Aromatic Substitution Reactions",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Organic nitrogen compounds",
+        "summary": "",
+        "slug": "oct-nitrogen",
+        "videos": [
+          {
+            "i": "Y6AzMr0Fn3Y",
+            "t": "Naming Amines - IUPAC Nomenclature & Common Names",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "GtyquGq3aSE",
+            "t": "Amine Synthesis Reactions Organic Chemistry - Summary & Practice Problems",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "EzjyF2qvtLs",
+            "t": "Naming Amides - IUPAC Nomenclature",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Organic synthesis",
+        "summary": "",
+        "slug": "oct-synthesis",
+        "videos": [
+          {
+            "i": "nkh0egRNQz0",
+            "t": "Organic Chemistry Reactions Summary",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "I85LgmfkJ0o",
+            "t": "Organic Chemistry Synthesis Reactions - Examples and Practice Problems - Retrosynthesis",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
       }
     ],
     "WCH16": [
@@ -490,6 +1092,56 @@
             "c": "Dr Hanaa Assil - Chemistry Teacher",
             "tags": [
               "Revision"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Advanced practicals",
+        "summary": "",
+        "slug": "oct-core-techniques-2",
+        "videos": [
+          {
+            "i": "ekMM3-o_4FA",
+            "t": "Filtration and Crystallisation",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "FPidlCmymVg",
+            "t": "Dilution Problems, Chemistry, Molarity & Concentration Examples, Formula & Equations",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Evaluation style",
+        "summary": "",
+        "slug": "oct-evaluation-2",
+        "videos": [
+          {
+            "i": "0IiHPKAvo7g",
+            "t": "Accuracy and Precision",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "IBRzTvoHbHY",
+            "t": "Uncertainty - Addition and Subtraction",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
             ]
           }
         ]
@@ -554,6 +1206,156 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Kinematics and motion graphs",
+        "summary": "",
+        "slug": "oct-kinematics",
+        "videos": [
+          {
+            "i": "dHjWVlfNraM",
+            "t": "Kinematics In One Dimension - Physics",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "tfItlGfPHyo",
+            "t": "How To Solve Projectile Motion Problems In Physics",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Forces and Newton's laws",
+        "summary": "",
+        "slug": "oct-forces",
+        "videos": [
+          {
+            "i": "g550H4e5FCY",
+            "t": "Newton's Law of Motion - First, Second & Third - Physics",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "52R61aSWHg0",
+            "t": "Free Body Diagrams - Tension, Friction, Inclined Planes, & Net Force",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Work, energy and power",
+        "summary": "",
+        "slug": "oct-work-energy",
+        "videos": [
+          {
+            "i": "_MR1Dp8-F8w",
+            "t": "Work, Energy, and Power - Basic Introduction",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "_DwG8fukuj4",
+            "t": "Conservation of Energy Physics Problems",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Momentum",
+        "summary": "",
+        "slug": "oct-momentum",
+        "videos": [
+          {
+            "i": "FfaEbqmvKQA",
+            "t": "Impulse and Momentum Conservation - Inelastic & Elastic Collisions",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "9YRgHikdcqs",
+            "t": "Conservation of Momentum In Two Dimensions - 2D Elastic & Inelastic Collisions - Physics Problems",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Fluids",
+        "summary": "",
+        "slug": "oct-fluids",
+        "videos": [
+          {
+            "i": "nUKUzpRgdbY",
+            "t": "Fluid Pressure, Density, Archimede & Pascal's Principle, Buoyant Force, Bernoulli's Equation Physics",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "Qgl_l0H7Qgc",
+            "t": "Archimedes Principle, Buoyant Force, Basic Introduction - Buoyancy & Density - Fluid Statics",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Materials",
+        "summary": "",
+        "slug": "oct-materials",
+        "videos": [
+          {
+            "i": "HALbtyDUjp0",
+            "t": "Elasticity & Hooke's Law - Intro to Young's Modulus, Stress & Strain, Elastic & Proportional Limit",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "qQZRTBRJbl4",
+            "t": "Stress & Strain - Elastic Modulus & Shear Modulus Practice Problems - Physics",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
       }
     ],
     "WPH12": [
@@ -597,6 +1399,106 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — The nature of light",
+        "summary": "",
+        "slug": "oct-light",
+        "videos": [
+          {
+            "i": "KiJi8yqB_Rg",
+            "t": "Snell's Law & Index of Refraction - Wavelength, Frequency and Speed of Light",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "9hCrhllI0ck",
+            "t": "Single Slit Diffraction - Physics Problems",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Waves",
+        "summary": "",
+        "slug": "oct-waves",
+        "videos": [
+          {
+            "i": "ys0mQbJYQjY",
+            "t": "Period, Frequency, Amplitude, & Wavelength - Waves",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "-8nn8hb0H8o",
+            "t": "Standing Waves on a String, Fundamental Frequency, Harmonics, Overtones, Nodes, Antinodes, Physics",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Wave-particle duality",
+        "summary": "",
+        "slug": "oct-duality",
+        "videos": [
+          {
+            "i": "TX_4r76RppM",
+            "t": "Wave Particle Duality - Basic Introduction",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "-LECEvusk8E",
+            "t": "Photoelectric Effect, Work Function, Threshold Frequency, Wavelength, Speed & Kinetic Energy, Electr",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — DC electricity",
+        "summary": "",
+        "slug": "oct-dc",
+        "videos": [
+          {
+            "i": "dEuBykX5_B4",
+            "t": "Resistors In Series and Parallel Circuits - Keeping It Simple!",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "_rSHqvjDksg",
+            "t": "Ohm's Law",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
       }
     ],
     "WPH13": [
@@ -619,6 +1521,106 @@
             "c": "Science Shorts",
             "tags": [
               "Revision"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Measurement techniques",
+        "summary": "",
+        "slug": "oct-measurement",
+        "videos": [
+          {
+            "i": "8rZRYPoerPw",
+            "t": "SI Base Units and Derived Units - Physics and Chemistry",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "l2yuDvwYq5g",
+            "t": "Significant Figures - A Fast Review!",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Uncertainties and errors",
+        "summary": "",
+        "slug": "oct-uncertainties",
+        "videos": [
+          {
+            "i": "b881nOem4vg",
+            "t": "Percent Uncertainty In Measurement",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "NBnw_2gUiV4",
+            "t": "Uncertainty - Multiplication and Division",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Graphical analysis",
+        "summary": "",
+        "slug": "oct-graphs",
+        "videos": [
+          {
+            "i": "P8hT5nDai6A",
+            "t": "Linear Regression Using Least Squares Method - Line of Best Fit Equation",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "fyJAOD3X5tw",
+            "t": "How To Find The Slope and Y Intercept of a Line | Linear Equations - Algebra",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Core practicals recap",
+        "summary": "",
+        "slug": "oct-practicals-1",
+        "videos": [
+          {
+            "i": "1Q15fgz-lUk",
+            "t": "The Simple Pendulum",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "G1mZutobxDU",
+            "t": "Resistor Color Code Chart Tutorial Review - Physics",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
             ]
           }
         ]
@@ -716,6 +1718,156 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Further mechanics",
+        "summary": "",
+        "slug": "oct-further-mechanics",
+        "videos": [
+          {
+            "i": "WQ9AH2S8B6Y",
+            "t": "Rotational Motion Physics, Basic Introduction, Angular Velocity & Tangential Acceleration",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "WzjIMuf-yuo",
+            "t": "Angular Momentum - Basic Introduction, Torque, Inertia, Conservation of Angular Momentum",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Circular motion",
+        "summary": "",
+        "slug": "oct-circular",
+        "videos": [
+          {
+            "i": "IawY86XveQE",
+            "t": "Uniform Circular Motion Formulas and Equations - College Physics",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "_psIWtPBHzA",
+            "t": "Centripetal Acceleration & Force - Circular Motion, Banked Curves, Static Friction, Physics Problems",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Electric fields",
+        "summary": "",
+        "slug": "oct-electric-fields",
+        "videos": [
+          {
+            "i": "kCp5yYjo9zE",
+            "t": "Coulomb's Law - Net Electric Force & Point Charges",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "LzKMQByFSLc",
+            "t": "Electric Potential",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Capacitors",
+        "summary": "",
+        "slug": "oct-capacitors",
+        "videos": [
+          {
+            "i": "BimpNou0orc",
+            "t": "Capacitors - Basic Introduction - Physics",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "PTyB6_Kt_5A",
+            "t": "How To Calculate The Energy Stored In a Capacitor",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Magnetic fields",
+        "summary": "",
+        "slug": "oct-magnetic",
+        "videos": [
+          {
+            "i": "7MBawzone30",
+            "t": "Magnetic Force on a Moving Charge In a Magnetic Field",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "LDOa7UdfcMQ",
+            "t": "Faraday's Law of Electromagnetic Induction, Magnetic Flux & Induced EMF - Physics & Electromagnetism",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Nuclear and particle physics",
+        "summary": "",
+        "slug": "oct-nuclear",
+        "videos": [
+          {
+            "i": "cPRFF-eCGT8",
+            "t": "Alpha Particles, Beta Particles, Gamma Rays, Positrons, Electrons, Protons, and Neutrons",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "eLwraf_A80U",
+            "t": "Nuclear Binding Energy Per Nucleon & Mass Defect Problems - Nuclear Chemistry",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
       }
     ],
     "WPH15": [
@@ -807,6 +1959,106 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Thermodynamics",
+        "summary": "",
+        "slug": "oct-thermodynamics",
+        "videos": [
+          {
+            "i": "7Siv2NNCFag",
+            "t": "First Law of Thermodynamics, Basic Introduction, Physics Problems",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "TnDCxw0y6YM",
+            "t": "Thermodynamics, PV Diagrams, Internal Energy, Heat, Work, Isothermal, Adiabatic, Isobaric, Physics",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Nuclear decay",
+        "summary": "",
+        "slug": "oct-decay",
+        "videos": [
+          {
+            "i": "WTQvfvoOF3g",
+            "t": "Half Life Chemistry Problems - Nuclear Radioactive Decay Calculations Practice Examples",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "oSM6nyil7Q8",
+            "t": "Half Life Equation Derivation",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Oscillations",
+        "summary": "",
+        "slug": "oct-shm",
+        "videos": [
+          {
+            "i": "_Gnke2x3vT8",
+            "t": "How To Solve Simple Harmonic Motion Problems In Physics",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "iubb3eFBQ9U",
+            "t": "Simple Harmonic Motion, Mass Spring System - Amplitude, Frequency, Velocity - Physics Problems",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Gravitational fields",
+        "summary": "",
+        "slug": "oct-gravitational",
+        "videos": [
+          {
+            "i": "Ep1jIhHdf2A",
+            "t": "Gravity, Universal Gravitation Constant - Gravitational Force Between Earth, Moon & Sun, Physics",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "CCsbSq9wlyI",
+            "t": "Kepler's Third Law of Planetary Motion Explained, Physics Problems, Period & Orbital Radius",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
       }
     ],
     "WPH16": [
@@ -829,6 +2081,81 @@
             "c": "Doctor No Does Science",
             "tags": [
               "Exam technique"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Planning investigations",
+        "summary": "",
+        "slug": "oct-planning",
+        "videos": [
+          {
+            "i": "xaAthgG0o8o",
+            "t": "Young's Double Slit Experiment",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "sNQsdrqsD_s",
+            "t": "Rutherford's Gold Foil Experiment - Quick and Simple!",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Analysis and evaluation",
+        "summary": "",
+        "slug": "oct-analysis-2",
+        "videos": [
+          {
+            "i": "JbEo46uV6d4",
+            "t": "Percent Error Made Easy!",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "0IiHPKAvo7g",
+            "t": "Accuracy and Precision",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Chemistry Tutor — Core practicals recap",
+        "summary": "",
+        "slug": "oct-practicals-2",
+        "videos": [
+          {
+            "i": "1Q15fgz-lUk",
+            "t": "The Simple Pendulum",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
+            "i": "PLQrPqYlPmI",
+            "t": "RC Circuits Physics Problems, Time Constant Explained, Capacitor Charging and Discharging",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
             ]
           }
         ]
