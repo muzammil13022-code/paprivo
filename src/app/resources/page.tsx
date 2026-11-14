@@ -5,6 +5,7 @@ import { ResourceLibrary } from "@/components/ResourceLibrary";
 import { allResources, countByType } from "@/lib/resources";
 import { SUBJECTS, SUBJECT_ORDER } from "@/lib/subjects";
 import { Reveal } from "@/components/Reveal";
+import { SubmitResource } from "@/components/SubmitResource";
 
 export const metadata: Metadata = {
   title: "Resource Library",
@@ -77,6 +78,8 @@ export default function ResourcesPage() {
           })}
         </div>
       </section>
+
+      <SubmitResource />
     </div>
   );
 }

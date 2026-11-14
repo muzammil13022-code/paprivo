@@ -70,7 +70,7 @@ export default async function SubjectVideosPage({ params }: Props) {
               <p className="text-sm text-muted mt-1">
                 {videos > 0
                   ? `${videos} video${videos === 1 ? "" : "s"} · ${sections} topic area${sections === 1 ? "" : "s"}`
-                  : "No verified videos yet"}
+                  : "Video not available yet"}
               </p>
             </Link>
           );

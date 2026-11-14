@@ -11,6 +11,7 @@ import {
   watchUrl,
   type TopicVideo,
 } from "@/lib/videos";
+import { SubmitResource } from "@/components/SubmitResource";
 
 interface Props {
   params: Promise<{ subject: string; unit: string }>;
@@ -94,8 +95,7 @@ export default async function UnitVideosPage({ params }: Props) {
                 </ul>
               ) : (
                 <p className="rounded-xl border border-dashed border-white/15 p-4 text-sm text-muted">
-                  No verified video for this area yet — nothing is listed rather than something
-                  off-spec.
+                  Video not available for this topic yet.
                 </p>
               )}
             </section>
@@ -103,7 +103,7 @@ export default async function UnitVideosPage({ params }: Props) {
         </div>
       ) : (
         <p className="rounded-2xl border border-card-border bg-card p-4 text-sm text-muted">
-          No verified videos for this unit yet.
+          Video not available for this unit yet.
         </p>
       )}
 
@@ -113,6 +113,8 @@ export default async function UnitVideosPage({ params }: Props) {
         </p>
         <p className="mt-2">Sources: {VIDEO_SOURCE}.</p>
       </section>
+
+      <SubmitResource context={`${meta.label} ${unitData.code}`} />
     </div>
   );
 }
