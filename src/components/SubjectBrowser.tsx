@@ -84,18 +84,20 @@ function PaperRow({ paper }: { paper: Paper }) {
       </button>
 
       <div className="flex gap-1.5 flex-wrap">
-        {paper.qp && (
+        {/* A gated file needs a Pearson login, so it is not offered at all. */}
+        {paper.qp && !paper.qp.gated && (
           <a className="doc-btn" href={paper.qp.url} target="_blank" rel="noopener noreferrer">
-            Paper{paper.qp.gated && <span title="Requires a free Pearson sign-in"> (sign-in)</span>}
+            Paper
           </a>
         )}
-        {paper.ms && (
+        {paper.ms && !paper.ms.gated && (
           <a className="doc-btn" href={paper.ms.url} target="_blank" rel="noopener noreferrer">
-            Mark scheme{paper.ms.gated && <span title="Requires a free Pearson sign-in"> (sign-in)</span>}
+            Mark scheme
           </a>
-        )}        {paper.er && (
+        )}
+        {paper.er && !paper.er.gated && (
           <a className="doc-btn" href={paper.er.url} target="_blank" rel="noopener noreferrer">
-            Report{paper.er.gated && <span title="Requires a free Pearson sign-in"> (sign-in)</span>}
+            Report
           </a>
         )}
         <a

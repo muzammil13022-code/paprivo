@@ -176,7 +176,17 @@
         "name": "Topic 8 — Redox Chemistry and Groups 1, 2 and 7",
         "summary": "Energetics, Group Chemistry, Halogenoalkanes and Alcohols",
         "slug": "chem-topic-8",
-        "videos": []
+        "videos": [
+          {
+            "i": "j8M1ihTdD1w",
+            "t": "8A Redox Chemistry - Edexcel IAS Chemistry (Unit 2)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL",
+              "Lesson"
+            ]
+          }
+        ]
       },
       {
         "name": "Topic 9 — Introduction to Kinetics and Equilibria",
@@ -243,7 +253,24 @@
         "name": "Practical Skills in Chemistry I",
         "summary": "Practical Skills in Chemistry I",
         "slug": "chem-practical-1",
-        "videos": []
+        "videos": [
+          {
+            "i": "BkVndJUnNkc",
+            "t": "This will save your Edexcel IAL Unit 3 Chemistry Exam",
+            "c": "chem bio by Hosni",
+            "tags": [
+              "Exam technique"
+            ]
+          },
+          {
+            "i": "_owWiKzKdfI",
+            "t": "Edexcel IAL Chemistry Unit 3 May 2026 (WCH13/01) | Full Paper Walkthrough & Solutions",
+            "c": "A level Simplified",
+            "tags": [
+              "Walkthrough"
+            ]
+          }
+        ]
       }
     ],
     "WCH14": [
@@ -267,13 +294,49 @@
         "name": "Topic 12 — Entropy and Energetics",
         "summary": "Rates, Equilibria and Further Organic Chemistry",
         "slug": "chem-topic-12",
-        "videos": []
+        "videos": [
+          {
+            "i": "ab478ih7Esw",
+            "t": "Total Entropy Change & Gibbs Free Energy | A Level Chemistry (Edexcel Spec)",
+            "c": "Lifeboat Teachers",
+            "tags": [
+              "Edexcel",
+              "Lesson"
+            ]
+          },
+          {
+            "i": "eE8xvgUgTZw",
+            "t": "Entropy (A-Level Chemistry)",
+            "c": "Chemistry Student",
+            "tags": [
+              "Concept support"
+            ]
+          }
+        ]
       },
       {
         "name": "Topic 13 — Chemical Equilibria",
         "summary": "Rates, Equilibria and Further Organic Chemistry",
         "slug": "chem-topic-13",
-        "videos": []
+        "videos": [
+          {
+            "i": "Gc0EwJTWmGc",
+            "t": "13A Chemical Equilibria (Part 1) - Edexcel IAL Chemistry (Unit 4)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL",
+              "Lesson"
+            ]
+          },
+          {
+            "i": "J4WJCYpTYj8",
+            "t": "Chemical Equilibrium Constant K - Ice Tables - Kp and Kc",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Concept support"
+            ]
+          }
+        ]
       },
       {
         "name": "Topic 14 — Acid–Base Equilibria",
@@ -329,7 +392,26 @@
         "name": "Topic 17 — Transition Metals and their Chemistry",
         "summary": "Transition Metals and Organic Nitrogen Chemistry",
         "slug": "chem-topic-17",
-        "videos": []
+        "videos": [
+          {
+            "i": "bcrb_vl0dq0",
+            "t": "EDEXCEL Topic 15 Transition Metals REVISION",
+            "c": "Allery Chemistry",
+            "tags": [
+              "Edexcel",
+              "Revision"
+            ]
+          },
+          {
+            "i": "AArtRcpypnw",
+            "t": "17A Principles of Transition Metal Chemistry - Edexcel IAL Chemistry (Unit 5)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL",
+              "Lesson"
+            ]
+          }
+        ]
       },
       {
         "name": "Topic 18 — Organic Chemistry: Arenes",
@@ -367,7 +449,25 @@
         "name": "Topic 20 — Organic Synthesis",
         "summary": "Transition Metals and Organic Nitrogen Chemistry",
         "slug": "chem-topic-20",
-        "videos": []
+        "videos": [
+          {
+            "i": "0Of7WwJJcmk",
+            "t": "20A Organic Synthesis - Edexcel IAL Chemistry (Unit 5)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL",
+              "Lesson"
+            ]
+          },
+          {
+            "i": "xf4BJ9gOahk",
+            "t": "Organic Synthesis -  A2 Chemistry -  Dr  Hanaa Assil",
+            "c": "Dr Hanaa Assil - Chemistry Teacher",
+            "tags": [
+              "Revision"
+            ]
+          }
+        ]
       }
     ],
     "WCH16": [
@@ -375,7 +475,24 @@
         "name": "Practical Skills in Chemistry II",
         "summary": "Practical Skills in Chemistry II",
         "slug": "chem-practical-2",
-        "videos": []
+        "videos": [
+          {
+            "i": "GtCKZDE3n8U",
+            "t": "Edexcel Unit 6 Revision | Inorganic Chemical Tests (Part 1)",
+            "c": "ReallyAcademics",
+            "tags": [
+              "Exam technique"
+            ]
+          },
+          {
+            "i": "tDVGjuPbXp4",
+            "t": "Unit 6   Review - A2 Chemistry Edexcel -  Dr  Hanaa Assil",
+            "c": "Dr Hanaa Assil - Chemistry Teacher",
+            "tags": [
+              "Revision"
+            ]
+          }
+        ]
       }
     ],
     "WPH11": [
@@ -487,7 +604,24 @@
         "name": "Practical Skills in Physics I",
         "summary": "Practical Skills in Physics I",
         "slug": "physics-practical-1",
-        "videos": []
+        "videos": [
+          {
+            "i": "No_xQ0Ycw4s",
+            "t": "How to Answer Any Practical Paper | Unit 3 Physics IAL Edexcel AS Level 🏆",
+            "c": "Hesal Studios",
+            "tags": [
+              "Exam technique"
+            ]
+          },
+          {
+            "i": "o1ai6nymCNM",
+            "t": "All of PRACTICAL SKILLS in 10 mins - A-level Physics",
+            "c": "Science Shorts",
+            "tags": [
+              "Revision"
+            ]
+          }
+        ]
       }
     ],
     "WPH14": [
@@ -563,7 +697,25 @@
         "name": "Nuclear and Particle Physics",
         "summary": "Further Mechanics, Fields and Particles",
         "slug": "physics-topic-7",
-        "videos": []
+        "videos": [
+          {
+            "i": "xsVzk2B-CPo",
+            "t": "ALL of Edexcel Nuclear and Particle Physics in 34 Minutes",
+            "c": "ZPhysics",
+            "tags": [
+              "Edexcel",
+              "Revision"
+            ]
+          },
+          {
+            "i": "8dfBUxRzWxU",
+            "t": "A Level Physics Revision: All of Nuclear Physics - the nucleus, strong force, quarks, beta decay",
+            "c": "ZPhysics",
+            "tags": [
+              "Concept support"
+            ]
+          }
+        ]
       }
     ],
     "WPH15": [
@@ -628,7 +780,33 @@
         "name": "Astrophysics and Cosmology",
         "summary": "Thermodynamics, Radiation, Oscillations and Cosmology",
         "slug": "physics-topic-11",
-        "videos": []
+        "videos": [
+          {
+            "i": "bCrClNWH_Y8",
+            "t": "Astrophysics & Cosmology: Complete Chapter | Edexcel IAL Physics",
+            "c": "ExamLantern",
+            "tags": [
+              "Edexcel",
+              "Revision"
+            ]
+          },
+          {
+            "i": "4Ws2A6hsrI0",
+            "t": "A Level Physics Revision: All of Astrophysics (in under 25 minutes!)",
+            "c": "ZPhysics",
+            "tags": [
+              "Concept support"
+            ]
+          },
+          {
+            "i": "Sqs-dWJB2CQ",
+            "t": "A Level Physics Revision: All of Cosmology | Parallax, parsecs, Doppler, CMBR, Hubble's Law",
+            "c": "ZPhysics",
+            "tags": [
+              "Concept support"
+            ]
+          }
+        ]
       }
     ],
     "WPH16": [
@@ -636,7 +814,24 @@
         "name": "Practical Skills in Physics II",
         "summary": "Practical Skills in Physics II",
         "slug": "physics-practical-2",
-        "videos": []
+        "videos": [
+          {
+            "i": "eEZ8WEOMT-o",
+            "t": "Full Syllabus Revision for Edexcel IAL Unit 6 (WPH16) ",
+            "c": "A2Z Physics",
+            "tags": [
+              "Revision"
+            ]
+          },
+          {
+            "i": "FQLiXawOOT4",
+            "t": "Edexcel International A-Level Physics: Unit 6 Practical Skills II - Uncertainties",
+            "c": "Doctor No Does Science",
+            "tags": [
+              "Exam technique"
+            ]
+          }
+        ]
       }
     ],
     "WBI11": [
@@ -874,7 +1069,24 @@
         "name": "Practical Skills in Biology I",
         "summary": "Practical Skills in Biology I",
         "slug": "bio-practical-1",
-        "videos": []
+        "videos": [
+          {
+            "i": "8RVK-vCKX-Q",
+            "t": "Edexcel IAL AS Biology Unit 3 (WBI13) | Full 1-Hour Summary | Elevare",
+            "c": "Team Elevare",
+            "tags": [
+              "Revision"
+            ]
+          },
+          {
+            "i": "dSQ5H1fL1Oo",
+            "t": "Watch this if you're taking IAL Biology Unit 3 Exam",
+            "c": "chem bio by Hosni",
+            "tags": [
+              "Exam technique"
+            ]
+          }
+        ]
       }
     ],
     "WBI14": [
@@ -882,7 +1094,26 @@
         "name": "Topic 5 — Energy Flow, Ecosystems and the Environment",
         "summary": "Energy, Environment, Microbiology and Immunity",
         "slug": "bio-topic-5",
-        "videos": []
+        "videos": [
+          {
+            "i": "JDIZ9F7Rbw0",
+            "t": "Topic 5 Revision | Ecosystems, Climate Change & Energy Flow | Edexcel IAL Biology",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "Edexcel",
+              "Revision"
+            ]
+          },
+          {
+            "i": "KOpO87TLWUs",
+            "t": "5C 1. Transfers Between Trophic Levels | Edexcel IAL Biology | Unit 4",
+            "c": "IAL Edexcel Brilliant Biology",
+            "tags": [
+              "IAL",
+              "Lesson"
+            ]
+          }
+        ]
       },
       {
         "name": "Topic 6 — Microbiology, Immunity and Forensics",
@@ -958,7 +1189,25 @@
         "name": "Topic 8 — Coordination, Response and Gene Technology",
         "summary": "Respiration, Internal Environment, Coordination and Gene Technology",
         "slug": "bio-topic-8",
-        "videos": []
+        "videos": [
+          {
+            "i": "L24NWY3Taas",
+            "t": "A level | Biology | Topic 8B | Coordination in Animals and Plants | Pearson Edexcel",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "Edexcel",
+              "Lesson"
+            ]
+          },
+          {
+            "i": "jHx-01plgyY",
+            "t": "DNA Technology: Genetic Engineering | A-level Biology | OCR, AQA, Edexcel",
+            "c": "Launchpad Learning",
+            "tags": [
+              "Concept support"
+            ]
+          }
+        ]
       }
     ],
     "WBI16": [
@@ -966,7 +1215,24 @@
         "name": "Practical Skills in Biology II",
         "summary": "Practical Skills in Biology II",
         "slug": "bio-practical-2",
-        "videos": []
+        "videos": [
+          {
+            "i": "83lS7oJ5WRU",
+            "t": "IAL Unit 6 Biology: Where the Marks Are in EVERY Question",
+            "c": "chem bio by Hosni",
+            "tags": [
+              "Exam technique"
+            ]
+          },
+          {
+            "i": "FsRQtuTyWCQ",
+            "t": "IAL Unit 6 Biology: 10 Practicals MOST Likely to Appear",
+            "c": "chem bio by Hosni",
+            "tags": [
+              "Revision"
+            ]
+          }
+        ]
       }
     ],
     "WMA11": [
@@ -1396,6 +1662,206 @@
             "tags": [
               "Lesson",
               "Concept support"
+            ]
+          }
+        ]
+      }
+    ],
+    "WME03": [
+      {
+        "name": "Variable acceleration",
+        "summary": "",
+        "slug": "m3-variable-acceleration",
+        "videos": [
+          {
+            "i": "uB3aZRL48_4",
+            "t": "Mechanics 3 - Dynamics - Video 1",
+            "c": "A Level Maths Tutorials",
+            "tags": [
+              "IAL",
+              "Lesson"
+            ]
+          },
+          {
+            "i": "VmFejlRepKM",
+            "t": "Edexcel IAL M3 Jan 2015 Q1 | Variable acceleration",
+            "c": "Lucy Michaels Maths",
+            "tags": [
+              "Past paper"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Elastic strings and springs",
+        "summary": "",
+        "slug": "m3-elastic-strings",
+        "videos": [
+          {
+            "i": "iD8qDTDKd9k",
+            "t": "Elastic Strings & Springs 1 • Hooke's Law • FM1 Ex3A • 🎯",
+            "c": "Bicen Maths",
+            "tags": [
+              "Concept support"
+            ]
+          },
+          {
+            "i": "-N3Y6UU7V0E",
+            "t": "Mechanics 3 Elastic Strings and Springs",
+            "c": "XYZ Institute - Mathematics",
+            "tags": [
+              "IAL",
+              "Lesson"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Simple harmonic motion",
+        "summary": "",
+        "slug": "m3-shm",
+        "videos": [
+          {
+            "i": "tL3EZIfHAIU",
+            "t": "5.3 Simple harmonic motion (Further Mechanics 2 - Chapter 5)",
+            "c": "Hinds Maths",
+            "tags": [
+              "Concept support"
+            ]
+          },
+          {
+            "i": "az5L05GhAxM",
+            "t": "Modelling with Differential Equations 4 • Simple Harmonic Motion • CP2 Ex8B • 🏆",
+            "c": "Bicen Maths",
+            "tags": [
+              "Concept support"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Centres of mass of solids",
+        "summary": "",
+        "slug": "m3-centres-of-mass",
+        "videos": [
+          {
+            "i": "BKhIL7ltALw",
+            "t": "Centres of Mass 1 • Intro and Particles on a line • FM2 Ex2A • 🚗",
+            "c": "Bicen Maths",
+            "tags": [
+              "Concept support"
+            ]
+          },
+          {
+            "i": "87EeSLHoA6c",
+            "t": "Further Centres of Mass (A2) 1 • 2D bodies - using calculus • FM2 Ex3A • 🚗",
+            "c": "Bicen Maths",
+            "tags": [
+              "Concept support"
+            ]
+          }
+        ]
+      }
+    ],
+    "WST03": [
+      {
+        "name": "Combinations of random variables",
+        "summary": "",
+        "slug": "s3-combinations",
+        "videos": [
+          {
+            "i": "Eujxit90MOk",
+            "t": "Linear Combinations of Random Variables | CIE A Level Probability & Statistics 2 | Exam-Ready Series",
+            "c": "Walter Maths Tutoring",
+            "tags": [
+              "Concept support"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sampling distributions",
+        "summary": "",
+        "slug": "s3-sampling",
+        "videos": [
+          {
+            "i": "RLnmwvF2N00",
+            "t": "S3 | Ch1 | Lesson1 | Sampling & Using a random number table | Statistics3 | WST03 | Pearson Edexcel",
+            "c": "Pi By Me_Maths",
+            "tags": [
+              "IAL",
+              "Lesson"
+            ]
+          },
+          {
+            "i": "DKnw03lMxsw",
+            "t": "S3 | Ch1 | Lesson2 | Random sampling | Statistics3 | WST03 | Pearson Edexcel",
+            "c": "Pi By Me_Maths",
+            "tags": [
+              "IAL",
+              "Lesson"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Estimation and confidence",
+        "summary": "",
+        "slug": "s3-estimation",
+        "videos": [
+          {
+            "i": "ENnlSlvQHO0",
+            "t": "Confidence Interval [Simply explained]",
+            "c": "numiqo",
+            "tags": [
+              "Concept support"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chi-squared tests",
+        "summary": "",
+        "slug": "s3-chi-squared",
+        "videos": [
+          {
+            "i": "eK1DGTfppe8",
+            "t": "6.1 Goodness of Fit (FS1 - Chapter 6: Chi-squared tests)",
+            "c": "Hinds Maths",
+            "tags": [
+              "Concept support"
+            ]
+          },
+          {
+            "i": "HKDqlYSLt68",
+            "t": "Chi Square Test",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "Concept support"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hypothesis tests for means",
+        "summary": "",
+        "slug": "s3-hypothesis-means",
+        "videos": [
+          {
+            "i": "9ENXa6c8WrM",
+            "t": "Edexcel A Level Maths: 3.7 Hypothesis Testing with the Normal Distribution",
+            "c": "Zeeshan Zamurred",
+            "tags": [
+              "Edexcel",
+              "Lesson"
+            ]
+          },
+          {
+            "i": "6fXC4cYWIxw",
+            "t": "Hypothesis testing with the normal distribution",
+            "c": "Maths Genie A-Level",
+            "tags": [
+              "Lesson"
             ]
           }
         ]

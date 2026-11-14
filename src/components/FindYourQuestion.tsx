@@ -35,7 +35,6 @@ function DocButtons({ hit, questionNumber }: { hit: QuestionSearchHit; questionN
           rel="noopener noreferrer"
         >
           View Question Paper{page ? ` · page ${page}` : ""}
-          {paper.qp.gated && <span className="text-xs font-normal text-muted">(Pearson sign-in)</span>}
           <span aria-hidden>↗</span>
         </a>
       ) : (
@@ -44,7 +43,6 @@ function DocButtons({ hit, questionNumber }: { hit: QuestionSearchHit; questionN
       {paper.ms ? (
         <a className="btn-secondary !text-on-card !border-card-border !bg-card hover:!border-accent" href={paper.ms.url} target="_blank" rel="noopener noreferrer">
           View Mark Scheme
-          {paper.ms.gated && <span className="text-xs font-normal text-muted">(Pearson sign-in)</span>}
           <span aria-hidden>↗</span>
         </a>
       ) : (
