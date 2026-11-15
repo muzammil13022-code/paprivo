@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T11:35:21.148Z",
+  "generatedAt": "2026-11-15T16:22:42.710Z",
   "source": "Syllabus (edexcel-library.vercel.app) video picks, verified via YouTube oEmbed",
   "note": "Picks follow the Pearson IAL specification order. Videos tagged “Concept support” may use broader A-level coverage; check the specification for exact IAL scope.",
   "units": {
@@ -262,6 +262,363 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Chemical language, the mole and relative masses",
+        "summary": "",
+        "slug": "guide-chemical-language-the-mole-and-relative-masses",
+        "videos": [
+          {
+            "i": "MamnC21lB-s",
+            "t": "1DE Formula, Solutions and Gases - Edexcel IAS Chemistry (Unit 1)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "wZ56ATdluiI",
+            "t": "Unit 1 Sample - Multiple Choice (Edexcel IAS Chemistry)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Concentrations, formulae and reacting masses",
+        "summary": "",
+        "slug": "guide-concentrations-formulae-and-reacting-masses",
+        "videos": [
+          {
+            "i": "JBiQOvpOy7I",
+            "t": "A-level Chemistry Sunday Sessions: Calculating Reacting Masses | Revision Webclass",
+            "c": "Launchpad Learning",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Determining formulae and equations experimentally",
+        "summary": "",
+        "slug": "guide-determining-formulae-and-equations-experimentally",
+        "videos": [
+          {
+            "i": "UtRI-PeSIv0",
+            "t": "determination of formulae | A Level Chemistry OCR A 2.1.3",
+            "c": "Chemistry Explained",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "PGwTnV0zIpk",
+            "t": "Empirical & Molecular Formulae + Water of Crystallisation | A Level Chemistry",
+            "c": "The Chemistry Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gas calculations, percentage yield and atom economy",
+        "summary": "",
+        "slug": "guide-gas-calculations-percentage-yield-and-atom-economy",
+        "videos": [
+          {
+            "i": "ghU481TjHQY",
+            "t": "Percentage Yield and Atom Economy IAL As Chemistry Unit 1 Lecture 3 :",
+            "c": "IGCSE and A Levels By Zainul Arfeen",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Equations and observations in test-tube reactions",
+        "summary": "",
+        "slug": "guide-equations-and-observations-in-test-tube-reactions",
+        "videos": [
+          {
+            "i": "1Zhwe-n0V2w",
+            "t": "1AB Equations and Types of Reactions - Edexcel IAS Chemistry (Unit 1)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "0jhNouV9TNo",
+            "t": "Precipitation Reactions & Net Ionic Equations - Chemistry",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Safety, nomenclature and reaction types",
+        "summary": "",
+        "slug": "guide-safety-nomenclature-and-reaction-types",
+        "videos": [
+          {
+            "i": "1QAa02IT7yE",
+            "t": "Homolytic and Heterolytic Bond Fission (A-level Chemistry)",
+            "c": "Chemistry Student",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Subatomic particles, isotopes and mass spectrometry",
+        "summary": "",
+        "slug": "guide-subatomic-particles-isotopes-and-mass-spectrometry",
+        "videos": [
+          {
+            "i": "f0UcVWoayf8",
+            "t": "IAS Chemistry Edexcel Unit 1 Chapter 2 - Mass Spectrometer",
+            "c": "Dr Hanaa Assil - Chemistry Teacher",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "aQZav_2ie_w",
+            "t": "2A Isotopes and Mass Spectrometry - Edexcel IAS Chemistry (Unit 1)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Orbitals, electron configurations and periodic trends",
+        "summary": "",
+        "slug": "guide-orbitals-electron-configurations-and-periodic-trends",
+        "videos": [
+          {
+            "i": "q8yA5z8WsHQ",
+            "t": "IAL Edexcel Chemistry Unit 1: Periodic Trends",
+            "c": "chem bio by Hosni",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ions, ionic lattices and polarisation",
+        "summary": "",
+        "slug": "guide-ions-ionic-lattices-and-polarisation",
+        "videos": [
+          {
+            "i": "KIuWH2kInQY",
+            "t": "3A Ionic Bonding - Edexcel IAS Chemistry (Unit 1)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Covalent bonds, structures and molecular polarity",
+        "summary": "",
+        "slug": "guide-covalent-bonds-structures-and-molecular-polarity",
+        "videos": [
+          {
+            "i": "cKDT0x5YG0E",
+            "t": "Polar and Non Polar Covalent Bonds IAL As Chemistry Unit 1 Lecture 18",
+            "c": "IGCSE and A Levels By Zainul Arfeen",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "IDp7FJkG9qI",
+            "t": "3B Covalent Molecules - Edexcel IAS Chemistry (Unit 1)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Electron-pair repulsion, molecular shapes and bond angles",
+        "summary": "",
+        "slug": "guide-electron-pair-repulsion-molecular-shapes-and-bond-angles",
+        "videos": [
+          {
+            "i": "GH3mS79hoYU",
+            "t": "VSEPR theory explaining the shapes of molecules and molecular ions.",
+            "c": "FranklyChemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "TfXXuLAD2tk",
+            "t": "How To Work Out The Shape Of A Molecule (VSEPR) | A Level & SL IB Chemistry",
+            "c": "Science with Hazel",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Metallic structure and properties",
+        "summary": "",
+        "slug": "guide-metallic-structure-and-properties",
+        "videos": [
+          {
+            "i": "tRKkGRBndto",
+            "t": "GCSE Chemistry - Metallic Bonding - Properties of Metals | Alloys & Pure Metals (2027/28 exams)",
+            "c": "Cognito",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "ileXLAvDXIU",
+            "t": "Metallic Bonding and the Electron Sea Model, Electrical Conductivity - Basic Introduction",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Alkanes: formulae and isomerism",
+        "summary": "",
+        "slug": "guide-alkanes-formulae-and-isomerism",
+        "videos": [
+          {
+            "i": "D39sKprZwLA",
+            "t": "Isomers Organic Chemistry: How to Name the Isomers and Draw the Structures of Organic compounds",
+            "c": "Excellence Academy",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Alkane reactions and free-radical substitution",
+        "summary": "",
+        "slug": "guide-alkane-reactions-and-free-radical-substitution",
+        "videos": [
+          {
+            "i": "Z55WdITjs_E",
+            "t": "Reactions of alkanes Organic Chemistry (A Level Chemistry) Edexcel IAL Chemistry Unit 2",
+            "c": "Maskematics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Alkane fuels, combustion and alternatives",
+        "summary": "",
+        "slug": "guide-alkane-fuels-combustion-and-alternatives",
+        "videos": [
+          {
+            "i": "1jW-ycPZGCk",
+            "t": "4B Alkanes - Edexcel IAS Chemistry (Unit 1)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Alkenes and geometric isomerism",
+        "summary": "",
+        "slug": "guide-alkenes-and-geometric-isomerism",
+        "videos": [
+          {
+            "i": "5GUi5Up-ZPc",
+            "t": "5A Alkenes - Edexcel IAS Chemistry (Unit 1)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Alkene reactions and electrophilic addition",
+        "summary": "",
+        "slug": "guide-alkene-reactions-and-electrophilic-addition",
+        "videos": [
+          {
+            "i": "7QFc7xzttxg",
+            "t": "Alkenes: Electrophilic Addition with Hydrogen Bromide, HBr (A-level and IB Chemistry)",
+            "c": "Chemistry Student",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "epswpqJpL9g",
+            "t": "Electrophilic Addition Reactions of Alkenes | Organic Chemistry",
+            "c": "Science with Dr. Johnson",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Addition polymers and polymer disposal",
+        "summary": "",
+        "slug": "guide-addition-polymers-and-polymer-disposal",
+        "videos": [
+          {
+            "i": "v-rTQZ9N3fk",
+            "t": "Addition Polymers",
+            "c": "Allery Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "pzDyNUxm97E",
+            "t": "5B Addition Polymers - Edexcel IAS Chemistry (Unit 1)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 1: Measurement of the molar volume of a gas",
+        "summary": "",
+        "slug": "guide-core-practical-1-measurement-of-the-molar-volume-of-a-gas",
+        "videos": [
+          {
+            "i": "bwe2Okxex88",
+            "t": "Edexcel AS Chemistry Practical 1: Molar Volume of a Gas Made Easy | Revision + Past Paper Questions",
+            "c": "Chemistry Simplified",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
       }
     ],
     "WCH12": [
@@ -505,6 +862,409 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Enthalpy changes and enthalpy diagrams",
+        "summary": "",
+        "slug": "guide-enthalpy-changes-and-enthalpy-diagrams",
+        "videos": [
+          {
+            "i": "p4bqEXxp9Ac",
+            "t": "STANDARD ENTHALPY CHANGES",
+            "c": "MaChemGuy",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "ZFRd4yzeyHA",
+            "t": "6ABCD Enthalpy Changes and Reactions - Edexcel IAS Chemistry (Unit 2)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hess's Law",
+        "summary": "",
+        "slug": "guide-hess-s-law",
+        "videos": [
+          {
+            "i": "wINd7lK5SFs",
+            "t": "6E Hess's Law - Edexcel IAS Chemistry (Unit 2)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bond enthalpies",
+        "summary": "",
+        "slug": "guide-bond-enthalpies",
+        "videos": [
+          {
+            "i": "x9s6KAxGxYc",
+            "t": "Mean Bond Enthalpies",
+            "c": "Allery Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Calorimetry calculations and evaluating energy-change experiments",
+        "summary": "",
+        "slug": "guide-calorimetry-calculations-and-evaluating-energy-change-experiments",
+        "videos": [
+          {
+            "i": "EWb5q8Bl39A",
+            "t": "Calorimetry: Calculate Enthalpy",
+            "c": "Anne Schmidt",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "LmLiVLZOTwg",
+            "t": "Calorimetry: How to calculate enthalpy change experimentally",
+            "c": "Tom Hoeffel",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Intermolecular forces and hydrogen bonding",
+        "summary": "",
+        "slug": "guide-intermolecular-forces-and-hydrogen-bonding",
+        "videos": [
+          {
+            "i": "yk6JqnBAxfE",
+            "t": "7A Intermolecular Forces - Edexcel IAS Chemistry (Unit 2)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "f0AU6eH8uxY",
+            "t": "7B Physical Properties - Edexcel IAS Chemistry (Unit 2)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oxidation numbers",
+        "summary": "",
+        "slug": "guide-oxidation-numbers",
+        "videos": [
+          {
+            "i": "IWzQm15e4xI",
+            "t": "8C Inorganic Chemistry of Group 7 - Edexcel IAS Chemistry (Unit 2)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oxidation numbers and ionic equations",
+        "summary": "",
+        "slug": "guide-oxidation-numbers-and-ionic-equations",
+        "videos": [
+          {
+            "i": "zmEDzzGD5kQ",
+            "t": "Skills - Identifying Redox Reactions and Half Equations",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Redox and disproportionation",
+        "summary": "",
+        "slug": "guide-redox-and-disproportionation",
+        "videos": [
+          {
+            "i": "DFlp2lW3IyY",
+            "t": "Worked example: Disproportionation reaction | Redox reactions | Chemistry | Khan Academy",
+            "c": "Khan Academy India - English",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "ShFKawO4QOo",
+            "t": "8B Elements of Group 1 and 2 - IAS Chemistry (Unit 2)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dynamic equilibrium and equilibrium position",
+        "summary": "",
+        "slug": "guide-dynamic-equilibrium-and-equilibrium-position",
+        "videos": [
+          {
+            "i": "rxAKHb5yT5U",
+            "t": "9B Equilibria - Edexcel IAS Chemistry (Unit 2)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "LGvdHxXjpaY",
+            "t": "Chemical Equilibria and Le Chatelier's Principle | A Level Chemistry | OCR, AQA, Edexcel",
+            "c": "Study Mind",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kinetics and catalysts",
+        "summary": "",
+        "slug": "guide-kinetics-and-catalysts",
+        "videos": [
+          {
+            "i": "qnSDnbB2VUc",
+            "t": "Maxwell-Boltzmann distribution, the effect of catalysts on reaction rate",
+            "c": "FlipChem",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "utWQtuwq3e8",
+            "t": "Kinetics 1: Rates of Reaction & Collision Theory | A Level Chemistry",
+            "c": "The Chemistry Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "KoY_Yj1CA_U",
+            "t": "11A Further Kinetics (Part 2) - Edexcel IAL Chemistry (Unit 4)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Classifying organic reactions",
+        "summary": "",
+        "slug": "guide-classifying-organic-reactions",
+        "videos": [
+          {
+            "i": "Hx5boNVSaac",
+            "t": "10B Halogenoalkanes - Edexcel IAS Chemistry (Unit 2)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "xScw2_aZ5UM",
+            "t": "4A Introduction to Organic Chemistry - Edexcel IAS Chemistry (Unit 1)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic reaction types and mechanisms",
+        "summary": "",
+        "slug": "guide-organic-reaction-types-and-mechanisms",
+        "videos": [
+          {
+            "i": "nWGRn5MFfg4",
+            "t": "A Level Chemistry reaction mechanisms walk through",
+            "c": "Letsgettothemarks",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Halogenoalkane structures, reactions and mechanisms",
+        "summary": "",
+        "slug": "guide-halogenoalkane-structures-reactions-and-mechanisms",
+        "videos": [
+          {
+            "i": "mtGv26D8uX0",
+            "t": "Halogenoalkanes | A level Chemistry",
+            "c": "The Chemistry Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Alcohol structures and reactions",
+        "summary": "",
+        "slug": "guide-alcohol-structures-and-reactions",
+        "videos": [
+          {
+            "i": "JQm34tryqZU",
+            "t": "10C Alcohols - Edexcel IAS Chemistry (Unit 2)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Alcohol oxidation and organic preparation techniques",
+        "summary": "",
+        "slug": "guide-alcohol-oxidation-and-organic-preparation-techniques",
+        "videos": [
+          {
+            "i": "4tkUFIfzszY",
+            "t": "(4K) OXIDATION OF A PRIMARY ALCOHOL (EDEXCEL A-LEVEL CHEMISTRY CORE PRACTICAL 7)",
+            "c": "Knightbus Science",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "L4SJ-ERAEXo",
+            "t": "Oxidation of Alcohols Reflux vs Distillation",
+            "c": "MaChemGuy",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "eLuSzbjs79k",
+            "t": "20A Organic Techniques - Edexcel IAL Chemistry (Unit 5)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mass spectra and infrared spectroscopy",
+        "summary": "",
+        "slug": "guide-mass-spectra-and-infrared-spectroscopy",
+        "videos": [
+          {
+            "i": "N2kDjPiAx4U",
+            "t": "10D Mass Spectra and IR - Edexcel IAS Chemistry (Unit 2)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Concentration calculations and volumetric-analysis uncertainty",
+        "summary": "",
+        "slug": "guide-concentration-calculations-and-volumetric-analysis-uncertainty",
+        "videos": [
+          {
+            "i": "pJ5Mwg5Oqso",
+            "t": "How to calculate uncertainty in titration",
+            "c": "Crunch Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "6Jx5Dy_Brog",
+            "t": "14B Acid-Base Titrations - Edexcel IAL Chemistry (Unit 4)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 2: Determination of an enthalpy change using Hess's Law",
+        "summary": "",
+        "slug": "guide-core-practical-2-determination-of-an-enthalpy-change-using-hess-s-law",
+        "videos": [
+          {
+            "i": "sY-MOpgobNs",
+            "t": "Core Practicals 1 and 2 - Edexcel IAS Chemistry (Unit 3)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 3: Finding the concentration of hydrochloric acid",
+        "summary": "",
+        "slug": "guide-core-practical-3-finding-the-concentration-of-hydrochloric-acid",
+        "videos": [
+          {
+            "i": "B0qX6iN_Sps",
+            "t": "Core Practicals 3 and 4 - Edexcel IAS Chemistry (Unit 3)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 5: Halogenoalkane hydrolysis rates",
+        "summary": "",
+        "slug": "guide-core-practical-5-halogenoalkane-hydrolysis-rates",
+        "videos": [
+          {
+            "i": "Yz-adz-2znM",
+            "t": "Core Practicals 5 and 6 - Edexcel IAS Chemistry (Unit 3)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 7: Oxidation of propan-1-ol",
+        "summary": "",
+        "slug": "guide-core-practical-7-oxidation-of-propan-1-ol",
+        "videos": [
+          {
+            "i": "adhHFjTn98s",
+            "t": "Core Practicals 7 and 8 - Edexcel IAS Chemistry (Unit 3)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
       }
     ],
     "WCH13": [
@@ -602,6 +1362,44 @@
             "tags": [
               "The Organic Chemistry Tutor",
               "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Planning practical methods and selecting equipment",
+        "summary": "",
+        "slug": "guide-planning-practical-methods-and-selecting-equipment",
+        "videos": [
+          {
+            "i": "mv60DPFd23k",
+            "t": "Edexcel IAL Chemistry Unit 3 – ALL-IN-ONE Practical Revision in 20 Minutes! 🔬 | Exam Hack",
+            "c": "Alevelallinones",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Measurements, data analysis and evaluation",
+        "summary": "",
+        "slug": "guide-measurements-data-analysis-and-evaluation",
+        "videos": [
+          {
+            "i": "6Jx5Dy_Brog",
+            "t": "14B Acid-Base Titrations - Edexcel IAL Chemistry (Unit 4)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "KgI8roa9Hv0",
+            "t": "8D Quantitative Chemistry - Edexcel IAS Chemistry (Unit 2)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
             ]
           }
         ]
@@ -834,6 +1632,301 @@
             "tags": [
               "The Organic Chemistry Tutor",
               "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rate equations, experimental methods and reaction order",
+        "summary": "",
+        "slug": "guide-rate-equations-experimental-methods-and-reaction-order",
+        "videos": [
+          {
+            "i": "bA6M372L7iw",
+            "t": "11A Further Kinetics (Part 1) - Edexcel IAL Chemistry (Unit 4)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "KoY_Yj1CA_U",
+            "t": "11A Further Kinetics (Part 2) - Edexcel IAL Chemistry (Unit 4)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Reaction mechanisms and rate-determining steps",
+        "summary": "",
+        "slug": "guide-reaction-mechanisms-and-rate-determining-steps",
+        "videos": [
+          {
+            "i": "iXyVh9TbTGU",
+            "t": "SN1 and SN2 Mechanisms (A-level Chemistry)",
+            "c": "Chemistry Student",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "ijdglGENBKI",
+            "t": "Monitoring Rate of Reaction - Iodination of Propanone - A-level Chemistry Required Practical",
+            "c": "Malmesbury Education",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Activation energy and heterogeneous catalysts",
+        "summary": "",
+        "slug": "guide-activation-energy-and-heterogeneous-catalysts",
+        "videos": [
+          {
+            "i": "i9TSLa3XNpQ",
+            "t": "The Arrhenius Equation, Activation Energy, and Catalysis Explained Pt  8",
+            "c": "Shawn Shields",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Entropy and the direction of change",
+        "summary": "",
+        "slug": "guide-entropy-and-the-direction-of-change",
+        "videos": [
+          {
+            "i": "5e9Lvu_DRxE",
+            "t": "12A Entropy - Edexcel IAL Chemistry (Unit 4)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lattice energy and Born-Haber cycles",
+        "summary": "",
+        "slug": "guide-lattice-energy-and-born-haber-cycles",
+        "videos": [
+          {
+            "i": "DRmQBZ_K4eg",
+            "t": "12B Lattice Energy - Edexcel IAL Chemistry (Unit 4)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ionic bonding, hydration and solubility",
+        "summary": "",
+        "slug": "guide-ionic-bonding-hydration-and-solubility",
+        "videos": [
+          {
+            "i": "fDglQCYTiqc",
+            "t": "Enthalpy of Solution, Enthalpy of Hydration, Lattice Energy and Heat of Formation - Chemistry",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chemical equilibria and equilibrium constants",
+        "summary": "",
+        "slug": "guide-chemical-equilibria-and-equilibrium-constants",
+        "videos": [
+          {
+            "i": "TvGOFQLaWhs",
+            "t": "13A Chemical Equilibria (Part 2) - Edexcel IAL Chemistry (Unit 4)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Acid-base concepts and pH calculations",
+        "summary": "",
+        "slug": "guide-acid-base-concepts-and-ph-calculations",
+        "videos": [
+          {
+            "i": "WrEC_alK-zw",
+            "t": "14A Strong and Weak Acids - Edexcel IAL Chemistry (Unit 4)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "2kOugsIOHxs",
+            "t": "Acids and Bases 1: pH, Kw, Ka & pKa | A Level Chemistry",
+            "c": "The Chemistry Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "pH investigations, titration curves and indicators",
+        "summary": "",
+        "slug": "guide-ph-investigations-titration-curves-and-indicators",
+        "videos": [
+          {
+            "i": "6Jx5Dy_Brog",
+            "t": "14B Acid-Base Titrations - Edexcel IAL Chemistry (Unit 4)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chirality and optical isomerism",
+        "summary": "",
+        "slug": "guide-chirality-and-optical-isomerism",
+        "videos": [
+          {
+            "i": "NwwisoFdXp8",
+            "t": "15A Chirality - Edexcel IAL Chemistry (Unit 4)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Aldehydes, ketones and carbonyl reactions",
+        "summary": "",
+        "slug": "guide-aldehydes-ketones-and-carbonyl-reactions",
+        "videos": [
+          {
+            "i": "A-PUcKHAabo",
+            "t": "Aldehydes and Ketones - Nucleophilic Addition (A2 Chemistry)",
+            "c": "Dr Roe Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "yHkl_sAEf1g",
+            "t": "Nucleophilic Addition Reaction Mechanism, Grignard Reagent, NaBH4, LiAlH4, Imine, Enamine, Reduction",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Carbonyl compound tests",
+        "summary": "",
+        "slug": "guide-carbonyl-compound-tests",
+        "videos": [
+          {
+            "i": "lvWUHGY_aaM",
+            "t": "15B Carbonyl Compounds - Edexcel IAL Chemistry (Unit 4)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Carboxylic acids: structures, properties and reactions",
+        "summary": "",
+        "slug": "guide-carboxylic-acids-structures-properties-and-reactions",
+        "videos": [
+          {
+            "i": "FpPFT6I4yN4",
+            "t": "15C Carboxylic Acids - Edexcel IAL Chemistry (Unit 4)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chromatography",
+        "summary": "",
+        "slug": "guide-chromatography",
+        "videos": [
+          {
+            "i": "iSltjoCTt9g",
+            "t": "15E Chromatography - Edexcel IAL Chemistry (Unit 4)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mass spectrometry and NMR spectroscopy",
+        "summary": "",
+        "slug": "guide-mass-spectrometry-and-nmr-spectroscopy",
+        "videos": [
+          {
+            "i": "U4VtwCiEnJ0",
+            "t": "Mass Spectrometry, NMR, and IR Spectroscopy explained",
+            "c": "Loreen Alhelal",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 9a and 9b: iodine-propanone rate and iodine clock",
+        "summary": "",
+        "slug": "guide-core-practical-9a-and-9b-iodine-propanone-rate-and-iodine-clock",
+        "videos": [
+          {
+            "i": "th7tZ-INIGA",
+            "t": "Core Practical 9b: Harcourt-Esson Iodine Clock Reaction | A Level Chemistry | Edexcel IAL",
+            "c": "Lifeboat Teachers",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 10: finding activation energy",
+        "summary": "",
+        "slug": "guide-core-practical-10-finding-activation-energy",
+        "videos": [
+          {
+            "i": "oXjlvh4FXQQ",
+            "t": "Finding the activation energy for a reaction",
+            "c": "HRChem",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "WqaoujqElnU",
+            "t": "Core Practicals 9 and 10 - Edexcel IAL Chemistry (Unit 6)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
             ]
           }
         ]
@@ -1070,6 +2163,218 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Redox and electrode potentials",
+        "summary": "",
+        "slug": "guide-redox-and-electrode-potentials",
+        "videos": [
+          {
+            "i": "aZg6FBYTgC8",
+            "t": "16A Electrochemical Cells - Edexcel IAL Chemistry (Unit 5)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "Dm4cKTpdyLY",
+            "t": "16A Standard Electrode Potentials - Edexcel IAL Chemistry (Unit 5)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cell emf, redox feasibility and disproportionation",
+        "summary": "",
+        "slug": "guide-cell-emf-redox-feasibility-and-disproportionation",
+        "videos": [
+          {
+            "i": "_HEc-_y61ng",
+            "t": "Redox and Transition Metals MCQs A2 Chemistry Unit 5 Lecture 4 part c",
+            "c": "IGCSE and A Levels By Zainul Arfeen",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Investigating electrochemical cells",
+        "summary": "",
+        "slug": "guide-investigating-electrochemical-cells",
+        "videos": [
+          {
+            "i": "igpwN3m_4Sw",
+            "t": "Electrochemical cells – practical video | 16–18 years",
+            "c": "Royal Society of Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fuel cells",
+        "summary": "",
+        "slug": "guide-fuel-cells",
+        "videos": [
+          {
+            "i": "BKcR-VQ1dYE",
+            "t": "16B Fuel Cells and Redox Titrations - Edexcel IAL Chemistry (Unit 5)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "o2ejTPS9gI0",
+            "t": "Fuel Cells | A-level Chemistry | OCR, AQA, Edexcel",
+            "c": "Launchpad Learning",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Vanadium and chromium redox chemistry",
+        "summary": "",
+        "slug": "guide-vanadium-and-chromium-redox-chemistry",
+        "videos": [
+          {
+            "i": "j8M1ihTdD1w",
+            "t": "8A Redox Chemistry - Edexcel IAS Chemistry (Unit 2)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Transition-metal ion reactions and ligand exchange",
+        "summary": "",
+        "slug": "guide-transition-metal-ion-reactions-and-ligand-exchange",
+        "videos": [
+          {
+            "i": "ROYzJPGVJeo",
+            "t": "17B Transition Metal Reactions (Part 1) - Edexcel IAL Chemistry (Unit 5)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "FQZ0A-3ZXVU",
+            "t": "Transition Metal Chemistry IAL Edexcel Unit 5 Ch-17 Lecture Part 2 Transition Metal Reactions",
+            "c": "Maskematics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Arenes: benzene and phenol",
+        "summary": "",
+        "slug": "guide-arenes-benzene-and-phenol",
+        "videos": [
+          {
+            "i": "_PQGB_CtV54",
+            "t": "18A Benzene (Arenes) - Edexcel IAL Level Chemistry (Unit 5)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Amines, amides, amino acids and polymers",
+        "summary": "",
+        "slug": "guide-amines-amides-amino-acids-and-polymers",
+        "videos": [
+          {
+            "i": "tgwFtnYb6JA",
+            "t": "19A Amines - Edexcel IAL Chemistry (Unit 5)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic synthesis and structure determination",
+        "summary": "",
+        "slug": "guide-organic-synthesis-and-structure-determination",
+        "videos": [
+          {
+            "i": "0rje7f2PUEE",
+            "t": "Organic Synthesis Q & A -  Unit 5 A2 Chemistry Edexcel - Dr  Hanaa Assil",
+            "c": "Dr Hanaa Assil - Chemistry Teacher",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "eLuSzbjs79k",
+            "t": "20A Organic Techniques - Edexcel IAL Chemistry (Unit 5)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Redox titrations: manganate(VII) and iodine-thiosulfate",
+        "summary": "",
+        "slug": "guide-redox-titrations-manganate-vii-and-iodine-thiosulfate",
+        "videos": [
+          {
+            "i": "RyDPHbrxmM4",
+            "t": "Core Practicals 13 and 14 - Edexcel IAL Chemistry (Unit 6)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Analysis of inorganic and organic unknowns",
+        "summary": "",
+        "slug": "guide-analysis-of-inorganic-and-organic-unknowns",
+        "videos": [
+          {
+            "i": "W94itF9kROY",
+            "t": "Core Practicals 15 and 16 - Edexcel IAL Chemistry (Unit 6)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Preparation of aspirin",
+        "summary": "",
+        "slug": "guide-preparation-of-aspirin",
+        "videos": [
+          {
+            "i": "sZY0XFuQsfU",
+            "t": "A Level Experiment A16 Aspirin Preparation",
+            "c": "St Peter's School Community",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
       }
     ],
     "WCH16": [
@@ -1142,6 +2447,74 @@
             "tags": [
               "The Organic Chemistry Tutor",
               "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Practical planning, methods, apparatus and safety",
+        "summary": "",
+        "slug": "guide-practical-planning-methods-apparatus-and-safety",
+        "videos": [
+          {
+            "i": "Yz-adz-2znM",
+            "t": "Core Practicals 5 and 6 - Edexcel IAS Chemistry (Unit 3)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "adhHFjTn98s",
+            "t": "Core Practicals 7 and 8 - Edexcel IAS Chemistry (Unit 3)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Practical measurements, data analysis and evaluation",
+        "summary": "",
+        "slug": "guide-practical-measurements-data-analysis-and-evaluation",
+        "videos": [
+          {
+            "i": "sY-MOpgobNs",
+            "t": "Core Practicals 1 and 2 - Edexcel IAS Chemistry (Unit 3)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic practical techniques: reaction and purification",
+        "summary": "",
+        "slug": "guide-organic-practical-techniques-reaction-and-purification",
+        "videos": [
+          {
+            "i": "eLuSzbjs79k",
+            "t": "20A Organic Techniques - Edexcel IAL Chemistry (Unit 5)",
+            "c": "Miss Natalie Chemistry",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Distillation and physical-property measurements",
+        "summary": "",
+        "slug": "guide-distillation-and-physical-property-measurements",
+        "videos": [
+          {
+            "i": "cm5LLaEIcOg",
+            "t": "Distillation CHEM2050",
+            "c": "chem2050",
+            "tags": [
+              "IAL video guide"
             ]
           }
         ]
@@ -1356,6 +2729,219 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Motion and motion graphs",
+        "summary": "",
+        "slug": "guide-motion-and-motion-graphs",
+        "videos": [
+          {
+            "i": "Gt-MRH0YTGA",
+            "t": "Pearson Edexcel IAL Physics Unit 1 Mechanics | SUVAT, Motion Graphs & Vectors | Complete Lecture",
+            "c": "IGCSE & A Level ExamCrack 🔎",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "mXRi3zuLEMY",
+            "t": "Motion Graphs - Areas: Mechanics: Edexcel A-level Physics",
+            "c": "Nutshell Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Vectors and projectile motion",
+        "summary": "",
+        "slug": "guide-vectors-and-projectile-motion",
+        "videos": [
+          {
+            "i": "rXFeDBlzrHM",
+            "t": "1.1.3 Adding and resolving vectors: Unit 1 mechanics and material: Edexcel IAL Physics:",
+            "c": "Pla Academy: IGCSE and A level buddy",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "qYfRWaZDseI",
+            "t": "1.1.6 Projectile Motion: Unit 1 mechanics and material: Edexcel IAL Physics",
+            "c": "Pla Academy: IGCSE and A level buddy",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forces, Newton's laws and weight",
+        "summary": "",
+        "slug": "guide-forces-newton-s-laws-and-weight",
+        "videos": [
+          {
+            "i": "aWgrwyhTSTs",
+            "t": "Lesson on Force Edexcel IAL Unit 1 WPH11 Resultant Free-body diagram equilibrium Newton law Moment",
+            "c": "Aravinth Physics Maths Lessons",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "WfSviDc1D1o",
+            "t": "1.1.5 Newton’s laws of motion: Unit 1 mechanics and material: Edexcel IAL Physics",
+            "c": "Pla Academy: IGCSE and A level buddy",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Momentum, interactions and moments",
+        "summary": "",
+        "slug": "guide-momentum-interactions-and-moments",
+        "videos": [
+          {
+            "i": "MJs90utsVVU",
+            "t": "1.1.4 Moments: Unit 1 mechanics and material: Edexcel IAL Physics",
+            "c": "Pla Academy: IGCSE and A level buddy",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "Xz1YCu6VCa0",
+            "t": "1.3 Momentum: Unit 1 mechanics and material: Edexcel IAL Physics",
+            "c": "Pla Academy: IGCSE and A level buddy",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Work, energy, power and efficiency",
+        "summary": "",
+        "slug": "guide-work-energy-power-and-efficiency",
+        "videos": [
+          {
+            "i": "1zRGE8YNgEw",
+            "t": "1.2 Energy, work and power: Unit 1 mechanics and material: Edexcel IAL Physics",
+            "c": "Pla Academy: IGCSE and A level buddy",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "huP1xQiLIWo",
+            "t": "Efficiency - A Level Physics",
+            "c": "Physics Online",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Density, upthrust and viscous drag",
+        "summary": "",
+        "slug": "guide-density-upthrust-and-viscous-drag",
+        "videos": [
+          {
+            "i": "Xz2GUJnV5D0",
+            "t": "Physics of Fluids  Density, Buoyancy, and Viscosity",
+            "c": "Amphil",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hooke's law, stress, strain and Young modulus",
+        "summary": "",
+        "slug": "guide-hooke-s-law-stress-strain-and-young-modulus",
+        "videos": [
+          {
+            "i": "NBKr4CH5Yr8",
+            "t": "Hookes law, stress, strain and young modulus IAL As Physics Unit 1 Lecture 21 part a",
+            "c": "IGCSE and A Levels By Zainul Arfeen",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Stress-strain behaviour and elastic energy",
+        "summary": "",
+        "slug": "guide-stress-strain-behaviour-and-elastic-energy",
+        "videos": [
+          {
+            "i": "xlO3gfUBaG4",
+            "t": "6.1b Graphs of Stress-Strain and Force-Extension | AS Deformation | Cambridge A Level 9702 Physics",
+            "c": "ETphysics",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "aaDfHS5JVsU",
+            "t": "Stress-Strain Curves in Detail - A Level Physics",
+            "c": "Physics Online",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Determine the acceleration of a freely falling object",
+        "summary": "",
+        "slug": "guide-determine-the-acceleration-of-a-freely-falling-object",
+        "videos": [
+          {
+            "i": "uY7fET2u-Eo",
+            "t": "Core Practical 1: Mechanics: Edexcel A-level Physics",
+            "c": "Nutshell Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 3: Young modulus",
+        "summary": "",
+        "slug": "guide-core-practical-3-young-modulus",
+        "videos": [
+          {
+            "i": "t_OuvPkm6fM",
+            "t": "Core Practical 5 - Young Modulus: Materials: Edexcel A-level Physics",
+            "c": "Nutshell Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Determine liquid viscosity using the falling-ball method",
+        "summary": "",
+        "slug": "guide-determine-liquid-viscosity-using-the-falling-ball-method",
+        "videos": [
+          {
+            "i": "pwhGUDRvvqk",
+            "t": "Core Prac 4 - Viscosity: Materials: Edexcel A-level Physics",
+            "c": "Nutshell Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
       }
     ],
     "WPH12": [
@@ -1499,6 +3085,273 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Wave quantities and wave representations",
+        "summary": "",
+        "slug": "guide-wave-quantities-and-wave-representations",
+        "videos": [
+          {
+            "i": "X0UworXKHa4",
+            "t": "4.3a2 Wave graphs",
+            "c": "Byron Farrow",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "3ERBuAyHDhI",
+            "t": "Travelling Waves - Graphs [IB Physics SL/HL]",
+            "c": "Revision Village",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Interference, stationary waves and waves on strings",
+        "summary": "",
+        "slug": "guide-interference-stationary-waves-and-waves-on-strings",
+        "videos": [
+          {
+            "i": "7DbAzjtsInU",
+            "t": "A Lesson on Stationary or Standing  Wave Edexcel IAL Unit 2 WPH12/01 Interference Node Antinode",
+            "c": "Aravinth Physics Maths Lessons",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "Gk6hHizBMC4",
+            "t": "Superposition [Lecture 1] | IAL Edexcel - Unit 2 (WPH)",
+            "c": "Centaurus Academy",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Matter waves, photons, spectra and electric current",
+        "summary": "",
+        "slug": "guide-matter-waves-photons-spectra-and-electric-current",
+        "videos": [
+          {
+            "i": "FK4rLg55bWM",
+            "t": "Spectra: Particle Nature of Light: Edexcel A-level Physics",
+            "c": "Nutshell Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "Ezu3G8veq0E",
+            "t": "Edexcel IAL Waves and the Particle Nature of Light - A Level Physics Revision",
+            "c": "Physics Online",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "q80rdZLspoc",
+            "t": "Electron Diffraction - A-level Physics",
+            "c": "Science Shorts",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Radiation intensity, refraction, polarisation and diffraction",
+        "summary": "",
+        "slug": "guide-radiation-intensity-refraction-polarisation-and-diffraction",
+        "videos": [
+          {
+            "i": "CuKrtwqNUpI",
+            "t": "Edexcel IAL Unit 2 May June 2022 Physics Past Paper Discussion Waves Electricity Spectra WPH12/01",
+            "c": "Aravinth Physics Maths Lessons",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "lK_uaZicL2E",
+            "t": "Lesson on Polarisation or Polarization of Waves Edexcel IAL Unit 2 WPH12/01 Polaroid Polarising lens",
+            "c": "Aravinth Physics Maths Lessons",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "PiRAuefQtLA",
+            "t": "A Level Physics (EDEXCEL): Intensity and Refractive Index",
+            "c": "Mr M",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "I-V characteristics, resistivity and potential along a wire",
+        "summary": "",
+        "slug": "guide-i-v-characteristics-resistivity-and-potential-along-a-wire",
+        "videos": [
+          {
+            "i": "TFWMMFIDMBk",
+            "t": "Cambridge A-level Physics: 9.3 Resistance and resistivity",
+            "c": "Boo Hin Khoo",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "t_-avJt1NlA",
+            "t": "ALL of A Level Electricity in 1 hour",
+            "c": "ZPhysics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cells and resistance changes",
+        "summary": "",
+        "slug": "guide-cells-and-resistance-changes",
+        "videos": [
+          {
+            "i": "ytnrryyUVh0",
+            "t": "A-Level Physics Revision: Electrical Circuits Content Review (OCR A-Level Physics)",
+            "c": "Mr Turnbull's Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Potential difference, resistance and circuit conservation",
+        "summary": "",
+        "slug": "guide-potential-difference-resistance-and-circuit-conservation",
+        "videos": [
+          {
+            "i": "8FrdDrKIADw",
+            "t": "Series & Parallel Circuits: Theory, Uses, and How they WORK",
+            "c": "Math and Science",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Potential divider circuits",
+        "summary": "",
+        "slug": "guide-potential-divider-circuits",
+        "videos": [
+          {
+            "i": "ioG4Yw1RcEo",
+            "t": "Potendial Dividers with Thermistors EXPLAINED A Level Physics",
+            "c": "ZPhysics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 4: Speed of sound in air",
+        "summary": "",
+        "slug": "guide-core-practical-4-speed-of-sound-in-air",
+        "videos": [
+          {
+            "i": "_bp9Shb-Gu8",
+            "t": "Experiment to Determine the Speed of Sound in Air",
+            "c": "Will Hall",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 5: Vibrating string or wire",
+        "summary": "",
+        "slug": "guide-core-practical-5-vibrating-string-or-wire",
+        "videos": [
+          {
+            "i": "1ciTuTCOIkw",
+            "t": "Edexcel A-Level Physics: Core Practical 7",
+            "c": "AstroKate",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 6: Wavelength using a diffraction grating",
+        "summary": "",
+        "slug": "guide-core-practical-6-wavelength-using-a-diffraction-grating",
+        "videos": [
+          {
+            "i": "XeFOzxozypY",
+            "t": "Diffraction Grating Experiment - A Level Physics Practical",
+            "c": "Physics Online",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "TlkVtpzPTdU",
+            "t": "Measuring Wavelength of Light with a Diffraction Grating - PRACTICAL - A Level Physics",
+            "c": "Physics Online",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 7: Electrical resistivity",
+        "summary": "",
+        "slug": "guide-core-practical-7-electrical-resistivity",
+        "videos": [
+          {
+            "i": "v7mZnyXnhzI",
+            "t": "Resistivity Practical - A Level Physics Practical",
+            "c": "Physics Online",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 8: E.m.f. and internal resistance",
+        "summary": "",
+        "slug": "guide-core-practical-8-e-m-f-and-internal-resistance",
+        "videos": [
+          {
+            "i": "en4ayl2zsN8",
+            "t": "Internal Resistance - A Level Physics Practical",
+            "c": "Physics Online",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "SMmgtGIUQhk",
+            "t": "Measuring Internal Resistance - PRACTICAL - A Level Physics",
+            "c": "Physics Online",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
       }
     ],
     "WPH13": [
@@ -1621,6 +3474,44 @@
             "tags": [
               "The Organic Chemistry Tutor",
               "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Planning a physics experiment",
+        "summary": "",
+        "slug": "guide-planning-a-physics-experiment",
+        "videos": [
+          {
+            "i": "zrGSDHSOM5E",
+            "t": "A Level Physics: AQA: Practical Skills: Calculating Uncertainty.",
+            "c": "Burrows Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "BL88NTBBz94",
+            "t": "A-level Physics Sunday Sessions: Practical Skills | Revision Webclass",
+            "c": "Launchpad Learning",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Measurements, data processing and evaluation",
+        "summary": "",
+        "slug": "guide-measurements-data-processing-and-evaluation",
+        "videos": [
+          {
+            "i": "sxPxenq_KnI",
+            "t": "Edexcel IAL Physics Unit 3 January 2026 Full Paper Walkthrough",
+            "c": "Doctor No Does Science",
+            "tags": [
+              "IAL video guide"
             ]
           }
         ]
@@ -1868,6 +3759,298 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Angular motion and circular motion",
+        "summary": "",
+        "slug": "guide-angular-motion-and-circular-motion",
+        "videos": [
+          {
+            "i": "UEPNWzV83zc",
+            "t": "Centripetal Force and Centripetal Acceleration | 7.2 General Physics",
+            "c": "Chad's Prep",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "5SgnnZDyPUY",
+            "t": "Circular Motion 1 - radians and angular velocity",
+            "c": "Physics for all",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Electric fields, potential and capacitors",
+        "summary": "",
+        "slug": "guide-electric-fields-potential-and-capacitors",
+        "videos": [
+          {
+            "i": "tkmGGBxrhtQ",
+            "t": "Electric Fields | 15.3 General Physics",
+            "c": "Chad's Prep",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "aNrKh4AgAoA",
+            "t": "Potential Energy Stored in a Capacitor | Doc Physics",
+            "c": "Doc Schuster",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "xlA7P8-JMoA",
+            "t": "Physics Summary.  Chapter 19: Electric Potential and Electric Field",
+            "c": "Dot Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Measuring capacitor charge and discharge",
+        "summary": "",
+        "slug": "guide-measuring-capacitor-charge-and-discharge",
+        "videos": [
+          {
+            "i": "IQQ6XWTBYmY",
+            "t": "Capacitor Discharge Experiment - Determine Unknown Capacitance",
+            "c": "A Level Physics HQ",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "H-msLvr0q6g",
+            "t": "Charging and Discharging Capacitors | A-Level Physics Required Practical 9 ",
+            "c": "Physics with Keith",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "RC circuits: charge, discharge and exponential relationships",
+        "summary": "",
+        "slug": "guide-rc-circuits-charge-discharge-and-exponential-relationships",
+        "videos": [
+          {
+            "i": "uyisBvgY5i0",
+            "t": "RC Circuits and the Time Constant (Full Visual Explanation)",
+            "c": "Decipher Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "PLQrPqYlPmI",
+            "t": "RC Circuits Physics Problems, Time Constant Explained, Capacitor Charging and Discharging",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Magnetic fields and electromagnetic induction",
+        "summary": "",
+        "slug": "guide-magnetic-fields-and-electromagnetic-induction",
+        "videos": [
+          {
+            "i": "fBLzZATD4Fk",
+            "t": "Magnetic flux and flux linkage AQA A Level Physics 3.7.5.3",
+            "c": "AQA Physics with Ms Plant",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "xSMSlaKmB8Y",
+            "t": "Magnetic Forces and Currents | 19.2 General Physics",
+            "c": "Chad's Prep",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "t9bYhoBlprw",
+            "t": "Electromagnetic Induction & Magnetic Flux Linkage | A Level Physics",
+            "c": "Physeeks",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Electromagnetic induction",
+        "summary": "",
+        "slug": "guide-electromagnetic-induction",
+        "videos": [
+          {
+            "i": "OOg4SIFCIiE",
+            "t": "Investigating Electromagnetic Induction (Lenz's and Faraday's Laws)",
+            "c": "Electric and Magnetic Fields",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "jz92oOkJFNA",
+            "t": "Faraday's & Lenz's Law of Electromagnetic Induction, Induced EMF, Magnetic Flux, Transformers",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Impulse, momentum and collisions",
+        "summary": "",
+        "slug": "guide-impulse-momentum-and-collisions",
+        "videos": [
+          {
+            "i": "9YRgHikdcqs",
+            "t": "Conservation of Momentum In Two Dimensions - 2D Elastic & Inelastic Collisions - Physics Problems",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "FfaEbqmvKQA",
+            "t": "Impulse and Momentum Conservation - Inelastic & Elastic Collisions",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Analysing collisions between spheres using ICT",
+        "summary": "",
+        "slug": "guide-analysing-collisions-between-spheres-using-ict",
+        "videos": [
+          {
+            "i": "0qokl8vGUoA",
+            "t": "Momentum IAL A2 Physics Unit 4 Lecture 1 part a",
+            "c": "IGCSE and A Levels By Zainul Arfeen",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "6EzToy8Zg_c",
+            "t": "Core Practical 10: Further Mechanics: Edexcel A-level Physics",
+            "c": "Nutshell Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Investigating force and change of momentum",
+        "summary": "",
+        "slug": "guide-investigating-force-and-change-of-momentum",
+        "videos": [
+          {
+            "i": "obYnZWE-__E",
+            "t": "CorePrac 9: Further Mechanics: Edexcel A-level Physics",
+            "c": "Nutshell Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Nuclear structure and particle physics",
+        "summary": "",
+        "slug": "guide-nuclear-structure-and-particle-physics",
+        "videos": [
+          {
+            "i": "DbMA-l704KI",
+            "t": "The Nucleus: Nuclear & Particle: Edexcel A-level Physics",
+            "c": "Nutshell Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "A4O0HefPO64",
+            "t": "Nuclear Radius & Alpha Scattering - A-level Physics",
+            "c": "Science Shorts",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Simple harmonic motion",
+        "summary": "",
+        "slug": "guide-simple-harmonic-motion",
+        "videos": [
+          {
+            "i": "wiGk8cAGtBg",
+            "t": "Simple Harmonic Motion - x,v, & a graphs (Pendulum & Spring )",
+            "c": "Beat Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "fkSsV5Wdprs",
+            "t": "Simple Harmonic Motion (SHM) | 13.2 General Physics",
+            "c": "Chad's Prep",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Quarks, leptons and particle interactions",
+        "summary": "",
+        "slug": "guide-quarks-leptons-and-particle-interactions",
+        "videos": [
+          {
+            "i": "jK-CeUdtAj4",
+            "t": "IB Physics: Quarks, Leptons & Antiparticles",
+            "c": "Chris Doner",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "dkFr3BGO8Dg",
+            "t": "Particle Physics - Conservation Laws - A Level Physics Revision",
+            "c": "Kit Betts-Masters",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "L-XhYS7FhaE",
+            "t": "Particle Physics - A-level Physics (old version)",
+            "c": "Science Shorts",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
       }
     ],
     "WPH15": [
@@ -2059,6 +4242,226 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Thermal energy and the ideal gas",
+        "summary": "",
+        "slug": "guide-thermal-energy-and-the-ideal-gas",
+        "videos": [
+          {
+            "i": "xgazuykYLDs",
+            "t": "A Level Physics Revision: All of Thermal Physics (in 28 minutues) Part 1",
+            "c": "ZPhysics",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "amWO7iWc32Y",
+            "t": "Kinetic Theory for Gas Molecules (Heat & Temperature)",
+            "c": "Sara Rose Ph.D.",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Black-body radiation, stellar properties and distances",
+        "summary": "",
+        "slug": "guide-black-body-radiation-stellar-properties-and-distances",
+        "videos": [
+          {
+            "i": "kG34ooIYCTw",
+            "t": "Edexcel IAL Physics Starshine, Blackbody Radiation, Stefan-Boltzmann Law and Wien's Law",
+            "c": "Doctor No Does Science",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "5aRTZ6THrp4",
+            "t": "Must-Know Physics Unit 5 Concepts - IAL Edexcel WPH15",
+            "c": "That Physics Guy",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Doppler effect, redshift and cosmology",
+        "summary": "",
+        "slug": "guide-doppler-effect-redshift-and-cosmology",
+        "videos": [
+          {
+            "i": "A-vHAxc6djs",
+            "t": "Hubble's Law, the Doppler Effect, and an Expanding Universe",
+            "c": "London Jenks",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "_xDETeEA1yE",
+            "t": "Doppler Effect, Red Shift & The Big Bang Theory (1/2) - GCSE & A-level Physics (old version)",
+            "c": "Science Shorts",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gravitational fields and orbital motion",
+        "summary": "",
+        "slug": "guide-gravitational-fields-and-orbital-motion",
+        "videos": [
+          {
+            "i": "HKGLIE41VgM",
+            "t": "13.4a Orbital Mechanics | A2 Gravitational Fields | Cambridge A Level Physics",
+            "c": "ETphysics",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "dOO35TBkOc4",
+            "t": "AS & A Level Physics (9702) - Chapter 17: Gravitational Fields",
+            "c": "James Gan",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Nuclear binding energy and radioactive decay",
+        "summary": "",
+        "slug": "guide-nuclear-binding-energy-and-radioactive-decay",
+        "videos": [
+          {
+            "i": "0HFwNnewAR8",
+            "t": "Binding energy, Fission, Fusion: Nuclear Radiation: Edexcel A-level Physics",
+            "c": "Nutshell Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Radioactive decay",
+        "summary": "",
+        "slug": "guide-radioactive-decay",
+        "videos": [
+          {
+            "i": "M25LeN6rAm0",
+            "t": "Radioactive Decay - Part II [IB Physics HL]",
+            "c": "Revision Village",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "vAPHP9A7_iI",
+            "t": "HL Decay constant and more detailed equations [IB Physics HL]",
+            "c": "Sirius Revision",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Resonance, energy and damping",
+        "summary": "",
+        "slug": "guide-resonance-energy-and-damping",
+        "videos": [
+          {
+            "i": "mvYTN6WjYSo",
+            "t": "Energy, Resonance, Damping: Oscillations: Edexcel A-level Physics",
+            "c": "Nutshell Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 12: Thermistor thermostat",
+        "summary": "",
+        "slug": "guide-core-practical-12-thermistor-thermostat",
+        "videos": [
+          {
+            "i": "H3J80q9WLm0",
+            "t": "Core Practical 12: Thermodynamics: Edexcel A-level Physics",
+            "c": "Nutshell Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 13: Specific latent heat",
+        "summary": "",
+        "slug": "guide-core-practical-13-specific-latent-heat",
+        "videos": [
+          {
+            "i": "irHJw_4FrCA",
+            "t": "Specific Latent Heat of Water - A Level Physics Practical",
+            "c": "Kit Betts-Masters",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 14: Pressure and volume of a gas",
+        "summary": "",
+        "slug": "guide-core-practical-14-pressure-and-volume-of-a-gas",
+        "videos": [
+          {
+            "i": "Kkjho73Oxx0",
+            "t": "BOYLE'S LAW - A-level Physics Required Practical",
+            "c": "Science Shorts",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 15: Gamma absorption",
+        "summary": "",
+        "slug": "guide-core-practical-15-gamma-absorption",
+        "videos": [
+          {
+            "i": "aaZ13Tkt2fc",
+            "t": "Core Practical 15: Nuclear Radiation: Edexcel A-level Physics",
+            "c": "Nutshell Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Determine an unknown mass using resonant frequencies",
+        "summary": "",
+        "slug": "guide-determine-an-unknown-mass-using-resonant-frequencies",
+        "videos": [
+          {
+            "i": "iXzpswLhrCU",
+            "t": "Core Practical 16: Oscillations: Edexcel A-level Physics",
+            "c": "Nutshell Physics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
       }
     ],
     "WPH16": [
@@ -2156,6 +4559,36 @@
             "tags": [
               "The Organic Chemistry Tutor",
               "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Planning and carrying out an investigation",
+        "summary": "",
+        "slug": "guide-planning-and-carrying-out-an-investigation",
+        "videos": [
+          {
+            "i": "YDff--OEte4",
+            "t": "Edexcel IAL Physics Unit 6 Walkthrough October 2025 Practical Skills II",
+            "c": "Doctor No Does Science",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Analysing experimental data",
+        "summary": "",
+        "slug": "guide-analysing-experimental-data",
+        "videos": [
+          {
+            "i": "YmvsgyuZlMw",
+            "t": "Edexcel IAL Physics Unit 6, May 2025 Past Paper Walkthrough",
+            "c": "Doctor No Does Science",
+            "tags": [
+              "IAL video guide"
             ]
           }
         ]
@@ -2342,6 +4775,312 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Mutations, inheritance and cystic fibrosis",
+        "summary": "",
+        "slug": "guide-mutations-inheritance-and-cystic-fibrosis",
+        "videos": [
+          {
+            "i": "L4UUFbf-VNs",
+            "t": "SNAB 2.14 Cystic Fibrosis",
+            "c": "A level Biology Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "YGxfGl_Ose0",
+            "t": "Gene Mutations, Inheritance, Sex Linkage, Cystic Fibrosis & Genetic Screening | IAL Biology",
+            "c": "ExamLantern",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "amC8MR-87gQ",
+            "t": "A level |  Biology | Topic 2C | Genetics and gene expression | Pearson Edexcel",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Diffusion and mammalian gas exchange",
+        "summary": "",
+        "slug": "guide-diffusion-and-mammalian-gas-exchange",
+        "videos": [
+          {
+            "i": "31WG2Z0cox0",
+            "t": "Cell membrane and Human Gas Exchange | Edexcel IAL Biology | 2A | Podcast",
+            "c": "Apex Education International",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Circulation, the heart and haemoglobin",
+        "summary": "",
+        "slug": "guide-circulation-the-heart-and-haemoglobin",
+        "videos": [
+          {
+            "i": "5yNdw1b-RaY",
+            "t": "Mammalian Transport Systems |Edexcel IAL Biology Leson 1B",
+            "c": "Apex Education International",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 3: membrane permeability",
+        "summary": "",
+        "slug": "guide-core-practical-3-membrane-permeability",
+        "videos": [
+          {
+            "i": "Hc3Mg0Yc7kI",
+            "t": "Membrane Permeability Beetroot Practical",
+            "c": "Biology Practicals and Revision Biology Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "i9xVr25aqYA",
+            "t": "Membrane permeability | Alcohol and temperature | Core practical 3",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Water and biological molecules",
+        "summary": "",
+        "slug": "guide-water-and-biological-molecules",
+        "videos": [
+          {
+            "i": "Ei0v28Yeux0",
+            "t": "Chapter 2.2: Biological Molecules: Lipids",
+            "c": " A-Level Science with Dr. Demi",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Membranes, osmosis and transport",
+        "summary": "",
+        "slug": "guide-membranes-osmosis-and-transport",
+        "videos": [
+          {
+            "i": "WS3IxkHYZIA",
+            "t": "Fluid Mosaic Model Explained | IAL Biology Unit 1",
+            "c": "chem bio by Hosni",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "Eo-m_p1qlUI",
+            "t": "TRANSPORT ACROSS MEMBRANES: A-level Bio. Simple & facilitated diffusion, osmosis & active transport",
+            "c": "Miss Estruch Biology",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "pDZuW35IoLk",
+            "t": "Membrane transport - A Level Biology",
+            "c": "Mr Exham Biology",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Amino acids, protein bonds and primary structure",
+        "summary": "",
+        "slug": "guide-amino-acids-protein-bonds-and-primary-structure",
+        "videos": [
+          {
+            "i": "Ilfj_n70GQg",
+            "t": "IAL Biology Unit 1 Biological Molecules 2026 Exams",
+            "c": "chem bio by Hosni",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "oyThkt-yd4U",
+            "t": "Protein Structure Explained: All 4 Levels | IAL Biology",
+            "c": "chem bio by Hosni",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "DNA, replication and protein synthesis",
+        "summary": "",
+        "slug": "guide-dna-replication-and-protein-synthesis",
+        "videos": [
+          {
+            "i": "6wc410jDlGY",
+            "t": "IAL Biology: Transcription 🧬 made easy 👌",
+            "c": "chem bio by Hosni",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "4gdWOWjioBE",
+            "t": "THE MOST BEAUTIFUL EXPERIMENT IN BIOLOGY: Meselson & Stahl, The Semi-Conservative Replication of DNA",
+            "c": "YourekaScience",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Protein structure and enzyme action",
+        "summary": "",
+        "slug": "guide-protein-structure-and-enzyme-action",
+        "videos": [
+          {
+            "i": "IQ0a4c2nHWY",
+            "t": "Those small details are what separate B from A* students – A-level Biology proteins for Edexcel IAL",
+            "c": "chem bio by Hosni",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "36jeCHTwx3U",
+            "t": "Home Study Club: A-level Biology - Haemoglobin",
+            "c": "Launchpad Learning",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Atherosclerosis, clotting and cardiovascular risk",
+        "summary": "",
+        "slug": "guide-atherosclerosis-clotting-and-cardiovascular-risk",
+        "videos": [
+          {
+            "i": "j36RXxkwPv8",
+            "t": "Edexcel (SNAB) A level biology: atherosclerosis and blood clotting (topic 1)",
+            "c": "Dr Bhavsar Biology",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "8yeYguRoQjM",
+            "t": "Edexcel (SNAB) A level biology: Reducing risk of CVD (topic 1)",
+            "c": "Dr Bhavsar Biology",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "YEnSAZVXNfA",
+            "t": "A level | Biology | Topic 1C | Cardiovascular health and risk | Pearson Edexcel",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 1: estimating sugar and starch concentrations",
+        "summary": "",
+        "slug": "guide-core-practical-1-estimating-sugar-and-starch-concentrations",
+        "videos": [
+          {
+            "i": "kHoM7dN_sS8",
+            "t": "Core Practical 1: Benedict's & Iodine Tests + Colorimetry | Edexcel IAL Biology",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 2: vitamin C in food and drink",
+        "summary": "",
+        "slug": "guide-core-practical-2-vitamin-c-in-food-and-drink",
+        "videos": [
+          {
+            "i": "CejDit7UAno",
+            "t": "Core Practical 2: Vitamin C Test with DCPIP + Temperature Effects | Edexcel IAL Biology",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 4: enzyme reaction rates",
+        "summary": "",
+        "slug": "guide-core-practical-4-enzyme-reaction-rates",
+        "videos": [
+          {
+            "i": "s0xIduoWxQ8",
+            "t": "Initial rate of enzyme activity | Core practical 4",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "LWwz0bW56qQ",
+            "t": "Core Practical 4: Enzyme Reaction Rate | Temperature, pH & Concentration | Edexcel IAL Biology",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Genetic screening and its implications",
+        "summary": "",
+        "slug": "guide-genetic-screening-and-its-implications",
+        "videos": [
+          {
+            "i": "AoNFfG5Zu1M",
+            "t": "19-14 Genetic Screening (Cambridge AS A Level Biology, 9700)",
+            "c": "OtterBioTutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "Wmt0VmbAL8k",
+            "t": "19-16 Ethics of Genetic Screening & Gene Therapy (Cambridge AS A Level Biology, 9700)",
+            "c": "OtterBioTutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
       }
     ],
     "WBI12": [
@@ -2489,6 +5228,227 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Mitotic indices, stem cells, gene expression and variation",
+        "summary": "",
+        "slug": "guide-mitotic-indices-stem-cells-gene-expression-and-variation",
+        "videos": [
+          {
+            "i": "h1xtTOIT91k",
+            "t": "Polygenic Inheritance & Epigenetics A-Level Biology (SNAB, AQA, OCR)",
+            "c": "A*demola",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "amC8MR-87gQ",
+            "t": "A level |  Biology | Topic 2C | Genetics and gene expression | Pearson Edexcel",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "uf7pcOruu-0",
+            "t": "5-8 Stem Cells (Cambridge AS & A Level Biology, 9700)",
+            "c": "OtterBioTutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gene linkage and meiosis",
+        "summary": "",
+        "slug": "guide-gene-linkage-and-meiosis",
+        "videos": [
+          {
+            "i": "gTJqDEhClNg",
+            "t": "Crossing Over in Meiosis: Independent Assortment expanded",
+            "c": "Biology Brainery",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "9YBJxrVHmGI",
+            "t": "A-Level Biology - Meiosis & Genetic Variation - Crossing Over | Independent Segregation",
+            "c": "Cognito",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gametes, fertilisation and mitosis",
+        "summary": "",
+        "slug": "guide-gametes-fertilisation-and-mitosis",
+        "videos": [
+          {
+            "i": "_yWIcl7b6Ic",
+            "t": "All details of mitosis in 1 min for your Edexcel IAL biology exam",
+            "c": "chem bio by Hosni",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "7WtEB85-dsk",
+            "t": "Edexcel IAL Biology Unit 2: Meiosis & Fertilisation",
+            "c": "chem bio by Hosni",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 6: root-tip squash and mitosis",
+        "summary": "",
+        "slug": "guide-core-practical-6-root-tip-squash-and-mitosis",
+        "videos": [
+          {
+            "i": "vld6z6VV8mQ",
+            "t": "This practical appears in nearly all Unit 3 and Unit 6 IAL Biology exams",
+            "c": "chem bio by Hosni",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 5: animal cells and microscopy",
+        "summary": "",
+        "slug": "guide-core-practical-5-animal-cells-and-microscopy",
+        "videos": [
+          {
+            "i": "BHhM5O-Qk_4",
+            "t": "Core Practical 5: Microscopes, Magnification & Scientific Drawing | Edexcel IAL Biology",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cells, organelles and microscopy",
+        "summary": "",
+        "slug": "guide-cells-organelles-and-microscopy",
+        "videos": [
+          {
+            "i": "3LIZBn7bS4s",
+            "t": "Microscopy: Magnification, Resolution & Types of Microscopes | A-level Biology | OCR, AQA, Edexcel",
+            "c": "Launchpad Learning",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plant cells, tissues, fibres and plant resources",
+        "summary": "",
+        "slug": "guide-plant-cells-tissues-fibres-and-plant-resources",
+        "videos": [
+          {
+            "i": "jp9BBvYIrG0",
+            "t": "A-Level Biology - Xylem & Phloem - Structure | Function | Distribution (2027/28 exams)",
+            "c": "Cognito",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "jiPxorV92-M",
+            "t": "A Level Biology Edexcel A SNAB: Xylem and Sclerenchyma Fibres",
+            "c": "Professor SNAB",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 7: microscopy of plant tissues",
+        "summary": "",
+        "slug": "guide-core-practical-7-microscopy-of-plant-tissues",
+        "videos": [
+          {
+            "i": "l45qynRwmE8",
+            "t": "Light microscope | plant tissues | Core practical 7",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 8: tensile strength of plant fibres",
+        "summary": "",
+        "slug": "guide-core-practical-8-tensile-strength-of-plant-fibres",
+        "videos": [
+          {
+            "i": "jkVD6wOl2XM",
+            "t": "Core Practical 8: Tensile Strength of Plant Fibres | Structure & Lignin | Edexcel IAL Biology",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 9: antimicrobial properties of plants",
+        "summary": "",
+        "slug": "guide-core-practical-9-antimicrobial-properties-of-plants",
+        "videos": [
+          {
+            "i": "5Ovm5XXVGt8",
+            "t": "Core Practical 9: Antimicrobial Properties of Plants |  Aseptic Techniques | Edexcel IAL Biology",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Classification, biodiversity, evolution and conservation",
+        "summary": "",
+        "slug": "guide-classification-biodiversity-evolution-and-conservation",
+        "videos": [
+          {
+            "i": "1CgFSw9d0co",
+            "t": "A level | Biology | Topic 4B |  Classification | Pearson Edexcel",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "ElLXOXPFWY4",
+            "t": "A level | Biology | Topic 4C | Biodiversity and conservation | Pearson Edexcel",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "agL9mvDPT8Y",
+            "t": "18-11 Conservation Methods (Cambridge AS A Level Biology, 9700)",
+            "c": "OtterBioTutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
       }
     ],
     "WBI13": [
@@ -2577,6 +5537,44 @@
             "tags": [
               "Mr Exham",
               "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Planning an investigation",
+        "summary": "",
+        "slug": "guide-planning-an-investigation",
+        "videos": [
+          {
+            "i": "iMEj75-tcuQ",
+            "t": "Unit 6 Biology 8 marker | Designing an experiment | what to do to get full marks",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "fkjNHDgv0j4",
+            "t": "Edexcel IAL Biology Unit 6 | Core Practicals 10 & 15 Explained (Exam Prep)",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Measurements, data processing and evaluation",
+        "summary": "",
+        "slug": "guide-measurements-data-processing-and-evaluation",
+        "videos": [
+          {
+            "i": "N_lSfUqeVjc",
+            "t": "A-level Biology Exam Technique | Application, Evaluate, Graphs, Comprehension, Long answer",
+            "c": "Miss Estruch Biology",
+            "tags": [
+              "IAL video guide"
             ]
           }
         ]
@@ -2688,6 +5686,203 @@
             "tags": [
               "Mr Exham",
               "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Photosynthesis, productivity and trophic transfers",
+        "summary": "",
+        "slug": "guide-photosynthesis-productivity-and-trophic-transfers",
+        "videos": [
+          {
+            "i": "IWEt-LdaZCw",
+            "t": "A2 Edexcel Biology Unit 4 - Ecology, Natural Selection, Evolution and Succession",
+            "c": "Charliesk",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "VXu6bAB4fVo",
+            "t": "Introduction to Photosynthesis | Edexcel IAL Biology Unit 4",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ATP and energy transfer",
+        "summary": "",
+        "slug": "guide-atp-and-energy-transfer",
+        "videos": [
+          {
+            "i": "aPns0xWcED4",
+            "t": "A-level Biology Non cyclic photophosphorylation #Edexcel",
+            "c": "chem bio by Hosni",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Light-dependent reactions of photosynthesis",
+        "summary": "",
+        "slug": "guide-light-dependent-reactions-of-photosynthesis",
+        "videos": [
+          {
+            "i": "wg5bNHH7ae8",
+            "t": "IAL Biology Unit 4 Photosynthesis Topic 5 (Light-dependent reactions) for 2026–2027 exams",
+            "c": "chem bio by Hosni",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Light-independent reactions and the Calvin cycle",
+        "summary": "",
+        "slug": "guide-light-independent-reactions-and-the-calvin-cycle",
+        "videos": [
+          {
+            "i": "4sDtDY0Ml9Q",
+            "t": "IAL Biology Unit 4: Calvin Cycle",
+            "c": "chem bio by Hosni",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ecology, climate change, evolution and conservation",
+        "summary": "",
+        "slug": "guide-ecology-climate-change-evolution-and-conservation",
+        "videos": [
+          {
+            "i": "Mi9vUlnCmeQ",
+            "t": "Edexcel IAL biology Unit 4: Ecology",
+            "c": "chem bio by Hosni",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "3-PxEKx4HE0",
+            "t": "A level | Biology | Topic 5C | Environment and climate change | Pearson Edexcel",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "PWH4nGn4au4",
+            "t": "Evolution and speciation (Topic 5) for Edexcel (SNAB) A level Biology",
+            "c": "Dr Bhavsar Biology",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Immunity, infection control and forensic biology",
+        "summary": "",
+        "slug": "guide-immunity-infection-control-and-forensic-biology",
+        "videos": [
+          {
+            "i": "A748moPXxDQ",
+            "t": "Edexcel IAL Biology Unit 4: Specific Immune Response | T Cells, B Cells & Clonal Selection",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Microorganisms, growth and infection",
+        "summary": "",
+        "slug": "guide-microorganisms-growth-and-infection",
+        "videos": [
+          {
+            "i": "0XjMRD185V8",
+            "t": "Core Practical 13 Biology: Measuring Microbial Growth Using a Colorimeter | Edexcel IAL Biology",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 10: factors affecting photosynthesis",
+        "summary": "",
+        "slug": "guide-core-practical-10-factors-affecting-photosynthesis",
+        "videos": [
+          {
+            "i": "fkjNHDgv0j4",
+            "t": "Edexcel IAL Biology Unit 6 | Core Practicals 10 & 15 Explained (Exam Prep)",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 11: ecological field study",
+        "summary": "",
+        "slug": "guide-core-practical-11-ecological-field-study",
+        "videos": [
+          {
+            "i": "uNcEQBnnCFc",
+            "t": "Core Practical 11: Ecology, Quadrats & Transects | Edexcel IAL Biology",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 12: temperature and organism development",
+        "summary": "",
+        "slug": "guide-core-practical-12-temperature-and-organism-development",
+        "videos": [
+          {
+            "i": "s3RtqBT4dHs",
+            "t": "Core Practical 12: Effect of Temperature on Development | Shrimp & Seedings | Edexcel IAL Biology",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "qr0Dg4Svi7Q",
+            "t": "[New Specification] IAL Edexcel Biology Unit 6 | ALL CORE PRACTICALS EXPERIMENTS in UNDER 10 MINS",
+            "c": "ReallyAcademics",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 14: antibiotic effects on bacteria",
+        "summary": "",
+        "slug": "guide-core-practical-14-antibiotic-effects-on-bacteria",
+        "videos": [
+          {
+            "i": "OMcciwbMaoE",
+            "t": "Investigate the effect of different antibiotics on bacteria. Biology core practical 14",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "IAL video guide"
             ]
           }
         ]
@@ -2819,6 +6014,279 @@
             ]
           }
         ]
+      },
+      {
+        "name": "GMOs: risks and benefits",
+        "summary": "",
+        "slug": "guide-gmos-risks-and-benefits",
+        "videos": [
+          {
+            "i": "6VluBrOWmSU",
+            "t": "The benefits and risks of Genetically Modified Organisms (GMOs) in agriculture | 1001: ItE Clip",
+            "c": "Andres Pulido",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Recombinant DNA and its insertion into cells",
+        "summary": "",
+        "slug": "guide-recombinant-dna-and-its-insertion-into-cells",
+        "videos": [
+          {
+            "i": "vr4b1ntBHaw",
+            "t": "RECOMBINANT DNA & RESTRICTION ENZYMES",
+            "c": "Faaizah Academy",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "P9pLJ5x1nZQ",
+            "t": "How To: DNA Ligation Reaction",
+            "c": "LabXchange",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Producing drugs using GMOs",
+        "summary": "",
+        "slug": "guide-producing-drugs-using-gmos",
+        "videos": [
+          {
+            "i": "ROq6KlLJ21I",
+            "t": "A level | Biology | Topic 8C | Gene technology | Pearson Edexcel |",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Brain chemicals, illness and drug development",
+        "summary": "",
+        "slug": "guide-brain-chemicals-illness-and-drug-development",
+        "videos": [
+          {
+            "i": "d-5wJWM8snc",
+            "t": "BTEC Applied Science: Unit 1 Biology Brain Chemicals",
+            "c": "BTEC Applied Science Help",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bioinformatics",
+        "summary": "",
+        "slug": "guide-bioinformatics",
+        "videos": [
+          {
+            "i": "AgQyKqYD8YY",
+            "t": "Bioinformatics and computational biology OCR A A-Level Biology",
+            "c": "Biology with Christine ",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "7tEiOZsFJ7w",
+            "t": "Chap 19 (Part 5) Bioinformatics and Gene Editing using CRISPR/Cas9 | Cambridge A-Level 9700 Biology",
+            "c": "Ms Beh @behlogy | Cambridge A Level Biology (9700)",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Microarrays and active genes",
+        "summary": "",
+        "slug": "guide-microarrays-and-active-genes",
+        "videos": [
+          {
+            "i": "4bOY2Oh5tEQ",
+            "t": "19-10 Microarray / DNA Chip - Part 1 (Cambridge AS A Level Biology, 9700)",
+            "c": "OtterBioTutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "aFTQY7DAadg",
+            "t": "19-11 Microarray / DNA Chip - Part 2 (Cambridge AS A Level Biology, 9700)",
+            "c": "OtterBioTutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Nervous system and neural responses",
+        "summary": "",
+        "slug": "guide-nervous-system-and-neural-responses",
+        "videos": [
+          {
+            "i": "Wfpl5O1eL14",
+            "t": "A level | Biology | Topic 8A | The Nervous System | Pearson Edexcel",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Muscles, cardiac activity and exercise responses",
+        "summary": "",
+        "slug": "guide-muscles-cardiac-activity-and-exercise-responses",
+        "videos": [
+          {
+            "i": "L9gYREuFRSI",
+            "t": "A level | Biology | Topic 7B | Muscles, Movement and the Heart | Pearson Edexcel",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Homeostasis, kidney function and gene regulation",
+        "summary": "",
+        "slug": "guide-homeostasis-kidney-function-and-gene-regulation",
+        "videos": [
+          {
+            "i": "mCfyIhLF2Vc",
+            "t": "A level | Biology | Topic 7C | Homeostasis, the kidney the skin | Pearson Edexcel",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "DJ-349wpzyU",
+            "t": "Homeostasis: Kidneys 2 - ultrafiltration & selective reabsorption - A Level Biology",
+            "c": "Mr Gill's Science Stuff",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plant and animal coordination; brain structure and imaging",
+        "summary": "",
+        "slug": "guide-plant-and-animal-coordination-brain-structure-and-imaging",
+        "videos": [
+          {
+            "i": "hGStvgESLJ0",
+            "t": "Plant Responses: Introduction to Plant Hormones | A-level Biology | OCR, AQA, Edexcel",
+            "c": "Launchpad Learning",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Respiration and respiratory quotient",
+        "summary": "",
+        "slug": "guide-respiration-and-respiratory-quotient",
+        "videos": [
+          {
+            "i": "kgSHJyJ9yOk",
+            "t": "Respiration: Glycolysis | A-level Biology | OCR, AQA, Edexcel",
+            "c": "Launchpad Learning",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 15: yeast respiration",
+        "summary": "",
+        "slug": "guide-core-practical-15-yeast-respiration",
+        "videos": [
+          {
+            "i": "dsPRvc9ca5Q",
+            "t": "Core Practical 15: Respiration in Yeast | TTC Indicator & Temperature | Edexcel IAL Biology",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 16: respirometry",
+        "summary": "",
+        "slug": "guide-core-practical-16-respirometry",
+        "videos": [
+          {
+            "i": "Q21b0VCIZL4",
+            "t": "A-Level Biology - Respirometer & RQ",
+            "c": "D Biology Classroom",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "2D2tJNFJ0mM",
+            "t": "A-level Biology RESPIROMETER- AQA required practical.  How to measure the rate of respiration",
+            "c": "Miss Estruch Biology",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 17: exercise and spirometry",
+        "summary": "",
+        "slug": "guide-core-practical-17-exercise-and-spirometry",
+        "videos": [
+          {
+            "i": "iGNMwSiiRHA",
+            "t": "Spirometer traces, ventilation rate. Core practical 17",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "lX9tBLRtxYY",
+            "t": "Core Practical 17: Effects of Exercise | Spirometer & Lung Capacity | Edexcel IAL Biology",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Practical 18: amylase in germinating cereal grains",
+        "summary": "",
+        "slug": "guide-core-practical-18-amylase-in-germinating-cereal-grains",
+        "videos": [
+          {
+            "i": "83iZqRXStW8",
+            "t": "Edexcel IAL Biology Core Practical 18: Seed Germination | Gibberellin, Amylase & Zone of Inhibition",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
       }
     ],
     "WBI16": [
@@ -2891,6 +6359,44 @@
             "tags": [
               "Mr Exham",
               "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Planning biological investigations",
+        "summary": "",
+        "slug": "guide-planning-biological-investigations",
+        "videos": [
+          {
+            "i": "iMEj75-tcuQ",
+            "t": "Unit 6 Biology 8 marker | Designing an experiment | what to do to get full marks",
+            "c": "Chemistry, Biology, and Math revision Hub",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "fkjNHDgv0j4",
+            "t": "Edexcel IAL Biology Unit 6 | Core Practicals 10 & 15 Explained (Exam Prep)",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Practical data, analysis and evaluation",
+        "summary": "",
+        "slug": "guide-practical-data-analysis-and-evaluation",
+        "videos": [
+          {
+            "i": "pOz5NnozZZk",
+            "t": "Unit 6 Biology Exam Tips (Part 2) | Statistics, Graphs & Null Hypothesis | Edexcel IAL Biology",
+            "c": "Lisa the Science Tutor",
+            "tags": [
+              "IAL video guide"
             ]
           }
         ]
@@ -3045,6 +6551,213 @@
             "tags": [
               "Mr Hassaan",
               "Extra help"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Indices and surds",
+        "summary": "",
+        "slug": "guide-indices-and-surds",
+        "videos": [
+          {
+            "i": "0tVSzwC1rN0",
+            "t": "Index Laws (Edexcel IAL P1 1.1)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "Gwoqm-Evm0A",
+            "t": "Rationalising Denominators (Edexcel IAL P1 1.6)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "AuMxCwW6mSI",
+            "t": "Surds (Edexcel IAL P1 1.5)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Quadratics and simultaneous equations",
+        "summary": "",
+        "slug": "guide-quadratics-and-simultaneous-equations",
+        "videos": [
+          {
+            "i": "6l80xvYDYk0",
+            "t": "Quadratic Simultaneous Equations (Edexcel IAL P1 3.2) updated",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "Yj7LMCgevJY",
+            "t": "Solving quadratic equations part 2 (Edexcel IAL P1 2.1)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Inequalities and their graphs",
+        "summary": "",
+        "slug": "guide-inequalities-and-their-graphs",
+        "videos": [
+          {
+            "i": "O3VyR-I-9zA",
+            "t": "Inequalities on Graphs (Edexcel IAL P1 3.6)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "p87k-qooJZU",
+            "t": "Linear inequalities (Edexcel IAL P1 3.4)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "uQP4xU8EmWo",
+            "t": "Quadratic Inequalities (Edexcel IAL P1 3.5)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Polynomial algebra and function graphs",
+        "summary": "",
+        "slug": "guide-polynomial-algebra-and-function-graphs",
+        "videos": [
+          {
+            "i": "h8IaTxotk90",
+            "t": "Pure Math P1 October 2023 Edexcel [Q4] IAL WMA 11/01 | Curve sketching, asymptotes, factorization,",
+            "c": "Math Web",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "XeLcEJ14xIQ",
+            "t": "WMA11/01 (Edexcel) IAL P1 June 2021 Q9 Graphs of Trig Functions,   Reciprocal Functions",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Transformations of function graphs",
+        "summary": "",
+        "slug": "guide-transformations-of-function-graphs",
+        "videos": [
+          {
+            "i": "vu7Hbq3B7VA",
+            "t": "Transforming Functions (Edexcel IAL P1 4.6)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Coordinate geometry of straight lines",
+        "summary": "",
+        "slug": "guide-coordinate-geometry-of-straight-lines",
+        "videos": [
+          {
+            "i": "Mooc9yqFWsM",
+            "t": "Equations of Straight Lines (Edexcel IAL P1 5.2)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "UJIzpopBHN8",
+            "t": "Parallel and Perpendicular Lines (Edexcel IAL P1 5.3)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Trigonometry and radian measure",
+        "summary": "",
+        "slug": "guide-trigonometry-and-radian-measure",
+        "videos": [
+          {
+            "i": "9F5nWIdtvOQ",
+            "t": "Sine Rule - The Ambiguous Case | ExamSolutions Maths Revision",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "M7P5X6KipIw",
+            "t": "Solving Triangle Problems (Edexcel IAL P1 6.4)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Differentiation and tangents",
+        "summary": "",
+        "slug": "guide-differentiation-and-tangents",
+        "videos": [
+          {
+            "i": "i4iVfF7Hi7g",
+            "t": "Gradients, Tangents and Normals (Edexcel IAL P1 8.6)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Indefinite integration",
+        "summary": "",
+        "slug": "guide-indefinite-integration",
+        "videos": [
+          {
+            "i": "h5kWi4IiYiE",
+            "t": "A-Level Maths: H1-01 [Integration: Introducing the Fundamental Theorem of Calculus]",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "UiK-oe_2CYY",
+            "t": "A-Level Maths: H2-09 Integration: Further Examples of Integration",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
             ]
           }
         ]
@@ -3279,6 +6992,266 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Mathematical proof",
+        "summary": "",
+        "slug": "guide-mathematical-proof",
+        "videos": [
+          {
+            "i": "NQ5X4fUV59g",
+            "t": "Example to Try on Proof by Exhaustion and Deduction | ExamSolutions - maths problems answered",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "bKnMSlF0hSE",
+            "t": "Mathematical Proof (Edexcel IAL P2 1.5)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Polynomial division and factor theorems",
+        "summary": "",
+        "slug": "guide-polynomial-division-and-factor-theorems",
+        "videos": [
+          {
+            "i": "UxYXql6lzu8",
+            "t": "OCR MEI Core 1 7.14 Introducing the Remainder Theorem",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "lyMwX8_QZIc",
+            "t": "A-Level Maths: B6-11 [Polynomials: Introducing the Factor Theorem]",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "iodMVKpyCiw",
+            "t": "A-Level Maths: B6-12 [Polynomials: An Example of Using the Factor Theorem]",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Exponentials and logarithms",
+        "summary": "",
+        "slug": "guide-exponentials-and-logarithms",
+        "videos": [
+          {
+            "i": "QnxN6lYiwyY",
+            "t": "Exponential Functions (Edexcel IAL P2 3.1)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "YqEpsJQhis8",
+            "t": "Pure 2 Chapter 3 Exponentials and Logarithms A-level Mathematics International",
+            "c": "Mindful Maths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Logarithms and exponential equations",
+        "summary": "",
+        "slug": "guide-logarithms-and-exponential-equations",
+        "videos": [
+          {
+            "i": "df0X8v1FvOU",
+            "t": "Logarithms (Edexcel IAL P2 3.2)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "5V5V86hTnjQ",
+            "t": "Solving Equations using Logarithms (Edexcel IAL P2 3.4 )",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sequences and arithmetic series",
+        "summary": "",
+        "slug": "guide-sequences-and-arithmetic-series",
+        "videos": [
+          {
+            "i": "aGz2V-uXn90",
+            "t": "Sequences & Series 1 • Arithmetic Sequences • P2 Ex3A • 🎲",
+            "c": "Bicen Maths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "rE2oQ32STDU",
+            "t": "Sequences & Series 2 • Arithmetic Series • P2 Ex3B • 🎲",
+            "c": "Bicen Maths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Geometric sequences and series",
+        "summary": "",
+        "slug": "guide-geometric-sequences-and-series",
+        "videos": [
+          {
+            "i": "X_9PYoyCAbU",
+            "t": "Geometric Series (Edexcel IAL P2 5.4)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Binomial expansion",
+        "summary": "",
+        "slug": "guide-binomial-expansion",
+        "videos": [
+          {
+            "i": "1hn4P0i9rzI",
+            "t": "The Binomial Expansion (Edexcel IAL P2 4.3)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Coordinate geometry of the circle",
+        "summary": "",
+        "slug": "guide-coordinate-geometry-of-the-circle",
+        "videos": [
+          {
+            "i": "FABQ7obdysI",
+            "t": "Use tangent and chord properties (Edexcel IAL P2 2.4)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Trigonometric identities and equations",
+        "summary": "",
+        "slug": "guide-trigonometric-identities-and-equations",
+        "videos": [
+          {
+            "i": "SucyIEoVe0E",
+            "t": "Solve simple trigonometric equations (Edexcel IAL P2 6.4)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "qn7PmrFQPxw",
+            "t": "A-Level Maths: E7-53 Trig Equations: Solve sec^2(x) = 4 + 2tan(x) between 0 and 2π radians",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Differentiation applications",
+        "summary": "",
+        "slug": "guide-differentiation-applications",
+        "videos": [
+          {
+            "i": "tGPKWHKA29o",
+            "t": "WMA12/01 (Edexcel) IAL P2 January 2023,  Q2, Differentiation, Applications, Optimisation",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "Io_FGPEEnFQ",
+            "t": "WMA12/01 Edexcel IAL P2 OCT 2019 Q10  Applications of Differentiation",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Definite integrals and area",
+        "summary": "",
+        "slug": "guide-definite-integrals-and-area",
+        "videos": [
+          {
+            "i": "CLfl_qbzckg",
+            "t": "A-Level Maths: H3-02 [Integration: Finding the Exact Area under a Curve]",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "g__q9RkcOk8",
+            "t": "A-Level Maths: H3-11 [Integration: Finding the Area between Curves and Lines Example 1]",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "M2f-o3OK0W8",
+            "t": "A-Level Maths: H3-14 Integration: Finding the Area between Two Curves Example 1",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Trapezium rule",
+        "summary": "",
+        "slug": "guide-trapezium-rule",
+        "videos": [
+          {
+            "i": "WVmxfiaso5I",
+            "t": "The Trapezium Rule (Edexcel IAL P2 8.6)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
       }
     ],
     "WME01": [
@@ -3333,6 +7306,90 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Straight-line kinematics and particle dynamics",
+        "summary": "",
+        "slug": "guide-straight-line-kinematics-and-particle-dynamics",
+        "videos": [
+          {
+            "i": "_8rKmpQe8HE",
+            "t": "Connected Particles (Edexcel IAL M1 4.5)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mechanics models and vectors",
+        "summary": "",
+        "slug": "guide-mechanics-models-and-vectors",
+        "videos": [
+          {
+            "i": "hCRaK0JV2T4",
+            "t": "Forces as Vectors (Edexcel IAL M1 4.2)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Particle dynamics, momentum and friction",
+        "summary": "",
+        "slug": "guide-particle-dynamics-momentum-and-friction",
+        "videos": [
+          {
+            "i": "YbQbBTIKNMQ",
+            "t": "Collisions : M1 Edexcel January 2007 Q4(a)(b) : ExamSolutions Maths Revision",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "Kw3_pw_50f0",
+            "t": "Impulse : Mechanics M1 Edexcel June 2013 Q1 : ExamSolutions Maths Revision",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "khoDUL8Rodc",
+            "t": "Inclined Planes (Edexcel IAL M1 5.2)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Particle statics and moments",
+        "summary": "",
+        "slug": "guide-particle-statics-and-moments",
+        "videos": [
+          {
+            "i": "rkvvJMe1mjg",
+            "t": "Friction and static particles (Edexcel IAL M1 7.3)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "ME5wb1VVPlE",
+            "t": "A-Level Maths: S1-13 Equilibrium of a Rigid Body: An Introduction",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
       }
     ],
     "WST01": [
@@ -3366,6 +7423,229 @@
             "tags": [
               "Lesson",
               "Concept support"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Representing and summarising data",
+        "summary": "",
+        "slug": "guide-representing-and-summarising-data",
+        "videos": [
+          {
+            "i": "SIuylqPE8qs",
+            "t": "A-Level Maths: L4-01 [Outliers: Using the Quartiles and Interquartile Range]",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "yO7LngGNh1o",
+            "t": "Core Maths - Skewness",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Statistical modelling",
+        "summary": "",
+        "slug": "guide-statistical-modelling",
+        "videos": [
+          {
+            "i": "p2sOak36KU8",
+            "t": "One way to design a mathematical model (Based on Statistics 1, Edexcel)",
+            "c": "Mathematics Proofs - GCSE & A Level",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "AuSCUfVXppg",
+            "t": "What are Mathematical Models and why are they useful? [S1 Edexcel Statistics]",
+            "c": "Mathematics Proofs - GCSE & A Level",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Probability and events",
+        "summary": "",
+        "slug": "guide-probability-and-events",
+        "videos": [
+          {
+            "i": "NKrxUF_4IvA",
+            "t": "Conditional Probability Example : ExamSolutions",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "yWFPj47NLCc",
+            "t": "Possibility Space diagrams : ExamSolutions",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Independence and probability laws",
+        "summary": "",
+        "slug": "guide-independence-and-probability-laws",
+        "videos": [
+          {
+            "i": "z8ZytM7SCNE",
+            "t": "A-Level Maths: M1-09 [Probability: Are A and B Independent?]",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "ceGuMFzQNUQ",
+            "t": "A-Level Maths: M1-10 [Probability: With Replacement and Without Replacement]",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "cOjz6JMAWjI",
+            "t": "A-Level Maths: M2-05 Probability: Tree Diagram Example",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Discrete random variables and distributions",
+        "summary": "",
+        "slug": "guide-discrete-random-variables-and-distributions",
+        "videos": [
+          {
+            "i": "YX4XK1R_I8g",
+            "t": "Probability : Cumulative Distribution Function F(X) : ExamSolutions",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "2gipNeB8mkU",
+            "t": "WST01/01, (Edexcel) IAL S1 January 2022, Q7 Discrete Random Variables",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Discrete random variable expectation and distributions",
+        "summary": "",
+        "slug": "guide-discrete-random-variable-expectation-and-distributions",
+        "videos": [
+          {
+            "i": "amlb01GXoVs",
+            "t": "WST01/01, (Edexcel) IAL S1 January 2022, Q4 Discrete Random Variables, Linear Transformations",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "ymQsykVoM_Y",
+            "t": "OCR MEI Statistics Minor F: Discrete Random Variables: 03 The Expected Value E(X)",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "RdKeby9rfL8",
+            "t": "OCR MEI Statistics Minor G: Discrete Uniform Distributions: 01 Introduction",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Normal distribution",
+        "summary": "",
+        "slug": "guide-the-normal-distribution",
+        "videos": [
+          {
+            "i": "u2dfivSAXQs",
+            "t": "Normal Distribution - Finding mean and st. dev  : S1 Edexcel January 2011 Q8c : ExamSolutions Maths",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "XtHnOu55uZM",
+            "t": "Edexcel S1 Tutorial 21 Standardising the normal",
+            "c": "MrArnoldsMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Product moment correlation",
+        "summary": "",
+        "slug": "guide-product-moment-correlation",
+        "videos": [
+          {
+            "i": "hbvePCiu_wc",
+            "t": "A-Level Maths: L2-04 [Scatter Graphs: The Product Moment Correlation Coefficient]",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "Rnq_WijvS6c",
+            "t": "OCR MEI Statistics 2 1.01 The Product Moment Correlation Coefficient",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Linear regression and prediction",
+        "summary": "",
+        "slug": "guide-linear-regression-and-prediction",
+        "videos": [
+          {
+            "i": "GMN1H82juCo",
+            "t": "Ch. 11 - Regression Line, Interpolation, Extrapolation (IB Math Studies)",
+            "c": "Anton Petrov",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "kVZL9d6Gfbk",
+            "t": "Equation of Regression Line : Statistics : S1 : Edexcel January 2010 Q6(d)(e) ; ExamSolutions",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
             ]
           }
         ]
@@ -3600,6 +7880,206 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Modulus graphs and function transformations",
+        "summary": "",
+        "slug": "guide-modulus-graphs-and-function-transformations",
+        "videos": [
+          {
+            "i": "GgozK-qrE50",
+            "t": "AQA Core 3 3.02 Inequalities involving the Modulus Function",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "5q0dkBShi7Y",
+            "t": "A-Level Maths B7-08 Graphs: Introducing Solving Modulus Equations",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "B2mui1CLUAU",
+            "t": "A-Level Maths: B7-16 Graphs: EDEXCEL Sketching the Modulus of Other Functions",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Transformations of graphs",
+        "summary": "",
+        "slug": "guide-transformations-of-graphs",
+        "videos": [
+          {
+            "i": "fIDSk7Lss-k",
+            "t": "Transformations of Graphs : Reflections y = - f(x), f(-x) : ExamSolutions",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "HgfzlHR1H5Q",
+            "t": "Transformations of Graphs (translations) : ExamSolutions",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "9VkNO8nm6jQ",
+            "t": "AS Maths Graph Transformations - Understanding f(ax) Stretches in x direction",
+            "c": "ukmathsteacher",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rational expressions and functions",
+        "summary": "",
+        "slug": "guide-rational-expressions-and-functions",
+        "videos": [
+          {
+            "i": "XS2mYvy2TWM",
+            "t": "Pure Maths EQ - Functions, Composite Function, Inverse Function and Domain/Range of a Function",
+            "c": "Zeeshan Zamurred",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Trigonometric functions, identities and equations",
+        "summary": "",
+        "slug": "guide-trigonometric-functions-identities-and-equations",
+        "videos": [
+          {
+            "i": "Lm-8cKOCqLc",
+            "t": "Trigonometry | Solving Equations using identities (Example 3) | ExamSolutions",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "t2CY14NUAhU",
+            "t": "Trigonometric Identities (Edexcel IAL P3 3.4)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Exponential and logarithmic functions and models",
+        "summary": "",
+        "slug": "guide-exponential-and-logarithmic-functions-and-models",
+        "videos": [
+          {
+            "i": "_Gg0Lgde3PQ",
+            "t": "Exponential Functions (Edexcel IAL P3 5.1)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "o6jLB4mfS3M",
+            "t": "Logarithms and non-linear data (Edexcel IAL P3 5.4)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Differentiation and exponential growth or decay",
+        "summary": "",
+        "slug": "guide-differentiation-and-exponential-growth-or-decay",
+        "videos": [
+          {
+            "i": "2ntsKCzl_iw",
+            "t": "Differentiating Exponentials and Logarithms (Edexcel IAL P3 6.2)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "PJAxQN9cxf4",
+            "t": "A-Level Maths: F7-01 [Exponential Growth & Decay: Long-Term Behaviour]",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "8RDKbCq8Ct0",
+            "t": "A-Level Maths: F7-03 [Exponential Growth & Decay: The Cup of Water Problem]",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Integration of standard functions and by recognition",
+        "summary": "",
+        "slug": "guide-integration-of-standard-functions-and-by-recognition",
+        "videos": [
+          {
+            "i": "CNEuo2JIiqU",
+            "t": "Integrating f(ax + b) (Edexcel IAL P3 7.2)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "aUGk-7klQyQ",
+            "t": "Using Trigonometric Identities in Integration (Edexcel IAL P3 7.3)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Root location and iterative methods",
+        "summary": "",
+        "slug": "guide-root-location-and-iterative-methods",
+        "videos": [
+          {
+            "i": "TRWxtWq3z34",
+            "t": "Fixed Point Iteration (Edexcel IAL P3 8.2)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "neBPBR6v84Q",
+            "t": "Locating roots (Edexcel IAL P3 8.1)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
       }
     ],
     "WMA14": [
@@ -3786,6 +8266,276 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Proof by contradiction",
+        "summary": "",
+        "slug": "guide-proof-by-contradiction",
+        "videos": [
+          {
+            "i": "Zd5wdTGOkhE",
+            "t": "A2, (IAL), P4, Text Book,  Chapter1, Proof,  Example 4, p3, Contradiction, Infinity of Primes",
+            "c": "Mr Hassaan's Maths Channel",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "7p1VgeTZDGw",
+            "t": "A-Level Maths: A1-11 Proving √2 is Irrational",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Partial fractions",
+        "summary": "",
+        "slug": "guide-partial-fractions",
+        "videos": [
+          {
+            "i": "If6LCOESZRk",
+            "t": "Partial Fractions (Edexcel IAL P4 2.1)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "BCemyPmeZQM",
+            "t": "Repeated Factors (Edexcel IAL P4 2.2)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Parametric equations",
+        "summary": "",
+        "slug": "guide-parametric-equations",
+        "videos": [
+          {
+            "i": "DfjEdCIT8Ps",
+            "t": "Parametric Equations : Converting to Cartesian form (1) : ExamSolutions",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "cHeWFLFODwQ",
+            "t": "Parametric Equations : Converting to Cartesian form (2) : ExamSolutions",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "TdpIvJZdrkc",
+            "t": "Parametric Equations (Edexcel IAL P4 3.1)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Implicit and parametric differentiation; differential equations",
+        "summary": "",
+        "slug": "guide-implicit-and-parametric-differentiation-differential-equations",
+        "videos": [
+          {
+            "i": "ly_scx1YzVA",
+            "t": "A-Level Maths: G4-06 Differentiation: Connected Rates of Change Example 1",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "3P4quuzo_jI",
+            "t": "A-Level Maths: G5-03 Differentiation: Examples of Implicit Differentiation",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "HAqdAqi8Nk8",
+            "t": "A-Level Maths: G5-08 Differentiation: Examples of Parametric Differentiation",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "JHFJC0vmfU0",
+            "t": "A-Level Maths G4-05 Differentiation: Introducing Connected Rates of Change",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Separable differential equations and parametric area",
+        "summary": "",
+        "slug": "guide-separable-differential-equations-and-parametric-area",
+        "videos": [
+          {
+            "i": "WAOGZ3DtEBs",
+            "t": "Area under a parametric curve (Edexcel Pure Maths 2 paper 2 Oct 2020 Q12)",
+            "c": "Dr Waleed Al-Nuaimy",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "PHvz2s8soQI",
+            "t": "P3 Differential Equations | Difficult Questions from Recent Papers | 2024-2026 | A-level Math 9709",
+            "c": "MathPrep with Ahmad Bilal",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Integration by substitution, parts and partial fractions",
+        "summary": "",
+        "slug": "guide-integration-by-substitution-parts-and-partial-fractions",
+        "videos": [
+          {
+            "i": "GzEx5x_ph2g",
+            "t": "A-Level Maths: H5-12 Further Integration: Introducing Integration by Substitution",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "VSJVe8gnAN4",
+            "t": "A-Level Maths: H6-01 Integration of Partial Fractions: Example 1",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "H-Mm6MTC-l4",
+            "t": "A-Level Maths: Choosing Integration Methods",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Volumes of revolution",
+        "summary": "",
+        "slug": "guide-volumes-of-revolution",
+        "videos": [
+          {
+            "i": "ayxhodkAgNI",
+            "t": "Volume of Revolution for a parametric curve : ExamSolutions",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "XPgFQYMRWDg",
+            "t": "Volumes of Revolution for Parametric Equations (x-axis) : ExamSolutions Maths Revision",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Vectors in two and three dimensions",
+        "summary": "",
+        "slug": "guide-vectors-in-two-and-three-dimensions",
+        "videos": [
+          {
+            "i": "n-8x9wbCJj4",
+            "t": "A-Level Maths: J1-05 Vectors: Introducing 3D Vectors",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "6JLjLaK0UG0",
+            "t": "A-Level Maths: J4-01 [Vectors: Introducing Position Vectors]",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "vZfjKl95VmI",
+            "t": "AQA Core 4 7.01 Introducing Vectors in 3D",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Vector equations of lines and scalar product",
+        "summary": "",
+        "slug": "guide-vector-equations-of-lines-and-scalar-product",
+        "videos": [
+          {
+            "i": "0HvfuK5wS30",
+            "t": "Vectors - Equation of a Line :  Introduction : ExamSolutions",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "5XVFQix8tAk",
+            "t": "Vectors : Scalar or Dot Product : ExamSolutions",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "tEu77b99Hpg",
+            "t": "A-Level Further Maths F4-04 Scalar Product: Perpendicular Vector Problem 2",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Binomial series",
+        "summary": "",
+        "slug": "guide-binomial-series",
+        "videos": [
+          {
+            "i": "vfB376u6JoM",
+            "t": "Using Partial Fractions with binomial expansion (Edexcel IAL P4 4.3)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
       }
     ],
     "WME02": [
@@ -3831,6 +8581,121 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Kinematics in a straight line and plane",
+        "summary": "",
+        "slug": "guide-kinematics-in-a-straight-line-and-plane",
+        "videos": [
+          {
+            "i": "tEooQEM31R0",
+            "t": "Differentiating Vectors (Edexcel IAL M2 2.4)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "1cbQy-ZMl6g",
+            "t": "Projection at any Angle (Edexcel IAL M2 1.3)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "61mqcNhC0Eo",
+            "t": "Using Integration (Edexcel IAL M2 2.3)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Work, energy and power",
+        "summary": "",
+        "slug": "guide-work-energy-and-power",
+        "videos": [
+          {
+            "i": "UZ5zyR9fk5g",
+            "t": "Work - Energy - Principle : M2 Edexcel January 2013 Q5(b) : ExamSolutions Maths Revision",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "khoDUL8Rodc",
+            "t": "Inclined Planes (Edexcel IAL M1 5.2)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Momentum and collisions",
+        "summary": "",
+        "slug": "guide-momentum-and-collisions",
+        "videos": [
+          {
+            "i": "IlK4-Z3CmF8",
+            "t": "OCR MEI Mechanics Minor D: Momentum & Impulse: 08 Introduction to Impulse",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "8SZkN1bwXNo",
+            "t": "OCR MEI Mechanics Minor E: Collisions: 02 Conservation of Linear Momentum",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "GUYY58PpoaY",
+            "t": "OCR MEI Mechanics Minor E: Collisions: 10 The Coefficient of Restitution",
+            "c": "TLMaths",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Centres of mass and lamina equilibrium",
+        "summary": "",
+        "slug": "guide-centres-of-mass-and-lamina-equilibrium",
+        "videos": [
+          {
+            "i": "DPqdik7MaV4",
+            "t": "Centre of Mass of a Composite Lamina (Edexcel IAL M2 3.4)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Statics of rigid bodies",
+        "summary": "",
+        "slug": "guide-statics-of-rigid-bodies",
+        "videos": [
+          {
+            "i": "6MN16QRuwTo",
+            "t": "Edexcel A Level Maths: 7.4 Ladders and Beams (Statics of Rigid Bodies Part 1)",
+            "c": "Zeeshan Zamurred",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
       }
     ],
     "WST02": [
@@ -3873,6 +8738,90 @@
             "tags": [
               "Lesson",
               "Concept support"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Binomial and Poisson distributions",
+        "summary": "",
+        "slug": "guide-binomial-and-poisson-distributions",
+        "videos": [
+          {
+            "i": "hLZw2lPB63o",
+            "t": "Using the Poisson distribution to approximate the binomial distribution (Edexcel IAL S2 3.1)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Continuous random variables",
+        "summary": "",
+        "slug": "guide-continuous-random-variables",
+        "videos": [
+          {
+            "i": "ZOVbRFj3-I0",
+            "t": "The Cumulative Distribution Function (Edexcel IAL S2 4.2)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "dJc1vPzkqBM",
+            "t": "Mode, Median, Quartiles and Percentiles of a Continuous distribution(Edexcel IAL S2 4.4)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "7RZRky-SY7g",
+            "t": "Mean and Variance of a Continuous distribution (Edexcel IAL S2 4.3)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Continuous distributions and normal approximations",
+        "summary": "",
+        "slug": "guide-continuous-distributions-and-normal-approximations",
+        "videos": [
+          {
+            "i": "kOcrXXSluTc",
+            "t": "Continuity Corrections | ExamSolutions",
+            "c": "ExamSolutions",
+            "tags": [
+              "IAL video guide"
+            ]
+          },
+          {
+            "i": "9Sx0OVjuAt4",
+            "t": "Modelling with the continuous uniform distribution (Edexcel IAL S2 5.2)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sampling and hypothesis tests",
+        "summary": "",
+        "slug": "guide-sampling-and-hypothesis-tests",
+        "videos": [
+          {
+            "i": "k71Cx7DUIN4",
+            "t": "Testing the mean of a Poisson distribution (Edexcel IAL S2 7.5)",
+            "c": "Maths Deity",
+            "tags": [
+              "IAL video guide"
             ]
           }
         ]

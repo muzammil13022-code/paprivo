@@ -13,6 +13,7 @@
  */
 import { writeFile, readFile } from "node:fs/promises";
 import { CURATED_EXTRAS, CURATED_PICKS, CURATED_UNITS } from "./curated-videos.mjs";
+import { GUIDE_SECTIONS } from "./guide-videos.mjs";
 
 const LIB = "https://edexcel-library.vercel.app";
 const UA = "Mozilla/5.0 (compatible; Paprivo research)";
@@ -198,6 +199,29 @@ async function main() {
       built.push({ name, summary: "", slug, videos });
       curated += videos.length;
       console.log(`extra ${code}/${slug}: ${videos.length} videos`);
+    }
+    units[code] = [...existing, ...built];
+  }
+
+  // Videos mapped by the IAL full-syllabus guide spreadsheet, appended per topic
+  // and skipping any id the unit already lists.
+  for (const [code, sections] of Object.entries(GUIDE_SECTIONS)) {
+    const existing = units[code] ?? [];
+    const seen = new Set(existing.flatMap((s) => s.videos.map((v) => v.i)));
+    const slugs = new Set(existing.map((s) => s.slug));
+    const built = [];
+    for (const [name, ids] of sections) {
+      const fresh = ids.filter((id) => !seen.has(id));
+      if (fresh.length === 0) continue;
+      let slug = `guide-${name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
+      if (slugs.has(slug)) slug = `${slug}-2`;
+      slugs.add(slug);
+      const videos = await verifyPicks(fresh.map((id) => [id, ["IAL video guide"]]));
+      if (videos.length === 0) continue;
+      for (const v of videos) seen.add(v.i);
+      built.push({ name, summary: "", slug, videos });
+      curated += videos.length;
+      console.log(`guide ${code}/${slug}: ${videos.length} videos`);
     }
     units[code] = [...existing, ...built];
   }
