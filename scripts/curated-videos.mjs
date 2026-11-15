@@ -246,7 +246,7 @@ export const CURATED_EXTRAS = {
     ["Organic Chemistry Tutor — Intermolecular forces", "oct-intermolecular", [["XSRa9P-xJl0", O], ["QdwzMPwPA3I", O]]],
     ["Organic Chemistry Tutor — Redox and Groups 1, 2 and 7", "oct-redox-groups", [["j0hI-a6EWWo", O], ["t55mYdWC5mo", O], ["moRp4_oIioc", O]]],
     ["Organic Chemistry Tutor — Kinetics and equilibria", "oct-rates-equilibria", [["JpoOfrPKgmM", O], ["bNcTt3l3Q8k", O]]],
-    ["Organic Chemistry Tutor — Halogenoalkanes, alcohols and spectra", "oct-halogenoalkanes", [["yrV85H737o", O], ["K07VceUan0k", O], ["SzVxYTp3pZY", O]]],
+    ["Organic Chemistry Tutor — Halogenoalkanes, alcohols and spectra", "oct-halogenoalkanes", [["yrvV85H737o", O], ["K07VceUan0k", O], ["SzVxYTp3pZY", O]]],
   ],
   WCH13: [
     ["Organic Chemistry Tutor — Core techniques", "oct-core-techniques-1", [["HJvALCcKYAc", O], ["ekMM3-o_4FA", O]]],

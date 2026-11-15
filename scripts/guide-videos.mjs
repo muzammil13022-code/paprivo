@@ -8,6 +8,8 @@
  *
  * scripts/build-videos.mjs appends these as extra sections and re-checks every
  * id through YouTube oEmbed, so a dead link is dropped rather than shipped.
+ * Guide rows that shared an identical video list inside one unit are merged into
+ * a single entry (labels joined with " / ") so one video set never lists twice.
  * Rows the guide marked "Optional refresher" and the Decision 1 rows (no D1 unit
  * on Paprivo) are left out.
  */
@@ -52,11 +54,10 @@ export const GUIDE_SECTIONS = {
     ["Light-independent reactions and the Calvin cycle", ["4sDtDY0Ml9Q"]],
     ["Ecology, climate change, evolution and conservation", ["Mi9vUlnCmeQ", "3-PxEKx4HE0", "PWH4nGn4au4"]],
     ["Immunity, infection control and forensic biology", ["A748moPXxDQ"]],
-    ["Microorganisms, growth and infection", ["0XjMRD185V8"]],
+    ["Microorganisms, growth and infection / Core Practical 13: microorganism growth", ["0XjMRD185V8"]],
     ["Core Practical 10: factors affecting photosynthesis", ["fkjNHDgv0j4"]],
     ["Core Practical 11: ecological field study", ["uNcEQBnnCFc"]],
     ["Core Practical 12: temperature and organism development", ["s3RtqBT4dHs", "qr0Dg4Svi7Q"]],
-    ["Core Practical 13: microorganism growth", ["0XjMRD185V8"]],
     ["Core Practical 14: antibiotic effects on bacteria", ["OMcciwbMaoE"]],
   ],
   WBI15: [
@@ -107,13 +108,11 @@ export const GUIDE_SECTIONS = {
     ["Hess's Law", ["wINd7lK5SFs"]],
     ["Bond enthalpies", ["x9s6KAxGxYc", "ZFRd4yzeyHA"]],
     ["Calorimetry calculations and evaluating energy-change experiments", ["EWb5q8Bl39A", "HlvllF6Ml9c", "LmLiVLZOTwg"]],
-    ["Intermolecular forces and hydrogen bonding", ["yk6JqnBAxfE", "f0AU6eH8uxY"]],
-    ["Intermolecular forces, boiling points and solvent choice", ["yk6JqnBAxfE", "f0AU6eH8uxY"]],
-    ["Oxidation numbers", ["IWzQm15e4xI"]],
+    ["Intermolecular forces and hydrogen bonding / Intermolecular forces, boiling points and solvent choice", ["yk6JqnBAxfE", "f0AU6eH8uxY"]],
+    ["Oxidation numbers / Group 7 chemistry", ["IWzQm15e4xI"]],
     ["Oxidation numbers and ionic equations", ["zmEDzzGD5kQ"]],
     ["Redox and disproportionation", ["DFlp2lW3IyY", "ShFKawO4QOo", "IWzQm15e4xI"]],
     ["Groups 1 and 2: trends, reactions and tests", ["ShFKawO4QOo"]],
-    ["Group 7 chemistry", ["IWzQm15e4xI"]],
     ["Dynamic equilibrium and equilibrium position", ["rxAKHb5yT5U", "LGvdHxXjpaY"]],
     ["Kinetics and catalysts", ["qnSDnbB2VUc", "utWQtuwq3e8", "KoY_Yj1CA_U"]],
     ["Classifying organic reactions", ["Hx5boNVSaac", "xScw2_aZ5UM"]],
@@ -125,12 +124,9 @@ export const GUIDE_SECTIONS = {
     ["Mass spectra and infrared spectroscopy", ["N2kDjPiAx4U"]],
     ["Concentration calculations and volumetric-analysis uncertainty", ["pJ5Mwg5Oqso", "6Jx5Dy_Brog"]],
     ["Core Practical 2: Determination of an enthalpy change using Hess's Law", ["sY-MOpgobNs"]],
-    ["Core Practical 3: Finding the concentration of hydrochloric acid", ["B0qX6iN_Sps"]],
-    ["Core Practical 4: Standard solution and sodium hydroxide concentration", ["B0qX6iN_Sps"]],
-    ["Core Practical 5: Halogenoalkane hydrolysis rates", ["Yz-adz-2znM"]],
-    ["Core Practical 6: Chlorination of 2-methylpropan-2-ol", ["Yz-adz-2znM"]],
-    ["Core Practical 7: Oxidation of propan-1-ol", ["adhHFjTn98s"]],
-    ["Core Practical 8: Analysis of unknowns", ["adhHFjTn98s"]],
+    ["Core Practical 3: Finding the concentration of hydrochloric acid / Core Practical 4: Standard solution and sodium hydroxide concentration", ["B0qX6iN_Sps"]],
+    ["Core Practical 5: Halogenoalkane hydrolysis rates / Core Practical 6: Chlorination of 2-methylpropan-2-ol", ["Yz-adz-2znM"]],
+    ["Core Practical 7: Oxidation of propan-1-ol / Core Practical 8: Analysis of unknowns", ["adhHFjTn98s"]],
   ],
   WCH13: [
     ["Planning practical methods and selecting equipment", ["mv60DPFd23k"]],
@@ -140,8 +136,7 @@ export const GUIDE_SECTIONS = {
     ["Rate equations, experimental methods and reaction order", ["bA6M372L7iw", "KoY_Yj1CA_U"]],
     ["Reaction mechanisms and rate-determining steps", ["iXyVh9TbTGU", "ijdglGENBKI"]],
     ["Activation energy and heterogeneous catalysts", ["i9TSLa3XNpQ"]],
-    ["Entropy and the direction of change", ["5e9Lvu_DRxE"]],
-    ["Entropy calculations, feasibility and stability", ["5e9Lvu_DRxE"]],
+    ["Entropy and the direction of change / Entropy calculations, feasibility and stability", ["5e9Lvu_DRxE"]],
     ["Lattice energy and Born-Haber cycles", ["DRmQBZ_K4eg"]],
     ["Ionic bonding, hydration and solubility", ["DRmQBZ_K4eg", "fDglQCYTiqc"]],
     ["Chemical equilibria and equilibrium constants", ["TvGOFQLaWhs"]],
@@ -150,8 +145,7 @@ export const GUIDE_SECTIONS = {
     ["Chirality and optical isomerism", ["NwwisoFdXp8"]],
     ["Aldehydes, ketones and carbonyl reactions", ["A-PUcKHAabo", "yHkl_sAEf1g"]],
     ["Carbonyl compound tests", ["lvWUHGY_aaM"]],
-    ["Carboxylic acids: structures, properties and reactions", ["FpPFT6I4yN4"]],
-    ["Acyl chlorides, esters and polyesters", ["FpPFT6I4yN4"]],
+    ["Carboxylic acids: structures, properties and reactions / Acyl chlorides, esters and polyesters", ["FpPFT6I4yN4"]],
     ["Chromatography", ["iSltjoCTt9g"]],
     ["Mass spectrometry and NMR spectroscopy", ["U4VtwCiEnJ0"]],
     ["Core Practical 9a and 9b: iodine-propanone rate and iodine clock", ["th7tZ-INIGA", "ijdglGENBKI"]],
@@ -169,8 +163,7 @@ export const GUIDE_SECTIONS = {
     ["Arenes: benzene and phenol", ["_PQGB_CtV54"]],
     ["Amines, amides, amino acids and polymers", ["tgwFtnYb6JA"]],
     ["Organic synthesis and structure determination", ["0rje7f2PUEE", "0Of7WwJJcmk", "eLuSzbjs79k"]],
-    ["Redox titrations: manganate(VII) and iodine-thiosulfate", ["RyDPHbrxmM4"]],
-    ["Preparation of a transition-metal complex", ["RyDPHbrxmM4"]],
+    ["Redox titrations: manganate(VII) and iodine-thiosulfate / Preparation of a transition-metal complex", ["RyDPHbrxmM4"]],
     ["Analysis of inorganic and organic unknowns", ["W94itF9kROY"]],
     ["Preparation of aspirin", ["W94itF9kROY", "sZY0XFuQsfU"]],
   ],

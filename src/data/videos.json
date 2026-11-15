@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T16:22:42.710Z",
+  "generatedAt": "2026-11-15T16:55:13.360Z",
   "source": "Syllabus (edexcel-library.vercel.app) video picks, verified via YouTube oEmbed",
   "note": "Picks follow the Pearson IAL specification order. Videos tagged “Concept support” may use broader A-level coverage; check the specification for exact IAL scope.",
   "units": {
@@ -844,6 +844,15 @@
         "slug": "oct-halogenoalkanes",
         "videos": [
           {
+            "i": "yrvV85H737o",
+            "t": "Nucleophilic Substitution Reactions - SN1 and SN2 Mechanism, Organic Chemistry",
+            "c": "The Organic Chemistry Tutor",
+            "tags": [
+              "The Organic Chemistry Tutor",
+              "Extra help"
+            ]
+          },
+          {
             "i": "K07VceUan0k",
             "t": "Oxidation of Alcohols",
             "c": "The Organic Chemistry Tutor",
@@ -940,9 +949,9 @@
         ]
       },
       {
-        "name": "Intermolecular forces and hydrogen bonding",
+        "name": "Intermolecular forces and hydrogen bonding / Intermolecular forces, boiling points and solvent choice",
         "summary": "",
-        "slug": "guide-intermolecular-forces-and-hydrogen-bonding",
+        "slug": "guide-intermolecular-forces-and-hydrogen-bonding-intermolecular-forces-boiling-points-and-solvent-choice",
         "videos": [
           {
             "i": "yk6JqnBAxfE",
@@ -963,9 +972,9 @@
         ]
       },
       {
-        "name": "Oxidation numbers",
+        "name": "Oxidation numbers / Group 7 chemistry",
         "summary": "",
-        "slug": "guide-oxidation-numbers",
+        "slug": "guide-oxidation-numbers-group-7-chemistry",
         "videos": [
           {
             "i": "IWzQm15e4xI",
@@ -1222,9 +1231,9 @@
         ]
       },
       {
-        "name": "Core Practical 3: Finding the concentration of hydrochloric acid",
+        "name": "Core Practical 3: Finding the concentration of hydrochloric acid / Core Practical 4: Standard solution and sodium hydroxide concentration",
         "summary": "",
-        "slug": "guide-core-practical-3-finding-the-concentration-of-hydrochloric-acid",
+        "slug": "guide-core-practical-3-finding-the-concentration-of-hydrochloric-acid-core-practical-4-standard-solution-and-sodium-hydroxide-concentration",
         "videos": [
           {
             "i": "B0qX6iN_Sps",
@@ -1237,9 +1246,9 @@
         ]
       },
       {
-        "name": "Core Practical 5: Halogenoalkane hydrolysis rates",
+        "name": "Core Practical 5: Halogenoalkane hydrolysis rates / Core Practical 6: Chlorination of 2-methylpropan-2-ol",
         "summary": "",
-        "slug": "guide-core-practical-5-halogenoalkane-hydrolysis-rates",
+        "slug": "guide-core-practical-5-halogenoalkane-hydrolysis-rates-core-practical-6-chlorination-of-2-methylpropan-2-ol",
         "videos": [
           {
             "i": "Yz-adz-2znM",
@@ -1252,9 +1261,9 @@
         ]
       },
       {
-        "name": "Core Practical 7: Oxidation of propan-1-ol",
+        "name": "Core Practical 7: Oxidation of propan-1-ol / Core Practical 8: Analysis of unknowns",
         "summary": "",
-        "slug": "guide-core-practical-7-oxidation-of-propan-1-ol",
+        "slug": "guide-core-practical-7-oxidation-of-propan-1-ol-core-practical-8-analysis-of-unknowns",
         "videos": [
           {
             "i": "adhHFjTn98s",
@@ -1698,9 +1707,9 @@
         ]
       },
       {
-        "name": "Entropy and the direction of change",
+        "name": "Entropy and the direction of change / Entropy calculations, feasibility and stability",
         "summary": "",
-        "slug": "guide-entropy-and-the-direction-of-change",
+        "slug": "guide-entropy-and-the-direction-of-change-entropy-calculations-feasibility-and-stability",
         "videos": [
           {
             "i": "5e9Lvu_DRxE",
@@ -1849,9 +1858,9 @@
         ]
       },
       {
-        "name": "Carboxylic acids: structures, properties and reactions",
+        "name": "Carboxylic acids: structures, properties and reactions / Acyl chlorides, esters and polyesters",
         "summary": "",
-        "slug": "guide-carboxylic-acids-structures-properties-and-reactions",
+        "slug": "guide-carboxylic-acids-structures-properties-and-reactions-acyl-chlorides-esters-and-polyesters",
         "videos": [
           {
             "i": "FpPFT6I4yN4",
@@ -2332,9 +2341,9 @@
         ]
       },
       {
-        "name": "Redox titrations: manganate(VII) and iodine-thiosulfate",
+        "name": "Redox titrations: manganate(VII) and iodine-thiosulfate / Preparation of a transition-metal complex",
         "summary": "",
-        "slug": "guide-redox-titrations-manganate-vii-and-iodine-thiosulfate",
+        "slug": "guide-redox-titrations-manganate-vii-and-iodine-thiosulfate-preparation-of-a-transition-metal-complex",
         "videos": [
           {
             "i": "RyDPHbrxmM4",
@@ -5805,9 +5814,9 @@
         ]
       },
       {
-        "name": "Microorganisms, growth and infection",
+        "name": "Microorganisms, growth and infection / Core Practical 13: microorganism growth",
         "summary": "",
-        "slug": "guide-microorganisms-growth-and-infection",
+        "slug": "guide-microorganisms-growth-and-infection-core-practical-13-microorganism-growth",
         "videos": [
           {
             "i": "0XjMRD185V8",
