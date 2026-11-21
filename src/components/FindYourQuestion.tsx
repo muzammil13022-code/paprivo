@@ -8,6 +8,7 @@ import {
   type QuestionSearchResult,
 } from "@/lib/question-search";
 import { Reveal } from "@/components/Reveal";
+import { previewHref } from "@/lib/docs";
 
 const EXAMPLES = ["WMA11 June 2024 Q3", "Chemistry WCH12 2023 Q5", "WPH11/24 Q2"];
 
@@ -25,12 +26,15 @@ function SearchIcon() {
 function DocButtons({ hit, questionNumber }: { hit: QuestionSearchHit; questionNumber: number | null }) {
   const { paper } = hit;
   const page = questionStartPage(paper.code, paper.session, paper.year, paper.variant, questionNumber);
+  const live = (doc: typeof paper.qp) => (doc && !doc.gated && !doc.missing ? doc : null);
+  const qp = live(paper.qp);
+  const ms = live(paper.ms);
   return (
     <div className="flex flex-col sm:flex-row gap-2.5 mt-4">
-      {paper.qp ? (
+      {qp ? (
         <a
           className="btn-secondary !text-on-card !border-card-border !bg-card hover:!border-accent"
-          href={page ? `${paper.qp.url}#page=${page}` : paper.qp.url}
+          href={previewHref(qp.url, page)}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -38,15 +42,15 @@ function DocButtons({ hit, questionNumber }: { hit: QuestionSearchHit; questionN
           <span aria-hidden>↗</span>
         </a>
       ) : (
-        <span className="btn-secondary !text-on-card !border-card-border !bg-card opacity-50 cursor-not-allowed">Question paper not in catalogue</span>
+        <span className="btn-secondary !text-on-card !border-card-border !bg-card opacity-50 cursor-not-allowed">Question paper not available</span>
       )}
-      {paper.ms ? (
-        <a className="btn-secondary !text-on-card !border-card-border !bg-card hover:!border-accent" href={paper.ms.url} target="_blank" rel="noopener noreferrer">
+      {ms ? (
+        <a className="btn-secondary !text-on-card !border-card-border !bg-card hover:!border-accent" href={previewHref(ms.url)} target="_blank" rel="noopener noreferrer">
           View Mark Scheme
           <span aria-hidden>↗</span>
         </a>
       ) : (
-        <span className="btn-secondary !text-on-card !border-card-border !bg-card opacity-50 cursor-not-allowed">Mark scheme not in catalogue</span>
+        <span className="btn-secondary !text-on-card !border-card-border !bg-card opacity-50 cursor-not-allowed">Mark scheme not available</span>
       )}
     </div>
   );

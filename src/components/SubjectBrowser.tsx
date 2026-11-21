@@ -5,6 +5,7 @@ import { paperId } from "@/lib/papers";
 import type { Paper, Subject } from "@/types";
 import { useUserState } from "@/lib/state";
 import ytWalkthroughs from "@/data/yt-walkthroughs.json";
+import { previewHref } from "@/lib/docs";
 
 const SESSIONS = ["January", "June", "October"] as const;
 
@@ -85,18 +86,18 @@ function PaperRow({ paper }: { paper: Paper }) {
 
       <div className="flex gap-1.5 flex-wrap">
         {/* A gated file needs a Pearson login, so it is not offered at all. */}
-        {paper.qp && !paper.qp.gated && (
-          <a className="doc-btn" href={paper.qp.url} target="_blank" rel="noopener noreferrer">
+        {paper.qp && !paper.qp.gated && !paper.qp.missing && (
+          <a className="doc-btn" href={previewHref(paper.qp.url)} target="_blank" rel="noopener noreferrer">
             Paper
           </a>
         )}
-        {paper.ms && !paper.ms.gated && (
-          <a className="doc-btn" href={paper.ms.url} target="_blank" rel="noopener noreferrer">
+        {paper.ms && !paper.ms.gated && !paper.ms.missing && (
+          <a className="doc-btn" href={previewHref(paper.ms.url)} target="_blank" rel="noopener noreferrer">
             Mark scheme
           </a>
         )}
-        {paper.er && !paper.er.gated && (
-          <a className="doc-btn" href={paper.er.url} target="_blank" rel="noopener noreferrer">
+        {paper.er && !paper.er.gated && !paper.er.missing && (
+          <a className="doc-btn" href={previewHref(paper.er.url)} target="_blank" rel="noopener noreferrer">
             Report
           </a>
         )}

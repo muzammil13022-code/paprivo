@@ -9,6 +9,7 @@ import {
   topicalPacksOf,
 } from "@/lib/topics";
 import { SubmitResource } from "@/components/SubmitResource";
+import { previewHref } from "@/lib/docs";
 
 interface Props {
   params: Promise<{ subject: string; unit: string }>;
@@ -95,22 +96,40 @@ export default async function TopicalUnitPage({ params }: Props) {
             The newest {unitData.code} papers — most topics appear somewhere in every session.
           </p>
           <ul className="space-y-2">
-            {recentPapers.map((paper) => (
-              <li key={`${paper.session}-${paper.year}-${paper.variant ?? ""}`}>
-                <a
-                  className="card-interactive flex items-center justify-between gap-3 rounded-xl border border-card-border bg-card p-3 shadow-card-sm"
-                  href={paper.qp?.url ?? paper.ms?.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="font-medium">
-                    {paper.session} {paper.year}
-                    {paper.variant ? ` · Variant ${paper.variant}` : ""}
-                  </span>
-                  <span className="text-xs text-muted">Question paper PDF ↗</span>
-                </a>
-              </li>
-            ))}
+            {recentPapers.map((paper) => {
+              const doc =
+                paper.qp && !paper.qp.gated && !paper.qp.missing
+                  ? paper.qp
+                  : paper.ms && !paper.ms.gated && !paper.ms.missing
+                    ? paper.ms
+                    : null;
+              return (
+                <li key={`${paper.session}-${paper.year}-${paper.variant ?? ""}`}>
+                  {doc ? (
+                    <a
+                      className="card-interactive flex items-center justify-between gap-3 rounded-xl border border-card-border bg-card p-3 shadow-card-sm"
+                      href={previewHref(doc.url)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="font-medium">
+                        {paper.session} {paper.year}
+                        {paper.variant ? ` · Variant ${paper.variant}` : ""}
+                      </span>
+                      <span className="text-xs text-muted">Question paper PDF ↗</span>
+                    </a>
+                  ) : (
+                    <span className="flex items-center justify-between gap-3 rounded-xl border border-card-border bg-card p-3 opacity-60">
+                      <span className="font-medium">
+                        {paper.session} {paper.year}
+                        {paper.variant ? ` · Variant ${paper.variant}` : ""}
+                      </span>
+                      <span className="text-xs text-muted">Not available yet</span>
+                    </span>
+                  )}
+                </li>
+              );
+            })}
           </ul>
           <p className="text-xs text-muted">
             All {unitData.code} sessions are on the{" "}

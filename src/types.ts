@@ -8,6 +8,8 @@ export interface PaperDoc {
   url: string;
   /** true when Pearson gates the file behind sign-in (typically the most recent 12 months) */
   gated: boolean;
+  /** true when the source has withdrawn the file — never link it */
+  missing?: boolean;
 }
 
 export interface Paper {

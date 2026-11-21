@@ -100,6 +100,24 @@ function facetOf(categories, prefix) {
   return hit ? hit.slice(prefix.length) : null;
 }
 
+const SUBJECT_FOLDER = {
+  mathematics: "Mathematics",
+  physics: "Physics",
+  chemistry: "Chemistry",
+  biology: "Biology",
+};
+
+/**
+ * Pearson also indexes copies under a lowercase subject folder, and its CDN
+ * 404s those while the capitalised folder serves the same file.
+ */
+function canonicalUrl(url) {
+  return url.replace(
+    //International-Advanced-Level/(mathematics|physics|chemistry|biology)//,
+    (_, s) => `/International-Advanced-Level/${SUBJECT_FOLDER[s]}/`,
+  );
+}
+
 function basename(url) {
   const last = url.split("/").pop() ?? "";
   return decodeURIComponent(last).toLowerCase();
@@ -151,7 +169,7 @@ function parseHit(hit, code) {
   const year = Number(m[2]);
   if (year < YEAR_MIN || year > YEAR_MAX) return null;
   if (!(session in SESSION_MONTHS)) return null;
-  const url = hit.id && hit.id.startsWith("/") ? BASE + hit.id : null;
+  const url = hit.id && hit.id.startsWith("/") ? canonicalUrl(BASE + hit.id) : null;
   if (!url || !url.endsWith(".pdf")) return null;
   if (!matchesCode(url, code)) return null; // kill cross-contamination
   const gated = hit.gating === true || url.includes("/secure/");
