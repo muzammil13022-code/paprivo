@@ -5,7 +5,7 @@ import { paperId } from "@/lib/papers";
 import type { Paper, Subject } from "@/types";
 import { useUserState } from "@/lib/state";
 import ytWalkthroughs from "@/data/yt-walkthroughs.json";
-import { previewHref } from "@/lib/docs";
+import { docFileName, previewHref } from "@/lib/docs";
 
 const SESSIONS = ["January", "June", "October"] as const;
 
@@ -21,7 +21,28 @@ function ytSearchUrl(paper: Pick<Paper, "code" | "session" | "year" | "variant">
   return `https://www.youtube.com/results?search_query=${encodeURIComponent(q)}`;
 }
 
-function PaperRow({ paper }: { paper: Paper }) {
+function PaperRow({
+  paper,
+  subjectLabel,
+  unitName,
+}: {
+  paper: Paper;
+  subjectLabel: string;
+  unitName: string;
+}) {
+  const docHref = (kind: "qp" | "ms" | "er", url: string) =>
+    previewHref(url, {
+      name: docFileName({
+        subjectLabel,
+        unitCode: paper.code,
+        unitName,
+        session: paper.session,
+        year: paper.year,
+        variant: paper.variant,
+        kind,
+      }),
+    });
+
   const { progress, bookmarks, toggleProgress, toggleBookmark } = useUserState();
   const id = paperId(paper.code, paper.session, paper.year, paper.variant);
   const walkthrough = walkthroughFor(paper);
@@ -87,17 +108,17 @@ function PaperRow({ paper }: { paper: Paper }) {
       <div className="flex gap-1.5 flex-wrap">
         {/* A gated file needs a Pearson login, so it is not offered at all. */}
         {paper.qp && !paper.qp.gated && !paper.qp.missing && (
-          <a className="doc-btn" href={previewHref(paper.qp.url)} target="_blank" rel="noopener noreferrer">
+          <a className="doc-btn" href={docHref("qp", paper.qp.url)} target="_blank" rel="noopener noreferrer">
             Paper
           </a>
         )}
         {paper.ms && !paper.ms.gated && !paper.ms.missing && (
-          <a className="doc-btn" href={previewHref(paper.ms.url)} target="_blank" rel="noopener noreferrer">
+          <a className="doc-btn" href={docHref("ms", paper.ms.url)} target="_blank" rel="noopener noreferrer">
             Mark scheme
           </a>
         )}
         {paper.er && !paper.er.gated && !paper.er.missing && (
-          <a className="doc-btn" href={previewHref(paper.er.url)} target="_blank" rel="noopener noreferrer">
+          <a className="doc-btn" href={docHref("er", paper.er.url)} target="_blank" rel="noopener noreferrer">
             Report
           </a>
         )}
@@ -220,7 +241,7 @@ export function SubjectBrowser({ subject }: { subject: Subject }) {
                 <span className="font-semibold">{unit}</span>{" "}
                 <span className="text-muted">{name}</span>
               </div>
-              <PaperRow paper={paper} />
+              <PaperRow paper={paper} subjectLabel={subject.label} unitName={name} />
             </li>
           ))}
         </ul>

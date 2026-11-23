@@ -9,7 +9,7 @@ import {
   topicalPacksOf,
 } from "@/lib/topics";
 import { SubmitResource } from "@/components/SubmitResource";
-import { previewHref } from "@/lib/docs";
+import { docFileName, previewHref } from "@/lib/docs";
 
 interface Props {
   params: Promise<{ subject: string; unit: string }>;
@@ -97,18 +97,26 @@ export default async function TopicalUnitPage({ params }: Props) {
           </p>
           <ul className="space-y-2">
             {recentPapers.map((paper) => {
-              const doc =
-                paper.qp && !paper.qp.gated && !paper.qp.missing
-                  ? paper.qp
-                  : paper.ms && !paper.ms.gated && !paper.ms.missing
-                    ? paper.ms
-                    : null;
+              const liveQp = paper.qp && !paper.qp.gated && !paper.qp.missing ? paper.qp : null;
+              const liveMs = paper.ms && !paper.ms.gated && !paper.ms.missing ? paper.ms : null;
+              const doc = liveQp ?? liveMs;
+              const docKind: "qp" | "ms" = liveQp ? "qp" : "ms";
               return (
                 <li key={`${paper.session}-${paper.year}-${paper.variant ?? ""}`}>
                   {doc ? (
                     <a
                       className="card-interactive flex items-center justify-between gap-3 rounded-xl border border-card-border bg-card p-3 shadow-card-sm"
-                      href={previewHref(doc.url)}
+                      href={previewHref(doc.url, {
+                        name: docFileName({
+                          subjectLabel: meta.label,
+                          unitCode: unitData.code,
+                          unitName: unitData.name,
+                          session: paper.session,
+                          year: paper.year,
+                          variant: paper.variant,
+                          kind: docKind,
+                        }),
+                      })}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

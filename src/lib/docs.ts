@@ -1,28 +1,65 @@
 /**
  * Paper PDF links.
  *
- * Most sources serve PDFs inline, so a plain link opens in the browser's viewer
- * in a new tab. alevelcopilot.com sends `Content-Disposition: attachment`, which
- * makes the browser save the file instead — those links go through /api/doc,
- * which re-serves the same bytes inline so the preview opens as expected.
+ * A paper link opens the PDF in a new tab. Every document goes through /api/doc
+ * for two reasons: hosts that send the file as an attachment then open in the
+ * viewer instead of downloading, and the saved file carries the paper's own name
+ * ("Mathematics - Pure Mathematics 1 (WMA11) - 2026 June - Question Paper.pdf")
+ * rather than a hashed path or a Pearson file name.
  */
 
-const DOWNLOAD_ONLY_HOSTS = new Set(["www.alevelcopilot.com", "alevelcopilot.com"]);
+export type DocKind = "qp" | "ms" | "er";
+
+const KIND_LABEL: Record<DocKind, string> = {
+  qp: "Question Paper",
+  ms: "Mark Scheme",
+  er: "Examiner Report",
+};
+
+export interface PaperNameParts {
+  /** Subject label, e.g. "Mathematics" */
+  subjectLabel: string;
+  /** Unit code, e.g. "WMA11" */
+  unitCode: string;
+  /** Unit name, e.g. "Pure Mathematics 1" */
+  unitName?: string | null;
+  session: string;
+  year: number;
+  variant?: string | null;
+  kind: DocKind;
+}
+
+/** Drop the characters Windows and macOS reject in file names. */
+function tidy(value: string): string {
+  return value
+    .replace(/[<>:"/\|?*\u0000-\u001f]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/** Subject - Unit - Year Session - kind, e.g. `Mathematics - Pure Mathematics 1 (WMA11) - 2026 June - Question Paper.pdf` */
+export function docFileName(parts: PaperNameParts): string {
+  const unitName = tidy(parts.unitName ?? "");
+  const bits = [
+    tidy(parts.subjectLabel),
+    unitName ? `${unitName} (${parts.unitCode})` : parts.unitCode,
+    `${parts.year} ${tidy(parts.session)}`.trim(),
+    parts.variant ? `Variant ${parts.variant}` : "",
+    KIND_LABEL[parts.kind],
+  ].filter(Boolean);
+  return `${bits.join(" - ")}.pdf`;
+}
 
 function withPage(url: string, page?: number | null): string {
   return page && page > 0 ? `${url}#page=${page}` : url;
 }
 
-/** A link that opens `url` in the PDF viewer, at `page` when one is known. */
-export function previewHref(url: string, page?: number | null): string {
-  let host: string | null = null;
-  try {
-    host = new URL(url).host;
-  } catch {
-    return withPage(url, page); // site-relative file under /public
-  }
-  if (DOWNLOAD_ONLY_HOSTS.has(host)) {
-    return withPage(`/api/doc?u=${encodeURIComponent(url)}`, page);
-  }
-  return withPage(url, page);
+/** A link that opens `url` in the PDF viewer, saved as `name`, at `page` when known. */
+export function previewHref(
+  url: string,
+  options: { page?: number | null; name?: string } = {},
+): string {
+  const params = new URLSearchParams({ u: url });
+  if (options.name) params.set("name", options.name);
+  return withPage(`/api/doc?${params.toString()}`, options.page);
 }

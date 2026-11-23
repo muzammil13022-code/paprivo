@@ -8,7 +8,7 @@ import {
   type QuestionSearchResult,
 } from "@/lib/question-search";
 import { Reveal } from "@/components/Reveal";
-import { previewHref } from "@/lib/docs";
+import { docFileName, previewHref } from "@/lib/docs";
 
 const EXAMPLES = ["WMA11 June 2024 Q3", "Chemistry WCH12 2023 Q5", "WPH11/24 Q2"];
 
@@ -29,12 +29,22 @@ function DocButtons({ hit, questionNumber }: { hit: QuestionSearchHit; questionN
   const live = (doc: typeof paper.qp) => (doc && !doc.gated && !doc.missing ? doc : null);
   const qp = live(paper.qp);
   const ms = live(paper.ms);
+  const fileName = (kind: "qp" | "ms") =>
+    docFileName({
+      subjectLabel: hit.subjectLabel,
+      unitCode: hit.unitCode,
+      unitName: hit.unitName,
+      session: paper.session,
+      year: paper.year,
+      variant: paper.variant,
+      kind,
+    });
   return (
     <div className="flex flex-col sm:flex-row gap-2.5 mt-4">
       {qp ? (
         <a
           className="btn-secondary !text-on-card !border-card-border !bg-card hover:!border-accent"
-          href={previewHref(qp.url, page)}
+          href={previewHref(qp.url, { page, name: fileName("qp") })}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -45,7 +55,7 @@ function DocButtons({ hit, questionNumber }: { hit: QuestionSearchHit; questionN
         <span className="btn-secondary !text-on-card !border-card-border !bg-card opacity-50 cursor-not-allowed">Question paper not available</span>
       )}
       {ms ? (
-        <a className="btn-secondary !text-on-card !border-card-border !bg-card hover:!border-accent" href={previewHref(ms.url)} target="_blank" rel="noopener noreferrer">
+        <a className="btn-secondary !text-on-card !border-card-border !bg-card hover:!border-accent" href={previewHref(ms.url, { name: fileName("ms") })} target="_blank" rel="noopener noreferrer">
           View Mark Scheme
           <span aria-hidden>↗</span>
         </a>

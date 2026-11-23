@@ -1,15 +1,18 @@
 import type { NextRequest } from "next/server";
 
 /**
- * Inline PDF proxy for hosts that serve their files as an attachment.
+ * Inline PDF gateway for every paper the catalogue links.
  *
- * Only the hosts the catalogue already links to are accepted, so this cannot be
- * used as an open proxy. The response is always inline, which is what makes the
- * document open in a new tab instead of downloading.
+ * It accepts two kinds of `u`: an absolute URL on one of the hosts the catalogue
+ * already links to (so this cannot be used as an open proxy), or a same-origin
+ * path such as `/papers/wma11-01-que-202606.pdf` for the files Paprivo hosts.
+ * The response is always inline and carries the paper's own name from `name`,
+ * which is what makes the document open in the new tab and save as
+ * "Mathematics - Pure Mathematics 1 (WMA11) - 2026 June - Question Paper.pdf".
  *
- * alevelcopilot.com throttles each connection to roughly 10 KB/s, so a single
- * stream took minutes for one paper. Range requests are supported, so the file
- * is pulled over several connections at once and released in order.
+ * alevelcopilot.com throttles each connection to roughly 10 KB/s, so the file is
+ * pulled over several parallel range requests and released in order; hosts
+ * without range support get a single plain stream.
  */
 
 export const maxDuration = 60;
@@ -38,18 +41,31 @@ function unavailable(status: number, message: string) {
   });
 }
 
-function docHeaders(name: string) {
-  return {
-    "content-type": "application/pdf",
-    "content-disposition": `inline; filename="${name}"`,
-    "cache-control": "public, max-age=86400, s-maxage=604800, stale-while-revalidate=604800",
-  };
+/** The name the browser saves the file under. */
+function safeFileName(requested: string | null, fallback: string): string {
+  const cleaned = (requested ?? "")
+    .replace(/[^\x20-\x7e]+/g, " ")
+    .replace(/[<>:"/\|?*]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 160)
+    .trim();
+  if (!cleaned) return fallback;
+  return cleaned.toLowerCase().endsWith(".pdf") ? cleaned : `${cleaned}.pdf`;
 }
 
 function fileNameFor(target: URL) {
   return (
     decodeURIComponent(target.pathname.split("/").pop() ?? "").replace(/[^\w.-]+/g, "_") || "paper.pdf"
   );
+}
+
+function docHeaders(name: string) {
+  return {
+    "content-type": "application/pdf",
+    "content-disposition": `inline; filename="${name}"`,
+    "cache-control": "public, max-age=86400, s-maxage=604800, stale-while-revalidate=604800",
+  };
 }
 
 /** Fetch `url` one byte range at a time, retrying once on a transient failure. */
@@ -126,18 +142,24 @@ export async function GET(request: NextRequest) {
   if (!raw) return unavailable(400, "Missing document URL");
 
   let target: URL;
-  try {
-    target = new URL(raw);
-  } catch {
-    return unavailable(400, "Invalid document URL");
-  }
-  if (target.protocol !== "https:" || !ALLOWED_HOSTS.has(target.host)) {
-    return unavailable(403, "Document host not allowed");
+  if (raw.startsWith("/")) {
+    // A file Paprivo hosts itself; served from this deployment, never proxied on.
+    if (/^\/(api|_next)\//.test(raw)) return unavailable(400, "Unsupported document path");
+    target = new URL(raw, request.nextUrl.origin);
+  } else {
+    try {
+      target = new URL(raw);
+    } catch {
+      return unavailable(400, "Invalid document URL");
+    }
+    if (target.protocol !== "https:" || !ALLOWED_HOSTS.has(target.host)) {
+      return unavailable(403, "Document host not allowed");
+    }
   }
 
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), BUDGET_MS);
-  const name = fileNameFor(target);
+  const name = safeFileName(request.nextUrl.searchParams.get("name"), fileNameFor(target));
 
   // Size and range support come from a cheap HEAD; anything odd falls back to a
   // single plain stream below.
