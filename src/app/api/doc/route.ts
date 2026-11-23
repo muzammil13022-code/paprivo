@@ -30,8 +30,8 @@ const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36";
 
 const ACCEPT = "application/pdf,*/*";
-const CHUNK_SIZE = 128 * 1024;
-const MAX_PARALLEL = 6;
+const CHUNK_SIZE = 256 * 1024;
+const MAX_PARALLEL = 12;
 const BUDGET_MS = 55_000;
 
 function unavailable(status: number, message: string) {
