@@ -4,6 +4,7 @@ import Link from "next/link";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { UserStateProvider } from "@/lib/state";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -120,6 +121,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </footer>
         </UserStateProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
