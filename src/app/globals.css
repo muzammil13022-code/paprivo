@@ -1,41 +1,60 @@
 @import "tailwindcss";
 
 /*
- * Signature palette — 60 / 30 / 7 / 3
- *  Primary 60%  #0F172A  Deep Slate    — page background, text on light surfaces
- *  Secondary30% #F8FAFC  Alabaster     — card surfaces
- *  Accent1  7%  #1E3A8A  Oxford Blue   — structure, headers, primary actions
- *  Accent2  3%  #B45309  Rich Amber    — active states, premium badges, highlights
- * Tonal variants (#D97706 amber-bright) exist only for WCAG contrast on dark.
+ * Paprivo — "marked paper"
+ *
+ * The site is paperwork about paperwork, so it borrows the grammar of the
+ * exam sheets it indexes: a chalkboard-dark desk, cream paper sheets, hairline
+ * rules, and one chroma only — the red of the marker.
+ *
+ *   desk   60%  #1A1E17  Chalkboard   — page
+ *   paper  30%  #F7F3E7  Paper stock  — sheets and cards
+ *   chalk   7%  #ECE7D6  Chalk        — text on the desk
+ *   marker  3%  #A8231B  Marker red   — ticks, active state, primary action
  */
 
 :root {
-  --background: #0f172a;
-  --background-soft: #131f38;
-  --foreground: #f8fafc;
-  --card: #f8fafc;
-  --on-card: #0f172a;
-  --card-border: #b8c4d6;
-  --card-border-strong: #7e90ad;
-  --muted: #94a3b8; /* readable on deep slate */
-  --ring: #d97706;
+  /* Palette */
+  --board: #1a1e17;
+  --board-soft: #222720;
+  --chalk: #ece7d6;
+  --paper: #f7f3e7;
+  --ink: #1c1f1a;
+  --marker: #a8231b;
+  --marker-deep: #871a13;
+  --rule: #d2cab4;
+  --rule-strong: #ada48a;
+  --graphite: #6b685a;
 
-  --accent: #1e3a8a;
-  --accent-soft: #2b4cac;
-  --accent2: #b45309;
-  --accent2-bright: #d97706;
+  /* Names the components already speak */
+  --background: var(--board);
+  --background-soft: var(--board-soft);
+  --foreground: var(--chalk);
+  --card: var(--paper);
+  --on-card: var(--ink);
+  --card-border: var(--rule);
+  --card-border-strong: var(--rule-strong);
+  --muted: #b5b09d; /* readable on the desk */
+  --ring: var(--marker);
 
-  /* Elevation */
-  --shadow-sm: 0 1px 2px rgba(2, 8, 23, 0.06), 0 1px 3px rgba(2, 8, 23, 0.08);
-  --shadow-md: 0 4px 12px rgba(2, 8, 23, 0.08), 0 2px 4px rgba(2, 8, 23, 0.06);
-  --shadow-lg: 0 16px 40px rgba(2, 8, 23, 0.14), 0 4px 12px rgba(2, 8, 23, 0.08);
-  --shadow-glow: 0 0 0 1px rgba(30, 58, 138, 0.16), 0 8px 32px rgba(30, 58, 138, 0.18);
-  --shadow-btn: 0 2px 8px rgba(30, 58, 138, 0.35);
-  --shadow-btn-hover: 0 4px 16px rgba(30, 58, 138, 0.5);
+  --accent: var(--marker);
+  --accent-soft: var(--marker-deep);
+  --accent2: #4c5347;
+  --accent2-bright: #d9554a;
+
+  /* Paper does not float: edges, not shadows */
+  --shadow-sm: 0 1px 0 rgba(10, 12, 9, 0.12);
+  --shadow-md: 0 2px 0 rgba(10, 12, 9, 0.16);
+  --shadow-lg: 0 4px 0 rgba(10, 12, 9, 0.2);
+  --shadow-glow: 0 0 0 1px rgba(168, 35, 27, 0.28);
+  --shadow-btn: 0 1px 0 rgba(10, 12, 9, 0.25);
+  --shadow-btn-hover: 0 2px 0 rgba(10, 12, 9, 0.3);
 }
 
 @theme inline {
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display-face), Georgia, serif;
+
   --color-background: var(--background);
   --color-background-soft: var(--background-soft);
   --color-foreground: var(--foreground);
@@ -49,10 +68,28 @@
   --color-accent-soft: var(--accent-soft);
   --color-accent2: var(--accent2);
   --color-accent2-bright: var(--accent2-bright);
+
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-chalk: var(--chalk);
+  --color-marker: var(--marker);
+  --color-rule: var(--rule);
+  --color-graphite: var(--graphite);
+
   --shadow-card-sm: var(--shadow-sm);
   --shadow-card-md: var(--shadow-md);
   --shadow-card-lg: var(--shadow-lg);
   --shadow-glow: var(--shadow-glow);
+}
+
+/* Sheets, not bubbles. One radius scale, deliberately small. */
+@theme {
+  --radius-sm: 2px;
+  --radius-md: 2px;
+  --radius-lg: 3px;
+  --radius-xl: 3px;
+  --radius-2xl: 4px;
+  --radius-3xl: 4px;
 }
 
 html,
@@ -62,53 +99,120 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Display face echoes the Paprivo wordmark (rounded geometric sans);
-   Geist stays the UI/body voice. */
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  font-feature-settings: "cv05" 1;
+}
+
+/* Display face: tight, squared grotesque — the cover of the paper. */
 @layer base {
   h1,
   h2,
-  h3 {
-    font-family: var(--font-poppins), var(--font-geist-sans), sans-serif;
-    letter-spacing: -0.01em;
+  h3,
+  .font-display {
+    font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: -0.025em;
+    font-weight: 600;
+  }
+  h1 {
+    line-height: 1.02;
   }
 }
 
-* {
-  border-color: var(--card-border);
+@layer base {
+  * {
+    border-color: var(--card-border);
+  }
+
+  /* Links inherit their surroundings — except sheets, which are light surfaces.
+     Unlayered rules beat the layered .bg-card colour, so a link inside a sheet
+     would otherwise inherit the desk's chalk text and vanish. */
+  a:where(:not(.bg-card)) {
+    color: inherit;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--marker) 28%, transparent);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+
+  * {
+    scrollbar-width: thin;
+  }
 }
 
-/* Links inherit their surroundings — except cards, which are light surfaces.
-   Unlayered rules beat the layered .bg-card colour, so a link card would
-   otherwise inherit the page's white text and vanish on its own background. */
-a:where(:not(.bg-card)) {
-  color: inherit;
-}
-
-button {
-  cursor: pointer;
-}
-
-::selection {
-  background: color-mix(in srgb, var(--accent2-bright) 35%, transparent);
-}
-
-:focus-visible {
-  outline: 2px solid var(--ring);
-  outline-offset: 2px;
-}
-
-* {
-  scrollbar-width: thin;
-}
-
-/* Alabaster card surfaces always carry deep-slate text.
-   In @layer base so per-element utilities (e.g. text-muted) still win. */
+/* Paper sheets always carry ink text. In @layer base so per-element utilities
+   (e.g. text-muted) still win. */
 @layer base {
   .bg-card {
     color: var(--on-card);
-    /* muted text needs to be darker on light surfaces */
-    --muted: #64748b;
+    --muted: var(--graphite);
   }
+}
+
+@layer components {
+/* ---------------------------------- */
+/* Paper furniture                    */
+/* ---------------------------------- */
+
+/* A ruled divider: the line between sections of a paper. */
+.rule {
+  border: 0;
+  border-top: 1px solid rgba(236, 231, 214, 0.16);
+}
+.rule-ink {
+  border: 0;
+  border-top: 1px solid var(--rule);
+}
+
+/* Counts and unit codes: printed figures, aligned in columns. */
+.mark {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+}
+
+/* The mark bracket, [65], as printed down the right margin of a paper. */
+.mark-bracket::before {
+  content: "[";
+}
+.mark-bracket::after {
+  content: "]";
+}
+
+/* Rubric blocks — Instructions / Information / Advice. */
+.rubric-term {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
+/* Ticks are the only ornament the site allows itself. */
+.tick {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  color: var(--marker);
+  flex: none;
+}
+.tick-on {
+  border-color: var(--marker);
+  background: color-mix(in srgb, var(--marker) 10%, transparent);
 }
 
 /* Paper link buttons — the border answers the hover; no lift */
@@ -116,22 +220,21 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 0.375rem;
-  padding: 0.375rem 0.625rem;
-  border-radius: 0.5rem;
+  padding: 0.3125rem 0.5625rem;
+  border-radius: 3px;
   border: 1px solid var(--card-border);
   background: var(--card);
-  /* Light surface: always deep-slate text, even outside a .bg-card parent. */
   color: var(--on-card);
   font-size: 0.8125rem;
   font-weight: 500;
+  font-variant-numeric: tabular-nums;
   transition:
-    background 200ms ease,
-    border-color 200ms ease,
-    box-shadow 200ms ease;
+    border-color 160ms ease,
+    background 160ms ease;
 }
 .doc-btn:hover {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+  border-color: var(--marker);
+  background: color-mix(in srgb, var(--marker) 6%, var(--paper));
 }
 
 /* Progress ring animation */
@@ -140,55 +243,45 @@ button {
 }
 
 /* ---------------------------------- */
-/* Premium interaction system         */
+/* Interaction                        */
 /* ---------------------------------- */
 
-/* Interactive card: gentle lift, deeper shadow, brighter border */
+/* A sheet does not lift off the desk — its edge gets marked. */
 .card-interactive {
   transition:
-    transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
-    box-shadow 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
-    border-color 220ms ease;
-  will-change: transform;
+    border-color 160ms ease,
+    background-color 160ms ease;
 }
 .card-interactive:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--card-border-strong);
-}
-.card-interactive:hover .card-glyph {
-  transform: translateY(-2px) scale(1.08);
+  border-color: var(--marker);
 }
 .card-interactive .card-glyph {
-  transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: color 160ms ease;
+}
+.card-interactive:hover .card-glyph {
+  color: var(--marker);
 }
 
-/* Primary button — Oxford Blue, tactile hover with soft glow */
+/* Primary button — marker red, flat, tactile only through its edge */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background: var(--accent);
-  color: #fff;
-  font-weight: 500;
-  border-radius: 0.75rem;
-  box-shadow: var(--shadow-btn);
+  background: var(--marker);
+  color: var(--paper);
+  font-weight: 600;
+  border-radius: 3px;
+  box-shadow: none;
   transition:
-    transform 200ms cubic-bezier(0.2, 0.8, 0.2, 1),
-    box-shadow 200ms ease,
-    filter 200ms ease,
-    background 200ms ease;
+    background 160ms ease,
+    box-shadow 160ms ease;
 }
 .btn-primary:hover {
-  background: var(--accent-soft);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-btn-hover);
-  filter: brightness(1.05);
+  background: var(--marker-deep);
 }
 .btn-primary:active {
-  transform: translateY(0);
-  box-shadow: var(--shadow-btn);
+  background: var(--marker-deep);
 }
 
 /* Secondary button — outlined, quiet */
@@ -197,73 +290,32 @@ button {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  border: 1px solid rgba(248, 250, 252, 0.22);
+  border: 1px solid rgba(236, 231, 214, 0.28);
   color: var(--foreground);
   font-weight: 500;
-  border-radius: 0.75rem;
-  background: rgba(248, 250, 252, 0.04);
+  border-radius: 3px;
+  background: transparent;
   transition:
-    transform 200ms cubic-bezier(0.2, 0.8, 0.2, 1),
-    border-color 200ms ease,
-    background 200ms ease;
+    border-color 160ms ease,
+    background 160ms ease;
 }
 .btn-secondary:hover {
-  border-color: rgba(248, 250, 252, 0.45);
-  background: rgba(248, 250, 252, 0.08);
-  transform: translateY(-1px);
-}
-.btn-secondary:active {
-  transform: translateY(0);
+  border-color: rgba(236, 231, 214, 0.6);
+  background: rgba(236, 231, 214, 0.05);
 }
 
 /* ---------------------------------- */
-/* Motion system (transform/opacity)  */
+/* Motion                             */
 /* ---------------------------------- */
 
 @keyframes rise-in {
   from {
     opacity: 0;
-    transform: translateY(18px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-@keyframes scale-in {
-  from {
-    opacity: 0;
-    transform: scale(0.97);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-@keyframes float-slow {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-@keyframes pulse-glow {
-  0%,
-  100% {
-    opacity: 0.55;
-  }
-  50% {
-    opacity: 0.9;
-  }
-}
-@keyframes shimmer {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(100%);
   }
 }
 @keyframes spin {
@@ -273,41 +325,38 @@ button {
 }
 
 .anim-rise {
-  animation: rise-in 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
-}
-.anim-scale {
-  animation: scale-in 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
-}
-.anim-float {
-  animation: float-slow 7s ease-in-out infinite;
-}
-.anim-glow {
-  animation: pulse-glow 6s ease-in-out infinite;
+  animation: rise-in 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 .anim-spin {
   animation: spin 0.8s linear infinite;
 }
 
+/* Kept for elements that still reference them; no motion of their own. */
+.anim-scale,
+.anim-float,
+.anim-glow {
+  animation: none;
+}
+
 /* Entrance stagger helpers */
-.stagger-1 { animation-delay: 80ms; }
-.stagger-2 { animation-delay: 160ms; }
-.stagger-3 { animation-delay: 240ms; }
-.stagger-4 { animation-delay: 320ms; }
-.stagger-5 { animation-delay: 400ms; }
+.stagger-1 { animation-delay: 70ms; }
+.stagger-2 { animation-delay: 140ms; }
+.stagger-3 { animation-delay: 210ms; }
+.stagger-4 { animation-delay: 280ms; }
+.stagger-5 { animation-delay: 350ms; }
 
 /* Scroll reveal — JS toggles .is-visible when the element enters the viewport */
 .reveal {
   opacity: 0;
-  transform: translateY(22px) scale(0.985);
+  transform: translateY(12px);
   transition:
-    opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1),
-    transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    opacity 0.5s cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
   transition-delay: var(--reveal-delay, 0ms);
-  will-change: opacity, transform;
 }
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
 }
 
 /* Respect reduced motion everywhere */
@@ -315,10 +364,7 @@ button {
   html {
     scroll-behavior: auto;
   }
-  .anim-rise,
-  .anim-scale,
-  .anim-float,
-  .anim-glow {
+  .anim-rise {
     animation: none;
   }
   .reveal {
@@ -328,13 +374,9 @@ button {
   }
   .card-interactive,
   .btn-primary,
-  .btn-secondary {
+  .btn-secondary,
+  .doc-btn {
     transition: none;
-  }
-  .card-interactive:hover,
-  .btn-primary:hover,
-  .btn-secondary:hover {
-    transform: none;
   }
 }
 
@@ -345,16 +387,18 @@ button {
 .nav-link::after {
   content: "";
   position: absolute;
-  left: 0.75rem;
-  right: 0.75rem;
-  bottom: 0.2rem;
+  left: 0.6rem;
+  right: 0.6rem;
+  bottom: 0.1rem;
   height: 2px;
-  border-radius: 2px;
-  background: var(--accent2-bright);
+  border-radius: 1px;
+  background: var(--marker);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .nav-link:not(.nav-link-active):hover::after {
   transform: scaleX(1);
+}
+
 }

@@ -133,7 +133,7 @@ function PaperRow({
               : "Find a walkthrough video for this paper on YouTube"
           }
         >
-          Yt 🎥
+          Watch
         </a>
       </div>
     </div>
@@ -235,15 +235,24 @@ export function SubjectBrowser({ subject }: { subject: Subject }) {
         </div>
       ) : (
         <ul className="space-y-2">
-          {rows.map(({ unit, name, paper }) => (
-            <li key={paperId(paper.code, paper.session, paper.year, paper.variant)}>
-              <div className="mb-1 text-xs">
-                <span className="font-semibold">{unit}</span>{" "}
-                <span className="text-muted">{name}</span>
-              </div>
-              <PaperRow paper={paper} subjectLabel={subject.label} unitName={name} />
-            </li>
-          ))}
+          {rows.map(({ unit, name, paper }, i) => {
+            // Label the unit once, where a run of its papers begins, rather than
+            // repeating the same caption above every row.
+            const startsUnit = i === 0 || rows[i - 1].unit !== unit;
+            return (
+              <li key={paperId(paper.code, paper.session, paper.year, paper.variant)}>
+                {startsUnit && (
+                  <div className="mb-1.5 flex items-baseline gap-2">
+                    <span className="mark font-display text-xs font-semibold text-foreground/90">
+                      {unit}
+                    </span>
+                    <span className="text-xs text-muted">{name}</span>
+                  </div>
+                )}
+                <PaperRow paper={paper} subjectLabel={subject.label} unitName={name} />
+              </li>
+            );
+          })}
         </ul>
       )}
     </div>

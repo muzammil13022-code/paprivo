@@ -3,7 +3,7 @@ export function ProgressRing({
   total,
   size = 44,
   stroke = 5,
-  color = "var(--accent2-bright)",
+  color = "var(--marker)",
 }: {
   done: number;
   total: number;
@@ -23,7 +23,7 @@ export function ProgressRing({
       role="img"
       aria-label={`${done} of ${total} papers done`}
     >
-      <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="rgba(15,23,42,0.12)" strokeWidth={stroke} />
+      <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="rgba(28,31,26,0.14)" strokeWidth={stroke} />
       <circle
         cx={size / 2}
         cy={size / 2}

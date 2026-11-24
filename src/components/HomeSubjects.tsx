@@ -5,7 +5,6 @@ import { catalogueSubject, paperCountOf, subjectList } from "@/lib/subjects";
 import { paperId } from "@/lib/papers";
 import type { Subject } from "@/types";
 import { useUserState } from "@/lib/state";
-import { ProgressRing } from "@/components/ProgressRing";
 import { Reveal } from "@/components/Reveal";
 
 function doneCount(subject: Subject | undefined, progress: Set<string>): number {
@@ -24,15 +23,16 @@ export function HomeSubjects() {
 
   if (loading) {
     return (
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-px sm:grid-cols-2 lg:grid-cols-3 bg-white/10 border border-white/10">
         {[...Array(5)].map((_, i) => (
-          <div key={i} className="h-44 rounded-2xl bg-card/5 border border-white/10 animate-pulse" />
+          <div key={i} className="h-48 bg-background-soft animate-pulse" />
         ))}
       </div>
     );
   }
 
-  const shown = subjectKeys.length > 0 ? subjectList.filter((s) => subjectKeys.includes(s.key)) : subjectList;
+  const shown =
+    subjectKeys.length > 0 ? subjectList.filter((s) => subjectKeys.includes(s.key)) : subjectList;
   const personalised = subjectKeys.length > 0;
 
   return (
@@ -42,50 +42,49 @@ export function HomeSubjects() {
           <p className="text-sm text-muted">
             Showing your {shown.length} selected subject{shown.length === 1 ? "" : "s"}
           </p>
-          <Link href="/onboarding" className="underline underline-offset-2 hover:text-accent2-bright">
+          <Link
+            href="/onboarding"
+            className="text-sm underline underline-offset-4 decoration-white/30 hover:decoration-accent2-bright"
+          >
             Edit selection
           </Link>
         </div>
       )}
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {shown.map((meta, i) => {
           const subject = catalogueSubject(meta.key);
           const total = paperCountOf(meta.key);
           const done = doneCount(subject, progress);
+          const pct = total > 0 ? Math.round((done / total) * 100) : 0;
           return (
-            <Reveal key={meta.key} delay={(i % 3) * 90}>
-              <div className="card-interactive rounded-2xl border border-card-border bg-card p-5 flex flex-col gap-3 h-full shadow-card-sm">
-                <div className="flex items-start justify-between gap-3">
-                  <div>
-                    <h3 className="text-lg font-semibold">
-                      <Link href={`/${meta.key}`} className="hover:underline underline-offset-4">
-                        {meta.label}
-                      </Link>
+            <Reveal key={meta.key} delay={(i % 3) * 70}>
+              <div className="card-interactive rounded-2xl border border-card-border bg-card h-full">
+                <Link href={`/${meta.key}`} className="flex h-full flex-col p-5">
+                  <div className="flex items-start justify-between gap-3">
+                    <h3 className="font-display text-xl font-semibold tracking-tight">
+                      {meta.label}
                     </h3>
-                    <p className="text-sm text-muted">{meta.unitsLine}</p>
+                    <span className="mark text-sm text-graphite mark-bracket shrink-0" aria-hidden>
+                      {total}
+                    </span>
                   </div>
-                  <span className="card-glyph text-2xl text-accent opacity-80" aria-hidden>
-                    {meta.glyph}
-                  </span>
-                </div>
+                  <p className="text-xs text-graphite mt-0.5">{meta.unitsLine}</p>
 
-                <>
-                  <p className="text-sm text-muted flex-1">{meta.blurb}</p>
-                  <div className="flex items-center gap-3">
-                    <ProgressRing done={done} total={total} />
-                    <div className="text-sm">
-                      <p className="font-medium">
-                        {done} of {total} papers done
-                      </p>
-                      <Link
-                        href={`/${meta.key}`}
-                        className="text-accent-soft underline underline-offset-2 hover:text-accent2-bright"
-                      >
-                        Browse papers
-                      </Link>
+                  <p className="text-sm text-graphite mt-3 flex-1 leading-relaxed">{meta.blurb}</p>
+
+                  {/* Scoring line: filled to the papers you have ticked off */}
+                  <div className="mt-5">
+                    <div className="h-[3px] w-full bg-rule" role="presentation">
+                      <div className="h-full bg-marker" style={{ width: `${pct}%` }} />
+                    </div>
+                    <div className="mt-2 flex items-baseline justify-between gap-2 text-xs">
+                      <span className="mark text-graphite">
+                        {done} of {total} ticked off
+                      </span>
+                      <span className="font-medium text-accent">Browse papers</span>
                     </div>
                   </div>
-                </>
+                </Link>
               </div>
             </Reveal>
           );

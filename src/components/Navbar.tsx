@@ -78,13 +78,13 @@ export function Navbar() {
   }
 
   const pill = (active: boolean) =>
-    active ? "bg-accent text-white font-medium shadow-card-sm" : "text-foreground/70 hover:text-foreground hover:bg-white/5";
+    active ? "bg-accent text-paper font-medium" : "text-foreground/70 hover:text-foreground hover:bg-white/5";
 
   return (
     <header
       className={`sticky top-0 z-40 transition-all duration-300 ${
         scrolled
-          ? "border-b border-white/10 bg-background/85 backdrop-blur-md shadow-[0_4px_24px_rgba(2,8,23,0.35)]"
+          ? "border-b border-white/10 bg-background/85 backdrop-blur-md shadow-[0_1px_0_rgba(236,231,214,0.06)]"
           : "border-b border-transparent bg-background/60 backdrop-blur-sm"
       }`}
     >
@@ -113,7 +113,7 @@ export function Navbar() {
               aria-expanded={resourcesOpen}
               className={`px-3 py-1.5 rounded-lg flex items-center gap-1 transition-colors ${
                 pathname.startsWith("/resources")
-                  ? "bg-accent text-white font-medium shadow-card-sm"
+                  ? "bg-accent text-paper font-medium"
                   : "text-foreground/70 hover:text-foreground hover:bg-white/5"
               }`}
             >
@@ -126,7 +126,7 @@ export function Navbar() {
               </span>
             </button>
             {resourcesOpen && (
-              <div className="absolute left-0 mt-2 w-64 rounded-2xl border border-white/10 bg-[#1b2740] shadow-lg p-2 text-sm anim-rise origin-top">
+              <div className="absolute left-0 mt-2 w-64 rounded-2xl border border-white/12 bg-background-soft shadow-lg p-2 text-sm anim-rise origin-top">
                 {resourceLinks.map((r) => (
                   <Link
                     key={r.href}

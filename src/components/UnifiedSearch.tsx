@@ -97,12 +97,8 @@ export function UnifiedSearch() {
 
   return (
     <section aria-labelledby="search-all-heading" className="relative overflow-hidden">
-      <div aria-hidden className="absolute -inset-x-6 -top-10 bottom-0 pointer-events-none">
-        <div className="anim-glow absolute left-1/2 top-0 -translate-x-1/2 w-[520px] h-[320px] rounded-full bg-accent/25 blur-[110px]" />
-      </div>
-
       <Reveal className="relative">
-        <div className="rounded-3xl border border-white/10 bg-background-soft/80 backdrop-blur p-6 sm:p-8 shadow-glow">
+        <div className="rounded-2xl border border-white/12 bg-background-soft p-6 sm:p-8">
           <h2 id="search-all-heading" className="text-2xl sm:text-3xl font-bold tracking-tight">
             Find a question or a video
           </h2>
@@ -111,7 +107,7 @@ export function UnifiedSearch() {
             the paper, or type a topic to get the videos that cover it.
           </p>
 
-          <form onSubmit={onSubmit} className="mt-6 flex flex-col sm:flex-row gap-2.5" role="search">
+          <form onSubmit={onSubmit} className="mt-6 border-t border-white/10 pt-6 flex flex-col sm:flex-row gap-2.5" role="search">
             <div className="relative flex-1">
               <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted" aria-hidden>
                 <SearchIcon />
@@ -154,7 +150,7 @@ export function UnifiedSearch() {
                   setQuery(ex);
                   runSearch(ex);
                 }}
-                className="px-2 py-1 rounded-md border border-white/10 bg-white/5 hover:border-accent2-bright/60 hover:text-foreground transition-colors"
+                className="px-2 py-1 rounded-md border border-white/10 bg-white/5 hover:border-accent hover:text-foreground transition-colors"
               >
                 {ex}
               </button>
