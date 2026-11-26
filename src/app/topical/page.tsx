@@ -13,11 +13,18 @@ export default function TopicalPage() {
   return (
     <div className="space-y-6">
       <header>
-        <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">Topical practice</h1>
-        <p className="text-muted mt-1 max-w-2xl">
-          Question banks and walkthrough searches grouped by specification topic, unit by
-          unit. Pick a subject to begin.
-        </p>
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">Topical practice</h1>
+            <p className="text-muted mt-1 max-w-2xl">
+              Question banks and walkthrough searches grouped by specification topic, unit by
+              unit. Pick a subject to begin.
+            </p>
+          </div>
+          <Link href="/topical/make" className="btn-primary h-9 px-4 text-sm inline-flex items-center">
+            Make a topical
+          </Link>
+        </div>
       </header>
 
       <div className="grid gap-3 sm:grid-cols-2">

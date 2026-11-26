@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "papers": "node scripts/fetch-papers.mjs",
-    "question-pages": "node scripts/build-question-pages.mjs"
+    "question-pages": "node scripts/build-question-pages.mjs",
+    "topical-index": "node scripts/build-topical-index.mjs"
   },
   "dependencies": {
     "@auth/core": "^0.41.3",
@@ -18,6 +19,7 @@
     "drizzle-orm": "^0.45.2",
     "next": "16.3.5",
     "next-auth": "^5.0.0-beta.32",
+    "pdf-lib": "^1.17.1",
     "pdfjs-dist": "^4.10.38",
     "react": "19.2.8",
     "react-dom": "19.2.8",
