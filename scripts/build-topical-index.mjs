@@ -252,7 +252,11 @@ function segmentPaper(pages, starts, markerMap) {
     const lastTotalPage = endsOn.get(n) ?? 0;
     for (const q of ascending(starts)) {
       if (q !== n + 1) continue;
-      if ((starts.get(q) ?? 0) <= lastTotalPage) continue;
+      const page = starts.get(q) ?? 0;
+      if (page <= lastTotalPage) continue;
+      // A blank page prints its number where a question number would sit.
+      if (/blank page/i.test(pages[page - 1])) continue;
+      if (cleanBody(pages[page - 1]).length < 20) continue;
       n = q;
     }
     candidates.push({ n, source: "totals" });
@@ -323,6 +327,14 @@ function hash(url) {
  * the last question.
  */
 const INSERT_RE = /scientific article for use with question/i;
+const COVER_RE = /please check the examination details|candidate surname/i;
+const PAPER_CODE_RE = /\b(P\d{5}[A-Z])\b/;
+
+/** Pearson prints its document code on every page; a different code is a new document. */
+function paperCode(page) {
+  const flat = page.replace(/\s+/g, " ");
+  return PAPER_CODE_RE.exec(flat)?.[1] ?? null;
+}
 
 function trimDuplicate(pages) {
   // Only trim an insert that follows the last question: in some PDFs the text
@@ -331,6 +343,14 @@ function trimDuplicate(pages) {
   const lastTotal = pages.reduce((last, page, index) => (hasTotal.test(page) ? index : last), -1);
   for (let i = Math.max(lastTotal + 1, 3); i < pages.length; i++) {
     if (INSERT_RE.test(pages[i])) return pages.slice(0, i);
+  }
+  // Some files bind the answer booklet after the question paper; its cover
+  // starts the second document, and its question numbers would collide.
+  const firstCode = pages.slice(0, 3).map(paperCode).find(Boolean) ?? null;
+  for (let i = 3; i < pages.length; i++) {
+    if (COVER_RE.test(pages[i])) return pages.slice(0, i);
+    const code = paperCode(pages[i]);
+    if (firstCode && code && code !== firstCode) return pages.slice(0, i);
   }
   return pages;
 }
@@ -384,7 +404,7 @@ async function main() {
           continue;
         }
         const raw = await pageText(paper);
-        const pages = raw ? trimDuplicate(raw) : null;
+        let pages = raw ? trimDuplicate(raw) : null;
         if (!pages) {
           debug?.("no text");
           continue;
@@ -395,7 +415,12 @@ async function main() {
         }
 
         const markerMap = starts[paperKey(paper)]?.qp;
-        const segmented = segmentPaper(pages, lineStarts(pages), markerMap);
+        let segmented = segmentPaper(pages, lineStarts(pages), markerMap);
+        if (!segmented && raw && pages.length !== raw.length) {
+          // The trim was wrong for this paper; index the whole file instead.
+          pages = raw;
+          segmented = segmentPaper(pages, lineStarts(pages), markerMap);
+        }
         if (!segmented) {
           const totals = totalsIn(pages);
           debug?.(
@@ -410,11 +435,17 @@ async function main() {
         // one question is left without marks, the cover's paper total gives it.
         const stated = statedTotal(pages);
         if (stated) {
-          const sum = questions.reduce((n, q) => n + q.marks, 0);
-          const blanks = questions.filter((q) => !q.marks);
-          if (blanks.length === 1 && sum !== stated) {
-            const residual = stated - sum;
-            if (residual > 0 && residual <= 30) blanks[0].marks = residual;
+          let sum = questions.reduce((n, q) => n + q.marks, 0);
+          if (sum === stated) {
+            // The paper is fully accounted for: a trailing unmarked question is
+            // a stray (a blank page's number, an article paragraph), not a mark.
+            while (questions.length > 1 && !questions[questions.length - 1].marks) questions.pop();
+          } else {
+            const blanks = questions.filter((q) => !q.marks);
+            if (blanks.length === 1) {
+              const residual = stated - sum;
+              if (residual > 0 && residual <= 30) blanks[0].marks = residual;
+            }
           }
         }
         sources[segmented.source] = (sources[segmented.source] ?? 0) + 1;
