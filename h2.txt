@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Age: 0
+Cache-Control: no-store
+Content-Disposition: attachment; filename="Paprivo - Biology - Molecules, Diet, Transport and Health (WBI11) - Biological molecules and enzymes.pdf"
+Content-Type: application/pdf
+Date: Thu, 26 Nov 2026 17:12:57 GMT
+Server: Vercel
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Matched-Path: /api/topical
+X-Skipped: 0
+X-Vercel-Cache: MISS
+X-Vercel-Id: bom1::iad1::p4qpq-1795713137706-96183e5e0bea
+Transfer-Encoding: chunked
+

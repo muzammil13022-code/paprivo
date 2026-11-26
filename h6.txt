@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+cache-control: no-store
+content-disposition: attachment; filename="Paprivo - Biology - Molecules, Diet, Transport and Health (WBI11) - Biological molecules and enzymes.pdf"
+content-type: application/pdf
+x-skipped: 0
+Date: Thu, 26 Nov 2026 17:14:06 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+

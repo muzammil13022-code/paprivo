@@ -183,7 +183,7 @@ export async function buildPack(
 
   const skipped: string[] = [];
 
-  const questionDocs = await mapLimit(match.papers, 3, async (entry) => {
+  const questionDocs = await mapLimit(match.papers, 6, async (entry) => {
     try {
       const source = await PDFDocument.load(await fetchDoc(origin, entry.paper.qp), {
         ignoreEncryption: true,
@@ -223,7 +223,7 @@ export async function buildPack(
   if (selection.includeMarkSchemes) {
     const schemes = await mapLimit(
       match.papers.filter((entry) => entry.paper.ms),
-      3,
+      6,
       async (entry) => {
         try {
           const source = await PDFDocument.load(await fetchDoc(origin, entry.paper.ms as string), {
