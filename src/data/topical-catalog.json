@@ -1,60 +1,60 @@
 {
-  "generatedAt": "2026-11-26T15:10:55.720Z",
+  "generatedAt": "2026-11-26T17:04:53.484Z",
   "units": {
     "WMA11": {
       "code": "WMA11",
       "name": "Pure Mathematics 1",
       "subject": "mathematics",
-      "papers": 21,
-      "questions": 210,
+      "papers": 27,
+      "questions": 270,
       "topics": [
         {
           "id": "algebraic-expressions",
           "name": "Algebraic expressions",
-          "questions": 4,
-          "papers": 4
+          "questions": 46,
+          "papers": 24
         },
         {
           "id": "quadratics",
           "name": "Quadratics",
-          "questions": 4,
-          "papers": 4
+          "questions": 11,
+          "papers": 8
         },
         {
           "id": "equations-inequalities",
           "name": "Equations and inequalities",
-          "questions": 1,
-          "papers": 1
+          "questions": 11,
+          "papers": 8
         },
         {
           "id": "graphs-transformations",
           "name": "Graphs and transformations",
-          "questions": 84,
-          "papers": 21
+          "questions": 103,
+          "papers": 27
         },
         {
           "id": "straight-lines",
           "name": "Straight lines",
-          "questions": 37,
-          "papers": 20
+          "questions": 48,
+          "papers": 26
         },
         {
           "id": "trigonometry",
           "name": "Trigonometry",
-          "questions": 26,
-          "papers": 19
+          "questions": 34,
+          "papers": 25
         },
         {
           "id": "differentiation",
           "name": "Differentiation",
-          "questions": 27,
-          "papers": 18
+          "questions": 43,
+          "papers": 22
         },
         {
           "id": "integration",
           "name": "Integration",
-          "questions": 13,
-          "papers": 10
+          "questions": 27,
+          "papers": 20
         }
       ]
     },
@@ -62,68 +62,68 @@
       "code": "WMA12",
       "name": "Pure Mathematics 2",
       "subject": "mathematics",
-      "papers": 21,
-      "questions": 209,
+      "papers": 26,
+      "questions": 258,
       "topics": [
         {
           "id": "proof",
           "name": "Proof",
-          "questions": 22,
-          "papers": 20
+          "questions": 26,
+          "papers": 22
         },
         {
           "id": "algebra-functions",
           "name": "Algebra and functions",
-          "questions": 10,
-          "papers": 10
+          "questions": 28,
+          "papers": 24
         },
         {
           "id": "circle-geometry",
           "name": "Coordinate geometry: circles",
-          "questions": 23,
-          "papers": 21
+          "questions": 33,
+          "papers": 25
         },
         {
           "id": "sequences-series",
           "name": "Sequences and series",
-          "questions": 24,
-          "papers": 17
+          "questions": 34,
+          "papers": 23
         },
         {
           "id": "binomial",
           "name": "Binomial expansion",
-          "questions": 21,
-          "papers": 21
+          "questions": 24,
+          "papers": 24
         },
         {
           "id": "radians-trigonometry",
           "name": "Radians and trigonometry",
-          "questions": 9,
-          "papers": 7
+          "questions": 13,
+          "papers": 9
         },
         {
           "id": "exponentials-logarithms",
           "name": "Exponentials and logarithms",
-          "questions": 24,
-          "papers": 21
+          "questions": 31,
+          "papers": 25
         },
         {
           "id": "differentiation",
           "name": "Differentiation",
-          "questions": 17,
-          "papers": 16
+          "questions": 28,
+          "papers": 22
         },
         {
           "id": "integration",
           "name": "Integration",
-          "questions": 12,
-          "papers": 11
+          "questions": 17,
+          "papers": 14
         },
         {
           "id": "trapezium-rule",
           "name": "The trapezium rule",
-          "questions": 20,
-          "papers": 20
+          "questions": 25,
+          "papers": 24
         }
       ]
     },
@@ -131,38 +131,44 @@
       "code": "WMA13",
       "name": "Pure Mathematics 3",
       "subject": "mathematics",
-      "papers": 18,
-      "questions": 171,
+      "papers": 23,
+      "questions": 216,
       "topics": [
+        {
+          "id": "algebra-functions",
+          "name": "Algebra and functions",
+          "questions": 68,
+          "papers": 23
+        },
         {
           "id": "trigonometry",
           "name": "Trigonometry",
-          "questions": 14,
-          "papers": 13
+          "questions": 21,
+          "papers": 18
         },
         {
           "id": "exponentials-logarithms",
           "name": "Exponentials and logarithms",
-          "questions": 46,
-          "papers": 18
+          "questions": 53,
+          "papers": 22
         },
         {
           "id": "differentiation",
           "name": "Differentiation",
-          "questions": 3,
-          "papers": 3
+          "questions": 29,
+          "papers": 19
         },
         {
           "id": "integration",
           "name": "Integration",
-          "questions": 14,
-          "papers": 12
+          "questions": 30,
+          "papers": 22
         },
         {
           "id": "numerical-methods",
           "name": "Numerical methods",
-          "questions": 15,
-          "papers": 14
+          "questions": 20,
+          "papers": 19
         }
       ]
     },
@@ -170,44 +176,38 @@
       "code": "WMA14",
       "name": "Pure Mathematics 4",
       "subject": "mathematics",
-      "papers": 19,
-      "questions": 176,
+      "papers": 22,
+      "questions": 204,
       "topics": [
         {
           "id": "vectors",
           "name": "Vectors",
-          "questions": 17,
-          "papers": 15
+          "questions": 28,
+          "papers": 22
         },
         {
           "id": "parametric-equations",
           "name": "Parametric equations",
-          "questions": 29,
-          "papers": 19
+          "questions": 46,
+          "papers": 22
         },
         {
           "id": "differentiation",
           "name": "Differentiation",
-          "questions": 10,
-          "papers": 8
+          "questions": 25,
+          "papers": 16
         },
         {
           "id": "integration",
           "name": "Integration",
-          "questions": 61,
-          "papers": 19
-        },
-        {
-          "id": "trigonometry",
-          "name": "Trigonometry",
-          "questions": 1,
-          "papers": 1
+          "questions": 74,
+          "papers": 22
         },
         {
           "id": "algebra-functions",
           "name": "Algebra and functions",
-          "questions": 26,
-          "papers": 19
+          "questions": 58,
+          "papers": 22
         }
       ]
     },
@@ -215,50 +215,50 @@
       "code": "WME01",
       "name": "Mechanics 1",
       "subject": "mathematics",
-      "papers": 19,
-      "questions": 147,
+      "papers": 25,
+      "questions": 192,
       "topics": [
         {
           "id": "kinematics",
           "name": "Kinematics",
-          "questions": 32,
-          "papers": 19
+          "questions": 67,
+          "papers": 25
         },
         {
           "id": "vectors",
           "name": "Vectors in mechanics",
-          "questions": 31,
-          "papers": 19
+          "questions": 40,
+          "papers": 24
         },
         {
           "id": "dynamics",
           "name": "Dynamics: F = ma",
-          "questions": 42,
-          "papers": 17
+          "questions": 54,
+          "papers": 22
         },
         {
           "id": "connected-particles",
           "name": "Connected particles and pulleys",
-          "questions": 32,
-          "papers": 19
+          "questions": 58,
+          "papers": 25
         },
         {
           "id": "friction-statics",
           "name": "Friction and statics",
-          "questions": 38,
-          "papers": 19
+          "questions": 58,
+          "papers": 25
         },
         {
           "id": "moments",
           "name": "Moments",
-          "questions": 19,
-          "papers": 18
+          "questions": 23,
+          "papers": 23
         },
         {
           "id": "momentum-impulse",
           "name": "Momentum and impulse",
-          "questions": 23,
-          "papers": 19
+          "questions": 26,
+          "papers": 23
         }
       ]
     },
@@ -266,44 +266,44 @@
       "code": "WME02",
       "name": "Mechanics 2",
       "subject": "mathematics",
-      "papers": 20,
-      "questions": 152,
+      "papers": 24,
+      "questions": 183,
       "topics": [
         {
           "id": "projectiles",
           "name": "Projectiles",
-          "questions": 32,
-          "papers": 19
+          "questions": 40,
+          "papers": 23
         },
         {
           "id": "variable-acceleration",
           "name": "Variable acceleration",
-          "questions": 1,
-          "papers": 1
+          "questions": 3,
+          "papers": 3
         },
         {
           "id": "work-energy-power",
           "name": "Work, energy and power",
-          "questions": 23,
-          "papers": 17
+          "questions": 56,
+          "papers": 23
         },
         {
           "id": "impulse-collisions",
           "name": "Impulse and collisions",
-          "questions": 40,
-          "papers": 20
+          "questions": 50,
+          "papers": 24
         },
         {
           "id": "centres-of-mass",
           "name": "Centres of mass",
-          "questions": 22,
-          "papers": 20
+          "questions": 30,
+          "papers": 24
         },
         {
           "id": "statics-rigid",
           "name": "Statics of rigid bodies",
-          "questions": 33,
-          "papers": 19
+          "questions": 46,
+          "papers": 23
         }
       ]
     },
@@ -311,38 +311,38 @@
       "code": "WME03",
       "name": "Mechanics 3",
       "subject": "mathematics",
-      "papers": 14,
-      "questions": 97,
+      "papers": 17,
+      "questions": 119,
       "topics": [
         {
           "id": "circular-motion",
           "name": "Circular motion",
-          "questions": 24,
-          "papers": 14
+          "questions": 36,
+          "papers": 17
         },
         {
           "id": "elastic-strings",
           "name": "Elastic strings and springs",
-          "questions": 32,
-          "papers": 14
+          "questions": 53,
+          "papers": 17
         },
         {
           "id": "simple-harmonic-motion",
           "name": "Simple harmonic motion",
-          "questions": 19,
-          "papers": 14
+          "questions": 23,
+          "papers": 17
         },
         {
           "id": "centres-of-mass-solids",
           "name": "Centres of mass of solids",
-          "questions": 23,
-          "papers": 14
+          "questions": 26,
+          "papers": 17
         },
         {
           "id": "variable-acceleration",
           "name": "Variable acceleration",
-          "questions": 1,
-          "papers": 1
+          "questions": 15,
+          "papers": 12
         }
       ]
     },
@@ -350,38 +350,38 @@
       "code": "WST01",
       "name": "Statistics 1",
       "subject": "mathematics",
-      "papers": 19,
-      "questions": 124,
+      "papers": 25,
+      "questions": 168,
       "topics": [
         {
           "id": "representation-data",
           "name": "Representation and summary of data",
-          "questions": 50,
-          "papers": 19
+          "questions": 62,
+          "papers": 25
         },
         {
           "id": "probability",
           "name": "Probability",
-          "questions": 55,
-          "papers": 19
+          "questions": 95,
+          "papers": 25
         },
         {
           "id": "correlation-regression",
           "name": "Correlation and regression",
-          "questions": 22,
-          "papers": 19
+          "questions": 30,
+          "papers": 25
         },
         {
           "id": "discrete-random-variables",
           "name": "Discrete random variables",
-          "questions": 33,
-          "papers": 19
+          "questions": 44,
+          "papers": 25
         },
         {
           "id": "normal-distribution",
           "name": "The normal distribution",
-          "questions": 22,
-          "papers": 17
+          "questions": 18,
+          "papers": 16
         }
       ]
     },
@@ -389,32 +389,32 @@
       "code": "WST02",
       "name": "Statistics 2",
       "subject": "mathematics",
-      "papers": 18,
-      "questions": 119,
+      "papers": 21,
+      "questions": 140,
       "topics": [
         {
           "id": "binomial-poisson",
           "name": "Binomial and Poisson distributions",
-          "questions": 27,
-          "papers": 17
+          "questions": 30,
+          "papers": 19
         },
         {
           "id": "continuous-random-variables",
           "name": "Continuous random variables",
-          "questions": 46,
-          "papers": 18
+          "questions": 54,
+          "papers": 21
         },
         {
           "id": "sampling-estimation",
           "name": "Sampling and estimation",
-          "questions": 44,
-          "papers": 18
+          "questions": 51,
+          "papers": 21
         },
         {
           "id": "hypothesis-testing",
           "name": "Hypothesis testing",
-          "questions": 15,
-          "papers": 14
+          "questions": 33,
+          "papers": 21
         }
       ]
     },
@@ -422,38 +422,38 @@
       "code": "WST03",
       "name": "Statistics 3",
       "subject": "mathematics",
-      "papers": 12,
-      "questions": 84,
+      "papers": 16,
+      "questions": 112,
       "topics": [
         {
           "id": "combinations-random-variables",
           "name": "Combinations of random variables",
-          "questions": 1,
-          "papers": 1
+          "questions": 18,
+          "papers": 11
         },
         {
           "id": "sampling-distributions",
           "name": "Sampling distributions",
-          "questions": 12,
-          "papers": 9
+          "questions": 15,
+          "papers": 11
         },
         {
           "id": "estimation-confidence",
           "name": "Estimation and confidence intervals",
-          "questions": 24,
-          "papers": 12
+          "questions": 34,
+          "papers": 16
         },
         {
           "id": "chi-squared",
           "name": "Chi-squared tests",
-          "questions": 18,
-          "papers": 12
+          "questions": 26,
+          "papers": 16
         },
         {
           "id": "hypothesis-means",
           "name": "Hypothesis tests for means",
-          "questions": 36,
-          "papers": 12
+          "questions": 63,
+          "papers": 16
         }
       ]
     },
@@ -461,44 +461,44 @@
       "code": "WPH11",
       "name": "Mechanics and Materials",
       "subject": "physics",
-      "papers": 5,
-      "questions": 96,
+      "papers": 24,
+      "questions": 451,
       "topics": [
         {
           "id": "kinematics",
           "name": "Kinematics and graphs of motion",
-          "questions": 37,
-          "papers": 5
+          "questions": 209,
+          "papers": 24
         },
         {
           "id": "forces-moments",
           "name": "Forces, Newton's laws and moments",
-          "questions": 31,
-          "papers": 5
+          "questions": 184,
+          "papers": 24
         },
         {
           "id": "work-energy-power",
           "name": "Work, energy and power",
-          "questions": 18,
-          "papers": 5
+          "questions": 90,
+          "papers": 24
         },
         {
           "id": "momentum",
           "name": "Momentum",
-          "questions": 10,
-          "papers": 5
+          "questions": 47,
+          "papers": 23
         },
         {
           "id": "fluids",
           "name": "Fluids",
-          "questions": 18,
-          "papers": 5
+          "questions": 84,
+          "papers": 24
         },
         {
           "id": "materials",
           "name": "Materials",
-          "questions": 26,
-          "papers": 5
+          "questions": 91,
+          "papers": 24
         }
       ]
     },
@@ -506,32 +506,32 @@
       "code": "WPH12",
       "name": "Waves and Electricity",
       "subject": "physics",
-      "papers": 8,
-      "questions": 144,
+      "papers": 23,
+      "questions": 427,
       "topics": [
         {
           "id": "nature-of-light",
           "name": "The nature of light",
-          "questions": 35,
-          "papers": 8
+          "questions": 102,
+          "papers": 23
         },
         {
           "id": "waves",
           "name": "Waves",
-          "questions": 55,
-          "papers": 8
+          "questions": 201,
+          "papers": 23
         },
         {
           "id": "wave-particle-duality",
           "name": "Wave-particle duality",
-          "questions": 29,
-          "papers": 8
+          "questions": 79,
+          "papers": 23
         },
         {
           "id": "dc-electricity",
           "name": "DC electricity",
-          "questions": 51,
-          "papers": 8
+          "questions": 193,
+          "papers": 23
         }
       ]
     },
@@ -539,32 +539,32 @@
       "code": "WPH13",
       "name": "Practical Skills in Physics I",
       "subject": "physics",
-      "papers": 17,
-      "questions": 71,
+      "papers": 24,
+      "questions": 102,
       "topics": [
         {
           "id": "measurement-techniques",
           "name": "Measurement techniques",
-          "questions": 27,
-          "papers": 15
+          "questions": 39,
+          "papers": 22
         },
         {
           "id": "uncertainties-errors",
           "name": "Uncertainties and errors",
-          "questions": 30,
-          "papers": 17
+          "questions": 50,
+          "papers": 24
         },
         {
           "id": "graphical-analysis",
           "name": "Graphical analysis",
-          "questions": 32,
-          "papers": 17
+          "questions": 47,
+          "papers": 24
         },
         {
           "id": "core-practicals",
           "name": "Core practicals",
-          "questions": 20,
-          "papers": 14
+          "questions": 28,
+          "papers": 19
         }
       ]
     },
@@ -572,38 +572,38 @@
       "code": "WPH14",
       "name": "Further Mechanics, Fields and Particles",
       "subject": "physics",
-      "papers": 5,
-      "questions": 90,
+      "papers": 22,
+      "questions": 418,
       "topics": [
         {
           "id": "further-mechanics",
           "name": "Further mechanics",
-          "questions": 12,
-          "papers": 5
+          "questions": 122,
+          "papers": 22
         },
         {
           "id": "electric-fields",
           "name": "Electric fields",
-          "questions": 31,
-          "papers": 5
+          "questions": 187,
+          "papers": 22
         },
         {
           "id": "capacitors",
           "name": "Capacitors",
-          "questions": 23,
-          "papers": 5
+          "questions": 68,
+          "papers": 22
         },
         {
           "id": "magnetic-fields",
           "name": "Magnetic fields",
-          "questions": 31,
-          "papers": 5
+          "questions": 127,
+          "papers": 22
         },
         {
           "id": "nuclear-particle",
           "name": "Nuclear and particle physics",
-          "questions": 18,
-          "papers": 5
+          "questions": 138,
+          "papers": 22
         }
       ]
     },
@@ -611,38 +611,38 @@
       "code": "WPH15",
       "name": "Thermodynamics, Radiation and Oscillations",
       "subject": "physics",
-      "papers": 10,
-      "questions": 203,
+      "papers": 20,
+      "questions": 411,
       "topics": [
         {
           "id": "thermodynamics",
           "name": "Thermodynamics",
-          "questions": 24,
-          "papers": 10
+          "questions": 74,
+          "papers": 20
         },
         {
           "id": "nuclear-decay",
           "name": "Nuclear decay",
-          "questions": 16,
-          "papers": 8
+          "questions": 86,
+          "papers": 20
         },
         {
           "id": "oscillations",
           "name": "Oscillations",
-          "questions": 72,
-          "papers": 10
+          "questions": 113,
+          "papers": 20
         },
         {
           "id": "gravitational-fields",
           "name": "Gravitational fields",
-          "questions": 45,
-          "papers": 10
+          "questions": 93,
+          "papers": 20
         },
         {
           "id": "astrophysics",
           "name": "Astrophysics and cosmology",
-          "questions": 55,
-          "papers": 10
+          "questions": 138,
+          "papers": 20
         }
       ]
     },
@@ -650,26 +650,26 @@
       "code": "WPH16",
       "name": "Practical Skills in Physics II",
       "subject": "physics",
-      "papers": 15,
-      "questions": 61,
+      "papers": 21,
+      "questions": 84,
       "topics": [
         {
           "id": "planning-investigations",
           "name": "Planning investigations",
-          "questions": 56,
-          "papers": 15
+          "questions": 74,
+          "papers": 21
         },
         {
           "id": "analysis-evaluation",
           "name": "Analysis and evaluation",
-          "questions": 51,
-          "papers": 15
+          "questions": 73,
+          "papers": 21
         },
         {
           "id": "core-practicals",
           "name": "Core practicals",
-          "questions": 3,
-          "papers": 3
+          "questions": 5,
+          "papers": 5
         }
       ]
     },
@@ -677,38 +677,38 @@
       "code": "WCH11",
       "name": "Structure, Bonding and Introduction to Organic Chemistry",
       "subject": "chemistry",
-      "papers": 13,
-      "questions": 291,
+      "papers": 24,
+      "questions": 525,
       "topics": [
         {
           "id": "formulae-moles",
           "name": "Formulae, equations and amounts of substance",
-          "questions": 171,
-          "papers": 13
+          "questions": 325,
+          "papers": 24
         },
         {
           "id": "atomic-structure",
           "name": "Atomic structure and the periodic table",
-          "questions": 72,
-          "papers": 13
+          "questions": 146,
+          "papers": 24
         },
         {
           "id": "bonding-structure",
           "name": "Bonding and structure",
-          "questions": 80,
-          "papers": 13
+          "questions": 151,
+          "papers": 24
         },
         {
           "id": "organic-alkanes",
           "name": "Introduction to organic chemistry and alkanes",
-          "questions": 64,
-          "papers": 13
+          "questions": 96,
+          "papers": 23
         },
         {
           "id": "alkenes",
           "name": "Alkenes",
-          "questions": 19,
-          "papers": 13
+          "questions": 40,
+          "papers": 23
         }
       ]
     },
@@ -716,50 +716,50 @@
       "code": "WCH12",
       "name": "Energetics, Group Chemistry, Halogenoalkanes and Alcohols",
       "subject": "chemistry",
-      "papers": 10,
-      "questions": 207,
+      "papers": 25,
+      "questions": 528,
       "topics": [
         {
           "id": "energetics",
           "name": "Energetics",
-          "questions": 49,
-          "papers": 10
+          "questions": 118,
+          "papers": 25
         },
         {
           "id": "intermolecular-forces",
           "name": "Intermolecular forces",
-          "questions": 45,
-          "papers": 10
+          "questions": 140,
+          "papers": 25
         },
         {
           "id": "redox-groups",
           "name": "Redox chemistry and groups 1, 2 and 7",
-          "questions": 56,
-          "papers": 10
+          "questions": 178,
+          "papers": 25
         },
         {
           "id": "kinetics-equilibria",
           "name": "Introduction to kinetics and equilibria",
-          "questions": 30,
-          "papers": 10
+          "questions": 97,
+          "papers": 25
         },
         {
           "id": "halogenoalkanes",
           "name": "Halogenoalkanes",
-          "questions": 20,
-          "papers": 9
+          "questions": 36,
+          "papers": 20
         },
         {
           "id": "alcohols",
           "name": "Alcohols",
-          "questions": 15,
-          "papers": 9
+          "questions": 104,
+          "papers": 25
         },
         {
           "id": "spectra",
           "name": "Mass spectra and IR",
-          "questions": 19,
-          "papers": 9
+          "questions": 52,
+          "papers": 24
         }
       ]
     },
@@ -767,26 +767,26 @@
       "code": "WCH13",
       "name": "Practical Skills in Chemistry I",
       "subject": "chemistry",
-      "papers": 17,
-      "questions": 72,
+      "papers": 25,
+      "questions": 107,
       "topics": [
         {
           "id": "techniques",
           "name": "Core techniques",
-          "questions": 41,
-          "papers": 17
+          "questions": 67,
+          "papers": 25
         },
         {
           "id": "qualitative-tests",
           "name": "Qualitative tests",
-          "questions": 26,
-          "papers": 15
+          "questions": 51,
+          "papers": 23
         },
         {
           "id": "analysis-evaluation",
           "name": "Analysis and evaluation",
-          "questions": 16,
-          "papers": 11
+          "questions": 30,
+          "papers": 21
         }
       ]
     },
@@ -794,50 +794,50 @@
       "code": "WCH14",
       "name": "Rates, Equilibria and Further Organic Chemistry",
       "subject": "chemistry",
-      "papers": 11,
-      "questions": 217,
+      "papers": 21,
+      "questions": 409,
       "topics": [
         {
           "id": "kinetics",
           "name": "Kinetics",
-          "questions": 35,
-          "papers": 11
+          "questions": 65,
+          "papers": 21
         },
         {
           "id": "entropy-energetics",
           "name": "Entropy and energetics",
-          "questions": 48,
-          "papers": 11
+          "questions": 102,
+          "papers": 21
         },
         {
           "id": "chemical-equilibria",
           "name": "Chemical equilibria",
-          "questions": 37,
-          "papers": 11
+          "questions": 66,
+          "papers": 21
         },
         {
           "id": "acid-base",
           "name": "Acid-base equilibria",
-          "questions": 36,
-          "papers": 11
+          "questions": 180,
+          "papers": 21
         },
         {
           "id": "carbonyls-acids",
           "name": "Carbonyls and carboxylic acids",
-          "questions": 35,
-          "papers": 10
+          "questions": 99,
+          "papers": 21
         },
         {
           "id": "chirality",
           "name": "Chirality",
-          "questions": 24,
-          "papers": 10
+          "questions": 39,
+          "papers": 17
         },
         {
           "id": "spectroscopy",
           "name": "Spectroscopy and chromatography",
-          "questions": 34,
-          "papers": 11
+          "questions": 57,
+          "papers": 20
         }
       ]
     },
@@ -845,38 +845,38 @@
       "code": "WCH15",
       "name": "Transition Metals and Organic Nitrogen Chemistry",
       "subject": "chemistry",
-      "papers": 7,
-      "questions": 138,
+      "papers": 22,
+      "questions": 438,
       "topics": [
         {
           "id": "redox-electrodes",
           "name": "Redox equilibria and electrode potentials",
-          "questions": 30,
-          "papers": 7
+          "questions": 112,
+          "papers": 22
         },
         {
           "id": "transition-metals",
           "name": "Transition metals",
-          "questions": 55,
-          "papers": 7
+          "questions": 162,
+          "papers": 22
         },
         {
           "id": "arenes",
           "name": "Arenes",
-          "questions": 30,
-          "papers": 7
+          "questions": 116,
+          "papers": 22
         },
         {
           "id": "organic-nitrogen",
           "name": "Organic nitrogen compounds",
-          "questions": 35,
-          "papers": 7
+          "questions": 101,
+          "papers": 22
         },
         {
           "id": "organic-synthesis",
           "name": "Organic synthesis",
-          "questions": 19,
-          "papers": 7
+          "questions": 89,
+          "papers": 22
         }
       ]
     },
@@ -884,20 +884,20 @@
       "code": "WCH16",
       "name": "Practical Skills in Chemistry II",
       "subject": "chemistry",
-      "papers": 11,
-      "questions": 45,
+      "papers": 21,
+      "questions": 85,
       "topics": [
         {
           "id": "advanced-practicals",
           "name": "Advanced core practicals",
-          "questions": 19,
-          "papers": 10
+          "questions": 56,
+          "papers": 20
         },
         {
           "id": "evaluation",
           "name": "Evaluation style questions",
-          "questions": 4,
-          "papers": 3
+          "questions": 6,
+          "papers": 6
         }
       ]
     },
@@ -905,26 +905,26 @@
       "code": "WBI11",
       "name": "Molecules, Diet, Transport and Health",
       "subject": "biology",
-      "papers": 15,
-      "questions": 121,
+      "papers": 25,
+      "questions": 203,
       "topics": [
         {
           "id": "biological-molecules",
           "name": "Biological molecules and enzymes",
-          "questions": 49,
-          "papers": 15
+          "questions": 93,
+          "papers": 25
         },
         {
           "id": "transport-health",
           "name": "Mammalian transport and cardiovascular health",
-          "questions": 56,
-          "papers": 15
+          "questions": 94,
+          "papers": 25
         },
         {
           "id": "membranes-proteins-dna",
           "name": "Membranes, proteins, DNA and gene expression",
-          "questions": 21,
-          "papers": 14
+          "questions": 49,
+          "papers": 25
         }
       ]
     },
@@ -932,38 +932,38 @@
       "code": "WBI12",
       "name": "Cells, Development, Biodiversity and Conservation",
       "subject": "biology",
-      "papers": 17,
-      "questions": 137,
+      "papers": 24,
+      "questions": 193,
       "topics": [
         {
           "id": "cell-structure",
           "name": "Cell structure",
-          "questions": 55,
-          "papers": 17
+          "questions": 84,
+          "papers": 24
         },
         {
           "id": "division-reproduction",
           "name": "Mitosis, meiosis and reproduction",
-          "questions": 47,
-          "papers": 17
+          "questions": 67,
+          "papers": 24
         },
         {
           "id": "development",
           "name": "Development of organisms",
-          "questions": 19,
-          "papers": 13
+          "questions": 38,
+          "papers": 22
         },
         {
           "id": "plant-structure",
           "name": "Plant structure and function",
-          "questions": 27,
-          "papers": 17
+          "questions": 31,
+          "papers": 22
         },
         {
           "id": "biodiversity",
           "name": "Biodiversity and conservation",
-          "questions": 37,
-          "papers": 15
+          "questions": 62,
+          "papers": 23
         }
       ]
     },
@@ -971,19 +971,25 @@
       "code": "WBI13",
       "name": "Practical Skills in Biology I",
       "subject": "biology",
-      "papers": 1,
-      "questions": 4,
+      "papers": 24,
+      "questions": 72,
       "topics": [
         {
           "id": "techniques",
           "name": "Core techniques",
-          "questions": 1,
-          "papers": 1
+          "questions": 44,
+          "papers": 23
         },
         {
           "id": "analysis",
           "name": "Analysis and evaluation",
-          "questions": 4,
+          "questions": 69,
+          "papers": 24
+        },
+        {
+          "id": "statistical-tests",
+          "name": "Statistical tests",
+          "questions": 1,
           "papers": 1
         }
       ]
@@ -992,32 +998,32 @@
       "code": "WBI14",
       "name": "Energy, Exercise and Coordination",
       "subject": "biology",
-      "papers": 14,
-      "questions": 119,
+      "papers": 22,
+      "questions": 185,
       "topics": [
         {
           "id": "energy-ecosystems",
           "name": "Energy flow, ecosystems and the environment",
-          "questions": 14,
-          "papers": 11
+          "questions": 69,
+          "papers": 22
         },
         {
           "id": "microbiology",
           "name": "Microbiology",
-          "questions": 33,
-          "papers": 13
+          "questions": 53,
+          "papers": 21
         },
         {
           "id": "immunity",
           "name": "Immunity",
-          "questions": 31,
-          "papers": 14
+          "questions": 43,
+          "papers": 22
         },
         {
           "id": "forensics",
           "name": "Forensics",
-          "questions": 14,
-          "papers": 10
+          "questions": 22,
+          "papers": 16
         }
       ]
     },
@@ -1025,32 +1031,32 @@
       "code": "WBI15",
       "name": "Genetics, Evolution and Biodiversity",
       "subject": "biology",
-      "papers": 15,
-      "questions": 244,
+      "papers": 18,
+      "questions": 146,
       "topics": [
         {
           "id": "respiration",
           "name": "Respiration",
-          "questions": 38,
-          "papers": 15
+          "questions": 30,
+          "papers": 17
         },
         {
           "id": "muscles-homeostasis",
           "name": "Muscles and the internal environment",
-          "questions": 92,
-          "papers": 15
+          "questions": 72,
+          "papers": 18
         },
         {
           "id": "coordination",
           "name": "Coordination and response",
-          "questions": 73,
-          "papers": 15
+          "questions": 66,
+          "papers": 18
         },
         {
           "id": "gene-technology",
           "name": "Gene technology",
-          "questions": 19,
-          "papers": 9
+          "questions": 6,
+          "papers": 5
         }
       ]
     },
@@ -1058,26 +1064,26 @@
       "code": "WBI16",
       "name": "Practical Skills in Biology II",
       "subject": "biology",
-      "papers": 13,
-      "questions": 52,
+      "papers": 21,
+      "questions": 81,
       "topics": [
         {
           "id": "advanced-practicals",
           "name": "Advanced practicals",
-          "questions": 41,
-          "papers": 13
+          "questions": 78,
+          "papers": 21
         },
         {
           "id": "statistical-tests",
           "name": "Statistical tests",
-          "questions": 15,
-          "papers": 13
+          "questions": 37,
+          "papers": 21
         },
         {
           "id": "evaluation",
           "name": "Evaluation",
-          "questions": 22,
-          "papers": 13
+          "questions": 25,
+          "papers": 21
         }
       ]
     }

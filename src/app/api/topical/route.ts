@@ -18,8 +18,8 @@ export const maxDuration = 60;
 // Vercel caps buffered responses at 4.5 MB but not streamed ones, so the pack
 // is streamed below. The paper cap keeps a build inside the 60 s function
 // budget (mark schemes roughly double the downloads).
-const MAX_PAPERS = 24;
-const MAX_PAPERS_WITH_MS = 16;
+const MAX_PAPERS = 32;
+const MAX_PAPERS_WITH_MS = 22;
 
 function fail(status: number, message: string) {
   return new Response(message, {

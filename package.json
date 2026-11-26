@@ -9,7 +9,9 @@
     "lint": "eslint",
     "papers": "node scripts/fetch-papers.mjs",
     "question-pages": "node scripts/build-question-pages.mjs",
-    "topical-index": "node scripts/build-topical-index.mjs"
+    "topical-index": "node scripts/build-topical-index.mjs",
+    "topical-fetch": "node scripts/fetch-question-text.mjs",
+    "topical-check": "node scripts/validate-topical.mjs"
   },
   "dependencies": {
     "@auth/core": "^0.41.3",

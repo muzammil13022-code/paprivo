@@ -4,22 +4,24 @@
  *
  * Inputs (all already in the repo):
  *   src/data/papers.json            the catalogue
- *   src/data/question-pages.json    exact question → page map from booklet headers
- *   .cache-question-pages/*.txt     per-page text of 466 question papers
+ *   src/data/question-pages.json    answer-booklet "Question N continued" pages
+ *   .cache-question-pages/*.txt     per-page text of every question paper
  *   src/data/topical-topics.json    specification topics + question-text cues
  *
- * A paper is indexed only when its question boundaries are unambiguous:
+ * Question boundaries come from the most reliable evidence a paper offers:
  *
- *  1. Question numbers printed at the start of a line ("1. Find …", "3 The
- *     diagram shows …") forming a complete ascending run 1..N; or
- *  2. the answer-booklet headers ("Question N continued"), where a question's
- *     pages run from the page after the previous header to the one before its
- *     own. Papers whose numbers overlap or skip are dropped rather than guessed.
+ *  1. Pearson's "(Total for Question 3 = 1 mark)" line, which ends every
+ *     question and gives its marks;
+ *  2. question numbers printed at the start of a line ("1. Find …", "3 The
+ *     diagram shows …"), allowing for control characters some PDFs leave after
+ *     the number;
+ *  3. the answer booklet's "Question N continued" pages.
  *
- * Marks come from Pearson's own "(Total for Question 3 = 1 mark)" line, and
- * each question is labelled with the specification topics whose cues fire.
+ * The first source that gives a clean ascending run 1..N decides N; page starts
+ * from (2) and ends from (1) are then combined, so a paper missing one printed
+ * number is still segmented. A paper is dropped only when no source agrees.
  *
- * Output: public/topical/<UNIT>.json for the builder UI, plus
+ * Output: public/topical-data/<UNIT>.json for the builder UI, plus
  * src/data/topical-catalog.json with per-unit topic counts for the hub.
  *
  * Usage: node scripts/build-topical-index.mjs
@@ -39,6 +41,7 @@ const CATALOG = new URL("../src/data/topical-catalog.json", import.meta.url);
 const DEFAULT_WEIGHT = 2;
 const DEFAULT_MIN = 4;
 const MAX_TOPICS_PER_QUESTION = 2;
+const MAX_QUESTION_PAGES = 14;
 
 const escapeRegExp = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
@@ -77,62 +80,81 @@ function tagQuestion(text, topics) {
     .map((t) => t.id);
 }
 
-/** "… (Total for Question 3 = 1 mark)" → Map(3 → 1). */
+/** "… (Total for Question 3 = 1 mark)" → marks and the page each question ends on. */
 const TOTAL_RE = /\(Total for Question\s+(\d+)\s*(?:is|=|:)\s*(\d+)\s*marks?\)/gi;
+const OLD_TOTAL_RE = /\(Total\s+(\d{1,2})\s+marks?\)/gi;
 
-function totalsIn(text) {
-  const out = new Map();
-  for (const m of text.matchAll(TOTAL_RE)) out.set(Number(m[1]), Number(m[2]));
-  return out;
+function totalsIn(pages) {
+  const marks = new Map();
+  const endsOn = new Map();
+  const sequential = []; // older papers print "(Total 5 marks)" with no number
+  pages.forEach((pageText, index) => {
+    // Totals are sometimes split over two lines by the text layer.
+    const text = pageText.replace(/\s+/g, " ");
+    for (const m of text.matchAll(TOTAL_RE)) {
+      const q = Number(m[1]);
+      if (!endsOn.has(q)) endsOn.set(q, index + 1);
+      marks.set(q, Number(m[2]));
+    }
+    for (const m of text.matchAll(OLD_TOTAL_RE)) sequential.push({ page: index + 1, marks: Number(m[1]) });
+  });
+  return { marks, endsOn, sequential };
 }
 
-/** Start page of every question printed at line start, or null. */
-function numbersFromLines(pages) {
-  const starts = new Map();
+const CONTROL = /[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g;
+const tidy = (line) => line.replace(CONTROL, " ").trim();
+
+/** Start page of every question printed at line start. */
+function lineStarts(pages) {
+  const candidates = new Map();
   pages.forEach((text, index) => {
-    for (const line of text.split("\n")) {
-      const m = /^(\d{1,2})(?:\.|\s)\s*(.*)$/.exec(line.trim());
+    for (const raw of text.split("\n")) {
+      const line = tidy(raw);
+      // A question number is followed by a full stop or whitespace — not by an
+      // algebraic term, which would make "2x2 – xy = 8" look like question 2.
+      // Some papers prefix a question with an asterisk ("*18 Fuel cells are …").
+      const m = /^\*?(\d{1,2})(?!\d)(\.\s*|\s+|\)\s*)(\S.*)$/.exec(line);
       if (!m) continue;
       const q = Number(m[1]);
-      const rest = m[2] ?? "";
-      if (q < 1 || q > 40) continue;
-      if (/^\d/.test(rest)) continue; // "14 500 N" is data, not a question
-      if (!rest && q === index + 1) continue; // bare page number
-      if (starts.has(q)) continue;
-      starts.set(q, index + 1);
+      if (q < 1 || q > 30) continue;
+      const separator = m[2].trim();
+      const rest = m[3];
+      const letters = (rest.match(/\p{L}/gu) ?? []).length;
+      // "9 cos3 θ – …" is a formula, "2 500 N" a data cell; a real question
+      // follows its number with a full stop, a bracket, or ordinary prose.
+      const looksLikeQuestion =
+        separator !== "" || /^[A-Z(\u201c\u2018"]/.test(rest) || (letters >= 3 && /^\d/.test(rest));
+      if (!looksLikeQuestion) continue;
+      if (!candidates.has(q)) candidates.set(q, new Set());
+      candidates.get(q).add(index + 1);
     }
   });
-  const nums = [...starts.keys()].sort((a, b) => a - b);
-  if (nums.length < 4 || !nums.every((n, i) => n === i + 1)) return null;
-  // Equal start pages are normal: MCQ sections print several questions per page.
-  for (let i = 1; i < nums.length; i++) if (starts.get(nums[i]) < starts.get(nums[i - 1])) return null;
+
+  // Questions are printed in order, so take each number's earliest page that
+  // still follows the previous question. A stray label cannot hide a real one.
+  const starts = new Map();
+  let previous = 0;
+  for (const q of [...candidates.keys()].sort((a, b) => a - b)) {
+    const page = [...candidates.get(q)].sort((a, b) => a - b).find((p) => p > previous);
+    if (page === undefined) continue;
+    starts.set(q, page);
+    previous = page;
+  }
   return starts;
 }
 
 /** Question pages derived from the booklet's "Question N continued" pages. */
-function pagesFromHeaders(pages, map) {
+function markersOf(map) {
+  if (!map) return null;
   const nums = Object.keys(map).map(Number).sort((a, b) => a - b);
-  if (nums.length < 4) return null;
+  if (nums.length < 2 || !nums.every((n, i) => n === i + 1)) return null;
   for (let i = 1; i < nums.length; i++) if (map[String(nums[i])] <= map[String(nums[i - 1])]) return null;
-
-  const ranges = [];
-  let previousMarker = 1;
-  for (const q of nums) {
-    const marker = map[String(q)];
-    let from = previousMarker + 1;
-    let to = Math.min(marker - 1, pages.length);
-    previousMarker = marker;
-    while (from <= to && cleanBody(pages[from - 1]).length < 40) from++;
-    while (to >= from && cleanBody(pages[to - 1]).length < 40) to--;
-    if (to < from) continue;
-    ranges.push({ q, from, to });
-  }
-  if (ranges.length !== nums.length) return null;
-  return ranges;
+  return map;
 }
 
 function cleanBody(text) {
   return text
+    .replace(CONTROL, " ")
     .replace(/_{5,}/g, " ")
     .replace(/DO NOT WRITE IN THIS AREA/gi, " ")
     .replace(/Question\s+\d+\s*continued/gi, " ")
@@ -143,11 +165,177 @@ function cleanBody(text) {
     .trim();
 }
 
+/** Questions 1..N, allowing a couple of totals that never made it into the text layer. */
+const isRun = (nums) =>
+  nums.length >= 2 && nums[0] === 1 && nums.every((n, i) => i === 0 || n > nums[i - 1]) && nums[nums.length - 1] - nums.length < 3;
+const ascending = (map) => [...map.keys()].sort((a, b) => a - b);
+
+/** Marks from "(Total 5 marks)" or part marks — "(2)" on its own line. */
+function partMarks(text) {
+  const old = /\(Total\s+(\d{1,2})\s+marks?\)/i.exec(text);
+  if (old) return Number(old[1]);
+  let sum = 0;
+  for (const m of text.matchAll(/(?:^|\n)\s*\((\d{1,2})\)\s*(?:\n|$)/g)) sum += Number(m[1]);
+  return Math.min(sum, 30);
+}
+
+function buildRanges(pages, evidence, n) {
+  const { starts, endsOn, markers } = evidence;
+  const total = pages.length;
+  const ranges = [];
+  let previousEnd = 0;
+
+  for (let q = 1; q <= n; q++) {
+    let end = endsOn.get(q) ?? null;
+    if (end === null || end > total) {
+      const nextStart = starts.get(q + 1);
+      const nextMarker = markers?.[String(q)];
+      const nextTotal = [...endsOn.entries()]
+        .filter(([other]) => other > q)
+        .reduce((min, [, page]) => Math.min(min, page), Infinity);
+      const limits = [
+        nextStart ? nextStart - 1 : null,
+        nextMarker ? nextMarker - 1 : null,
+        Number.isFinite(nextTotal) ? nextTotal - 1 : null,
+      ].filter((v) => typeof v === "number" && v > 0);
+      end = limits.length ? Math.min(...limits) : total;
+    }
+    end = Math.min(Math.max(end, 1), total);
+
+    let start = starts.get(q) ?? null;
+    if (start !== null && (start < 1 || start > end)) start = null;
+    if (start === null) {
+      if (previousEnd === 0) start = Math.min(end, 2);
+      else if (previousEnd < end) start = previousEnd + 1;
+      else start = previousEnd;
+    }
+    // A number printed before the previous question finished is a stray label.
+    if (start !== null && start < previousEnd) start = previousEnd;
+    start = Math.min(Math.max(start, 1), end);
+    // Never open a question on a blank ruling page.
+    while (start < end && cleanBody(pages[start - 1]).length < 40) start++;
+
+    ranges.push({ q, from: start, to: end });
+    previousEnd = end;
+  }
+
+  // Never end a question on blank ruling pages (usually the last one).
+  const last = ranges[ranges.length - 1];
+  while (last.to > last.from && cleanBody(pages[last.to - 1]).length < 40) last.to--;
+  return ranges;
+}
+
+function rangeProblem(ranges, pages) {
+  if (ranges.length < 2) return "fewer than two questions";
+  let previousEnd = 0;
+  for (const r of ranges) {
+    if (r.from < 1 || r.to > pages.length || r.from > r.to) return `q${r.q} outside 1..${pages.length} (${r.from}-${r.to})`;
+    if (r.from < previousEnd) return `q${r.q} starts before previous end (${r.from} < ${previousEnd})`;
+    if (r.to - r.from + 1 > MAX_QUESTION_PAGES) return `q${r.q} spans ${r.to - r.from + 1} pages`;
+    if (cleanBody(pages[r.from - 1]).length < 20) return `q${r.q} starts on an empty page ${r.from}`;
+    previousEnd = r.to;
+  }
+  return null;
+}
+
+/** Segment one paper, trying totals → printed numbers → booklet headers. */
+function segmentPaper(pages, starts, markerMap) {
+  const { marks, endsOn, sequential } = totalsIn(pages);
+  const markers = markersOf(markerMap);
+
+  const candidates = [];
+  const totalNums = ascending(endsOn);
+  if (isRun(totalNums)) {
+    // A section can end with a "TOTAL FOR SECTION C" line instead of totals per
+    // question. Keep the questions the paper numbers after its last total.
+    let n = totalNums[totalNums.length - 1];
+    const lastTotalPage = endsOn.get(n) ?? 0;
+    for (const q of ascending(starts)) {
+      if (q !== n + 1) continue;
+      if ((starts.get(q) ?? 0) <= lastTotalPage) continue;
+      n = q;
+    }
+    candidates.push({ n, source: "totals" });
+  }
+  if (sequential.length >= 2) {
+    const bySequence = new Map(sequential.map((entry, index) => [index + 1, entry.page]));
+    // "(Total 5 marks)" papers carry no question number; trust the count when
+    // the printed numbers agree with it. One stray figure label must not veto it.
+    const plausible = ascending(starts).filter((q) => q <= sequential.length).length;
+    if (plausible >= 2) {
+      candidates.push({ n: sequential.length, source: "totals-count", endsOn: bySequence });
+    }
+  }
+  const lineNums = ascending(starts);
+  if (isRun(lineNums)) candidates.push({ n: lineNums[lineNums.length - 1], source: "numbers" });
+  const markerNums = markers ? ascending(new Map(Object.entries(markers).map(([k, v]) => [Number(k), v]))) : [];
+  if (isRun(markerNums)) candidates.push({ n: markerNums[markerNums.length - 1], source: "headers" });
+
+  const seen = new Set();
+  const usable = [];
+  for (const candidate of candidates) {
+    if (seen.has(candidate.n)) continue;
+    seen.add(candidate.n);
+    const evidence = { starts, endsOn: candidate.endsOn ?? endsOn, markers };
+    const ranges = buildRanges(pages, evidence, candidate.n);
+    const problem = rangeProblem(ranges, pages);
+    if (problem) {
+      if (process.env.TOPICAL_DEBUG) console.log(`WHY ${candidate.source} n=${candidate.n}: ${problem}`);
+      continue;
+    }
+    const questions = ranges.map(({ q, from, to }) => {
+      const text = pages.slice(from - 1, to).join("\n");
+      return {
+        q,
+        from,
+        to,
+        marks: marks.get(q) || partMarks(text),
+        topics: [],
+      };
+    });
+    const result = { questions, source: candidate.source };
+    // The total printed on the cover is the best judge of a boundary choice.
+    if (statedTotal(pages) && questions.reduce((n, q) => n + q.marks, 0) === statedTotal(pages)) {
+      return result;
+    }
+    usable.push(result);
+  }
+  return usable[0] ?? null;
+}
+
+/** "The total mark for this paper is 75" or "TOTAL FOR PAPER = 75 MARKS". */
+function statedTotal(pages) {
+  const head = pages.slice(0, 3).join(" ").replace(/\s+/g, " ");
+  const m = /total mark for this paper is\s+(\d+)/i.exec(head);
+  if (m) return Number(m[1]);
+  const foot = pages.join(" ").replace(/\s+/g, " ");
+  const closing = /total for paper\s*=\s*(\d+)\s*marks?/i.exec(foot);
+  return closing ? Number(closing[1]) : null;
+}
+
 function hash(url) {
   return createHash("sha1").update(url).digest("hex");
 }
 
-async function pageText(paper, publicDir) {
+/**
+ * Trim what is not the paper: a second copy glued into the same PDF (it opens
+ * with another candidate cover) and the reading insert some papers carry after
+ * the last question.
+ */
+const INSERT_RE = /scientific article for use with question/i;
+
+function trimDuplicate(pages) {
+  // Only trim an insert that follows the last question: in some PDFs the text
+  // layer puts the article pages first, and those must be left alone.
+  const hasTotal = /\(Total for Question\s+\d+/i;
+  const lastTotal = pages.reduce((last, page, index) => (hasTotal.test(page) ? index : last), -1);
+  for (let i = Math.max(lastTotal + 1, 3); i < pages.length; i++) {
+    if (INSERT_RE.test(pages[i])) return pages.slice(0, i);
+  }
+  return pages;
+}
+
+async function pageText(paper) {
   const cached = new URL(`${hash(paper.qp.url)}.txt`, CACHE);
   if (existsSync(cached)) {
     const raw = await readFile(cached, "utf8");
@@ -157,7 +345,7 @@ async function pageText(paper, publicDir) {
     return raw.slice(at + marker.length).split("\f");
   }
   if (paper.qp.url.startsWith("/")) {
-    const file = new URL(`.${paper.qp.url}`, publicDir);
+    const file = new URL(`../public/${paper.qp.url.slice(1)}`, import.meta.url);
     if (!existsSync(file)) return null;
     const buf = new Uint8Array(await readFile(file));
     const pdf = await getDocumentProxy(buf);
@@ -177,10 +365,10 @@ async function main() {
   const topicsData = JSON.parse(await readFile(TOPICS, "utf8"));
 
   await mkdir(OUT_DIR, { recursive: true });
-  const publicDir = new URL("../public/", import.meta.url);
 
   const catalog = { generatedAt: new Date().toISOString(), units: {} };
   const totals = { papers: 0, questions: 0, tagged: 0 };
+  const sources = { totals: 0, numbers: 0, headers: 0 };
 
   for (const subject of papersData.subjects) {
     for (const unit of subject.units) {
@@ -190,40 +378,47 @@ async function main() {
 
       const outPapers = [];
       for (const paper of unit.papers) {
-        const pages = await pageText(paper, publicDir);
-        if (!pages || pages.length < 4) continue;
-
-        const markers = starts[paperKey(paper)]?.qp;
-        const lines = numbersFromLines(pages);
-        let ranges = lines
-          ? [...lines.entries()]
-              .sort((a, b) => a[1] - b[1])
-              .map(([q, from], i, arr) => ({
-                q,
-                from,
-                to: i + 1 < arr.length ? Math.max(from, arr[i + 1][1] - 1) : pages.length,
-              }))
-          : markers
-            ? pagesFromHeaders(pages, markers)
-            : null;
-        if (ranges) {
-          // Never end a question on blank ruling pages (usually the last one).
-          const last = ranges[ranges.length - 1];
-          while (last.to > last.from && cleanBody(pages[last.to - 1]).length < 40) last.to--;
+        const debug = process.env.TOPICAL_DEBUG ? (msg) => console.log(`SKIP ${paperKey(paper)} ${msg}`) : null;
+        if (!paper.qp?.url) {
+          debug?.("no qp");
+          continue;
         }
-        if (!ranges) continue;
+        const raw = await pageText(paper);
+        const pages = raw ? trimDuplicate(raw) : null;
+        if (!pages) {
+          debug?.("no text");
+          continue;
+        }
+        if (pages.length < 3) {
+          debug?.(`short (${pages.length} pages)`);
+          continue;
+        }
 
-        const docTotals = totalsIn(pages.join("\n"));
-        const questions = ranges.map(({ q, from, to }) => {
-          const text = flatten(pages.slice(from - 1, to).join("\n"));
-          return {
-            q,
-            from,
-            to,
-            marks: docTotals.get(q) ?? 0,
-            topics: tagQuestion(text, topics),
-          };
-        });
+        const markerMap = starts[paperKey(paper)]?.qp;
+        const segmented = segmentPaper(pages, lineStarts(pages), markerMap);
+        if (!segmented) {
+          const totals = totalsIn(pages);
+          debug?.(
+            `no boundaries: totals=[${ascending(totals.endsOn).join(",")}] numbers=[${ascending(lineStarts(pages)).join(",")}]`,
+          );
+          continue;
+        }
+        const { questions } = segmented;
+        for (const question of questions) question.topics = tagQuestion(flatten(pages.slice(question.from - 1, question.to).join("\n")), topics);
+
+        // A final section sometimes prints no per-question total. When exactly
+        // one question is left without marks, the cover's paper total gives it.
+        const stated = statedTotal(pages);
+        if (stated) {
+          const sum = questions.reduce((n, q) => n + q.marks, 0);
+          const blanks = questions.filter((q) => !q.marks);
+          if (blanks.length === 1 && sum !== stated) {
+            const residual = stated - sum;
+            if (residual > 0 && residual <= 30) blanks[0].marks = residual;
+          }
+        }
+        sources[segmented.source] = (sources[segmented.source] ?? 0) + 1;
+        if (process.env.TOPICAL_DEBUG) console.log(`OK ${paperKey(paper)} ${segmented.source} n=${questions.length} [${questions.map((q) => q.from + "-" + q.to).join(",")}]`);
 
         outPapers.push({
           id: paperKey(paper),
@@ -305,6 +500,7 @@ async function main() {
   console.log(
     `\nIndexed ${totals.papers} papers, ${totals.questions} questions (${totals.tagged} tagged, ${totals.questions - totals.tagged} untagged).`,
   );
+  console.log(`Boundaries from: ${JSON.stringify(sources)}`);
 }
 
 main().catch((err) => {
