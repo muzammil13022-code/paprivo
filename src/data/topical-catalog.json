@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T17:24:34.385Z",
+  "generatedAt": "2026-11-26T17:39:55.246Z",
   "units": {
     "WMA11": {
       "code": "WMA11",
@@ -434,31 +434,31 @@
         {
           "id": "combinations-random-variables",
           "name": "Combinations of random variables",
-          "questions": 20,
-          "papers": 12
+          "questions": 34,
+          "papers": 16
         },
         {
           "id": "sampling-distributions",
           "name": "Sampling distributions",
-          "questions": 16,
-          "papers": 12
+          "questions": 65,
+          "papers": 17
         },
         {
           "id": "estimation-confidence",
           "name": "Estimation and confidence intervals",
-          "questions": 38,
-          "papers": 17
+          "questions": 20,
+          "papers": 14
         },
         {
           "id": "chi-squared",
           "name": "Chi-squared tests",
-          "questions": 26,
-          "papers": 16
+          "questions": 19,
+          "papers": 13
         },
         {
           "id": "hypothesis-means",
           "name": "Hypothesis tests for means",
-          "questions": 67,
+          "questions": 63,
           "papers": 17
         }
       ]
@@ -734,13 +734,13 @@
         {
           "id": "intermolecular-forces",
           "name": "Intermolecular forces",
-          "questions": 140,
+          "questions": 148,
           "papers": 25
         },
         {
           "id": "redox-groups",
           "name": "Redox chemistry and groups 1, 2 and 7",
-          "questions": 178,
+          "questions": 212,
           "papers": 25
         },
         {
@@ -752,19 +752,19 @@
         {
           "id": "halogenoalkanes",
           "name": "Halogenoalkanes",
-          "questions": 36,
-          "papers": 20
+          "questions": 34,
+          "papers": 18
         },
         {
           "id": "alcohols",
           "name": "Alcohols",
-          "questions": 104,
+          "questions": 98,
           "papers": 25
         },
         {
           "id": "spectra",
           "name": "Mass spectra and IR",
-          "questions": 52,
+          "questions": 50,
           "papers": 24
         }
       ]
@@ -896,8 +896,8 @@
         {
           "id": "advanced-practicals",
           "name": "Advanced core practicals",
-          "questions": 56,
-          "papers": 20
+          "questions": 85,
+          "papers": 21
         },
         {
           "id": "evaluation",
@@ -923,13 +923,13 @@
         {
           "id": "transport-health",
           "name": "Mammalian transport and cardiovascular health",
-          "questions": 94,
+          "questions": 92,
           "papers": 25
         },
         {
           "id": "membranes-proteins-dna",
           "name": "Membranes, proteins, DNA and gene expression",
-          "questions": 49,
+          "questions": 72,
           "papers": 25
         }
       ]
@@ -1010,19 +1010,19 @@
         {
           "id": "energy-ecosystems",
           "name": "Energy flow, ecosystems and the environment",
-          "questions": 69,
+          "questions": 77,
           "papers": 22
         },
         {
           "id": "microbiology",
           "name": "Microbiology",
-          "questions": 53,
-          "papers": 21
+          "questions": 70,
+          "papers": 22
         },
         {
           "id": "immunity",
           "name": "Immunity",
-          "questions": 43,
+          "questions": 42,
           "papers": 22
         },
         {
