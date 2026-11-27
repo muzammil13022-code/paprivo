@@ -154,6 +154,17 @@ export function Navbar() {
         </nav>
 
         <div className="ml-auto flex items-center gap-2">
+          {/* Straight to the pack builder, visible at every width */}
+          <Link
+            href="/topical/make"
+            className={`inline-flex items-center rounded-lg border px-2.5 sm:px-3 py-1.5 text-xs sm:text-sm whitespace-nowrap transition-colors ${
+              isActive("/topical/make")
+                ? "border-marker bg-marker text-paper font-medium"
+                : "border-marker/60 text-marker hover:bg-marker hover:text-paper"
+            }`}
+          >
+            Make a topical
+          </Link>
           <Link href="/onboarding" className="hidden lg:inline-flex btn-primary h-9 px-4 text-sm">
             Choose subjects
           </Link>
@@ -206,6 +217,12 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
+          <Link
+            href="/topical/make"
+            className="mt-2 block rounded-lg border border-marker px-3 py-2.5 text-sm text-center font-medium text-marker"
+          >
+            Make a topical
+          </Link>
           <div className="pt-2 mt-2 border-t border-white/10">
             <p className="px-3 pb-1 text-xs font-medium text-muted">Resources</p>
             {resourceLinks.map((r) => (

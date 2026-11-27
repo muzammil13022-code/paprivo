@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T15:13:32.237Z",
+  "generatedAt": "2026-11-27T16:14:12.665Z",
   "units": {
     "WMA11": {
       "code": "WMA11",
@@ -29,7 +29,7 @@
         {
           "id": "graphs-transformations",
           "name": "Graphs and transformations",
-          "questions": 99,
+          "questions": 100,
           "papers": 27
         },
         {
@@ -68,32 +68,32 @@
         {
           "id": "proof",
           "name": "Proof",
-          "questions": 26,
-          "papers": 22
+          "questions": 27,
+          "papers": 23
         },
         {
           "id": "algebra-functions",
           "name": "Algebra and functions",
-          "questions": 35,
-          "papers": 24
+          "questions": 36,
+          "papers": 25
         },
         {
           "id": "circle-geometry",
           "name": "Coordinate geometry: circles",
-          "questions": 33,
-          "papers": 25
+          "questions": 34,
+          "papers": 26
         },
         {
           "id": "sequences-series",
           "name": "Sequences and series",
-          "questions": 50,
-          "papers": 25
+          "questions": 51,
+          "papers": 26
         },
         {
           "id": "binomial",
           "name": "Binomial expansion",
-          "questions": 24,
-          "papers": 24
+          "questions": 25,
+          "papers": 25
         },
         {
           "id": "radians-trigonometry",
@@ -110,8 +110,8 @@
         {
           "id": "differentiation",
           "name": "Differentiation",
-          "questions": 28,
-          "papers": 22
+          "questions": 30,
+          "papers": 23
         },
         {
           "id": "integration",
@@ -122,8 +122,8 @@
         {
           "id": "trapezium-rule",
           "name": "The trapezium rule",
-          "questions": 25,
-          "papers": 24
+          "questions": 26,
+          "papers": 25
         }
       ]
     },
@@ -473,7 +473,7 @@
         {
           "id": "kinematics",
           "name": "Kinematics and graphs of motion",
-          "questions": 211,
+          "questions": 214,
           "papers": 25
         },
         {
@@ -497,7 +497,7 @@
         {
           "id": "fluids",
           "name": "Fluids",
-          "questions": 91,
+          "questions": 93,
           "papers": 25
         },
         {

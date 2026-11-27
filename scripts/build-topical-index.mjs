@@ -67,6 +67,19 @@ function prepare(raw) {
 
 const flatten = (text) => text.toLowerCase().replace(/\s+/g, " ");
 
+/**
+ * A few older papers print their body in a font whose glyphs sit 29 code points
+ * below ASCII: "Find" extracts as ")LQG" and a space as ETX (\u0003). Decoding
+ * a whole paper would wreck the pages that extract normally, so decoding is a
+ * fallback: only a question the normal reading leaves untagged and that carries
+ * several shifted spaces is re-read through the decoder.
+ */
+const SHIFT = 29;
+const unshift = (text) => text.replace(/[\u0000-\u0061]/g, (c) => String.fromCharCode(c.charCodeAt(0) + SHIFT));
+const shiftedSpaces = (text) => (text.match(/\u0003/g) ?? []).length;
+/** Whitespace first, so shifting does not turn line breaks into quotes; case after. */
+const decodedText = (text) => unshift(text.replace(/\s+/g, " ")).toLowerCase();
+
 function tagQuestion(text, topics) {
   const scored = [];
   for (const topic of topics) {
@@ -429,7 +442,14 @@ async function main() {
           continue;
         }
         const { questions } = segmented;
-        for (const question of questions) question.topics = tagQuestion(flatten(pages.slice(question.from - 1, question.to).join("\n")), topics);
+        for (const question of questions) {
+          const raw = pages.slice(question.from - 1, question.to).join("\n");
+          let ids = tagQuestion(flatten(raw), topics);
+          // Only a question the normal reading could not tag is worth decoding;
+          // decoding an already-tagged one would let page-sharing text re-rank it.
+          if (ids.length === 0 && shiftedSpaces(raw) >= 3) ids = tagQuestion(decodedText(raw), topics);
+          question.topics = ids;
+        }
 
         // A final section sometimes prints no per-question total. When exactly
         // one question is left without marks, the cover's paper total gives it.
