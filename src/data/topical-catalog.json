@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T12:49:15.252Z",
+  "generatedAt": "2026-11-27T15:13:32.237Z",
   "units": {
     "WMA11": {
       "code": "WMA11",
@@ -401,13 +401,13 @@
         {
           "id": "binomial-poisson",
           "name": "Binomial and Poisson distributions",
-          "questions": 37,
-          "papers": 22
+          "questions": 51,
+          "papers": 24
         },
         {
           "id": "continuous-random-variables",
           "name": "Continuous random variables",
-          "questions": 63,
+          "questions": 70,
           "papers": 24
         },
         {
@@ -473,37 +473,37 @@
         {
           "id": "kinematics",
           "name": "Kinematics and graphs of motion",
-          "questions": 214,
+          "questions": 211,
           "papers": 25
         },
         {
           "id": "forces-moments",
           "name": "Forces, Newton's laws and moments",
-          "questions": 193,
+          "questions": 196,
           "papers": 25
         },
         {
           "id": "work-energy-power",
           "name": "Work, energy and power",
-          "questions": 93,
+          "questions": 98,
           "papers": 25
         },
         {
           "id": "momentum",
           "name": "Momentum",
-          "questions": 52,
-          "papers": 24
+          "questions": 50,
+          "papers": 25
         },
         {
           "id": "fluids",
           "name": "Fluids",
-          "questions": 89,
+          "questions": 91,
           "papers": 25
         },
         {
           "id": "materials",
           "name": "Materials",
-          "questions": 96,
+          "questions": 117,
           "papers": 25
         }
       ]
@@ -518,25 +518,25 @@
         {
           "id": "nature-of-light",
           "name": "The nature of light",
-          "questions": 105,
+          "questions": 114,
           "papers": 24
         },
         {
           "id": "waves",
           "name": "Waves",
-          "questions": 209,
+          "questions": 255,
           "papers": 24
         },
         {
           "id": "wave-particle-duality",
           "name": "Wave-particle duality",
-          "questions": 79,
-          "papers": 23
+          "questions": 86,
+          "papers": 24
         },
         {
           "id": "dc-electricity",
           "name": "DC electricity",
-          "questions": 203,
+          "questions": 201,
           "papers": 24
         }
       ]
@@ -623,19 +623,19 @@
         {
           "id": "thermodynamics",
           "name": "Thermodynamics",
-          "questions": 76,
+          "questions": 80,
           "papers": 21
         },
         {
           "id": "nuclear-decay",
           "name": "Nuclear decay",
-          "questions": 88,
+          "questions": 119,
           "papers": 21
         },
         {
           "id": "oscillations",
           "name": "Oscillations",
-          "questions": 121,
+          "questions": 131,
           "papers": 21
         },
         {
@@ -647,7 +647,7 @@
         {
           "id": "astrophysics",
           "name": "Astrophysics and cosmology",
-          "questions": 144,
+          "questions": 154,
           "papers": 21
         }
       ]
@@ -689,32 +689,38 @@
         {
           "id": "formulae-moles",
           "name": "Formulae, equations and amounts of substance",
-          "questions": 342,
+          "questions": 366,
           "papers": 25
         },
         {
           "id": "atomic-structure",
           "name": "Atomic structure and the periodic table",
-          "questions": 152,
+          "questions": 199,
           "papers": 25
         },
         {
           "id": "bonding-structure",
           "name": "Bonding and structure",
-          "questions": 161,
+          "questions": 150,
           "papers": 25
         },
         {
           "id": "organic-alkanes",
           "name": "Introduction to organic chemistry and alkanes",
-          "questions": 100,
+          "questions": 120,
           "papers": 24
         },
         {
           "id": "alkenes",
           "name": "Alkenes",
-          "questions": 42,
-          "papers": 24
+          "questions": 46,
+          "papers": 22
+        },
+        {
+          "id": "energetics",
+          "name": "Energetics",
+          "questions": 1,
+          "papers": 1
         }
       ]
     },
@@ -728,19 +734,19 @@
         {
           "id": "energetics",
           "name": "Energetics",
-          "questions": 118,
+          "questions": 130,
           "papers": 25
         },
         {
           "id": "intermolecular-forces",
           "name": "Intermolecular forces",
-          "questions": 148,
+          "questions": 154,
           "papers": 25
         },
         {
           "id": "redox-groups",
           "name": "Redox chemistry and groups 1, 2 and 7",
-          "questions": 212,
+          "questions": 208,
           "papers": 25
         },
         {
@@ -752,20 +758,20 @@
         {
           "id": "halogenoalkanes",
           "name": "Halogenoalkanes",
-          "questions": 34,
-          "papers": 18
+          "questions": 51,
+          "papers": 22
         },
         {
           "id": "alcohols",
           "name": "Alcohols",
-          "questions": 98,
+          "questions": 94,
           "papers": 25
         },
         {
           "id": "spectra",
           "name": "Mass spectra and IR",
-          "questions": 50,
-          "papers": 24
+          "questions": 47,
+          "papers": 22
         }
       ]
     },
@@ -779,7 +785,7 @@
         {
           "id": "techniques",
           "name": "Core techniques",
-          "questions": 67,
+          "questions": 72,
           "papers": 25
         },
         {
@@ -806,7 +812,7 @@
         {
           "id": "kinetics",
           "name": "Kinetics",
-          "questions": 67,
+          "questions": 71,
           "papers": 22
         },
         {
@@ -824,13 +830,13 @@
         {
           "id": "acid-base",
           "name": "Acid-base equilibria",
-          "questions": 189,
+          "questions": 181,
           "papers": 22
         },
         {
           "id": "carbonyls-acids",
           "name": "Carbonyls and carboxylic acids",
-          "questions": 104,
+          "questions": 125,
           "papers": 22
         },
         {
@@ -842,7 +848,7 @@
         {
           "id": "spectroscopy",
           "name": "Spectroscopy and chromatography",
-          "questions": 60,
+          "questions": 63,
           "papers": 21
         }
       ]
@@ -857,31 +863,31 @@
         {
           "id": "redox-electrodes",
           "name": "Redox equilibria and electrode potentials",
-          "questions": 112,
+          "questions": 123,
           "papers": 22
         },
         {
           "id": "transition-metals",
           "name": "Transition metals",
-          "questions": 162,
+          "questions": 175,
           "papers": 22
         },
         {
           "id": "arenes",
           "name": "Arenes",
-          "questions": 116,
+          "questions": 127,
           "papers": 22
         },
         {
           "id": "organic-nitrogen",
           "name": "Organic nitrogen compounds",
-          "questions": 101,
+          "questions": 97,
           "papers": 22
         },
         {
           "id": "organic-synthesis",
           "name": "Organic synthesis",
-          "questions": 89,
+          "questions": 114,
           "papers": 22
         }
       ]
@@ -917,19 +923,19 @@
         {
           "id": "biological-molecules",
           "name": "Biological molecules and enzymes",
-          "questions": 93,
+          "questions": 109,
           "papers": 25
         },
         {
           "id": "transport-health",
           "name": "Mammalian transport and cardiovascular health",
-          "questions": 92,
+          "questions": 102,
           "papers": 25
         },
         {
           "id": "membranes-proteins-dna",
           "name": "Membranes, proteins, DNA and gene expression",
-          "questions": 72,
+          "questions": 83,
           "papers": 25
         }
       ]
@@ -1010,13 +1016,13 @@
         {
           "id": "energy-ecosystems",
           "name": "Energy flow, ecosystems and the environment",
-          "questions": 77,
+          "questions": 85,
           "papers": 22
         },
         {
           "id": "microbiology",
           "name": "Microbiology",
-          "questions": 70,
+          "questions": 73,
           "papers": 22
         },
         {
@@ -1028,8 +1034,8 @@
         {
           "id": "forensics",
           "name": "Forensics",
-          "questions": 22,
-          "papers": 16
+          "questions": 26,
+          "papers": 17
         }
       ]
     },
@@ -1049,13 +1055,13 @@
         {
           "id": "muscles-homeostasis",
           "name": "Muscles and the internal environment",
-          "questions": 83,
+          "questions": 86,
           "papers": 21
         },
         {
           "id": "coordination",
           "name": "Coordination and response",
-          "questions": 76,
+          "questions": 93,
           "papers": 21
         },
         {
