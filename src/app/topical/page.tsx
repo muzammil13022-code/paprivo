@@ -21,9 +21,17 @@ export default function TopicalPage() {
               unit. Pick a subject to begin.
             </p>
           </div>
-          <Link href="/topical/make" className="btn-primary h-9 px-4 text-sm inline-flex items-center">
-            Make a topical
-          </Link>
+          <div className="flex flex-wrap gap-2">
+            <Link href="/topical/make" className="btn-primary h-9 px-4 text-sm inline-flex items-center">
+              Make a topical
+            </Link>
+            <Link
+              href="/mock"
+              className="inline-flex h-9 items-center border border-marker px-4 text-sm text-marker transition-colors hover:bg-marker hover:text-paper"
+            >
+              Mock test
+            </Link>
+          </div>
         </div>
       </header>
 

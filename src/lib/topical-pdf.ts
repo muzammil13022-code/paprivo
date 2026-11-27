@@ -9,6 +9,7 @@
  */
 import { PDFDocument, StandardFonts, rgb } from "pdf-lib";
 import {
+  mockTestName,
   paperLabel,
   topicalPackName,
   type TopicalMatch,
@@ -77,8 +78,11 @@ export async function buildPack(
   const body = await out.embedFont(StandardFonts.Helvetica);
   const bold = await out.embedFont(StandardFonts.HelveticaBold);
 
-  out.setTitle(`Paprivo topical - ${index.subjectLabel} ${index.name} (${index.unit})`);
-  out.setSubject(topicNames.join(", "));
+  const isMock = selection.kind === "mock";
+  out.setTitle(
+    `Paprivo ${isMock ? "mock test" : "topical"} - ${index.subjectLabel} ${index.name} (${index.unit})`,
+  );
+  out.setSubject(isMock ? `Mock test - ${match.marks} marks` : topicNames.join(", "));
   out.setCreator("Paprivo");
 
   const wrap = (text: string, size: number, width: number, font = body): string[] => {
@@ -107,7 +111,13 @@ export async function buildPack(
   });
 
   let y = PAGE_HEIGHT - 122;
-  cover.drawText("PAPRIVO - TOPICAL PRACTICE", { x: MARGIN, y, size: 8.5, font: bold, color: marker });
+  cover.drawText(isMock ? "PAPRIVO - MOCK TEST" : "PAPRIVO - TOPICAL PRACTICE", {
+    x: MARGIN,
+    y,
+    size: 8.5,
+    font: bold,
+    color: marker,
+  });
   y -= 34;
   for (const line of wrap(index.name, 25, PAGE_WIDTH - MARGIN * 2, bold)) {
     cover.drawText(line, { x: MARGIN, y, size: 25, font: bold, color: ink });
@@ -120,15 +130,26 @@ export async function buildPack(
     font: body,
     color: graphite,
   });
-  y -= 40;
+  if (isMock) {
+    cover.drawText(`MOCK TEST - ${match.marks} MARKS`, {
+      x: MARGIN,
+      y: y - 20,
+      size: 9,
+      font: bold,
+      color: marker,
+    });
+  }
+  y -= isMock ? 58 : 40;
 
-  cover.drawText("TOPICS", { x: MARGIN, y, size: 8.5, font: bold, color: marker });
-  y -= 18;
-  for (const name of topicNames) {
-    for (const line of wrap(name, 11.5, PAGE_WIDTH - MARGIN * 2 - 14)) {
-      cover.drawCircle({ x: MARGIN + 2, y: y + 4, size: 1.3, color: marker });
-      cover.drawText(line, { x: MARGIN + 12, y, size: 11.5, font: body, color: ink });
-      y -= 17;
+  if (topicNames.length > 0) {
+    cover.drawText("TOPICS", { x: MARGIN, y, size: 8.5, font: bold, color: marker });
+    y -= 18;
+    for (const name of topicNames) {
+      for (const line of wrap(name, 11.5, PAGE_WIDTH - MARGIN * 2 - 14)) {
+        cover.drawCircle({ x: MARGIN + 2, y: y + 4, size: 1.3, color: marker });
+        cover.drawText(line, { x: MARGIN + 12, y, size: 11.5, font: body, color: ink });
+        y -= 17;
+      }
     }
   }
 
@@ -151,11 +172,18 @@ export async function buildPack(
 
   y -= 62;
   const parts = [
-    "Part 1 - the questions, newest paper first. Each page is stamped with the paper and question it belongs to.",
+    isMock
+      ? "Part 1 - the questions, newest paper first. Sit them under exam conditions; each page is stamped with the paper and question it belongs to."
+      : "Part 1 - the questions, newest paper first. Each page is stamped with the paper and question it belongs to.",
   ];
   if (selection.includeMarkSchemes) {
     parts.push(
       "Part 2 - the complete mark scheme for every paper used, so each question can be checked in its own scheme.",
+    );
+  }
+  if (isMock && !selection.includeMarkSchemes) {
+    parts.push(
+      "No mark scheme is included - build a topical pack on the same topics once you have finished, and mark your answers there.",
     );
   }
   if (match.sharedPagePapers > 0) {
@@ -254,7 +282,7 @@ export async function buildPack(
   const bytes = await out.save();
   return {
     bytes,
-    name: topicalPackName(index, topicNames),
+    name: isMock ? mockTestName(index, `${match.marks} marks`) : topicalPackName(index, topicNames),
     pages: out.getPageCount(),
     skipped,
   };

@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react";
 
 const resourceLinks = [
   { href: "/topical", label: "Topical practice", desc: "Questions by topic" },
+  { href: "/mock", label: "Mock test", desc: "A paper you can sit" },
   { href: "/notes", label: "Revision notes", desc: "Notes PDFs per unit" },
   { href: "/videos", label: "Video library", desc: "Lessons in spec order" },
   { href: "/resources", label: "Resource Library", desc: "Search everything" },
