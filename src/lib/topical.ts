@@ -20,6 +20,17 @@ export interface TopicalQuestion {
   to: number;
   marks: number;
   topics: string[];
+  /** Specification points, written `<topic>/<n>`; at most one per topic. */
+  points: string[];
+}
+
+/** One line of a specification section, with the questions that match it. */
+export interface TopicalSpecPoint {
+  id: string;
+  topic: string;
+  name: string;
+  questions: number;
+  papers: number;
 }
 
 export interface TopicalPaper {
@@ -41,6 +52,8 @@ export interface TopicalUnitIndex {
   subject: string;
   subjectLabel: string;
   generatedAt: string;
+  /** Specification points with at least one matching question. */
+  points?: TopicalSpecPoint[];
   papers: TopicalPaper[];
 }
 
@@ -52,6 +65,8 @@ export type BuildKind = "topical" | "mock";
 
 export interface TopicalSelection {
   topics: string[];
+  /** Specification points; a question on any selected point is included too. */
+  points?: string[];
   fromYear: number;
   toYear: number;
   sessions: string[];
@@ -84,6 +99,7 @@ export interface TopicalMatch {
 export function matchQuestions(index: TopicalUnitIndex, selection: TopicalSelection): TopicalMatch {
   const mode = selection.mode ?? "topics";
   const wanted = new Set(selection.topics);
+  const wantedPoints = new Set(selection.points ?? []);
   const sessions = new Set(selection.sessions);
   const paperIds = new Set(selection.paperIds ?? []);
   const papers: SelectedPaper[] = [];
@@ -97,7 +113,13 @@ export function matchQuestions(index: TopicalUnitIndex, selection: TopicalSelect
     } else {
       if (paper.year < selection.fromYear || paper.year > selection.toYear) continue;
       if (sessions.size > 0 && !sessions.has(paper.session)) continue;
-      questions = paper.questions.filter((q) => q.topics.some((t) => wanted.has(t)));
+      // Sections and single points add up: a student may take three whole
+      // sections and one point from a fourth.
+      questions = paper.questions.filter(
+        (q) =>
+          q.topics.some((t) => wanted.has(t)) ||
+          (q.points ?? []).some((p) => wantedPoints.has(p)),
+      );
     }
 
     if (questions.length === 0) continue;

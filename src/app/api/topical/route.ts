@@ -51,12 +51,20 @@ export async function GET(request: NextRequest) {
     .split(",")
     .map((t) => t.trim())
     .filter((t) => knownTopics.has(t));
+  // Specification points are validated against the index, which is fetched
+  // below; a point id reads "<topic>/<n>".
+  const wantedPoints = (params.get("points") ?? "")
+    .split(",")
+    .map((p) => p.trim())
+    .filter(Boolean);
   const paperIds = (params.get("papers") ?? "")
     .split(",")
     .map((id) => id.trim())
     .filter(Boolean);
 
-  if (mode === "topics" && topics.length === 0) return fail(400, "Choose at least one topic");
+  if (mode === "topics" && topics.length === 0 && wantedPoints.length === 0) {
+    return fail(400, "Choose at least one section or specification point");
+  }
   if (mode === "papers" && paperIds.length === 0) return fail(400, "Choose at least one paper");
 
   const fromYear = Number(params.get("from"));
@@ -74,6 +82,12 @@ export async function GET(request: NextRequest) {
   if (!indexResponse.ok) return fail(502, "Could not read the question index");
   const index = (await indexResponse.json()) as TopicalUnitIndex;
 
+  const knownPoints = new Set((index.points ?? []).map((p) => p.id));
+  const points = wantedPoints.filter((p) => knownPoints.has(p));
+  if (mode === "topics" && topics.length === 0 && points.length === 0) {
+    return fail(400, "Choose at least one section or specification point");
+  }
+
   if (mode === "papers") {
     const known = new Set(index.papers.map((paper) => paper.id));
     if (paperIds.some((id) => !known.has(id))) return fail(400, "Unknown paper in that selection");
@@ -81,6 +95,7 @@ export async function GET(request: NextRequest) {
 
   const selection: TopicalSelection = {
     topics,
+    points,
     fromYear: Number.isFinite(fromYear) ? fromYear : 0,
     toYear: Number.isFinite(toYear) ? toYear : 9999,
     sessions,
@@ -104,11 +119,14 @@ export async function GET(request: NextRequest) {
   }
 
   const topicNames = entry.topics.filter((t) => topics.includes(t.id)).map((t) => t.name);
+  const pointNames = (index.points ?? []).filter((p) => points.includes(p.id)).map((p) => p.name);
   const name =
-    kind === "mock" ? mockTestName(index, `${match.marks} marks`) : topicalPackName(index, topicNames);
+    kind === "mock"
+      ? mockTestName(index, `${match.marks} marks`)
+      : topicalPackName(index, [...topicNames, ...pointNames]);
 
   try {
-    const pack = await buildPack(request.nextUrl.origin, index, selection, match, topicNames);
+    const pack = await buildPack(request.nextUrl.origin, index, selection, match, [...topicNames, ...pointNames]);
     const stream = new ReadableStream<Uint8Array>({
       start(controller) {
         controller.enqueue(pack.bytes);

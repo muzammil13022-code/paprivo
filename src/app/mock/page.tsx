@@ -7,7 +7,7 @@ import type { TopicalUnitOption } from "@/components/TopicalMaker";
 export const metadata: Metadata = {
   title: "Mock test",
   description:
-    "Sit a mock under exam conditions: pick the topics or take whole past papers, set a mark target, and open the paper in a new tab. Mathematics, Physics, Chemistry and Biology.",
+    "Sit a mock under exam conditions: pick whole specification sections or single specification points, or take whole past papers, set a mark target, and open the paper in a new tab. Mathematics, Physics, Chemistry and Biology.",
 };
 
 const SUBJECT_ORDER = ["mathematics", "physics", "chemistry", "biology"];
@@ -50,13 +50,14 @@ export default function MockTestPage() {
           </p>
         </div>
         <p className="max-w-2xl text-muted">
-          Build a paper you can sit in one go. Pick the topics and set a mark total, or take whole past
-          papers exactly as printed — then open the PDF in a new tab, on a timer, with nothing in front
-          of you but the questions.
+          Build a paper you can sit in one go. Pick whole sections of the specification, or open a
+          section and take one line of it at a time, then set a mark total — or take whole past papers
+          exactly as printed. The PDF opens in a new tab, on a timer, with nothing in front of you but
+          the questions.
         </p>
         <p className="max-w-2xl text-xs text-muted">
           Mark schemes are left out by default, so the paper you open is just the questions. Add them
-          when you are ready to mark, or build a topical on the same topics afterwards.
+          when you are ready to mark, or build a topical on the same sections and points afterwards.
         </p>
       </header>
 

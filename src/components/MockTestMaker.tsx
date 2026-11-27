@@ -8,6 +8,7 @@ import {
   paperLabel,
   paperMarks,
   type TopicalSelection,
+  type TopicalSpecPoint,
   type TopicalUnitIndex,
 } from "@/lib/topical";
 import { docFileName, previewHref } from "@/lib/docs";
@@ -58,6 +59,9 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
 
   const [mode, setMode] = useState<"topics" | "papers">("topics");
   const [topics, setTopics] = useState<string[]>([]);
+  // Specification points are picked one line at a time, on top of whole sections.
+  const [points, setPoints] = useState<string[]>([]);
+  const [openTopics, setOpenTopics] = useState<string[]>([]);
   const [topicQuery, setTopicQuery] = useState("");
   const [paperIds, setPaperIds] = useState<string[]>([]);
   const [fromYear, setFromYear] = useState(0);
@@ -90,6 +94,8 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
   function pickUnit(code: string) {
     setUnitCode(code);
     setTopics([]);
+    setPoints([]);
+    setOpenTopics([]);
     setPaperIds([]);
     setShowInside(false);
     setBuildError(null);
@@ -100,7 +106,9 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
     if (!activeCode) return;
     let cancelled = false;
 
-    fetch(`/topical-data/${activeCode}.json`, { cache: "force-cache" })
+    // Revalidate: the index is regenerated in place, and a cached copy from
+    // before a rebuild would have no specification points in it.
+    fetch(`/topical-data/${activeCode}.json`, { cache: "no-store" })
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json() as Promise<TopicalUnitIndex>;
@@ -156,6 +164,7 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
   const selection: TopicalSelection = useMemo(
     () => ({
       topics,
+      points,
       fromYear,
       toYear,
       sessions,
@@ -165,7 +174,7 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
       markTarget,
       kind: "mock",
     }),
-    [topics, fromYear, toYear, sessions, includeMarkSchemes, mode, paperIds, markTarget],
+    [topics, points, fromYear, toYear, sessions, includeMarkSchemes, mode, paperIds, markTarget],
   );
 
   const match = useMemo(
@@ -177,16 +186,47 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
   );
 
   const allTopics = unit?.topics ?? [];
+  const pointsByTopic = useMemo(() => {
+    const map = new Map<string, TopicalSpecPoint[]>();
+    for (const point of index?.points ?? []) {
+      const list = map.get(point.topic) ?? [];
+      list.push(point);
+      map.set(point.topic, list);
+    }
+    return map;
+  }, [index]);
+  const pointCount = index?.points?.length ?? 0;
+  const query = topicQuery.trim().toLowerCase();
   const filteredTopics = allTopics.filter((topic) =>
-    topicQuery.trim() === ""
+    query === ""
       ? true
-      : `${topic.name} ${topic.id}`.toLowerCase().includes(topicQuery.trim().toLowerCase()),
+      : `${topic.name} ${topic.id} ${(pointsByTopic.get(topic.id) ?? [])
+          .map((point) => point.name)
+          .join(" ")}`
+          .toLowerCase()
+          .includes(query),
   );
+
+  function toggleTopic(topicId: string) {
+    setTopics((current) =>
+      current.includes(topicId) ? current.filter((t) => t !== topicId) : [...current, topicId],
+    );
+    // A whole section covers its points, so picking one drops its point picks.
+    setPoints((current) => current.filter((p) => !p.startsWith(`${topicId}/`)));
+  }
+
+  function togglePoint(topicId: string, pointId: string) {
+    setPoints((current) =>
+      current.includes(pointId) ? current.filter((p) => p !== pointId) : [...current, pointId],
+    );
+    // A single point is narrower than its section: the two never both apply.
+    setTopics((current) => current.filter((t) => t !== topicId));
+  }
   // Section numbering follows the specification order, not the filtered list.
   const topicNumber = (id: string) => String(allTopics.findIndex((t) => t.id === id) + 1).padStart(2, "0");
   const busiestTopic = Math.max(1, ...allTopics.map((t) => t.questions));
 
-  const hasChoice = mode === "topics" ? topics.length > 0 : paperIds.length > 0;
+  const hasChoice = mode === "topics" ? topics.length + points.length > 0 : paperIds.length > 0;
   const ready = Boolean(index && hasChoice && match.questionCount > 0 && !building);
   const estimatedMb = Math.max(
     1,
@@ -217,6 +257,7 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
       if (mode === "papers") params.set("papers", paperIds.join(","));
       else {
         params.set("topics", topics.join(","));
+        if (points.length > 0) params.set("points", points.join(","));
         params.set("marks", String(markTarget));
       }
 
@@ -352,15 +393,18 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
                       {unit?.name ?? "Choose a unit"}
                     </p>
                     <p className="mt-1 text-[10px] uppercase tracking-[0.12em] text-muted">
-                      {allTopics.length} section{allTopics.length === 1 ? "" : "s"} · {unit?.papers ?? 0} papers ·{" "}
-                      {unit?.questions ?? 0} questions · {topics.length} selected
+                      {allTopics.length} section{allTopics.length === 1 ? "" : "s"} · {pointCount} spec points ·{" "}
+                      {unit?.papers ?? 0} papers · {topics.length + points.length} selected
                     </p>
                   </div>
                   <div className="flex items-center gap-2 text-[11px]">
                     <button
                       type="button"
                       className="underline underline-offset-4 decoration-card-border-strong hover:decoration-marker"
-                      onClick={() => setTopics(allTopics.map((topic) => topic.id))}
+                      onClick={() => {
+                        setTopics(allTopics.map((topic) => topic.id));
+                        setPoints([]);
+                      }}
                     >
                       All sections
                     </button>
@@ -368,7 +412,10 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
                     <button
                       type="button"
                       className="underline underline-offset-4 decoration-card-border-strong hover:decoration-marker"
-                      onClick={() => setTopics([])}
+                      onClick={() => {
+                        setTopics([]);
+                        setPoints([]);
+                      }}
                     >
                       Clear
                     </button>
@@ -405,68 +452,144 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
                     {filteredTopics.map((topic) => {
                       const checked = topics.includes(topic.id);
                       const share = Math.round((topic.questions / busiestTopic) * 100);
+                      const sectionPoints = pointsByTopic.get(topic.id) ?? [];
+                      const open = openTopics.includes(topic.id);
+                      const picked = sectionPoints.filter((point) => points.includes(point.id)).length;
                       return (
                         <li key={topic.id} className="bg-card">
-                          <button
-                            type="button"
-                            role="checkbox"
-                            aria-checked={checked}
-                            onClick={() =>
-                              setTopics((current) =>
-                                current.includes(topic.id)
-                                  ? current.filter((t) => t !== topic.id)
-                                  : [...current, topic.id],
-                              )
-                            }
-                            className={`flex w-full cursor-pointer flex-col gap-2 px-3 py-2.5 text-left transition-colors ${
-                              checked ? "bg-marker/5" : "hover:bg-white/60"
-                            }`}
-                          >
-                            <span className="flex w-full items-start justify-between gap-3">
-                              <span className="flex items-start gap-2.5">
+                          <div className={`flex items-stretch ${checked ? "bg-marker/5" : ""}`}>
+                            <button
+                              type="button"
+                              role="checkbox"
+                              aria-checked={checked}
+                              onClick={() => toggleTopic(topic.id)}
+                              className={`flex min-w-0 flex-1 cursor-pointer flex-col gap-2 py-2.5 pl-3 pr-2 text-left transition-colors ${
+                                checked ? "" : "hover:bg-white/60"
+                              }`}
+                            >
+                              <span className="flex w-full items-start justify-between gap-3">
+                                <span className="flex items-start gap-2.5">
+                                  <span
+                                    aria-hidden
+                                    className={`mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center border ${
+                                      checked
+                                        ? "border-marker bg-marker text-paper"
+                                        : "border-card-border-strong bg-white/70"
+                                    }`}
+                                  >
+                                    {checked && (
+                                      <svg
+                                        viewBox="0 0 12 12"
+                                        className="h-2.5 w-2.5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        strokeWidth="2"
+                                      >
+                                        <path d="m2 6.5 2.5 2.5L10 3" />
+                                      </svg>
+                                    )}
+                                  </span>
+                                  <span className="text-sm leading-snug">
+                                    <span className="mr-2 font-mono text-[10px] text-muted">
+                                      {topicNumber(topic.id)}
+                                    </span>
+                                    {topic.name}
+                                  </span>
+                                </span>
+                                <span className="shrink-0 font-mono text-[11px] text-muted">
+                                  {topic.questions} Q
+                                </span>
+                              </span>
+                              <span className="ml-[26px] flex items-center gap-2" aria-hidden>
+                                <span className="h-[3px] flex-1 bg-card-border">
+                                  <span
+                                    className={`block h-[3px] ${checked ? "bg-marker" : "bg-marker/45"}`}
+                                    style={{ width: `${share}%` }}
+                                  />
+                                </span>
+                                <span className="w-16 shrink-0 text-right text-[10px] uppercase tracking-[0.1em] text-muted">
+                                  {topic.papers} papers
+                                </span>
+                              </span>
+                            </button>
+                            {sectionPoints.length > 0 && (
+                              <button
+                                type="button"
+                                onClick={() =>
+                                  setOpenTopics((current) =>
+                                    current.includes(topic.id)
+                                      ? current.filter((t) => t !== topic.id)
+                                      : [...current, topic.id],
+                                  )
+                                }
+                                aria-expanded={open}
+                                aria-label={`${open ? "Hide" : "Show"} the ${sectionPoints.length} specification points in ${topic.name}`}
+                                className="flex w-10 shrink-0 flex-col items-center justify-center gap-1 border-l border-card-border text-[9px] text-muted hover:text-marker"
+                              >
                                 <span
                                   aria-hidden
-                                  className={`mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center border ${
-                                    checked
-                                      ? "border-marker bg-marker text-paper"
-                                      : "border-card-border-strong bg-white/70"
-                                  }`}
+                                  className={`transition-transform ${open ? "rotate-90" : ""}`}
                                 >
-                                  {checked && (
-                                    <svg
-                                      viewBox="0 0 12 12"
-                                      className="h-2.5 w-2.5"
-                                      fill="none"
-                                      stroke="currentColor"
-                                      strokeWidth="2"
+                                  ▶
+                                </span>
+                                <span className={`font-mono text-[10px] ${picked > 0 ? "text-marker" : ""}`}>
+                                  {picked > 0 ? picked : sectionPoints.length}
+                                </span>
+                              </button>
+                            )}
+                          </div>
+                          {open && sectionPoints.length > 0 && (
+                            <ul className="border-t border-card-border bg-white/35">
+                              {sectionPoints.map((point, index) => {
+                                const on = points.includes(point.id);
+                                return (
+                                  <li key={point.id}>
+                                    <button
+                                      type="button"
+                                      role="checkbox"
+                                      aria-checked={on}
+                                      onClick={() => togglePoint(topic.id, point.id)}
+                                      className={`flex w-full items-start justify-between gap-3 py-1.5 pl-[35px] pr-3 text-left text-[13px] leading-snug transition-colors ${
+                                        on ? "bg-marker/10" : "hover:bg-white/70"
+                                      }`}
                                     >
-                                      <path d="m2 6.5 2.5 2.5L10 3" />
-                                    </svg>
-                                  )}
-                                </span>
-                                <span className="text-sm leading-snug">
-                                  <span className="mr-2 font-mono text-[10px] text-muted">
-                                    {topicNumber(topic.id)}
-                                  </span>
-                                  {topic.name}
-                                </span>
-                              </span>
-                              <span className="shrink-0 font-mono text-[11px] text-muted">
-                                {topic.questions} Q
-                              </span>
-                            </span>
-                            <span className="ml-[26px] flex items-center gap-2" aria-hidden>
-                              <span className="h-[3px] flex-1 bg-card-border">
-                                <span
-                                  className={`block h-[3px] ${checked ? "bg-marker" : "bg-marker/45"}`}
-                                  style={{ width: `${share}%` }}
-                                />
-                              </span>
-                              <span className="w-16 shrink-0 text-right text-[10px] uppercase tracking-[0.1em] text-muted">
-                                {topic.papers} papers
-                              </span>
-                            </span>
-                          </button>
+                                      <span className="flex items-start gap-2">
+                                        <span
+                                          aria-hidden
+                                          className={`mt-0.5 flex h-3.5 w-3.5 shrink-0 items-center justify-center border ${
+                                            on
+                                              ? "border-marker bg-marker text-paper"
+                                              : "border-card-border-strong bg-white/70"
+                                          }`}
+                                        >
+                                          {on && (
+                                            <svg
+                                              viewBox="0 0 12 12"
+                                              className="h-2 w-2"
+                                              fill="none"
+                                              stroke="currentColor"
+                                              strokeWidth="2"
+                                            >
+                                              <path d="m2 6.5 2.5 2.5L10 3" />
+                                            </svg>
+                                          )}
+                                        </span>
+                                        <span>
+                                          <span className="mr-1.5 font-mono text-[10px] text-muted">
+                                            {topicNumber(topic.id)}.{index + 1}
+                                          </span>
+                                          {point.name}
+                                        </span>
+                                      </span>
+                                      <span className="shrink-0 font-mono text-[10px] text-muted">
+                                        {point.questions} Q
+                                      </span>
+                                    </button>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          )}
                         </li>
                       );
                     })}
@@ -805,7 +928,11 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
             <p className="text-[11px] uppercase tracking-[0.14em] text-muted">Settings</p>
             <p className="mt-1.5 text-sm leading-snug">
               {mode === "topics"
-                ? `${markTarget}-mark paper from ${topics.length} of ${allTopics.length} spec sections`
+                ? `${markTarget}-mark paper from ${topics.length} of ${allTopics.length} sections${
+                    points.length > 0
+                      ? ` + ${points.length} point${points.length === 1 ? "" : "s"}`
+                      : ""
+                  }`
                 : `${paperIds.length} whole paper${paperIds.length === 1 ? "" : "s"}`}
             </p>
             <p className="mt-1 text-xs text-muted">

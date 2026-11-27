@@ -7,6 +7,7 @@
  *   src/data/question-pages.json    answer-booklet "Question N continued" pages
  *   .cache-question-pages/*.txt     per-page text of every question paper
  *   src/data/topical-topics.json    specification topics + question-text cues
+ *   src/data/topical-points.json    the points inside each topic, with their own cues
  *
  * Question boundaries come from the most reliable evidence a paper offers:
  *
@@ -34,13 +35,19 @@ import { extractText, getDocumentProxy } from "unpdf";
 const PAPERS = new URL("../src/data/papers.json", import.meta.url);
 const PAGES = new URL("../src/data/question-pages.json", import.meta.url);
 const TOPICS = new URL("../src/data/topical-topics.json", import.meta.url);
+const POINTS = new URL("../src/data/topical-points.json", import.meta.url);
 const CACHE = new URL("../.cache-question-pages/", import.meta.url);
 const OUT_DIR = new URL("../public/topical-data/", import.meta.url);
 const CATALOG = new URL("../src/data/topical-catalog.json", import.meta.url);
 
 const DEFAULT_WEIGHT = 2;
 const DEFAULT_MIN = 4;
+// A point is narrower than its section, so one clear cue is usually enough.
+const DEFAULT_POINT_MIN = 2;
 const MAX_TOPICS_PER_QUESTION = 2;
+// A question often covers more than one line of a section, so a point is not
+// exclusive; it still stays narrower than the section it belongs to.
+const MAX_POINTS_PER_SECTION = 3;
 const MAX_QUESTION_PAGES = 14;
 
 const escapeRegExp = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -63,6 +70,50 @@ function prepare(raw) {
     min: typeof t.min === "number" ? t.min : raw.defaultMin ?? DEFAULT_MIN,
     cues: (t.cues ?? []).map(compileCue),
   }));
+}
+
+/**
+ * One section = one specification heading, and each of its points is a line of
+ * that heading. Point ids read "<topic>/<n>", n following specification order.
+ */
+function preparePoints(byTopic, defaultMin) {
+  const out = [];
+  for (const [topicId, points] of Object.entries(byTopic ?? {})) {
+    points.forEach((point, index) => {
+      out.push({
+        id: `${topicId}/${index + 1}`,
+        topic: topicId,
+        name: point.name,
+        min: typeof point.min === "number" ? point.min : defaultMin ?? DEFAULT_POINT_MIN,
+        cues: (point.cues ?? []).map(compileCue),
+      });
+    });
+  }
+  return out;
+}
+
+/**
+ * Points are narrower than their section but not exclusive: a question that
+ * both plans an experiment and estimates its uncertainty belongs to both. The
+ * three best-scoring points of a section are kept, so a stray cue cannot drag a
+ * question into the whole section's worth of points.
+ */
+function tagPoints(text, points) {
+  const byTopic = new Map();
+  for (const point of points) {
+    let score = 0;
+    for (const cue of point.cues) if (cue.re.test(text)) score += cue.weight;
+    if (score < point.min) continue;
+    const list = byTopic.get(point.topic) ?? [];
+    list.push({ id: point.id, score });
+    byTopic.set(point.topic, list);
+  }
+  return [...byTopic.values()].flatMap((list) =>
+    list
+      .sort((a, b) => b.score - a.score)
+      .slice(0, MAX_POINTS_PER_SECTION)
+      .map((p) => p.id),
+  );
 }
 
 const flatten = (text) => text.toLowerCase().replace(/\s+/g, " ");
@@ -308,6 +359,7 @@ function segmentPaper(pages, starts, markerMap) {
         to,
         marks: marks.get(q) || partMarks(text),
         topics: [],
+        points: [],
       };
     });
     const result = { questions, source: candidate.source };
@@ -396,11 +448,12 @@ async function main() {
   const papersData = JSON.parse(await readFile(PAPERS, "utf8"));
   const starts = JSON.parse(await readFile(PAGES, "utf8")).papers ?? {};
   const topicsData = JSON.parse(await readFile(TOPICS, "utf8"));
+  const pointsData = JSON.parse(await readFile(POINTS, "utf8"));
 
   await mkdir(OUT_DIR, { recursive: true });
 
   const catalog = { generatedAt: new Date().toISOString(), units: {} };
-  const totals = { papers: 0, questions: 0, tagged: 0 };
+  const totals = { papers: 0, questions: 0, tagged: 0, pointed: 0, points: 0 };
   const sources = { totals: 0, numbers: 0, headers: 0 };
 
   for (const subject of papersData.subjects) {
@@ -408,6 +461,7 @@ async function main() {
       const topicDefs = topicsData.units[unit.code];
       if (!topicDefs) continue;
       const topics = prepare({ ...topicsData, topics: topicDefs });
+      const points = preparePoints(pointsData.units?.[unit.code], pointsData.defaultMin);
 
       const outPapers = [];
       for (const paper of unit.papers) {
@@ -444,11 +498,18 @@ async function main() {
         const { questions } = segmented;
         for (const question of questions) {
           const raw = pages.slice(question.from - 1, question.to).join("\n");
-          let ids = tagQuestion(flatten(raw), topics);
+          let text = flatten(raw);
+          let ids = tagQuestion(text, topics);
           // Only a question the normal reading could not tag is worth decoding;
           // decoding an already-tagged one would let page-sharing text re-rank it.
-          if (ids.length === 0 && shiftedSpaces(raw) >= 3) ids = tagQuestion(decodedText(raw), topics);
+          if (ids.length === 0 && shiftedSpaces(raw) >= 3) {
+            text = decodedText(raw);
+            ids = tagQuestion(text, topics);
+          }
           question.topics = ids;
+          // Points are read from the same text as the section tags so the two
+          // levels agree; an untagged question belongs to no point either.
+          question.points = ids.length > 0 && points.length > 0 ? tagPoints(text, points) : [];
         }
 
         // A final section sometimes prints no per-question total. When exactly
@@ -493,8 +554,10 @@ async function main() {
       outPapers.sort((a, b) => b.year - a.year || a.session.localeCompare(b.session));
 
       const counts = Object.fromEntries(topicDefs.map((t) => [t.id, { questions: 0, papers: 0 }]));
+      const pointCounts = new Map();
       for (const paper of outPapers) {
         const seen = new Set();
+        const seenPoints = new Set();
         for (const question of paper.questions) {
           for (const id of question.topics) {
             if (!counts[id]) counts[id] = { questions: 0, papers: 0 };
@@ -504,8 +567,27 @@ async function main() {
               seen.add(id);
             }
           }
+          for (const id of question.points) {
+            const entry = pointCounts.get(id) ?? { questions: 0, papers: 0 };
+            entry.questions++;
+            if (!seenPoints.has(id)) {
+              entry.papers++;
+              seenPoints.add(id);
+            }
+            pointCounts.set(id, entry);
+          }
         }
       }
+
+      const specPoints = points
+        .map((p) => ({
+          id: p.id,
+          topic: p.topic,
+          name: p.name,
+          questions: pointCounts.get(p.id)?.questions ?? 0,
+          papers: pointCounts.get(p.id)?.papers ?? 0,
+        }))
+        .filter((p) => p.questions > 0);
 
       await writeFile(
         new URL(`${unit.code}.json`, OUT_DIR),
@@ -515,6 +597,7 @@ async function main() {
           subject: subject.key,
           subjectLabel: subject.label,
           generatedAt: catalog.generatedAt,
+          points: specPoints,
           papers: outPapers,
         }),
       );
@@ -541,8 +624,13 @@ async function main() {
         (n, p) => n + p.questions.filter((q) => q.topics.length > 0).length,
         0,
       );
+      totals.pointed += outPapers.reduce(
+        (n, p) => n + p.questions.filter((q) => q.points.length > 0).length,
+        0,
+      );
+      totals.points += specPoints.length;
       console.log(
-        `${unit.code}: ${outPapers.length} papers, ${catalog.units[unit.code].questions} questions, ${catalog.units[unit.code].topics.length} topics with matches`,
+        `${unit.code}: ${outPapers.length} papers, ${catalog.units[unit.code].questions} questions, ${catalog.units[unit.code].topics.length} topics with matches, ${specPoints.length}/${points.length} spec points with matches`,
       );
     }
   }
@@ -551,6 +639,7 @@ async function main() {
   console.log(
     `\nIndexed ${totals.papers} papers, ${totals.questions} questions (${totals.tagged} tagged, ${totals.questions - totals.tagged} untagged).`,
   );
+  console.log(`Spec points: ${totals.points} with matches, ${totals.pointed} questions on a point`);
   console.log(`Boundaries from: ${JSON.stringify(sources)}`);
 }
 
