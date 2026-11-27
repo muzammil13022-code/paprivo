@@ -98,9 +98,13 @@ function preparePoints(byTopic, defaultMin) {
  * three best-scoring points of a section are kept, so a stray cue cannot drag a
  * question into the whole section's worth of points.
  */
-function tagPoints(text, points) {
+function tagPoints(text, points, allowedTopics) {
   const byTopic = new Map();
   for (const point of points) {
+    // A point belongs to its section, so a question can only take points from
+    // the sections it was tagged with. Without this a cue like "sketch" makes
+    // every graph question part of the quadratics section.
+    if (allowedTopics && !allowedTopics.has(point.topic)) continue;
     let score = 0;
     for (const cue of point.cues) if (cue.re.test(text)) score += cue.weight;
     if (score < point.min) continue;
@@ -452,6 +456,10 @@ async function main() {
 
   await mkdir(OUT_DIR, { recursive: true });
 
+  // Optional: dump the exact text each question was tagged from, so cue work can
+  // be measured against the same input the index used.
+  const dump = process.env.TOPICAL_DUMP ? [] : null;
+
   const catalog = { generatedAt: new Date().toISOString(), units: {} };
   const totals = { papers: 0, questions: 0, tagged: 0, pointed: 0, points: 0 };
   const sources = { totals: 0, numbers: 0, headers: 0 };
@@ -509,7 +517,21 @@ async function main() {
           question.topics = ids;
           // Points are read from the same text as the section tags so the two
           // levels agree; an untagged question belongs to no point either.
-          question.points = ids.length > 0 && points.length > 0 ? tagPoints(text, points) : [];
+          question.points =
+            ids.length > 0 && points.length > 0 ? tagPoints(text, points, new Set(ids)) : [];
+          if (dump) {
+            dump.push({
+              unit: unit.code,
+              paper: paperKey(paper),
+              q: question.q,
+              from: question.from,
+              to: question.to,
+              marks: question.marks,
+              topics: question.topics,
+              points: question.points,
+              text: text.slice(0, 1800),
+            });
+          }
         }
 
         // A final section sometimes prints no per-question total. When exactly
@@ -635,6 +657,7 @@ async function main() {
     }
   }
 
+  if (dump) await writeFile(process.env.TOPICAL_DUMP, JSON.stringify(dump));
   await writeFile(CATALOG, JSON.stringify(catalog, null, 2) + "\n");
   console.log(
     `\nIndexed ${totals.papers} papers, ${totals.questions} questions (${totals.tagged} tagged, ${totals.questions - totals.tagged} untagged).`,
