@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T17:39:55.246Z",
+  "generatedAt": "2026-11-27T12:49:15.252Z",
   "units": {
     "WMA11": {
       "code": "WMA11",
@@ -362,13 +362,13 @@
         {
           "id": "representation-data",
           "name": "Representation and summary of data",
-          "questions": 62,
+          "questions": 65,
           "papers": 25
         },
         {
           "id": "probability",
           "name": "Probability",
-          "questions": 95,
+          "questions": 84,
           "papers": 25
         },
         {
@@ -380,14 +380,14 @@
         {
           "id": "discrete-random-variables",
           "name": "Discrete random variables",
-          "questions": 44,
+          "questions": 45,
           "papers": 25
         },
         {
           "id": "normal-distribution",
           "name": "The normal distribution",
-          "questions": 18,
-          "papers": 16
+          "questions": 25,
+          "papers": 20
         }
       ]
     },
@@ -413,14 +413,14 @@
         {
           "id": "sampling-estimation",
           "name": "Sampling and estimation",
-          "questions": 59,
-          "papers": 24
+          "questions": 31,
+          "papers": 22
         },
         {
           "id": "hypothesis-testing",
           "name": "Hypothesis testing",
-          "questions": 38,
-          "papers": 24
+          "questions": 37,
+          "papers": 23
         }
       ]
     },
@@ -434,26 +434,26 @@
         {
           "id": "combinations-random-variables",
           "name": "Combinations of random variables",
-          "questions": 34,
-          "papers": 16
+          "questions": 39,
+          "papers": 17
         },
         {
           "id": "sampling-distributions",
           "name": "Sampling distributions",
-          "questions": 65,
-          "papers": 17
+          "questions": 43,
+          "papers": 16
         },
         {
           "id": "estimation-confidence",
           "name": "Estimation and confidence intervals",
-          "questions": 20,
-          "papers": 14
+          "questions": 31,
+          "papers": 17
         },
         {
           "id": "chi-squared",
           "name": "Chi-squared tests",
-          "questions": 19,
-          "papers": 13
+          "questions": 25,
+          "papers": 16
         },
         {
           "id": "hypothesis-means",
