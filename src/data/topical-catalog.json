@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T16:14:12.665Z",
+  "generatedAt": "2026-11-27T17:31:07.499Z",
   "units": {
     "WMA11": {
       "code": "WMA11",
@@ -180,9 +180,21 @@
       "questions": 204,
       "topics": [
         {
-          "id": "vectors",
-          "name": "Vectors",
+          "id": "proof",
+          "name": "Proof",
           "questions": 29,
+          "papers": 22
+        },
+        {
+          "id": "algebra-functions",
+          "name": "Algebra and functions",
+          "questions": 15,
+          "papers": 15
+        },
+        {
+          "id": "binomial-expansion",
+          "name": "Binomial expansion",
+          "questions": 26,
           "papers": 22
         },
         {
@@ -194,13 +206,13 @@
         {
           "id": "differentiation",
           "name": "Differentiation",
-          "questions": 58,
+          "questions": 57,
           "papers": 20
         },
         {
           "id": "integration",
           "name": "Integration",
-          "questions": 72,
+          "questions": 69,
           "papers": 22
         },
         {
@@ -210,9 +222,9 @@
           "papers": 15
         },
         {
-          "id": "algebra-functions",
-          "name": "Algebra and functions",
-          "questions": 64,
+          "id": "vectors",
+          "name": "Vectors",
+          "questions": 28,
           "papers": 22
         }
       ]
@@ -225,9 +237,15 @@
       "questions": 192,
       "topics": [
         {
+          "id": "mathematical-models",
+          "name": "Mathematical models and assumptions",
+          "questions": 53,
+          "papers": 22
+        },
+        {
           "id": "kinematics",
           "name": "Kinematics",
-          "questions": 67,
+          "questions": 63,
           "papers": 25
         },
         {
@@ -239,31 +257,31 @@
         {
           "id": "dynamics",
           "name": "Dynamics: F = ma",
-          "questions": 54,
-          "papers": 22
+          "questions": 47,
+          "papers": 20
         },
         {
           "id": "connected-particles",
           "name": "Connected particles and pulleys",
-          "questions": 58,
+          "questions": 51,
           "papers": 25
         },
         {
           "id": "friction-statics",
           "name": "Friction and statics",
-          "questions": 58,
+          "questions": 48,
           "papers": 25
         },
         {
           "id": "moments",
           "name": "Moments",
-          "questions": 23,
-          "papers": 23
+          "questions": 20,
+          "papers": 20
         },
         {
           "id": "momentum-impulse",
           "name": "Momentum and impulse",
-          "questions": 26,
+          "questions": 25,
           "papers": 23
         }
       ]
@@ -329,7 +347,7 @@
         {
           "id": "elastic-strings",
           "name": "Elastic strings and springs",
-          "questions": 56,
+          "questions": 55,
           "papers": 18
         },
         {
@@ -349,6 +367,12 @@
           "name": "Variable acceleration",
           "questions": 17,
           "papers": 13
+        },
+        {
+          "id": "further-dynamics",
+          "name": "Further dynamics",
+          "questions": 3,
+          "papers": 3
         }
       ]
     },
@@ -368,7 +392,7 @@
         {
           "id": "probability",
           "name": "Probability",
-          "questions": 84,
+          "questions": 82,
           "papers": 25
         },
         {
@@ -382,6 +406,12 @@
           "name": "Discrete random variables",
           "questions": 45,
           "papers": 25
+        },
+        {
+          "id": "discrete-distributions",
+          "name": "The binomial and geometric distributions",
+          "questions": 2,
+          "papers": 2
         },
         {
           "id": "normal-distribution",
@@ -440,13 +470,13 @@
         {
           "id": "sampling-distributions",
           "name": "Sampling distributions",
-          "questions": 43,
+          "questions": 39,
           "papers": 16
         },
         {
           "id": "estimation-confidence",
           "name": "Estimation and confidence intervals",
-          "questions": 31,
+          "questions": 29,
           "papers": 17
         },
         {
@@ -459,6 +489,12 @@
           "id": "hypothesis-means",
           "name": "Hypothesis tests for means",
           "questions": 63,
+          "papers": 17
+        },
+        {
+          "id": "regression-correlation",
+          "name": "Regression and correlation",
+          "questions": 18,
           "papers": 17
         }
       ]
@@ -549,6 +585,12 @@
       "questions": 100,
       "topics": [
         {
+          "id": "planning",
+          "name": "Planning and experimental design",
+          "questions": 2,
+          "papers": 2
+        },
+        {
           "id": "measurement-techniques",
           "name": "Measurement techniques",
           "questions": 39,
@@ -563,7 +605,7 @@
         {
           "id": "graphical-analysis",
           "name": "Graphical analysis",
-          "questions": 47,
+          "questions": 46,
           "papers": 24
         },
         {
@@ -783,6 +825,12 @@
       "questions": 107,
       "topics": [
         {
+          "id": "planning",
+          "name": "Planning and experimental design",
+          "questions": 1,
+          "papers": 1
+        },
+        {
           "id": "techniques",
           "name": "Core techniques",
           "questions": 72,
@@ -900,6 +948,12 @@
       "questions": 85,
       "topics": [
         {
+          "id": "planning",
+          "name": "Planning and experimental design",
+          "questions": 3,
+          "papers": 3
+        },
+        {
           "id": "advanced-practicals",
           "name": "Advanced core practicals",
           "questions": 85,
@@ -923,19 +977,25 @@
         {
           "id": "biological-molecules",
           "name": "Biological molecules and enzymes",
-          "questions": 109,
+          "questions": 102,
           "papers": 25
+        },
+        {
+          "id": "diet-health",
+          "name": "Diet, lifestyle and cardiovascular health",
+          "questions": 33,
+          "papers": 19
         },
         {
           "id": "transport-health",
           "name": "Mammalian transport and cardiovascular health",
-          "questions": 102,
+          "questions": 100,
           "papers": 25
         },
         {
           "id": "membranes-proteins-dna",
           "name": "Membranes, proteins, DNA and gene expression",
-          "questions": 83,
+          "questions": 79,
           "papers": 25
         }
       ]
@@ -987,15 +1047,21 @@
       "questions": 72,
       "topics": [
         {
+          "id": "planning",
+          "name": "Planning and experimental design",
+          "questions": 7,
+          "papers": 7
+        },
+        {
           "id": "techniques",
           "name": "Core techniques",
-          "questions": 44,
-          "papers": 23
+          "questions": 40,
+          "papers": 22
         },
         {
           "id": "analysis",
           "name": "Analysis and evaluation",
-          "questions": 69,
+          "questions": 68,
           "papers": 24
         },
         {
@@ -1080,6 +1146,12 @@
       "questions": 81,
       "topics": [
         {
+          "id": "planning",
+          "name": "Planning and experimental design",
+          "questions": 25,
+          "papers": 21
+        },
+        {
           "id": "advanced-practicals",
           "name": "Advanced practicals",
           "questions": 78,
@@ -1088,14 +1160,14 @@
         {
           "id": "statistical-tests",
           "name": "Statistical tests",
-          "questions": 37,
+          "questions": 35,
           "papers": 21
         },
         {
           "id": "evaluation",
           "name": "Evaluation",
-          "questions": 25,
-          "papers": 21
+          "questions": 4,
+          "papers": 4
         }
       ]
     }

@@ -176,11 +176,15 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
     [index, selection],
   );
 
-  const filteredTopics = (unit?.topics ?? []).filter((topic) =>
+  const allTopics = unit?.topics ?? [];
+  const filteredTopics = allTopics.filter((topic) =>
     topicQuery.trim() === ""
       ? true
       : `${topic.name} ${topic.id}`.toLowerCase().includes(topicQuery.trim().toLowerCase()),
   );
+  // Section numbering follows the specification order, not the filtered list.
+  const topicNumber = (id: string) => String(allTopics.findIndex((t) => t.id === id) + 1).padStart(2, "0");
+  const busiestTopic = Math.max(1, ...allTopics.map((t) => t.questions));
 
   const hasChoice = mode === "topics" ? topics.length > 0 : paperIds.length > 0;
   const ready = Boolean(index && hasChoice && match.questionCount > 0 && !building);
@@ -252,27 +256,58 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
           ))}
         </div>
 
-        <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
-          {subjectUnits.map((option) => (
-            <button
-              key={option.code}
-              type="button"
-              onClick={() => pickUnit(option.code)}
-              aria-pressed={unitCode === option.code}
-              className={`bg-background-soft px-4 py-3 text-left transition-colors ${
-                unitCode === option.code ? "text-chalk" : "text-muted hover:text-chalk"
-              }`}
-            >
-              <span className="flex items-baseline justify-between gap-3">
-                <span className="text-sm font-medium">{option.name}</span>
-                <span className="font-mono text-[11px] text-muted">{option.code}</span>
-              </span>
-              <span className="mt-1 flex items-center gap-2 text-[11px] uppercase tracking-[0.12em]">
-                {unitCode === option.code && <span className="h-0.5 w-4 bg-marker" aria-hidden />}
-                {option.papers} papers · {option.questions} questions
-              </span>
-            </button>
-          ))}
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {subjectUnits.map((option) => {
+            const active = unitCode === option.code;
+            return (
+              <button
+                key={option.code}
+                type="button"
+                onClick={() => pickUnit(option.code)}
+                aria-pressed={active}
+                className={`group relative border bg-card px-4 py-3 text-left shadow-card-sm transition-colors ${
+                  active
+                    ? "border-marker text-chalk"
+                    : "border-card-border text-chalk hover:border-card-border-strong"
+                }`}
+              >
+                <span
+                  aria-hidden
+                  className={`absolute inset-y-0 left-0 w-[3px] ${active ? "bg-marker" : "bg-transparent"}`}
+                />
+                <span className="flex items-baseline justify-between gap-3">
+                  <span className="text-sm font-medium leading-snug">{option.name}</span>
+                  <span
+                    className={`shrink-0 border px-1.5 py-0.5 font-mono text-[10px] tracking-[0.08em] ${
+                      active ? "border-marker/50 text-marker" : "border-card-border text-muted"
+                    }`}
+                  >
+                    {option.code}
+                  </span>
+                </span>
+                <span className="mt-2 grid grid-cols-3 gap-2 border-t border-card-border pt-2 text-[10px] uppercase tracking-[0.1em] text-muted">
+                  <span>
+                    <span className="block font-mono text-xs tracking-normal text-chalk">
+                      {option.topics.length}
+                    </span>
+                    sections
+                  </span>
+                  <span>
+                    <span className="block font-mono text-xs tracking-normal text-chalk">
+                      {option.papers}
+                    </span>
+                    papers
+                  </span>
+                  <span>
+                    <span className="block font-mono text-xs tracking-normal text-chalk">
+                      {option.questions}
+                    </span>
+                    questions
+                  </span>
+                </span>
+              </button>
+            );
+          })}
         </div>
       </section>
 
@@ -308,6 +343,38 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
 
             {mode === "topics" ? (
               <div className="px-5 py-4">
+                <div className="mb-4 flex flex-wrap items-end justify-between gap-3 border-l-2 border-marker bg-white/45 px-3 py-2.5">
+                  <div>
+                    <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-marker">
+                      Specification {unit?.code}
+                    </p>
+                    <p className="mt-0.5 font-display text-sm font-semibold leading-snug">
+                      {unit?.name ?? "Choose a unit"}
+                    </p>
+                    <p className="mt-1 text-[10px] uppercase tracking-[0.12em] text-muted">
+                      {allTopics.length} section{allTopics.length === 1 ? "" : "s"} · {unit?.papers ?? 0} papers ·{" "}
+                      {unit?.questions ?? 0} questions · {topics.length} selected
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2 text-[11px]">
+                    <button
+                      type="button"
+                      className="underline underline-offset-4 decoration-card-border-strong hover:decoration-marker"
+                      onClick={() => setTopics(allTopics.map((topic) => topic.id))}
+                    >
+                      All sections
+                    </button>
+                    <span className="text-card-border-strong">/</span>
+                    <button
+                      type="button"
+                      className="underline underline-offset-4 decoration-card-border-strong hover:decoration-marker"
+                      onClick={() => setTopics([])}
+                    >
+                      Clear
+                    </button>
+                  </div>
+                </div>
+
                 <label className="sr-only" htmlFor="mock-topic-filter">
                   Filter topics
                 </label>
@@ -315,7 +382,7 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
                   id="mock-topic-filter"
                   value={topicQuery}
                   onChange={(e) => setTopicQuery(e.target.value)}
-                  placeholder="Filter topics — differentiation, electric fields, immunity…"
+                  placeholder="Filter sections — differentiation, electric fields, immunity…"
                   className="mb-4 w-full border border-card-border bg-white/60 px-3 py-2 text-sm outline-none focus:border-marker"
                 />
 
@@ -334,9 +401,10 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
                 )}
 
                 {index && (
-                  <ul className="grid gap-px bg-card-border sm:grid-cols-2">
+                  <ul className="grid gap-px bg-card-border">
                     {filteredTopics.map((topic) => {
                       const checked = topics.includes(topic.id);
+                      const share = Math.round((topic.questions / busiestTopic) * 100);
                       return (
                         <li key={topic.id} className="bg-card">
                           <button
@@ -350,32 +418,54 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
                                   : [...current, topic.id],
                               )
                             }
-                            className="flex w-full cursor-pointer items-center justify-between gap-3 px-3 py-2.5 text-left hover:bg-white/60"
+                            className={`flex w-full cursor-pointer flex-col gap-2 px-3 py-2.5 text-left transition-colors ${
+                              checked ? "bg-marker/5" : "hover:bg-white/60"
+                            }`}
                           >
-                            <span className="flex items-start gap-2.5">
-                              <span
-                                aria-hidden
-                                className={`mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center border ${
-                                  checked
-                                    ? "border-marker bg-marker text-paper"
-                                    : "border-card-border-strong bg-white/70"
-                                }`}
-                              >
-                                {checked && (
-                                  <svg
-                                    viewBox="0 0 12 12"
-                                    className="h-2.5 w-2.5"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                  >
-                                    <path d="m2 6.5 2.5 2.5L10 3" />
-                                  </svg>
-                                )}
+                            <span className="flex w-full items-start justify-between gap-3">
+                              <span className="flex items-start gap-2.5">
+                                <span
+                                  aria-hidden
+                                  className={`mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center border ${
+                                    checked
+                                      ? "border-marker bg-marker text-paper"
+                                      : "border-card-border-strong bg-white/70"
+                                  }`}
+                                >
+                                  {checked && (
+                                    <svg
+                                      viewBox="0 0 12 12"
+                                      className="h-2.5 w-2.5"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      strokeWidth="2"
+                                    >
+                                      <path d="m2 6.5 2.5 2.5L10 3" />
+                                    </svg>
+                                  )}
+                                </span>
+                                <span className="text-sm leading-snug">
+                                  <span className="mr-2 font-mono text-[10px] text-muted">
+                                    {topicNumber(topic.id)}
+                                  </span>
+                                  {topic.name}
+                                </span>
                               </span>
-                              <span className="text-sm leading-snug">{topic.name}</span>
+                              <span className="shrink-0 font-mono text-[11px] text-muted">
+                                {topic.questions} Q
+                              </span>
                             </span>
-                            <span className="shrink-0 font-mono text-[11px] text-muted">[{topic.questions}]</span>
+                            <span className="ml-[26px] flex items-center gap-2" aria-hidden>
+                              <span className="h-[3px] flex-1 bg-card-border">
+                                <span
+                                  className={`block h-[3px] ${checked ? "bg-marker" : "bg-marker/45"}`}
+                                  style={{ width: `${share}%` }}
+                                />
+                              </span>
+                              <span className="w-16 shrink-0 text-right text-[10px] uppercase tracking-[0.1em] text-muted">
+                                {topic.papers} papers
+                              </span>
+                            </span>
                           </button>
                         </li>
                       );
@@ -715,7 +805,7 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
             <p className="text-[11px] uppercase tracking-[0.14em] text-muted">Settings</p>
             <p className="mt-1.5 text-sm leading-snug">
               {mode === "topics"
-                ? `${markTarget}-mark paper from ${topics.length} selected topic${topics.length === 1 ? "" : "s"}`
+                ? `${markTarget}-mark paper from ${topics.length} of ${allTopics.length} spec sections`
                 : `${paperIds.length} whole paper${paperIds.length === 1 ? "" : "s"}`}
             </p>
             <p className="mt-1 text-xs text-muted">
