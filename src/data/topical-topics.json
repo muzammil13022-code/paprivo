@@ -18,7 +18,7 @@
           ],
           [
             "re:exact value",
-            3
+            4
           ],
           [
             "simplest form",
@@ -196,6 +196,10 @@
           [
             "re:θ",
             3
+          ],
+          [
+            "triangular",
+            4
           ]
         ]
       },
@@ -492,6 +496,10 @@
           [
             "re:pascal",
             5
+          ],
+          [
+            "ascending powers",
+            4
           ]
         ]
       },
@@ -753,7 +761,7 @@
           ],
           [
             "re:transform",
-            3
+            4
           ]
         ]
       },
@@ -1375,7 +1383,7 @@
           ],
           [
             "re:angle",
-            3
+            4
           ],
           [
             "re:vector",
@@ -1916,7 +1924,7 @@
           ],
           [
             "re:radius",
-            3
+            4
           ],
           [
             "re:angular",
@@ -2752,6 +2760,10 @@
           [
             "re:angle to the horizontal",
             5
+          ],
+          [
+            "acceleration",
+            4
           ]
         ]
       },
@@ -2797,7 +2809,7 @@
           ],
           [
             "re:support",
-            3
+            4
           ],
           [
             "re:tension",
@@ -2805,7 +2817,7 @@
           ],
           [
             "re:wire",
-            3
+            4
           ],
           [
             "re:angle",
@@ -2993,7 +3005,7 @@
           ],
           [
             "re:spring",
-            3
+            4
           ],
           [
             "re:extend",
@@ -3115,7 +3127,7 @@
           ],
           [
             "re:wave",
-            3
+            4
           ],
           [
             "re:ultrasound",
@@ -3148,6 +3160,10 @@
           [
             "re:speed of sound",
             6
+          ],
+          [
+            "string",
+            4
           ]
         ]
       },
@@ -3259,7 +3275,7 @@
           ],
           [
             "re:current",
-            3
+            4
           ],
           [
             "re:coulomb",
@@ -3280,6 +3296,10 @@
           [
             "re:equivalent to the (?:volt|coulomb|ohm|watt|farad)",
             6
+          ],
+          [
+            "e.m.f",
+            4
           ]
         ]
       }
@@ -3394,7 +3414,7 @@
         "cues": [
           [
             "re:graph",
-            3
+            4
           ],
           [
             "re:gradient",
@@ -3526,7 +3546,7 @@
           ],
           [
             "re:charge",
-            3
+            4
           ],
           [
             "re:vacuum tube",
@@ -3546,6 +3566,14 @@
           ],
           [
             "re:potential difference",
+            4
+          ],
+          [
+            "point charge",
+            4
+          ],
+          [
+            "coulomb",
             4
           ]
         ]
@@ -3673,6 +3701,10 @@
           [
             "re:nucleus",
             5
+          ],
+          [
+            "antiproton",
+            4
           ]
         ]
       }
@@ -3712,7 +3744,7 @@
           ],
           [
             "re:pressure",
-            3
+            4
           ],
           [
             "re:temperature",
@@ -3810,6 +3842,10 @@
           ],
           [
             "re:mev",
+            4
+          ],
+          [
+            "gamma",
             4
           ]
         ]
@@ -3940,7 +3976,7 @@
           ],
           [
             "wavelength|",
-            3
+            4
           ],
           [
             "star|",
@@ -3961,6 +3997,14 @@
           [
             "re:light.year",
             6
+          ],
+          [
+            "universe",
+            4
+          ],
+          [
+            "critical density",
+            4
           ]
         ]
       }
@@ -4022,7 +4066,7 @@
           ],
           [
             "re:accurate",
-            3
+            4
           ]
         ]
       },
@@ -4137,6 +4181,14 @@
           [
             "re:hydrated",
             3
+          ],
+          [
+            "gas volume",
+            4
+          ],
+          [
+            "percentage yield",
+            4
           ]
         ]
       },
@@ -4211,6 +4263,10 @@
           [
             "re:arrangement of electrons",
             6
+          ],
+          [
+            "d electrons",
+            4
           ]
         ]
       },
@@ -4264,6 +4320,18 @@
           ],
           [
             "re:delocalis",
+            4
+          ],
+          [
+            "polarising",
+            5
+          ],
+          [
+            "electrical conductivity",
+            4
+          ],
+          [
+            "molten",
             4
           ]
         ]
@@ -4327,6 +4395,14 @@
           [
             "re:fractional distillation",
             5
+          ],
+          [
+            "propagation",
+            4
+          ],
+          [
+            "ultraviolet",
+            4
           ]
         ]
       },
@@ -4401,6 +4477,10 @@
           [
             "re:\\b[ez]-\\d",
             5
+          ],
+          [
+            "propene",
+            4
           ]
         ]
       }
@@ -4507,6 +4587,10 @@
           [
             "re:viscosit",
             5
+          ],
+          [
+            "london forces",
+            4
           ]
         ]
       },
@@ -4560,7 +4644,7 @@
           ],
           [
             "re:sulfate",
-            3
+            4
           ],
           [
             "re:hydroxide",
@@ -4569,6 +4653,10 @@
           [
             "re:displacement reaction",
             5
+          ],
+          [
+            "precipitate",
+            4
           ]
         ]
       },
@@ -4614,7 +4702,7 @@
           ],
           [
             "rate|",
-            3
+            4
           ],
           [
             "re:maxwell",
@@ -4749,6 +4837,14 @@
           [
             "re:functional group",
             3
+          ],
+          [
+            "mass spectra",
+            4
+          ],
+          [
+            "infrared",
+            4
           ]
         ]
       }
@@ -4877,7 +4973,7 @@
           ],
           [
             "re:test",
-            3
+            4
           ],
           [
             "re:flame",
@@ -5062,6 +5158,10 @@
           [
             "re:indicat",
             4
+          ],
+          [
+            "conjugate base",
+            4
           ]
         ]
       },
@@ -5216,6 +5316,10 @@
           [
             "re:high resolution",
             5
+          ],
+          [
+            "fragment",
+            4
           ]
         ]
       }
@@ -5275,6 +5379,14 @@
           ],
           [
             "re:entropy",
+            4
+          ],
+          [
+            "feasible",
+            4
+          ],
+          [
+            "standard electrode potential",
             4
           ]
         ]
@@ -5337,6 +5449,26 @@
           ],
           [
             "re:oxidation number",
+            4
+          ],
+          [
+            "electronic configuration",
+            4
+          ],
+          [
+            "amphoteric",
+            4
+          ],
+          [
+            "colour",
+            4
+          ],
+          [
+            "ligand",
+            4
+          ],
+          [
+            "complex",
             4
           ]
         ]
@@ -5467,6 +5599,14 @@
           ],
           [
             "re:anhydride",
+            4
+          ],
+          [
+            "recrystallisation",
+            4
+          ],
+          [
+            "solvent extraction",
             4
           ]
         ]
