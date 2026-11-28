@@ -172,43 +172,79 @@ function totalsIn(pages) {
 const CONTROL = /[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g;
 const tidy = (line) => line.replace(CONTROL, " ").trim();
 
-/** Start page of every question printed at line start. */
-function lineStarts(pages) {
+/**
+ * Where each question number is printed: its page and its character offset in
+ * that page's text. The offset matters because plenty of papers print several
+ * questions on one page (multiple-choice sections especially); without it a
+ * question's text starts at the top of the page and reads its neighbours'.
+ */
+function lineMarkers(pages) {
   const candidates = new Map();
   pages.forEach((text, index) => {
+    let offset = 0;
     for (const raw of text.split("\n")) {
       const line = tidy(raw);
       // A question number is followed by a full stop or whitespace — not by an
       // algebraic term, which would make "2x2 – xy = 8" look like question 2.
       // Some papers prefix a question with an asterisk ("*18 Fuel cells are …").
       const m = /^\*?(\d{1,2})(?!\d)(\.\s*|\s+|\)\s*)(\S.*)$/.exec(line);
-      if (!m) continue;
-      const q = Number(m[1]);
-      if (q < 1 || q > 30) continue;
-      const separator = m[2].trim();
-      const rest = m[3];
+      const q = m ? Number(m[1]) : 0;
+      const separator = m ? m[2].trim() : "";
+      const rest = m ? m[3] : "";
       const letters = (rest.match(/\p{L}/gu) ?? []).length;
       // "9 cos3 θ – …" is a formula, "2 500 N" a data cell; a real question
       // follows its number with a full stop, a bracket, or ordinary prose.
       const looksLikeQuestion =
-        separator !== "" || /^[A-Z(\u201c\u2018"]/.test(rest) || (letters >= 3 && /^\d/.test(rest));
-      if (!looksLikeQuestion) continue;
-      if (!candidates.has(q)) candidates.set(q, new Set());
-      candidates.get(q).add(index + 1);
+        q >= 1 &&
+        q <= 30 &&
+        (separator !== "" || /^[A-Z(\u201c\u2018"]/.test(rest) || (letters >= 3 && /^\d/.test(rest)));
+      if (looksLikeQuestion) {
+        if (!candidates.has(q)) candidates.set(q, []);
+        candidates.get(q).push({ page: index + 1, index: offset + (raw.length - raw.trimStart().length) });
+      }
+      offset += raw.length + 1;
     }
   });
 
-  // Questions are printed in order, so take each number's earliest page that
-  // still follows the previous question. A stray label cannot hide a real one.
-  const starts = new Map();
-  let previous = 0;
+  // Questions are printed in order, so take each number's earliest position
+  // that still follows the previous question. The comparison is by page and
+  // then by offset within the page, so several questions on one page are all
+  // registered instead of only the first. A stray label cannot hide a real one.
+  const marks = new Map();
+  let previous = { page: 0, index: 0 };
   for (const q of [...candidates.keys()].sort((a, b) => a - b)) {
-    const page = [...candidates.get(q)].sort((a, b) => a - b).find((p) => p > previous);
-    if (page === undefined) continue;
-    starts.set(q, page);
-    previous = page;
+    const mark = candidates
+      .get(q)
+      .filter((m) => m.page > previous.page || (m.page === previous.page && m.index > previous.index))
+      .sort((a, b) => a.page - b.page || a.index - b.index)[0];
+    if (!mark) continue;
+    marks.set(q, mark);
+    previous = mark;
   }
-  return starts;
+  return marks;
+}
+
+/**
+ * One question's own text. A page that carries several question numbers is cut
+ * at the next number, so a question never includes the start of the one printed
+ * below it (their totals, marks and vocabulary used to leak into each other).
+ */
+function questionText(pages, q, from, to, marks) {
+  const start = marks.get(q);
+  const startIndex = start && start.page === from ? start.index : 0;
+  // Only a later question can end this one; a smaller number printed further
+  // down a page is a data label, not the next question.
+  const nextMark = [...marks.entries()]
+    .filter(([other, mark]) => other > q && mark.page === to && mark.index > (from === to ? startIndex : -1))
+    .sort((a, b) => a[1].index - b[1].index)[0];
+  const endIndex = nextMark ? nextMark[1].index : null;
+  if (from === to) {
+    const page = pages[from - 1];
+    return page.slice(startIndex, endIndex ?? page.length);
+  }
+  const head = pages[from - 1].slice(startIndex);
+  const tailPage = pages[to - 1];
+  return [head, ...pages.slice(from, to - 1), tailPage.slice(0, endIndex ?? tailPage.length)].join("\n");
 }
 
 /** Question pages derived from the booklet's "Question N continued" pages. */
@@ -307,7 +343,8 @@ function rangeProblem(ranges, pages) {
 }
 
 /** Segment one paper, trying totals → printed numbers → booklet headers. */
-function segmentPaper(pages, starts, markerMap) {
+function segmentPaper(pages, lineMarks, markerMap) {
+  const starts = new Map([...lineMarks].map(([q, mark]) => [q, mark.page]));
   const { marks, endsOn, sequential } = totalsIn(pages);
   const markers = markersOf(markerMap);
 
@@ -356,7 +393,7 @@ function segmentPaper(pages, starts, markerMap) {
       continue;
     }
     const questions = ranges.map(({ q, from, to }) => {
-      const text = pages.slice(from - 1, to).join("\n");
+      const text = questionText(pages, q, from, to, lineMarks);
       return {
         q,
         from,
@@ -490,11 +527,13 @@ async function main() {
         }
 
         const markerMap = starts[paperKey(paper)]?.qp;
-        let segmented = segmentPaper(pages, lineStarts(pages), markerMap);
+        let lineMarks = lineMarkers(pages);
+        let segmented = segmentPaper(pages, lineMarks, markerMap);
         if (!segmented && raw && pages.length !== raw.length) {
           // The trim was wrong for this paper; index the whole file instead.
           pages = raw;
-          segmented = segmentPaper(pages, lineStarts(pages), markerMap);
+          lineMarks = lineMarkers(pages);
+          segmented = segmentPaper(pages, lineMarks, markerMap);
         }
         if (!segmented) {
           const totals = totalsIn(pages);
@@ -505,7 +544,7 @@ async function main() {
         }
         const { questions } = segmented;
         for (const question of questions) {
-          const raw = pages.slice(question.from - 1, question.to).join("\n");
+          const raw = questionText(pages, question.q, question.from, question.to, lineMarks);
           let text = flatten(raw);
           let ids = tagQuestion(text, topics);
           // Only a question the normal reading could not tag is worth decoding;

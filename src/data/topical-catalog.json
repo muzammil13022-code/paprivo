@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T10:02:56.427Z",
+  "generatedAt": "2026-11-28T10:13:25.355Z",
   "units": {
     "WMA11": {
       "code": "WMA11",
@@ -17,14 +17,14 @@
         {
           "id": "quadratics",
           "name": "Quadratics",
-          "questions": 11,
+          "questions": 8,
           "papers": 8
         },
         {
           "id": "equations-inequalities",
           "name": "Equations and inequalities",
-          "questions": 16,
-          "papers": 12
+          "questions": 13,
+          "papers": 11
         },
         {
           "id": "graphs-transformations",
@@ -41,19 +41,19 @@
         {
           "id": "trigonometry",
           "name": "Trigonometry",
-          "questions": 40,
+          "questions": 36,
           "papers": 25
         },
         {
           "id": "differentiation",
           "name": "Differentiation",
-          "questions": 62,
+          "questions": 63,
           "papers": 27
         },
         {
           "id": "integration",
           "name": "Integration",
-          "questions": 36,
+          "questions": 34,
           "papers": 24
         }
       ]
@@ -74,19 +74,19 @@
         {
           "id": "algebra-functions",
           "name": "Algebra and functions",
-          "questions": 36,
+          "questions": 34,
           "papers": 25
         },
         {
           "id": "circle-geometry",
           "name": "Coordinate geometry: circles",
-          "questions": 34,
+          "questions": 31,
           "papers": 26
         },
         {
           "id": "sequences-series",
           "name": "Sequences and series",
-          "questions": 51,
+          "questions": 49,
           "papers": 26
         },
         {
@@ -98,25 +98,25 @@
         {
           "id": "radians-trigonometry",
           "name": "Radians and trigonometry",
-          "questions": 36,
+          "questions": 34,
           "papers": 26
         },
         {
           "id": "exponentials-logarithms",
           "name": "Exponentials and logarithms",
-          "questions": 29,
-          "papers": 24
+          "questions": 30,
+          "papers": 26
         },
         {
           "id": "differentiation",
           "name": "Differentiation",
-          "questions": 30,
+          "questions": 29,
           "papers": 23
         },
         {
           "id": "integration",
           "name": "Integration",
-          "questions": 17,
+          "questions": 15,
           "papers": 14
         },
         {
@@ -137,31 +137,31 @@
         {
           "id": "algebra-functions",
           "name": "Algebra and functions",
-          "questions": 72,
+          "questions": 70,
           "papers": 23
         },
         {
           "id": "trigonometry",
           "name": "Trigonometry",
-          "questions": 62,
+          "questions": 60,
           "papers": 23
         },
         {
           "id": "exponentials-logarithms",
           "name": "Exponentials and logarithms",
-          "questions": 43,
-          "papers": 21
+          "questions": 44,
+          "papers": 22
         },
         {
           "id": "differentiation",
           "name": "Differentiation",
-          "questions": 45,
+          "questions": 46,
           "papers": 21
         },
         {
           "id": "integration",
           "name": "Integration",
-          "questions": 30,
+          "questions": 28,
           "papers": 22
         },
         {
@@ -182,7 +182,7 @@
         {
           "id": "proof",
           "name": "Proof",
-          "questions": 29,
+          "questions": 24,
           "papers": 22
         },
         {
@@ -194,25 +194,25 @@
         {
           "id": "binomial-expansion",
           "name": "Binomial expansion",
-          "questions": 26,
+          "questions": 24,
           "papers": 22
         },
         {
           "id": "parametric-equations",
           "name": "Parametric equations",
-          "questions": 42,
+          "questions": 41,
           "papers": 22
         },
         {
           "id": "differentiation",
           "name": "Differentiation",
-          "questions": 57,
-          "papers": 20
+          "questions": 56,
+          "papers": 21
         },
         {
           "id": "integration",
           "name": "Integration",
-          "questions": 69,
+          "questions": 67,
           "papers": 22
         },
         {
@@ -224,7 +224,7 @@
         {
           "id": "vectors",
           "name": "Vectors",
-          "questions": 28,
+          "questions": 26,
           "papers": 22
         }
       ]
@@ -239,19 +239,19 @@
         {
           "id": "mathematical-models",
           "name": "Mathematical models and assumptions",
-          "questions": 53,
+          "questions": 52,
           "papers": 22
         },
         {
           "id": "kinematics",
           "name": "Kinematics",
-          "questions": 63,
+          "questions": 62,
           "papers": 25
         },
         {
           "id": "vectors",
           "name": "Vectors in mechanics",
-          "questions": 40,
+          "questions": 39,
           "papers": 24
         },
         {
@@ -269,14 +269,14 @@
         {
           "id": "friction-statics",
           "name": "Friction and statics",
-          "questions": 48,
-          "papers": 25
+          "questions": 47,
+          "papers": 24
         },
         {
           "id": "moments",
           "name": "Moments",
-          "questions": 20,
-          "papers": 20
+          "questions": 19,
+          "papers": 19
         },
         {
           "id": "momentum-impulse",
@@ -302,31 +302,31 @@
         {
           "id": "variable-acceleration",
           "name": "Variable acceleration",
-          "questions": 26,
-          "papers": 19
+          "questions": 25,
+          "papers": 20
         },
         {
           "id": "work-energy-power",
           "name": "Work, energy and power",
-          "questions": 60,
+          "questions": 59,
           "papers": 25
         },
         {
           "id": "impulse-collisions",
           "name": "Impulse and collisions",
-          "questions": 51,
+          "questions": 48,
           "papers": 26
         },
         {
           "id": "centres-of-mass",
           "name": "Centres of mass",
-          "questions": 36,
+          "questions": 32,
           "papers": 26
         },
         {
           "id": "statics-rigid",
           "name": "Statics of rigid bodies",
-          "questions": 51,
+          "questions": 49,
           "papers": 25
         }
       ]
@@ -347,14 +347,14 @@
         {
           "id": "elastic-strings",
           "name": "Elastic strings and springs",
-          "questions": 55,
+          "questions": 54,
           "papers": 18
         },
         {
           "id": "simple-harmonic-motion",
           "name": "Simple harmonic motion",
-          "questions": 24,
-          "papers": 18
+          "questions": 23,
+          "papers": 17
         },
         {
           "id": "centres-of-mass-solids",
@@ -431,26 +431,26 @@
         {
           "id": "binomial-poisson",
           "name": "Binomial and Poisson distributions",
-          "questions": 51,
+          "questions": 49,
           "papers": 24
         },
         {
           "id": "continuous-random-variables",
           "name": "Continuous random variables",
-          "questions": 70,
+          "questions": 67,
           "papers": 24
         },
         {
           "id": "sampling-estimation",
           "name": "Sampling and estimation",
-          "questions": 31,
+          "questions": 28,
           "papers": 22
         },
         {
           "id": "hypothesis-testing",
           "name": "Hypothesis testing",
           "questions": 37,
-          "papers": 23
+          "papers": 24
         }
       ]
     },
@@ -482,8 +482,8 @@
         {
           "id": "chi-squared",
           "name": "Chi-squared tests",
-          "questions": 25,
-          "papers": 16
+          "questions": 26,
+          "papers": 17
         },
         {
           "id": "hypothesis-means",
@@ -494,7 +494,7 @@
         {
           "id": "regression-correlation",
           "name": "Regression and correlation",
-          "questions": 18,
+          "questions": 17,
           "papers": 17
         }
       ]
@@ -509,37 +509,37 @@
         {
           "id": "kinematics",
           "name": "Kinematics and graphs of motion",
-          "questions": 214,
+          "questions": 180,
           "papers": 25
         },
         {
           "id": "forces-moments",
           "name": "Forces, Newton's laws and moments",
-          "questions": 196,
+          "questions": 173,
           "papers": 25
         },
         {
           "id": "work-energy-power",
           "name": "Work, energy and power",
-          "questions": 98,
+          "questions": 81,
           "papers": 25
         },
         {
           "id": "momentum",
           "name": "Momentum",
-          "questions": 50,
+          "questions": 48,
           "papers": 25
         },
         {
           "id": "fluids",
           "name": "Fluids",
-          "questions": 93,
+          "questions": 73,
           "papers": 25
         },
         {
           "id": "materials",
           "name": "Materials",
-          "questions": 117,
+          "questions": 83,
           "papers": 25
         }
       ]
@@ -554,25 +554,25 @@
         {
           "id": "nature-of-light",
           "name": "The nature of light",
-          "questions": 114,
+          "questions": 96,
           "papers": 24
         },
         {
           "id": "waves",
           "name": "Waves",
-          "questions": 255,
+          "questions": 199,
           "papers": 24
         },
         {
           "id": "wave-particle-duality",
           "name": "Wave-particle duality",
-          "questions": 86,
+          "questions": 64,
           "papers": 24
         },
         {
           "id": "dc-electricity",
           "name": "DC electricity",
-          "questions": 201,
+          "questions": 178,
           "papers": 24
         }
       ]
@@ -593,25 +593,25 @@
         {
           "id": "measurement-techniques",
           "name": "Measurement techniques",
-          "questions": 39,
+          "questions": 38,
           "papers": 22
         },
         {
           "id": "uncertainties-errors",
           "name": "Uncertainties and errors",
-          "questions": 50,
+          "questions": 49,
           "papers": 24
         },
         {
           "id": "graphical-analysis",
           "name": "Graphical analysis",
-          "questions": 46,
-          "papers": 24
+          "questions": 44,
+          "papers": 23
         },
         {
           "id": "core-practicals",
           "name": "Core practicals",
-          "questions": 28,
+          "questions": 29,
           "papers": 19
         }
       ]
@@ -626,31 +626,31 @@
         {
           "id": "further-mechanics",
           "name": "Further mechanics",
-          "questions": 122,
+          "questions": 101,
           "papers": 22
         },
         {
           "id": "electric-fields",
           "name": "Electric fields",
-          "questions": 187,
+          "questions": 143,
           "papers": 22
         },
         {
           "id": "capacitors",
           "name": "Capacitors",
-          "questions": 68,
+          "questions": 53,
           "papers": 22
         },
         {
           "id": "magnetic-fields",
           "name": "Magnetic fields",
-          "questions": 127,
+          "questions": 100,
           "papers": 22
         },
         {
           "id": "nuclear-particle",
           "name": "Nuclear and particle physics",
-          "questions": 138,
+          "questions": 101,
           "papers": 22
         }
       ]
@@ -665,31 +665,31 @@
         {
           "id": "thermodynamics",
           "name": "Thermodynamics",
-          "questions": 80,
+          "questions": 65,
           "papers": 21
         },
         {
           "id": "nuclear-decay",
           "name": "Nuclear decay",
-          "questions": 119,
+          "questions": 90,
           "papers": 21
         },
         {
           "id": "oscillations",
           "name": "Oscillations",
-          "questions": 131,
+          "questions": 77,
           "papers": 21
         },
         {
           "id": "gravitational-fields",
           "name": "Gravitational fields",
-          "questions": 99,
+          "questions": 71,
           "papers": 21
         },
         {
           "id": "astrophysics",
           "name": "Astrophysics and cosmology",
-          "questions": 154,
+          "questions": 115,
           "papers": 21
         }
       ]
@@ -731,32 +731,32 @@
         {
           "id": "formulae-moles",
           "name": "Formulae, equations and amounts of substance",
-          "questions": 366,
+          "questions": 257,
           "papers": 25
         },
         {
           "id": "atomic-structure",
           "name": "Atomic structure and the periodic table",
-          "questions": 199,
+          "questions": 139,
           "papers": 25
         },
         {
           "id": "bonding-structure",
           "name": "Bonding and structure",
-          "questions": 150,
+          "questions": 99,
           "papers": 25
         },
         {
           "id": "organic-alkanes",
           "name": "Introduction to organic chemistry and alkanes",
-          "questions": 120,
+          "questions": 88,
           "papers": 24
         },
         {
           "id": "alkenes",
           "name": "Alkenes",
-          "questions": 46,
-          "papers": 22
+          "questions": 38,
+          "papers": 21
         }
       ]
     },
@@ -770,43 +770,43 @@
         {
           "id": "energetics",
           "name": "Energetics",
-          "questions": 130,
+          "questions": 96,
           "papers": 25
         },
         {
           "id": "intermolecular-forces",
           "name": "Intermolecular forces",
-          "questions": 154,
+          "questions": 106,
           "papers": 25
         },
         {
           "id": "redox-groups",
           "name": "Redox chemistry and groups 1, 2 and 7",
-          "questions": 208,
+          "questions": 116,
           "papers": 25
         },
         {
           "id": "kinetics-equilibria",
           "name": "Introduction to kinetics and equilibria",
-          "questions": 97,
+          "questions": 71,
           "papers": 25
         },
         {
           "id": "halogenoalkanes",
           "name": "Halogenoalkanes",
-          "questions": 51,
-          "papers": 22
+          "questions": 43,
+          "papers": 23
         },
         {
           "id": "alcohols",
           "name": "Alcohols",
-          "questions": 94,
+          "questions": 75,
           "papers": 25
         },
         {
           "id": "spectra",
           "name": "Mass spectra and IR",
-          "questions": 47,
+          "questions": 38,
           "papers": 22
         }
       ]
@@ -827,20 +827,20 @@
         {
           "id": "techniques",
           "name": "Core techniques",
-          "questions": 72,
+          "questions": 71,
           "papers": 25
         },
         {
           "id": "qualitative-tests",
           "name": "Qualitative tests",
-          "questions": 51,
+          "questions": 50,
           "papers": 23
         },
         {
           "id": "analysis-evaluation",
           "name": "Analysis and evaluation",
-          "questions": 30,
-          "papers": 21
+          "questions": 32,
+          "papers": 20
         }
       ]
     },
@@ -854,43 +854,43 @@
         {
           "id": "kinetics",
           "name": "Kinetics",
-          "questions": 71,
+          "questions": 58,
           "papers": 22
         },
         {
           "id": "entropy-energetics",
           "name": "Entropy and energetics",
-          "questions": 106,
+          "questions": 87,
           "papers": 22
         },
         {
           "id": "chemical-equilibria",
           "name": "Chemical equilibria",
-          "questions": 70,
+          "questions": 56,
           "papers": 22
         },
         {
           "id": "acid-base",
           "name": "Acid-base equilibria",
-          "questions": 181,
+          "questions": 155,
           "papers": 22
         },
         {
           "id": "carbonyls-acids",
           "name": "Carbonyls and carboxylic acids",
-          "questions": 125,
+          "questions": 90,
           "papers": 22
         },
         {
           "id": "chirality",
           "name": "Chirality",
-          "questions": 39,
+          "questions": 24,
           "papers": 17
         },
         {
           "id": "spectroscopy",
           "name": "Spectroscopy and chromatography",
-          "questions": 63,
+          "questions": 51,
           "papers": 21
         }
       ]
@@ -905,31 +905,31 @@
         {
           "id": "redox-electrodes",
           "name": "Redox equilibria and electrode potentials",
-          "questions": 123,
+          "questions": 100,
           "papers": 22
         },
         {
           "id": "transition-metals",
           "name": "Transition metals",
-          "questions": 175,
+          "questions": 132,
           "papers": 22
         },
         {
           "id": "arenes",
           "name": "Arenes",
-          "questions": 127,
+          "questions": 100,
           "papers": 22
         },
         {
           "id": "organic-nitrogen",
           "name": "Organic nitrogen compounds",
-          "questions": 97,
+          "questions": 73,
           "papers": 22
         },
         {
           "id": "organic-synthesis",
           "name": "Organic synthesis",
-          "questions": 114,
+          "questions": 94,
           "papers": 22
         }
       ]
@@ -971,7 +971,7 @@
         {
           "id": "biological-molecules",
           "name": "Biological molecules and enzymes",
-          "questions": 102,
+          "questions": 103,
           "papers": 25
         },
         {
@@ -983,7 +983,7 @@
         {
           "id": "transport-health",
           "name": "Mammalian transport and cardiovascular health",
-          "questions": 100,
+          "questions": 101,
           "papers": 25
         },
         {
@@ -1004,7 +1004,7 @@
         {
           "id": "cell-structure",
           "name": "Cell structure",
-          "questions": 84,
+          "questions": 87,
           "papers": 24
         },
         {
@@ -1016,7 +1016,7 @@
         {
           "id": "development",
           "name": "Development of organisms",
-          "questions": 38,
+          "questions": 36,
           "papers": 22
         },
         {
@@ -1028,7 +1028,7 @@
         {
           "id": "biodiversity",
           "name": "Biodiversity and conservation",
-          "questions": 62,
+          "questions": 61,
           "papers": 23
         }
       ]
@@ -1076,13 +1076,13 @@
         {
           "id": "energy-ecosystems",
           "name": "Energy flow, ecosystems and the environment",
-          "questions": 85,
+          "questions": 86,
           "papers": 22
         },
         {
           "id": "microbiology",
           "name": "Microbiology",
-          "questions": 73,
+          "questions": 75,
           "papers": 22
         },
         {
@@ -1109,7 +1109,7 @@
         {
           "id": "respiration",
           "name": "Respiration",
-          "questions": 36,
+          "questions": 37,
           "papers": 20
         },
         {
