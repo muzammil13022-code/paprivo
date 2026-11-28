@@ -422,6 +422,11 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
                   </div>
                 </div>
 
+                <p className="mb-2 text-xs text-muted">
+                  Tick a section to take all of it, or open the <span aria-hidden>▶</span> arrow on
+                  the right of a section to pick single specification points.
+                </p>
+
                 <label className="sr-only" htmlFor="mock-topic-filter">
                   Filter topics
                 </label>

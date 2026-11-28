@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T10:24:33.466Z",
+  "generatedAt": "2026-11-28T10:35:29.876Z",
   "units": {
     "WMA11": {
       "code": "WMA11",
@@ -137,7 +137,7 @@
         {
           "id": "algebra-functions",
           "name": "Algebra and functions",
-          "questions": 75,
+          "questions": 76,
           "papers": 23
         },
         {
@@ -1076,7 +1076,7 @@
         {
           "id": "energy-ecosystems",
           "name": "Energy flow, ecosystems and the environment",
-          "questions": 86,
+          "questions": 87,
           "papers": 22
         },
         {

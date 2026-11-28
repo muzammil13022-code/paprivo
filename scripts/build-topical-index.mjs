@@ -135,6 +135,20 @@ const shiftedSpaces = (text) => (text.match(/\u0003/g) ?? []).length;
 /** Whitespace first, so shifting does not turn line breaks into quotes; case after. */
 const decodedText = (text) => unshift(text.replace(/\s+/g, " ")).toLowerCase();
 
+/**
+ * The section a question's own wording points at most strongly, even when it
+ * falls short of that section's threshold. Used only as a second opinion.
+ */
+function bestTopic(text, topics) {
+  let best = null;
+  for (const topic of topics) {
+    let score = 0;
+    for (const cue of topic.cues) if (cue.re.test(text)) score += cue.weight;
+    if (score > 0 && (!best || score > best.score)) best = { id: topic.id, score };
+  }
+  return best?.id ?? null;
+}
+
 function tagQuestion(text, topics) {
   const scored = [];
   for (const topic of topics) {
@@ -543,6 +557,7 @@ async function main() {
           continue;
         }
         const { questions } = segmented;
+        const texts = new Map();
         for (const question of questions) {
           const raw = questionText(pages, question.q, question.from, question.to, lineMarks);
           let text = flatten(raw);
@@ -554,10 +569,39 @@ async function main() {
             ids = tagQuestion(text, topics);
           }
           question.topics = ids;
+          texts.set(question, text);
+        }
+
+        // A question whose own wording fell just short of a section can still be
+        // placed by its neighbours — but position alone was measured at 43-61%
+        // accuracy, because papers mix topics. Where the neighbours agree on one
+        // section and the question's own cues point at that same section, the
+        // rule reproduced the existing tag 304 times out of 307, so that pair of
+        // signals is what is used here.
+        const own = new Map();
+        for (const question of questions) {
+          const text = texts.get(question) ?? "";
+          own.set(question, bestTopic(text, topics));
+        }
+        const taggedBefore = questions.map((q) => [...q.topics]);
+        questions.forEach((question, index) => {
+          if (question.topics.length > 0 || question.marks < 2) return;
+          const before = taggedBefore[index - 1] ?? [];
+          const after = taggedBefore[index + 1] ?? [];
+          const shared = before.filter((id) => after.includes(id));
+          if (shared.length !== 1) return;
+          if (own.get(question) !== shared[0]) return;
+          question.topics = [shared[0]];
+        });
+
+        for (const question of questions) {
+          const text = texts.get(question) ?? "";
           // Points are read from the same text as the section tags so the two
           // levels agree; an untagged question belongs to no point either.
           question.points =
-            ids.length > 0 && points.length > 0 ? tagPoints(text, points, new Set(ids)) : [];
+            question.topics.length > 0 && points.length > 0
+              ? tagPoints(text, points, new Set(question.topics))
+              : [];
           if (dump) {
             dump.push({
               unit: unit.code,
