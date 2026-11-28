@@ -61,6 +61,8 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
   const [topics, setTopics] = useState<string[]>([]);
   // Specification points are picked one line at a time, on top of whole sections.
   const [points, setPoints] = useState<string[]>([]);
+  // Questions wanted from each picked section/point; absent means all of them.
+  const [quotas, setQuotas] = useState<Record<string, number>>({});
   const [openTopics, setOpenTopics] = useState<string[]>([]);
   const [topicQuery, setTopicQuery] = useState("");
   const [paperIds, setPaperIds] = useState<string[]>([]);
@@ -95,6 +97,7 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
     setUnitCode(code);
     setTopics([]);
     setPoints([]);
+    setQuotas({});
     setOpenTopics([]);
     setPaperIds([]);
     setShowInside(false);
@@ -172,9 +175,21 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
       mode,
       paperIds,
       markTarget,
+      quotas,
       kind: "mock",
     }),
-    [topics, points, fromYear, toYear, sessions, includeMarkSchemes, mode, paperIds, markTarget],
+    [
+      topics,
+      points,
+      fromYear,
+      toYear,
+      sessions,
+      includeMarkSchemes,
+      mode,
+      paperIds,
+      markTarget,
+      quotas,
+    ],
   );
 
   const match = useMemo(
@@ -222,6 +237,17 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
     // A single point is narrower than its section: the two never both apply.
     setTopics((current) => current.filter((t) => t !== topicId));
   }
+  // An empty box means "all"; clearing it drops the cap for that row.
+  function setQuota(id: string, raw: string) {
+    const count = Number(raw);
+    setQuotas((current) => {
+      const next = { ...current };
+      if (raw.trim() === "" || !Number.isFinite(count) || count <= 0) delete next[id];
+      else next[id] = Math.floor(count);
+      return next;
+    });
+  }
+
   // Section numbering follows the specification order, not the filtered list.
   const topicNumber = (id: string) => String(allTopics.findIndex((t) => t.id === id) + 1).padStart(2, "0");
   const busiestTopic = Math.max(1, ...allTopics.map((t) => t.questions));
@@ -259,6 +285,11 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
         params.set("topics", topics.join(","));
         if (points.length > 0) params.set("points", points.join(","));
         params.set("marks", String(markTarget));
+        // Only picks that are actually selected carry a count.
+        const qty = Object.entries(quotas).filter(
+          ([id]) => topics.includes(id) || points.includes(id),
+        );
+        if (qty.length > 0) params.set("qty", qty.map(([id, n]) => `${id}:${n}`).join(","));
       }
 
       const res = await fetch(`/api/topical?${params.toString()}`);
@@ -424,7 +455,9 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
 
                 <p className="mb-2 text-xs text-muted">
                   Tick a section to take all of it, or open the <span aria-hidden>▶</span> arrow on
-                  the right of a section to pick single specification points.
+                  the right of a section to pick single specification points. A picked row takes everything
+                  — type a number in its <span className="font-mono text-[10px] uppercase tracking-[0.1em]">want</span>{" "}
+                  box to take only that many questions.
                 </p>
 
                 <label className="sr-only" htmlFor="mock-topic-filter">
@@ -517,6 +550,21 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
                                 </span>
                               </span>
                             </button>
+                            {checked && (
+                              <span className="flex w-[54px] shrink-0 flex-col items-center justify-center gap-0.5 border-l border-card-border bg-white/40">
+                                <span className="text-[8px] uppercase tracking-[0.1em] text-muted">want</span>
+                                <input
+                                  type="number"
+                                  min={1}
+                                  max={topic.questions}
+                                  value={quotas[topic.id] ?? ""}
+                                  placeholder="all"
+                                  aria-label={`How many questions from ${topic.name}`}
+                                  onChange={(e) => setQuota(topic.id, e.target.value)}
+                                  className="w-9 border border-card-border bg-white/80 px-1 py-0.5 text-center font-mono text-[11px] outline-none focus:border-marker"
+                                />
+                              </span>
+                            )}
                             {sectionPoints.length > 0 && (
                               <button
                                 type="button"
@@ -548,13 +596,13 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
                               {sectionPoints.map((point, index) => {
                                 const on = points.includes(point.id);
                                 return (
-                                  <li key={point.id}>
+                                  <li key={point.id} className="flex items-stretch">
                                     <button
                                       type="button"
                                       role="checkbox"
                                       aria-checked={on}
                                       onClick={() => togglePoint(topic.id, point.id)}
-                                      className={`flex w-full items-start justify-between gap-3 py-1.5 pl-[35px] pr-3 text-left text-[13px] leading-snug transition-colors ${
+                                      className={`flex min-w-0 flex-1 items-start justify-between gap-3 py-1.5 pl-[35px] pr-2 text-left text-[13px] leading-snug transition-colors ${
                                         on ? "bg-marker/10" : "hover:bg-white/70"
                                       }`}
                                     >
@@ -590,6 +638,20 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
                                         {point.questions} Q
                                       </span>
                                     </button>
+                                    {on && (
+                                      <span className="flex w-[48px] shrink-0 items-center border-l border-card-border bg-white/40 px-1">
+                                        <input
+                                          type="number"
+                                          min={1}
+                                          max={point.questions}
+                                          value={quotas[point.id] ?? ""}
+                                          placeholder="all"
+                                          aria-label={`How many questions from ${point.name}`}
+                                          onChange={(e) => setQuota(point.id, e.target.value)}
+                                          className="w-full border border-card-border bg-white/80 px-1 py-0.5 text-center font-mono text-[10px] outline-none focus:border-marker"
+                                        />
+                                      </span>
+                                    )}
                                   </li>
                                 );
                               })}
@@ -740,8 +802,9 @@ export function MockTestMaker({ units }: { units: TopicalUnitOption[] }) {
                   </div>
                 </div>
                 <p className="text-xs text-muted">
-                  Questions are taken newest paper first and stop at {match.marks} of {markTarget} marks —
-                  a question that would overshoot is skipped, so the paper stays at or under target.
+                  Marks are spread evenly over your picks, newest papers first, so no one section fills the
+                  paper. A question that would overshoot is skipped and a smaller one closes the gap —{" "}
+                  {match.marks} of {markTarget} marks taken.
                 </p>
 
                 <div className="grid gap-5 border-t border-card-border pt-4 sm:grid-cols-2">

@@ -14,6 +14,10 @@ import { buildPack } from "@/lib/topical-pdf";
  *                   &to=2026&sessions=June,October&ms=1
  * GET /api/topical?unit=WMA11&kind=mock&mode=papers&papers=<id>,<id>&ms=0
  * GET /api/topical?unit=WMA11&kind=mock&mode=topics&topics=…&marks=60
+ *                   &qty=differentiation:3,integration/2:2
+ *
+ * `marks` is the paper length to fill; `qty` caps how many questions come from
+ * one section or specification point (`<id>:<n>`).
  *
  * Builds one PDF: either every indexed past-paper question on the chosen
  * topics, or the chosen whole papers, optionally capped at a mark total and
@@ -84,6 +88,18 @@ export async function GET(request: NextRequest) {
 
   const knownPoints = new Set((index.points ?? []).map((p) => p.id));
   const points = wantedPoints.filter((p) => knownPoints.has(p));
+
+  // Questions wanted from each pick; ids read "<topic>" or "<topic>/<n>".
+  const quotas: Record<string, number> = {};
+  for (const part of (params.get("qty") ?? "").split(",")) {
+    const cut = part.lastIndexOf(":");
+    if (cut <= 0) continue;
+    const id = part.slice(0, cut).trim();
+    const count = Number(part.slice(cut + 1));
+    if (!Number.isFinite(count)) continue;
+    if (!knownTopics.has(id) && !knownPoints.has(id)) continue;
+    quotas[id] = Math.max(0, Math.floor(count));
+  }
   if (mode === "topics" && topics.length === 0 && points.length === 0) {
     return fail(400, "Choose at least one section or specification point");
   }
@@ -103,6 +119,7 @@ export async function GET(request: NextRequest) {
     mode,
     paperIds,
     markTarget: Number.isFinite(markTarget) && markTarget > 0 ? markTarget : undefined,
+    quotas,
     kind,
   };
   const match = matchQuestions(index, selection);

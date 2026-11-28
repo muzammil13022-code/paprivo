@@ -56,6 +56,10 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
   const [topics, setTopics] = useState<string[]>([]);
   // Single specification lines, on top of whole sections; ids read "<topic>/<n>".
   const [points, setPoints] = useState<string[]>([]);
+  // Questions wanted from each picked section/point; absent means all of them.
+  const [quotas, setQuotas] = useState<Record<string, number>>({});
+  // 0 keeps every matching question; anything else is the paper length to fill.
+  const [markTarget, setMarkTarget] = useState(0);
   const [openTopics, setOpenTopics] = useState<string[]>([]);
   const [topicQuery, setTopicQuery] = useState("");
   const [fromYear, setFromYear] = useState(0);
@@ -82,6 +86,7 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
     setLoadError(null);
     setTopics([]);
     setPoints([]);
+    setQuotas({});
     setOpenTopics([]);
     setBuilt(null);
     setBuildError(null);
@@ -128,9 +133,18 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
   const match = useMemo(
     () =>
       index
-        ? matchQuestions(index, { topics, points, fromYear, toYear, sessions, includeMarkSchemes })
+        ? matchQuestions(index, {
+            topics,
+            points,
+            fromYear,
+            toYear,
+            sessions,
+            includeMarkSchemes,
+            quotas,
+            markTarget,
+          })
         : { papers: [], questionCount: 0, marks: 0, pageCount: 0, sharedPagePapers: 0 },
-    [index, topics, points, fromYear, toYear, sessions, includeMarkSchemes],
+    [index, topics, points, fromYear, toYear, sessions, includeMarkSchemes, quotas, markTarget],
   );
 
   const selectedTopicNames = (unit?.topics ?? [])
@@ -181,6 +195,17 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
     setTopics((current) => current.filter((t) => t !== topicId));
   }
 
+  // An empty box means "all"; clearing it drops the cap for that row.
+  function setQuota(id: string, raw: string) {
+    const count = Number(raw);
+    setQuotas((current) => {
+      const next = { ...current };
+      if (raw.trim() === "" || !Number.isFinite(count) || count <= 0) delete next[id];
+      else next[id] = Math.floor(count);
+      return next;
+    });
+  }
+
   const pickCount = topics.length + points.length;
   const ready = Boolean(index && pickCount > 0 && match.questionCount > 0 && !building);
   const estimatedMb = Math.max(
@@ -203,6 +228,12 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
         ms: includeMarkSchemes ? "1" : "0",
       });
       if (points.length > 0) params.set("points", points.join(","));
+      if (markTarget > 0) params.set("marks", String(markTarget));
+      // Only picks that are actually selected carry a count.
+      const qty = Object.entries(quotas).filter(
+        ([id]) => topics.includes(id) || points.includes(id),
+      );
+      if (qty.length > 0) params.set("qty", qty.map(([id, n]) => `${id}:${n}`).join(","));
       const res = await fetch(`/api/topical?${params.toString()}`);
       if (!res.ok) throw new Error((await res.text()) || `HTTP ${res.status}`);
       const blob = await res.blob();
@@ -309,7 +340,9 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
             <div className="px-5 py-4">
               <p className="mb-3 text-xs text-muted">
                 Tick a section to take all of it, or open the <span aria-hidden>▶</span> arrow on a row to
-                take one specification line at a time.
+                take one specification line at a time. A picked row takes everything — type a number in its
+                <span className="font-mono text-[10px] uppercase tracking-[0.1em]"> want </span>box to take only
+                that many questions.
               </p>
 
               <label className="sr-only" htmlFor="topic-filter">
@@ -371,6 +404,21 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
                             </span>
                             <span className="shrink-0 font-mono text-[11px] text-muted">[{topic.questions}]</span>
                           </button>
+                          {checked && (
+                            <span className="flex w-[54px] shrink-0 flex-col items-center justify-center gap-0.5 border-l border-card-border bg-white/40">
+                              <span className="text-[8px] uppercase tracking-[0.1em] text-muted">want</span>
+                              <input
+                                type="number"
+                                min={1}
+                                max={topic.questions}
+                                value={quotas[topic.id] ?? ""}
+                                placeholder="all"
+                                aria-label={`How many questions from ${topic.name}`}
+                                onChange={(e) => setQuota(topic.id, e.target.value)}
+                                className="w-9 border border-card-border bg-white/80 px-1 py-0.5 text-center font-mono text-[11px] outline-none focus:border-marker"
+                              />
+                            </span>
+                          )}
                           {sectionPoints.length > 0 && (
                             <button
                               type="button"
@@ -399,13 +447,13 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
                             {sectionPoints.map((point, pointIndex) => {
                               const on = points.includes(point.id);
                               return (
-                                <li key={point.id}>
+                                <li key={point.id} className="flex items-stretch">
                                   <button
                                     type="button"
                                     role="checkbox"
                                     aria-checked={on}
                                     onClick={() => togglePoint(topic.id, point.id)}
-                                    className={`flex w-full items-start justify-between gap-2 py-1.5 pl-3 pr-2 text-left text-[12px] leading-snug transition-colors ${
+                                    className={`flex min-w-0 flex-1 items-start justify-between gap-2 py-1.5 pl-3 pr-2 text-left text-[12px] leading-snug transition-colors ${
                                       on ? "bg-marker/10" : "hover:bg-white/70"
                                     }`}
                                   >
@@ -441,6 +489,20 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
                                       {point.questions} Q
                                     </span>
                                   </button>
+                                  {on && (
+                                    <span className="flex w-[48px] shrink-0 items-center border-l border-card-border bg-white/40 px-1">
+                                      <input
+                                        type="number"
+                                        min={1}
+                                        max={point.questions}
+                                        value={quotas[point.id] ?? ""}
+                                        placeholder="all"
+                                        aria-label={`How many questions from ${point.name}`}
+                                        onChange={(e) => setQuota(point.id, e.target.value)}
+                                        className="w-full border border-card-border bg-white/80 px-1 py-0.5 text-center font-mono text-[10px] outline-none focus:border-marker"
+                                      />
+                                    </span>
+                                  )}
                                 </li>
                               );
                             })}
@@ -461,8 +523,68 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
           <section className="bg-card border border-card-border shadow-card-sm">
             <header className="border-b border-card-border px-5 py-4">
               <p className="text-[11px] uppercase tracking-[0.18em] text-marker">Step 2</p>
-              <h2 className="font-display text-xl font-semibold tracking-tight">Choose the papers</h2>
+              <h2 className="font-display text-xl font-semibold tracking-tight">Length and papers</h2>
             </header>
+            <div className="space-y-3 border-b border-card-border px-5 py-4">
+              <div className="flex flex-wrap items-end gap-3">
+                <div>
+                  <label
+                    htmlFor="topical-marks"
+                    className="mb-2 block text-[11px] uppercase tracking-[0.14em] text-muted"
+                  >
+                    Target marks
+                  </label>
+                  <input
+                    id="topical-marks"
+                    type="number"
+                    min={0}
+                    max={300}
+                    step={5}
+                    value={markTarget}
+                    onChange={(e) =>
+                      setMarkTarget(Math.max(0, Math.min(300, Number(e.target.value) || 0)))
+                    }
+                    className="w-24 border border-card-border bg-white/70 px-2 py-1.5 text-sm"
+                  />
+                </div>
+                <div className="flex flex-wrap gap-1.5 pb-1">
+                  {[40, 60, 75, 100].map((preset) => (
+                    <button
+                      key={preset}
+                      type="button"
+                      aria-pressed={markTarget === preset}
+                      onClick={() => setMarkTarget(preset)}
+                      className={`border px-2.5 py-1 text-xs ${
+                        markTarget === preset
+                          ? "border-marker bg-marker/10 text-ink"
+                          : "border-card-border text-muted"
+                      }`}
+                    >
+                      {preset}
+                    </button>
+                  ))}
+                  <button
+                    type="button"
+                    aria-pressed={markTarget === 0}
+                    onClick={() => setMarkTarget(0)}
+                    className={`border px-2.5 py-1 text-xs ${
+                      markTarget === 0
+                        ? "border-marker bg-marker/10 text-ink"
+                        : "border-card-border text-muted"
+                    }`}
+                  >
+                    Everything
+                  </button>
+                </div>
+              </div>
+              <p className="text-xs text-muted">
+                {markTarget > 0
+                  ? `Marks are spread evenly over your picks, newest papers first, so no one section fills the paper — ${match.marks} of ${markTarget} taken${
+                      match.marks < markTarget ? "; nothing smaller fits the rest" : ""
+                    }.`
+                  : "Set a mark total to cut the pack down to exam length. 0 keeps every matching question."}
+              </p>
+            </div>
             <div className="grid gap-5 px-5 py-4 sm:grid-cols-2">
               <div>
                 <p className="mb-2 text-[11px] uppercase tracking-[0.14em] text-muted">Years</p>
@@ -642,6 +764,9 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
               </p>
             )}
             <p className="mt-3 text-xs text-muted">
+              {markTarget > 0 ? `${match.marks} of ${markTarget} target marks` : "every matching question"}
+            </p>
+            <p className="mt-1 text-xs text-muted">
               {fromYear || "—"}–{toYear || "—"} · {sessions.length ? sessions.join(", ") : "no sessions"} ·{" "}
               {includeMarkSchemes ? "with mark schemes" : "questions only"}
             </p>
