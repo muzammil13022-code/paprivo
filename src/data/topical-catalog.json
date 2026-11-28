@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T20:37:56.690Z",
+  "generatedAt": "2026-11-28T10:02:56.427Z",
   "units": {
     "WMA11": {
       "code": "WMA11",
@@ -757,12 +757,6 @@
           "name": "Alkenes",
           "questions": 46,
           "papers": 22
-        },
-        {
-          "id": "energetics",
-          "name": "Energetics",
-          "questions": 1,
-          "papers": 1
         }
       ]
     },
