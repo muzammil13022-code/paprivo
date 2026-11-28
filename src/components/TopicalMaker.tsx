@@ -1,7 +1,13 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { matchQuestions, paperLabel, topicalPackName, type TopicalUnitIndex } from "@/lib/topical";
+import {
+  matchQuestions,
+  paperLabel,
+  topicalPackName,
+  type TopicalSpecPoint,
+  type TopicalUnitIndex,
+} from "@/lib/topical";
 import { docFileName, previewHref } from "@/lib/docs";
 
 export interface TopicalUnitOption {
@@ -48,6 +54,9 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
   const [index, setIndex] = useState<TopicalUnitIndex | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [topics, setTopics] = useState<string[]>([]);
+  // Single specification lines, on top of whole sections; ids read "<topic>/<n>".
+  const [points, setPoints] = useState<string[]>([]);
+  const [openTopics, setOpenTopics] = useState<string[]>([]);
   const [topicQuery, setTopicQuery] = useState("");
   const [fromYear, setFromYear] = useState(0);
   const [toYear, setToYear] = useState(0);
@@ -72,10 +81,14 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
     setIndex(null);
     setLoadError(null);
     setTopics([]);
+    setPoints([]);
+    setOpenTopics([]);
     setBuilt(null);
     setBuildError(null);
 
-    fetch(`/topical-data/${unit.code}.json`, { cache: "force-cache" })
+    // No-store: the index is rebuilt with the papers, and a cached copy would
+    // hide newly added specification points from this page.
+    fetch(`/topical-data/${unit.code}.json`, { cache: "no-store" })
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json() as Promise<TopicalUnitIndex>;
@@ -115,22 +128,61 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
   const match = useMemo(
     () =>
       index
-        ? matchQuestions(index, { topics, fromYear, toYear, sessions, includeMarkSchemes })
+        ? matchQuestions(index, { topics, points, fromYear, toYear, sessions, includeMarkSchemes })
         : { papers: [], questionCount: 0, marks: 0, pageCount: 0, sharedPagePapers: 0 },
-    [index, topics, fromYear, toYear, sessions, includeMarkSchemes],
+    [index, topics, points, fromYear, toYear, sessions, includeMarkSchemes],
   );
 
   const selectedTopicNames = (unit?.topics ?? [])
     .filter((t) => topics.includes(t.id))
     .map((t) => t.name);
+  const selectedPointNames = (index?.points ?? [])
+    .filter((p) => points.includes(p.id))
+    .map((p) => p.name);
+
+  const pointsByTopic = useMemo(() => {
+    const map = new Map<string, TopicalSpecPoint[]>();
+    for (const point of index?.points ?? []) {
+      const list = map.get(point.topic) ?? [];
+      list.push(point);
+      map.set(point.topic, list);
+    }
+    return map;
+  }, [index]);
+  const pointCount = index?.points?.length ?? 0;
 
   const filteredTopics = (unit?.topics ?? []).filter((t) =>
     topicQuery.trim() === ""
       ? true
-      : `${t.name} ${t.id}`.toLowerCase().includes(topicQuery.trim().toLowerCase()),
+      : `${t.name} ${t.id} ${(pointsByTopic.get(t.id) ?? [])
+          .map((point) => point.name)
+          .join(" ")}`
+          .toLowerCase()
+          .includes(topicQuery.trim().toLowerCase()),
   );
 
-  const ready = Boolean(index && topics.length > 0 && match.questionCount > 0 && !building);
+  function toggleTopic(topicId: string) {
+    const wasOn = topics.includes(topicId);
+    setTopics((current) =>
+      current.includes(topicId) ? current.filter((t) => t !== topicId) : [...current, topicId],
+    );
+    // A whole section covers its points, so picking one drops its point picks.
+    setPoints((current) => current.filter((p) => !p.startsWith(`${topicId}/`)));
+    if (wasOn) return;
+    // Turning a section on also opens it, so its lines can be seen and narrowed.
+    setOpenTopics((current) => (current.includes(topicId) ? current : [...current, topicId]));
+  }
+
+  function togglePoint(topicId: string, pointId: string) {
+    setPoints((current) =>
+      current.includes(pointId) ? current.filter((p) => p !== pointId) : [...current, pointId],
+    );
+    // A single point is narrower than its section: the two never both apply.
+    setTopics((current) => current.filter((t) => t !== topicId));
+  }
+
+  const pickCount = topics.length + points.length;
+  const ready = Boolean(index && pickCount > 0 && match.questionCount > 0 && !building);
   const estimatedMb = Math.max(
     1,
     Math.round((match.pageCount * 0.25 + (includeMarkSchemes ? match.papers.length * 0.6 : 0)) * 10) / 10,
@@ -150,11 +202,12 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
         sessions: sessions.join(","),
         ms: includeMarkSchemes ? "1" : "0",
       });
+      if (points.length > 0) params.set("points", points.join(","));
       const res = await fetch(`/api/topical?${params.toString()}`);
       if (!res.ok) throw new Error((await res.text()) || `HTTP ${res.status}`);
       const blob = await res.blob();
       const url = URL.createObjectURL(blob);
-      const name = topicalPackName(index, selectedTopicNames);
+      const name = topicalPackName(index, [...selectedTopicNames, ...selectedPointNames]);
       const link = document.createElement("a");
       link.href = url;
       link.download = name;
@@ -223,12 +276,19 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
               <div>
                 <p className="text-[11px] uppercase tracking-[0.18em] text-marker">Step 1</p>
                 <h2 className="font-display text-xl font-semibold tracking-tight">Pick your topics</h2>
+                <p className="mt-1 text-xs text-muted">
+                  {(unit?.topics ?? []).length} sections · {pointCount} specification points ·{" "}
+                  {pickCount} selected
+                </p>
               </div>
               <div className="flex items-center gap-2 text-xs">
                 <button
                   type="button"
                   className="underline underline-offset-4 decoration-card-border-strong hover:decoration-marker"
-                  onClick={() => setTopics((unit?.topics ?? []).filter((t) => t.questions > 0).map((t) => t.id))}
+                  onClick={() => {
+                    setTopics((unit?.topics ?? []).filter((t) => t.questions > 0).map((t) => t.id));
+                    setPoints([]);
+                  }}
                 >
                   Select all
                 </button>
@@ -236,7 +296,10 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
                 <button
                   type="button"
                   className="underline underline-offset-4 decoration-card-border-strong hover:decoration-marker"
-                  onClick={() => setTopics([])}
+                  onClick={() => {
+                    setTopics([]);
+                    setPoints([]);
+                  }}
                 >
                   Clear
                 </button>
@@ -244,6 +307,11 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
             </header>
 
             <div className="px-5 py-4">
+              <p className="mb-3 text-xs text-muted">
+                Tick a section to take all of it, or open the <span aria-hidden>▶</span> arrow on a row to
+                take one specification line at a time.
+              </p>
+
               <label className="sr-only" htmlFor="topic-filter">
                 Filter topics
               </label>
@@ -273,38 +341,111 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
                 <ul className="grid gap-px bg-card-border sm:grid-cols-2">
                   {filteredTopics.map((topic) => {
                     const checked = topics.includes(topic.id);
+                    const sectionPoints = pointsByTopic.get(topic.id) ?? [];
+                    const open = openTopics.includes(topic.id);
+                    const picked = sectionPoints.filter((point) => points.includes(point.id)).length;
                     return (
                       <li key={topic.id} className="bg-card">
-                        <button
-                          type="button"
-                          role="checkbox"
-                          aria-checked={checked}
-                          onClick={() =>
-                            setTopics((current) =>
-                              current.includes(topic.id)
-                                ? current.filter((t) => t !== topic.id)
-                                : [...current, topic.id],
-                            )
-                          }
-                          className="flex w-full cursor-pointer items-center justify-between gap-3 px-3 py-2.5 text-left hover:bg-white/60"
-                        >
-                          <span className="flex items-start gap-2.5">
-                            <span
-                              aria-hidden
-                              className={`mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center border ${
-                                checked ? "border-marker bg-marker text-paper" : "border-card-border-strong bg-white/70"
-                              }`}
-                            >
-                              {checked && (
-                                <svg viewBox="0 0 12 12" className="h-2.5 w-2.5" fill="none" stroke="currentColor" strokeWidth="2">
-                                  <path d="m2 6.5 2.5 2.5L10 3" />
-                                </svg>
-                              )}
+                        <div className={`flex items-stretch ${checked ? "bg-marker/5" : ""}`}>
+                          <button
+                            type="button"
+                            role="checkbox"
+                            aria-checked={checked}
+                            onClick={() => toggleTopic(topic.id)}
+                            className="flex min-w-0 flex-1 cursor-pointer items-center justify-between gap-3 px-3 py-2.5 text-left hover:bg-white/60"
+                          >
+                            <span className="flex items-start gap-2.5">
+                              <span
+                                aria-hidden
+                                className={`mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center border ${
+                                  checked ? "border-marker bg-marker text-paper" : "border-card-border-strong bg-white/70"
+                                }`}
+                              >
+                                {checked && (
+                                  <svg viewBox="0 0 12 12" className="h-2.5 w-2.5" fill="none" stroke="currentColor" strokeWidth="2">
+                                    <path d="m2 6.5 2.5 2.5L10 3" />
+                                  </svg>
+                                )}
+                              </span>
+                              <span className="text-sm leading-snug">{topic.name}</span>
                             </span>
-                            <span className="text-sm leading-snug">{topic.name}</span>
-                          </span>
-                          <span className="shrink-0 font-mono text-[11px] text-muted">[{topic.questions}]</span>
-                        </button>
+                            <span className="shrink-0 font-mono text-[11px] text-muted">[{topic.questions}]</span>
+                          </button>
+                          {sectionPoints.length > 0 && (
+                            <button
+                              type="button"
+                              onClick={() =>
+                                setOpenTopics((current) =>
+                                  current.includes(topic.id)
+                                    ? current.filter((t) => t !== topic.id)
+                                    : [...current, topic.id],
+                                )
+                              }
+                              aria-expanded={open}
+                              aria-label={`${open ? "Hide" : "Show"} the ${sectionPoints.length} specification points in ${topic.name}`}
+                              className="flex w-9 shrink-0 flex-col items-center justify-center gap-1 border-l border-card-border text-[9px] text-muted hover:text-marker"
+                            >
+                              <span aria-hidden className={`transition-transform ${open ? "rotate-90" : ""}`}>
+                                ▶
+                              </span>
+                              <span className={`font-mono text-[10px] ${picked > 0 ? "text-marker" : ""}`}>
+                                {picked > 0 ? picked : sectionPoints.length}
+                              </span>
+                            </button>
+                          )}
+                        </div>
+                        {open && sectionPoints.length > 0 && (
+                          <ul className="border-t border-card-border bg-white/35">
+                            {sectionPoints.map((point, pointIndex) => {
+                              const on = points.includes(point.id);
+                              return (
+                                <li key={point.id}>
+                                  <button
+                                    type="button"
+                                    role="checkbox"
+                                    aria-checked={on}
+                                    onClick={() => togglePoint(topic.id, point.id)}
+                                    className={`flex w-full items-start justify-between gap-2 py-1.5 pl-3 pr-2 text-left text-[12px] leading-snug transition-colors ${
+                                      on ? "bg-marker/10" : "hover:bg-white/70"
+                                    }`}
+                                  >
+                                    <span className="flex items-start gap-2">
+                                      <span
+                                        aria-hidden
+                                        className={`mt-0.5 flex h-3.5 w-3.5 shrink-0 items-center justify-center border ${
+                                          on
+                                            ? "border-marker bg-marker text-paper"
+                                            : "border-card-border-strong bg-white/70"
+                                        }`}
+                                      >
+                                        {on && (
+                                          <svg
+                                            viewBox="0 0 12 12"
+                                            className="h-2 w-2"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                          >
+                                            <path d="m2 6.5 2.5 2.5L10 3" />
+                                          </svg>
+                                        )}
+                                      </span>
+                                      <span>
+                                        <span className="mr-1.5 font-mono text-[10px] text-muted">
+                                          {pointIndex + 1}
+                                        </span>
+                                        {point.name}
+                                      </span>
+                                    </span>
+                                    <span className="shrink-0 font-mono text-[10px] text-muted">
+                                      {point.questions} Q
+                                    </span>
+                                  </button>
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        )}
                       </li>
                     );
                   })}
@@ -490,11 +631,15 @@ export function TopicalMaker({ units }: { units: TopicalUnitOption[] }) {
           </div>
 
           <div className="border-t border-card-border px-5 py-4">
-            <p className="text-[11px] uppercase tracking-[0.14em] text-muted">Selected topics</p>
-            {selectedTopicNames.length === 0 ? (
+            <p className="text-[11px] uppercase tracking-[0.14em] text-muted">
+              Selected sections and points
+            </p>
+            {selectedTopicNames.length + selectedPointNames.length === 0 ? (
               <p className="mt-1.5 text-sm text-muted">None yet — pick at least one.</p>
             ) : (
-              <p className="mt-1.5 text-sm leading-snug">{selectedTopicNames.join(" · ")}</p>
+              <p className="mt-1.5 text-sm leading-snug">
+                {[...selectedTopicNames, ...selectedPointNames].join(" · ")}
+              </p>
             )}
             <p className="mt-3 text-xs text-muted">
               {fromYear || "—"}–{toYear || "—"} · {sessions.length ? sessions.join(", ") : "no sessions"} ·{" "}
